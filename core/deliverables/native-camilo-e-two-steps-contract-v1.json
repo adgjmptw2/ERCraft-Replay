@@ -1,0 +1,64 @@
+{
+  "format": "native-camilo-e-two-steps-disjoint-q3.v1",
+  "characterCode": 39,
+  "skillGroup": 1039400,
+  "skillId": "CamiloActive3",
+  "wireSkillId": 549,
+  "effectCodes": [
+    1039402,
+    1039403
+  ],
+  "nativeSteps": [
+    {
+      "dataClass": "CamiloSkillActive3_StepOne",
+      "field": "DamageParamData",
+      "offset": "0x38",
+      "effectCode": 1039402,
+      "setter": "0x12460db",
+      "consumer": "0x29fde90",
+      "parameterSet": "0x29fe147",
+      "damageTo": "0x29fe1ea",
+      "processCall": "0x29ff806"
+    },
+    {
+      "dataClass": "CamiloSkillActive3_StepTwo",
+      "field": "DamageParamData",
+      "offset": "0x60",
+      "effectCode": 1039403,
+      "setter": "0x1246815",
+      "consumer": "0x29fe6d0",
+      "parameterSet": "0x29fe9ae",
+      "damageTo": "0x29fea4a",
+      "processCall": "0x29ffd1e"
+    }
+  ],
+  "lifecycle": "Process29ff380 calls StepOneDamage and StepTwoDamage directly between its movement waits. Both helpers clear and Set(slot8) the readonly parameter+c8, then only IndividualId+84 and SkillNumber+74 are written before same collection passes as DamageTo argument5. Caster=script+18, victim=script+20. Finish29fd980 handles cooldown without detached damage producer.",
+  "foreignProducerExclusion": {
+    "skillGroup": 1039220,
+    "skillId": "CamiloActive1_3",
+    "wireSkillId": 543,
+    "excludedEffects": [
+      1039402,
+      1039403
+    ],
+    "actualEffectCodes": [
+      1039204
+    ],
+    "proof": "Q3 Process29fbdc0 reads CamiloSkillActive1_3Data.DamageParamData+18, Set(slot8), then CalculateCriticalAttack returns a CriticalType stored only at parameter+3c; identity+84/+74 writes do not change effect dictionary. DamageTo at29fc256 uses the same parameter. Q3 constructor12454f0 sets Hit FX1039204. Critical roll is not an E effect override; Q3 state applies separately."
+  },
+  "collectorCorrection": "Old singleton regex required class suffix Data and silently omitted both CamiloSkillActive3_StepOne/StepTwo despite typed SkillDamageParameterData fields. Discovery now accepts exact Singleton classes by typed field, independent of suffix; only these two cached constructor bodies used here.",
+  "gameDbSha256": "5ef9cb5459a2e908099655bf9ffc70ac16b134d1db282fb97b25fe065e7c8e4f",
+  "staticDllSha256": "3a92f99aea09d6eae54456a07ac1360c51c5aad1a102ace5cca23deca59c5ef4",
+  "bodies": {
+    "tmp/static-code-restored-v1/game-fn-1245d80.json": "91f69c32e931d167894c70b39fb2bf783963dd03921cc383f17b2ca25b6933c2",
+    "tmp/static-code-restored-v1/game-fn-1246160.json": "fbeced3311587e53bb9d43d24d04a7ed60e5a9109b7e8a7224f11896e3ab3c42",
+    "tmp/static-code-restored-v1/game-fn-12454f0.json": "1940974a534ee9d8d78ff48d3baad160a4c12baacf1096392dd85993354c7f03",
+    "tmp/static-code-restored-v1/game-fn-29fde90.json": "b258d3ead52798b5ac0cc7fa1a74110042b8ff1d2261665cd79ff89957bb7419",
+    "tmp/static-code-restored-v1/game-fn-29fe6d0.json": "31be5d2dbca118ebfe279a580b10adbb47609a6281277c493760965810c31273",
+    "tmp/static-code-restored-v1/game-fn-29ff380.json": "65974d6ed1d5a9b5702559a721f645d6b0c2ac14eaa8d155d010ab2f4070cd54",
+    "tmp/static-code-restored-v1/game-fn-29fd980.json": "ea6c2c82b9fd066f4cff9e616f2797d42b550a4a409c5e4a9825d333bf972758",
+    "tmp/static-code-restored-v1/game-fn-29fbdc0.json": "22b977601c543006ab27b3c4a5efea4d29db30a4ff4ec8db29d1eb40b5b19967",
+    "tmp/static-code-restored-v1/game-fn-29fb960.json": "335e14fe3b18ba30b038627ab9f204f2975ff4c8d7c3525c0c0ff98fe3e4cee3",
+    "tmp/static-code-restored-v1/game-fn-29fba50.json": "8fc752ef0b2aa3995120858bc84429b71b3a1e15d8895094fa50f355cb4a0b22"
+  }
+}

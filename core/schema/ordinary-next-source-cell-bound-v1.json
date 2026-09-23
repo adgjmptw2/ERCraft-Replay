@@ -1,0 +1,48 @@
+{
+  "format": "er-ordinary-next-source-cell-bound.v1",
+  "clientVersion": "12.3.0",
+  "native": [
+    {
+      "path": "tmp\\static-code-restored-v1\\game-fn-3010460.json",
+      "sha256": "2a50ddc558eeb836e11d4720f4853e72770e0cc07ecba51e334836199262f1bf"
+    },
+    {
+      "path": "tmp\\static-code-restored-v1\\game-fn-3062160.json",
+      "sha256": "edf4cbfede2991f147e8c3827a8478fe8af159aa1a0a53316cae520c2eed8adb"
+    },
+    {
+      "path": "tmp\\static-code-restored-v1\\game-fn-3061540.json",
+      "sha256": "9e6d279582c630be95a186dc0ef44d0514f9ede71cd1afc5492cf51f50286164"
+    },
+    {
+      "path": "tmp\\static-code-restored-v1\\game-fn-3064bf0.json",
+      "sha256": "c365fd26b179233b6f450439e80fa03a61379fb8075fd906a4522dcda3aa6452"
+    },
+    {
+      "path": "tmp\\static-code-restored-v1\\game-fn-12a1830.json",
+      "sha256": "fa453856aa0840932ce0e19fa90d631f0007ee761b3e1fb4f749a9579e0f6b59"
+    },
+    {
+      "path": "tmp\\static-code-restored-v1\\game-fn-11a1760.json",
+      "sha256": "6f198f26af25788f2a08cd19c2077e3155b4c492c7845c43a0a951b5d0e612b7"
+    },
+    {
+      "path": "tmp\\static-code-restored-v1\\game-fn-129e550.json",
+      "sha256": "95f63e786abdd24c84cd0a7f30ece23ee00aa001e4a7832529800464b6cc00e0"
+    }
+  ],
+  "scope": "Refine an already proved ordinary forward pivot envelope using the FIRST subsequent position command, only if it is ordinary destination or avoidance.",
+  "sourceWriter": "WorldPlayerCharacter.EnqueueCommandAll3010460 gets current server position at3010588, multiplies X/Z by100 at30105c8/30105d9, FloorToIntbb14b0, writes inherited CurApproximatelyMoveCommandPacket.positionVector2+28 at30105f3. Base WorldObject.EnqueueCommandAll3062160 is equivalent at3062262/306229c..30622cd. Not a client requested position. CmdMoveToDestination+30 is instead relativeDestinationVector2.",
+  "continuity": "3064bf0 calls ServerMoveAgent.MoveToDestination with server current position, then enqueues.12a1830 sets non-null ordinary strategy, with navigation path initialization129e550.11a1760 navigation relocation branch is skipped for non-null new strategy by11a190c..11a190f. Between evaluation and first next ordinary position event the previous ordinary strategy remains active; any intervening position event prevents this witness. Existing forward proof establishes ordinary source-frame continuity.",
+  "operation": "Intersect forward X/Z intervals with next exact float32 source-cell preimage expanded by maxFrames*(1.001*f32(maxStrategySpeed*f32(1/60))+1/128). maxFrames=nextTick-damageTick+1 includes whole callback frame. Speed includes reset history through next witness, both update types. Empty intersection is conflict unknown, never discarded.",
+  "guards": [
+    "Existing forward-envelope requirements all pass",
+    "First later position event is ordinary and ordered after callback finish",
+    "Finite source-cell coordinates within512",
+    "Frame age1..3600, speed0..128, reach<=512",
+    "Malformed or missing optional next cell gives no extra constraint; does not supply a position"
+  ],
+  "movementRule": "schema/sua-source-cell-sweep-bound-v3.json",
+  "interpolationUsed": false,
+  "fallbackUsed": false
+}

@@ -1,0 +1,82 @@
+{
+  "format": "er-sua-center-slow-admission.v3",
+  "clientVersion": "12.3.0",
+  "review": {
+    "path": "deliverables/sua-state-admission-static-v1.json",
+    "sha256": "48ded263a23275fd7c0d907ebd1691503f2543e918522bfad3ee2c9d43238039"
+  },
+  "conditions": [
+    "Unique RQ callback; no overlapping normal Q; exactlevel and complete decoded state stream.",
+    "Original raw caster/target identity anchored by StartSkill and primary Damage.",
+    "Nearest preceding full CharacterSnapshot plus every state add/update through complete callback record; exact CmdRemoveState may clear group/caster only in a strictly earlier completed frame. Never extrapolate expiration; same-frame removal never clears possible presence.",
+    "Accepted same-caster bookmark AddState after primary Damage witnesses live shared external-debuff admission.",
+    "No callback death/reset/replacement; no potentially present immunity, invulnerability, VLS, or existing centerSlow group.",
+    "IsIgnoreStateCondition direct game writer review: only Berserk, ignores DyingImmunity25 and cannot ignore Slow31.",
+    "New centerSlow has positive exactlevel code. CC priority rows for Slow never block it. New-state completion emits AddState/Extended synchronously, including additions reentrant within the callback frame."
+  ],
+  "outcome": "When these predicates hold and the complete RQ callback has no centerSlow event, a contacted enemy is outside the central rectangle. This is conditional state-admission evidence, not absence of CC alone.",
+  "conservativeBlockedStateTypes": [
+    "SlowImmunity",
+    "Untargetability",
+    "Protectability",
+    "Invulnerability",
+    "Unstoppable",
+    "DebuffImmunity",
+    "CCImmunity",
+    "CCMovementImmunity",
+    "CCStopImmunity",
+    "DisplacementImmunity",
+    "DanceImmunity",
+    "VLS"
+  ],
+  "sameGroupBlocked": 1028230,
+  "stateExpirationAssumed": false,
+  "missingInputOutcome": "unknown",
+  "completedRemovalProof": {
+    "native": [
+      {
+        "path": "tmp/static-code-restored-v1/game-fn-322e530.json",
+        "sha256": "9833cfeba0c1bfdffccae52fa1cce94be3e4b7349b346da2a943ae6ada6aa5b8"
+      },
+      {
+        "path": "tmp/static-code-restored-v1/game-fn-322eac0.json",
+        "sha256": "1c66cbfae5913674c7563045d09599a0cd6f74e6c844aa0b269ee1cf27413bec"
+      },
+      {
+        "path": "tmp/static-code-restored-v1/game-fn-30d67c0.json",
+        "sha256": "57ac6d09457251939df0d33283a29a7e495f79fe72ae86313d0f2de35b174706"
+      },
+      {
+        "path": "tmp/static-code-restored-v1/game-fn-305f5d0.json",
+        "sha256": "7212e5c1e301336aa827363deed87f35609cd4b335b036b8b141db398f417f14"
+      },
+      {
+        "path": "tmp/static-code-restored-v1/game-fn-2fcdda0.json",
+        "sha256": "077c8346a66eba273fa08d7b2ae93a4656ac8d638e7cbe976c7698b00c357b2e"
+      }
+    ],
+    "serverRemoval": "322e530 terminates state then removes its object from StateEffector type-list at322e5e3. CompleteRemoveState emits actual state group and casterId at2fcdeba/2fcdecd, through SendCommand2fcdee7. WorldMovable delegates to this base writer. Only earlier-frame commands close presence; all callback-frame additions are retained even if later removed.",
+    "key": "CharacterStateGroup.notCheckCasterId normalization; otherwise exact group+casterId."
+  },
+  "selfCasterEncoding": {
+    "native": [
+      {
+        "path": "tmp/static-code-restored-v1/game-fn-fdc680.json",
+        "sha256": "1a93fa14cd70293c07ef88f3c414dc7f601b09dbef211aea55c8ac091122483c"
+      },
+      {
+        "path": "tmp/static-code-restored-v1/game-fn-fdc6a0.json",
+        "sha256": "e63308dd346a71e3b8d5b1b795c6ed337aeeee5fd7ccfacf248db6d78a47aea0"
+      },
+      {
+        "path": "tmp/static-code-restored-v1/game-fn-fddcc0.json",
+        "sha256": "50a0b16868f5beabc203d269bff9a823e10884872b6e5bf83dbe54415318b20d"
+      },
+      {
+        "path": "tmp/static-code-restored-v1/game-fn-fddcd0.json",
+        "sha256": "70515ec5e48cd0816035793407679dce0195b2480b7b5ab4aa85f122202413dd"
+      }
+    ],
+    "rule": "CmdAddState/Extended, Update/ResetCreateTime/Pause/RemoveState encode casterId==objectId as0. BeforeAction restores wire0 to objectId. Snapshot CharacterStateValue uses full CasterId. Normalize packet caster before group/caster joins; keep notCheckCasterId grouping separate."
+  }
+}

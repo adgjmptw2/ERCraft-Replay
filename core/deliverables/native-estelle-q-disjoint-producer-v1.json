@@ -1,0 +1,51 @@
+{
+  "format": "native-disjoint-normal-attack-producer.v1",
+  "characterCode": 55,
+  "consumerSkillGroup": 1055300,
+  "consumerWireSkillId": 797,
+  "excludedCompetingSkillGroup": 1055220,
+  "excludedCompetingSkillId": "EstelleActive1",
+  "excludedCompetingWireSkillId": 794,
+  "excludedAsProducerOfEffectCodes": [
+    1055301
+  ],
+  "notAGlobalNonDamageClaim": true,
+  "consumerContract": {
+    "path": "deliverables/native-process-direct-effects-v1.json",
+    "sha256": "94589b6a5685ec29d865910b1820b00615919041c31618983353c65ec2e16152"
+  },
+  "evidence": {
+    "dataClass": "EstelleSkillActive1Data",
+    "primaryEffectCode": 1055202,
+    "primary": "Constructor1282f90 stores EffectAndSound+40=1055202. NormalAttack.Process2ab8270 loads exact singleton+40 at2ab8498 and passes stack+30 effectAndSoundCode to MeleeAttackDamageTo2e49d40 at2ab84c4.",
+    "additional": "ReinforceEffect2ab7fd0 clears readonly damageParam+130 via slot5, sets data AttackParamData+30 via slot8, sets only IndividualId+84, then calls NotOnHitMeleeAttackDamageTo2e4b330. Its slot4 getter2ed5500 reads EffectAndSoundCodeType0 from effect dictionary+20; no entry returns native default0.",
+    "parameter": "AttackParamData is newly constructed by4fa4830 with empty effect dictionary+20. Data ctor1282f90 adds only damage float parameters via4fa36f0 and4fa3450, no effect setter. Collection Clear4fa6cc0 clears effect dictionary before Set. No producer path supplies W1FX1055301.",
+    "lifecycle": "Q Process creates its normal-attack state. State Start/Finish install/remove its buff and normal-attack targeting. Reviewed NormalAttack Start targets victim; Process normal hit and ReinforceEffect are the damage paths. Q is not a no-damage skill."
+  },
+  "runtimeRequirements": [
+    "exact character55",
+    "exact foreign group1055220/skillId EstelleActive1/wire794",
+    "foreign skillCode declared in exact gameDb group",
+    "consumer native FX exactly1055301"
+  ],
+  "sourceGameDbSha256": "5ef9cb5459a2e908099655bf9ffc70ac16b134d1db282fb97b25fe065e7c8e4f",
+  "staticDllSha256": "3a92f99aea09d6eae54456a07ac1360c51c5aad1a102ace5cca23deca59c5ef4",
+  "bodies": {
+    "tmp\\static-code-restored-v1\\game-fn-2ab7940.json": "62fffca739e4fb49a7e841d75693b9d58146280ad1823c12daaa19ae31331cdf",
+    "tmp\\static-code-restored-v1\\game-fn-2ab7a70.json": "43d8fc0a7097ad011d6b50f82e455ebce3531910770101cd0d90fd916fa992c1",
+    "tmp\\static-code-restored-v1\\game-fn-2ab7c00.json": "580ebb97dadc1945d0e2671de8db1b4bfd5721c82df403356b6a4dfe116f9088",
+    "tmp\\static-code-restored-v1\\game-fn-2ab7d30.json": "60444c84b911ec1d2cb92f5fd4788a075b49d37acd00b951451144eb5e084c19",
+    "tmp\\static-code-restored-v1\\game-fn-2ab7e80.json": "a74eb092b7d963825e04f1db42c64b24cba68fc61fb6dca793743f53107c8272",
+    "tmp\\static-code-restored-v1\\game-fn-2ab8270.json": "538123df3d16e6c821a141007dee054648165986e7aae718f26f5b7c7d5b9624",
+    "tmp\\static-code-restored-v1\\game-fn-2ab7fd0.json": "46f29ad14db9ef21d41b3772f67141e486ef88c18fac47fccf20684c28984458",
+    "tmp\\static-code-restored-v1\\game-fn-1282f90.json": "db58c77080c5a1ad36f61880c6635c34223c20d53500ac8bbae03bba29ef04da",
+    "tmp\\static-code-restored-v1\\game-fn-2e4b330.json": "a7c7ea71ac75b74730be02f37deb0f2eb48fbca29eb1714e98eea88377a6367d",
+    "tmp\\static-code-restored-v1\\game-fn-2e4b120.json": "1f3a0a350f15fdf67b81d9297a045dc83b038829642a957d42e71c6d27b49551",
+    "tmp\\static-code-restored-v1\\game-fn-2ed5500.json": "6c59249914345b64d8425b1693a8c1c76803e179928c5dfdb8b2e52d7152973b",
+    "tmp\\static-code-restored-v1\\game-fn-2ed48c0.json": "b7b91303b918444e417a8f61b8452a82dff060b96a437fe4b9138dd1f668a580",
+    "tmp\\static-code-restored-v1\\game-native-4fa4830.json": "51a2abdac200a2e3c0ce1d11e3397d1b5e7957dca1624c070e54488f0063f423",
+    "tmp\\static-code-restored-v1\\game-native-4fa6e20.json": "3bda1970d375b658f575f7ebec375782272ab591fece317b246e92d2cd9168c8",
+    "tmp\\static-code-restored-v1\\game-native-4fa6cc0.json": "d55a0593d191d1eeee139068b374f89b37c1a7a586c463e75d0ba5af6875a3b6",
+    "tmp\\static-code-restored-v1\\game-native-3b28640.json": "0ea864796d13225a5445493494a79da3cdd03aa1e3f787cc79f4d28dc19f565d"
+  }
+}

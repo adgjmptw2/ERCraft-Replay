@@ -1,0 +1,82 @@
+{
+  "format": "er-user-hit-rate-scope-amendment.v1",
+  "date": "2026-09-12",
+  "source": "Explicit user correction in current conversation",
+  "excludedMetricIds": [
+    "user-request-20260905-all90-v1:14:1014400:fetter",
+    "user-request-20260905-all90-v1:23:1023210:any",
+    "user-request-20260905-all90-v1:26:1026020:summon-railgun-normal",
+    "user-request-20260905-all90-v1:26:1026020:summon-railgun-reinforced",
+    "user-request-20260905-all90-v1:26:1026200:summon-shot",
+    "user-request-20260905-all90-v1:26:1026210:summon-shot",
+    "user-request-20260905-all90-v1:39:1039400:any",
+    "user-request-20260905-all90-v1:43:1043200:any",
+    "user-request-20260905-all90-v1:43:1043500:any",
+    "user-request-20260905-all90-v1:46:1046510:any",
+    "user-request-20260905-all90-v1:76:1076510:execute-success",
+    "user-request-20260905-all90-v1:38:1038500:any"
+  ],
+  "interpretations": {
+    "1029500": "레온 R은 첫 파도 타격만. 벽 충돌 피해와 벽 에어본은 적중률 및 세부 단계 집계에서 제외. 후속 벽 피해로 첫 타격 성공 추정 금지",
+    "1004200": "매그너스 Q는 상대 최초 적중만. 폭발 후속 판정 요구 제거 조사",
+    "1009200": "아이솔 Q 최초 부착만. 부착 후 바닥폭탄 종료가 계산을 막지 않도록 수정",
+    "1014400": "키아라 E 최초 적중만. 유지/속박 제외",
+    "1016300": "실비아 인간/바이크 W 구분 유지 및 귀속 검증",
+    "1023200": "캐시 Q 자체만 측정. Q 후속 일반공격 별도지표 제외; 다른키 기존요구 유지",
+    "26": "바바라 Q/RQ 전체 적중률 제외. W/E 유지",
+    "39": "카밀로 E 제외. 다른키 유지",
+    "43": "셀린은 W/E만. Q 및 R 별도적중률 제외",
+    "1046500": "에이든 R 이동 전 첫 단계만",
+    "1052410": "2026-09-13 사용자 변경: 아디나 강화 별E를 다시 포함하고 기본 E와 상위 E 적중률에 합산. 최초/낙하 phase를 별개 시전으로 더하지 않음. 기존 제외 지시 대체.",
+    "1060300": "타지아 벽 충돌/소멸 뒤 생성되는 회수물로 종료를 증명할 수 있는지 조사. 미검증 상태에서 종료로 대입 금지",
+    "1076500": "가넷 R 첫 타격만. 재시전 처형 제외",
+    "1028200": "수아 Q는 상대 적중 여부만 집계. 중앙·책갈피 피해·기절 별도 적중률 제외; 부모 적중과 미확정은 그대로 보존",
+    "1028510": "수아 RQ도 상대 적중 여부만 집계. 중앙·책갈피 피해·기절 별도 적중률 제외",
+    "1038500": "제니 R은 사용자 요청으로 적중률 집계에서 제외. 이전 질문의 폭발 피해 적중 기준 답변은 기록만 유지하며 집계 재활성화 요청으로 해석하지 않음. 원본 및 과거 미확정 결과 보존."
+  },
+  "retargetingStatus": "implementation-in-progress",
+  "exclusionsAreNotAccuracyFixes": true,
+  "preserveRawAndHistoricalResults": true,
+  "recordedUseMissPolicy": {
+    "enabled": true,
+    "authority": "explicit-user-rule",
+    "scope": "all-skills",
+    "meaning": "실제로 사용한 스킬은 막힘·취소·사망 등으로 상대를 맞히지 못해도 사용 분모에 포함한다. 기록된 적중은 보존하고, 실제 취소 종료까지 기록된 접촉이 없으면 사용자 규칙에 따른 미스로 센다.",
+    "actualCancellationFinishReasons": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      16,
+      17
+    ],
+    "excludedEvidenceFailures": [
+      "replay-end-reason-15",
+      "missing-finish",
+      "stream-gap",
+      "ambiguous-attribution"
+    ],
+    "implementationStatus": "explicit-exclusions-and-Jan-cancellation-applied; other unresolved cancellation paths remain under audit",
+    "appliedRoutes": [
+      "Jan-W-direct-and-phases",
+      "all-active-routes-recorded-cancelled-and-winner-exclusions"
+    ],
+    "notNativeCompletionOrGeometricAbsenceProof": true
+  },
+  "suaHitScope": "any-hit-only",
+  "postMatchCastPolicy": {
+    "enabled": true,
+    "authority": "explicit-user-rule",
+    "meaning": "검증된 경기 종료 뒤 새로 시전한 스킬은 적중률 집계에서 제외. 종료 전 시전의 후속 적중 증거와 원본 기록은 보존. 종료 경계가 불명확하면 제외를 추정하지 않음."
+  }
+}

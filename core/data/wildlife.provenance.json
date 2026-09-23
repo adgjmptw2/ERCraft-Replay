@@ -1,0 +1,23 @@
+{
+  "format": "ercraft-wildlife-icon-provenance.v1",
+  "status": "user-provided-public-shared-google-drive-assets",
+  "sourceFolderUrl": "https://drive.google.com/drive/folders/1iwk6fMIHhRV9s51AS9LjzzOYtLNhVvnd",
+  "selection": "small transparent map-icon variants from the supplied folder",
+  "checkedAt": "2026-08-31",
+  "assets": [
+    {"key":"chicken","file":"wildlife/chicken.png","sourceName":"002. Chicken.png","sourceId":"1j1g1YFqT-NUWZP9dqCPXmDOnWlGeIRZN","width":138,"height":159,"sha256":"ef806f2716d2f6ddfed530c71237d745c65d7f8a4d3e3ed33c6777992edd53bb"},
+    {"key":"bat","file":"wildlife/bat.png","sourceName":"004. Bat.png","sourceId":"1j-RXwvuXDq7RNEqbMasu1IJ-Gd9vzBzu","width":138,"height":159,"sha256":"49a49504b891b75e54cafb0666cf0d24df5d40acf857344fdc8229e04e3f0eb8"},
+    {"key":"wild-dog","file":"wildlife/wild-dog.png","sourceName":"006. Wild Dog.png","sourceId":"1jGnMb4DTwjgbYtZjqPRH8inCHkNv2tkW","width":138,"height":159,"sha256":"84272baf4f5dd5aa28f3f4f7c0ebd4085f15963e2b1cc4f3618da33fcaa685c9"},
+    {"key":"boar","file":"wildlife/boar.png","sourceName":"008. Roar.png","sourceId":"1jFhhcdfDAM2CFOphNN3uo9uc8gbSY6oP","width":138,"height":159,"sha256":"f87c245ec4807fdb1fcbfb3a2b8ab2c6db2a718894ad5e22002017a4bebd418a"},
+    {"key":"wolf","file":"wildlife/wolf.png","sourceName":"010. Wolf.png","sourceId":"1jE0aszTQx-uoo9j-w69ia6T4umjTAc4h","width":138,"height":159,"sha256":"31aaa64e1c7a98628b8146bd72bfa5824319992f41debb8b1597d50cd5a59f05"},
+    {"key":"bear","file":"wildlife/bear.png","sourceName":"012. Bear.png","sourceId":"1jBRfOBUpkiR6RFizCaFYMgcjuGTzUza6","width":138,"height":159,"sha256":"a973c13fc0553104b11f8c31c64f2ea7a1334fe5fe5470212785c4ed143df1f6"},
+    {"key":"raven","file":"wildlife/raven.png","sourceName":"026. Raven.png","sourceId":"1d6cXLXIkvhV_c-e8RNzAyFvnFfLrn8kB","width":138,"height":186,"sha256":"0a3cffe552a7a26a7098655b56f0211a3019235946ba5a05b2e84577b8535cca"},
+    {"key":"mutant-chicken","file":"wildlife/mutant-chicken.png","sourceName":"014. Mutant_Chicken.png","sourceId":"1jBN89Sc40mDKcqB5WF8MdCP3MaSe-hpM","width":138,"height":159,"sha256":"00b615a41c65a62d8c2f6c3587fef5062fb67c91fab8024d534bb7b036828355"},
+    {"key":"mutant-bat","file":"wildlife/mutant-bat.png","sourceName":"016. Mutant_Bat.png","sourceId":"1j9dzjk8kurDhYFXWLwn9eLu0pjYBAK-r","width":138,"height":159,"sha256":"c7ac86ba1ad02184ca3d6cca22a7e34169cd34d7f2363578ecc861afd9267457"},
+    {"key":"mutant-wild-dog","file":"wildlife/mutant-wild-dog.png","sourceName":"018. MutantWildDog.png","sourceId":"1j8kp2EoCv7mkgnEUQIJ8PFobz8uRUCSe","width":138,"height":159,"sha256":"99fbe562bedb00e2118c3da4d279f40719ecfec9ba410a0faec6eb9ef858dc24"},
+    {"key":"mutant-boar","file":"wildlife/mutant-boar.png","sourceName":"020. Mutant_Boar.png","sourceId":"1j7yq-G0-JIej3h32MQH5BLT9WOvHpKzU","width":138,"height":159,"sha256":"74f2bd394f5e734ea83ccb3c66c41d2b544657b1b0e77e699197b969f7db592a"},
+    {"key":"mutant-wolf","file":"wildlife/mutant-wolf.png","sourceName":"022. Mutant_Wolf.png","sourceId":"1j5xfYOlvUFHfMRSJiPPVf5qY943dMEV7","width":138,"height":159,"sha256":"c28c1b83de265dcacdd9dfb8bf34b537e1cee006b06f8edb3aba7fbd8e80f470"},
+    {"key":"mutant-bear","file":"wildlife/mutant-bear.png","sourceName":"024. Mutant_Bear.png","sourceId":"1j42yy4bTWvSueLhqMBZCSIMFhWA1zn5F","width":138,"height":159,"sha256":"94a81c6b0bfbf3f560ad5f793ecc3ddb468d3b2181ddc65d258254f3c314fbe8"},
+    {"key":"mutant-raven","file":"wildlife/mutant-raven.png","sourceName":"027. Mutant_Raven.png","sourceId":"1d7DXQxpyOJr7mORKgc2viWtOmuEfz4NN","width":138,"height":186,"sha256":"178bc7135ae6b75bc7c79304a1399c052e4c6206d15d443515d39f1de84c7006"}
+  ]
+}

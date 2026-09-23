@@ -1,0 +1,26 @@
+{
+  "format": "er-echion-secondary-required-signal.v1",
+  "clientVersion": "12.3.0",
+  "gameDbSha256": "5ef9cb5459a2e908099655bf9ffc70ac16b134d1db282fb97b25fe065e7c8e4f",
+  "native": [
+    {
+      "path": "tmp\\static-code-restored-v1\\game-fn-2a8f560.json",
+      "sha256": "ac71829593d9bff9ebc6fa03fdeedbff9537c32aa2ff371616508e36cf5c0734"
+    },
+    {
+      "path": "tmp\\static-code-restored-v1\\game-fn-12722c0.json",
+      "sha256": "a16a3c68ab0a5082118e3facf628e5e7c4c3a6f42cd30ea9b7ca38769c7c9927"
+    }
+  ],
+  "proof": [
+    "Secondary empty target list branches2a8f7b8 directly to return2a8fbba. Nonempty list iterates damage and Airborne before2a8fb76.",
+    "After all targets,2a8fb9b reads EchionSkillActive4_2Data+58 Active4_2BlackMambaMoreDamageCongestionTime. Level lookup1fec0 feeds AddCongestionTime2a8de90 at2a8fbb5. This does not depend on successful damage or Airborne admission.",
+    "Ctor12722c0 sets levels1..4 of+58 at1274847/4882/48bd/48f8 using xmm6 loaded at127443f, the same1.0f used by the already proved high-contact table.",
+    "Existing congestion cap, alive inventory, stable epoch and exact consecutive-duration exclusion apply. Secondary opportunity is launch+78, independently of parent finish."
+  ],
+  "limits": [
+    "No-enemy-contact is an outcome exclusion, not proof that the deferred callback executed. Keep actual-callback denominator unresolved.",
+    "No positive or ambiguous damage/Airborne is overwritten. Missing damage or state alone is insufficient.",
+    "Saturation, discontinuous epoch or life inventory, compatible increments remain unknown."
+  ]
+}

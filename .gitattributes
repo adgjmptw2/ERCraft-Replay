@@ -1,0 +1,9 @@
+# Preserve source bytes: versioned analysis contracts use SHA-256 fingerprints.
+* -text
+*.py diff
+*.js diff
+*.mjs diff
+*.css diff
+*.html diff
+*.md diff
+*.json diff

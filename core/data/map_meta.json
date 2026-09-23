@@ -1,0 +1,26 @@
+{
+  "world": {"minx": -250, "maxx": 205, "minz": -250, "maxz": 120},
+  "img": {"w": 772, "h": 1000},
+  "coordinateSpace": {"w": 772, "h": 981},
+  "imageContentRect": {"x": 0, "y": 10, "w": 772, "h": 981},
+  "imageAlignment": {
+    "status": "pixel-registered-satellite-content-to-dak-coordinate-space",
+    "reference": "https://cdn.dak.gg/er/data/replay/Img_Map_01_All_v2.jpg",
+    "referenceSize": {"w": 1544, "h": 1962},
+    "bestVerticalOffsetPixels": 10,
+    "sampledRgbMae": 7.945
+  },
+  "projection": {
+    "type": "affine-world-xz-to-source-pixel",
+    "pixelX": [-1.645, -1.645, 290.1],
+    "pixelY": [-1.653, 1.652, 555.0],
+    "formula": "pixelX=-1.645*(worldX+worldZ)+290.1; pixelY=-1.653*worldX+1.652*worldZ+555.0",
+    "status": "repository-previously-validated-affine-transform"
+  },
+  "source": {
+    "label": "Satellite Map.png",
+    "sharedFolder": "https://drive.google.com/drive/folders/1wpv5VivJ0rUL4Y6UcFP-mrkCKOGwyl1q",
+    "fileId": "1LuQ9pJVQqndor-PSr-l4U2YxQOMjAgI8",
+    "status": "user-provided-public-shared-map-not-client-asset-authority"
+  }
+}

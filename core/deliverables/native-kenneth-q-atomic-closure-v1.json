@@ -1,0 +1,36 @@
+{
+  "format": "native-atomic-process-gameplay-closure.v1",
+  "characterCode": 71,
+  "skillGroup": 1071200,
+  "wire": 1045,
+  "effects": [
+    1071202
+  ],
+  "nativeProcess": "2bf33c0 calls DamageProgress synchronously at2bf33fa and returns false, with no coroutine suspension or detached Q effect producer. All Q1071202 damage is inside DamageProgress before returning; passive/heal effects have separate producers.",
+  "closure": "Complete cast and damage streams plus a unique gameplay CmdFinishSkill boundary close Q effect production even when interrupted. No recorded enemy Q effect in that closed use is a miss. ReplayEnd/missing/duplicate/ambiguous/orphan evidence is not a gameplay closure. Does not extend to movement coroutines or detached projectile/state callbacks.",
+  "observedFinishReason": "3=CancelByDying for all three residual Q casts",
+  "acceptedFinishReasons": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    16,
+    17
+  ],
+  "fallbackUsed": false,
+  "artifacts": {
+    "deliverables/native-kenneth-q-disjoint-e-contract-v1.json": "42c224b80b6eea6728fbddfb06f1d4d1af54468f6e7bf8381cd0266c435326a0",
+    "tmp/static-code-restored-v1/game-fn-2bf33c0.json": "8840bf5fb157e7ac1ae55ad60cc537451fb7f38e74bd85d3b731112f1146d0f1",
+    "tmp/static-code-restored-v1/game-fn-2bf27f0.json": "ead18684af3f52e5b2b40cd8cb95965a06adf8fa558eedb109132f135563472a"
+  }
+}

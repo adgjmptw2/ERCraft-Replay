@@ -1,0 +1,487 @@
+/* ERCraft Replay Analytics - Modernized Team Loadout Rail */
+
+.rail {
+  padding: 14px;
+  position: sticky;
+  top: 14px;
+}
+
+.rail-title {
+  margin: 0 0 10px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Player Card */
+.pcard {
+  position: relative;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  padding: 10px 12px 12px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.pcard:hover {
+  background: var(--card-hi);
+  border-color: var(--line-2);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.pcard.is-selected {
+  background: var(--card-selected);
+  border-color: var(--accent-line);
+  box-shadow: var(--shadow-sm);
+}
+
+.pcard.is-selected::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3.5px;
+  background: var(--accent);
+  border-top-left-radius: var(--r-md);
+  border-bottom-left-radius: var(--r-md);
+}
+
+/* Card Header */
+.pcard-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  min-height: 22px;
+}
+
+.pcard-head-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+}
+
+.pcard-head b {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Status Chip (Alive / Down / Dead) */
+.chip {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  height: 20px;
+  padding: 0 8px;
+  border-radius: 999px;
+  font-size: 10.5px;
+  font-weight: 650;
+  line-height: 1;
+  border: 1px solid var(--line);
+  color: var(--muted);
+  background: var(--well);
+}
+
+.chip::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.chip.alive {
+  color: var(--good);
+  background: var(--good-soft);
+  border-color: var(--good-border);
+}
+
+.chip.down {
+  color: var(--warn);
+  background: var(--warn-soft);
+  border-color: var(--warn-border);
+}
+
+.chip.dead {
+  color: var(--faint);
+  background: var(--well);
+  border-color: var(--line);
+}
+
+/* Live Status Row (KDA & Resources) */
+.live-status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin: 7px 0 9px;
+  padding: 5px 8px;
+  background: var(--well);
+  border-radius: var(--r-sm);
+  border: 1px solid var(--line);
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.live-status .kda {
+  color: var(--text);
+  font-weight: 750;
+  letter-spacing: 0.02em;
+}
+
+.live-metrics {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.live-status .metric {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.live-status .metric img {
+  display: block;
+  width: 13px;
+  height: 13px;
+  object-fit: contain;
+}
+
+.live-status .metric.survive .restricted {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 2px;
+  background: #e2474f;
+  box-shadow: 0 0 4px rgba(226, 71, 79, 0.4);
+}
+
+/* Gear & Bag Slot Grids */
+.gear {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 4px;
+  margin-top: 6px;
+}
+
+.bag {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 4px;
+  margin-top: 5px;
+}
+
+/* Individual Item Cell */
+.cell {
+  position: relative;
+  display: grid;
+  place-items: center;
+  height: 38px;
+  background: var(--slot-bg);
+  border-radius: var(--r-sm);
+  border: 1px solid var(--slot-empty-border);
+  overflow: hidden;
+  transition: all 0.15s ease;
+}
+
+.cell:hover {
+  border-color: var(--line-2);
+}
+
+.cell .item-bg {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  z-index: 0;
+  transition: opacity 0.2s ease;
+}
+
+.cell .item-bg[hidden] {
+  display: none !important;
+}
+
+.cell.has-item {
+  border-color: var(--line-2);
+  background: var(--well);
+}
+
+.cell .art {
+  display: block;
+  object-fit: contain;
+  width: 32px;
+  height: 32px;
+  z-index: 1;
+  transition: transform 0.15s ease;
+}
+
+.cell .art[hidden] {
+  display: none !important;
+}
+
+.gear .cell .art {
+  transform: scale(1.1);
+}
+
+.bag .cell .art {
+  transform: scale(var(--asset-art-scale, 1));
+}
+
+.cell .gap {
+  font-size: 11px;
+  color: var(--faint);
+  line-height: 1;
+  z-index: 2;
+}
+
+.cell.unobserved .gap,
+.cell.empty .gap {
+  display: none;
+}
+
+/* Item Grade Indicators (Modern Glow & Corner Badge) */
+.cell.grade-Common {
+  border-color: var(--grade-common);
+  background: var(--grade-common-bg);
+}
+
+.cell.grade-Uncommon {
+  border-color: var(--grade-uncommon);
+  background: var(--grade-uncommon-bg);
+}
+
+.cell.grade-Rare {
+  border-color: var(--grade-rare);
+  background: var(--grade-rare-bg);
+}
+
+.cell.grade-Epic {
+  border-color: var(--grade-epic);
+  background: var(--grade-epic-bg);
+}
+
+.cell.grade-Legend {
+  border-color: var(--grade-legend);
+  background: var(--grade-legend-bg);
+  box-shadow: inset 0 0 8px rgba(245, 158, 11, 0.15);
+}
+
+.cell.grade-Mythic {
+  border-color: var(--grade-mythic);
+  background: var(--grade-mythic-bg);
+  box-shadow: inset 0 0 10px rgba(244, 63, 94, 0.2);
+}
+
+/* Quantity Pill */
+.qty {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  min-width: 14px;
+  height: 14px;
+  padding: 0 4px;
+  border-radius: 4px;
+  background: rgba(12, 14, 20, 0.85);
+  color: #ffffff;
+  font-size: 9.5px;
+  font-weight: 750;
+  line-height: 14px;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+  z-index: 3;
+  backdrop-filter: blur(2px);
+}
+
+/* Skills & Utilities Grid */
+.skills {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 4px;
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid var(--line);
+}
+
+.util {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px;
+  margin-top: 6px;
+}
+
+/* Skill Cell (Q, W, E, R, T) */
+.sk {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4px 2px 5px;
+  background: var(--well);
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+  min-width: 0;
+  gap: 3px;
+}
+
+.sk .ico {
+  position: relative;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  background: var(--slot-bg);
+}
+
+.sk .ico img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.sk .pair {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.sk .pair img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sk .ico .none {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 11px;
+  color: var(--faint);
+  font-weight: 700;
+  border: 1px dashed var(--line);
+}
+
+.sk .k {
+  font-size: 10.5px;
+  font-weight: 750;
+  color: var(--muted);
+  line-height: 1;
+}
+
+.sk .cd {
+  font-size: 11px;
+  font-weight: 750;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sk .cd.is-ready {
+  color: var(--good);
+}
+
+.sk .cd.is-cooldown {
+  color: var(--warn);
+}
+
+.pcard.skills-hidden .skills,
+.pcard.skills-hidden .util {
+  display: none;
+}
+
+.sk .cd.is-unknown {
+  color: var(--faint);
+}
+
+.sk .n {
+  font-size: 9.5px;
+  color: var(--faint);
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Utility Skill Cell (Weapon & Tactical) */
+.sk-util {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 8px;
+  background: var(--well);
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+  height: 38px;
+}
+
+.sk-util .ico {
+  width: 26px;
+  height: 26px;
+  flex: none;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 5px;
+  background: var(--slot-bg);
+}
+
+.sk-util .ico img,
+.sk-util .ico .pair {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.sk-util .ico .pair img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sk-util-info {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  gap: 2px;
+}
+
+.sk-util-info .cd {
+  font-size: 11.5px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.sk-util-info .n {
+  font-size: 9.5px;
+  color: var(--faint);
+}

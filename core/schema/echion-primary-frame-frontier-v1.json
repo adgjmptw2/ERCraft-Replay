@@ -1,0 +1,64 @@
+{
+  "format": "er-echion-primary-frame-frontier.v1",
+  "scope": "Primary contact opportunity only; no standalone miss or full R completion inference",
+  "nativeBodies": [
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-2a8f000.json",
+      "sha256": "4bf61e21f02289b32e946bd7605b8d6a7d30a2572cb924636f43ef3cc27d3a82"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-2a8e3f0.json",
+      "sha256": "b5f70d2c179621ce8880c20b11105c054ac190ff59301a3ca3394faf671b73f6"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-2f88ee0.json",
+      "sha256": "fccea8d0abf813e511615070e488c4c38c2575746685b70ac7ba171fd1153367"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-2f88e10.json",
+      "sha256": "6290e29bcab8cdb83b58be7d11903f194d8587f07ac3a4309315b3ce11f42adc"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-2f86a30.json",
+      "sha256": "ab6b0c88c4952a6f0a17bc8b36e03e836521464e83a9acd80420b403887b7e72"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-1875610.json",
+      "sha256": "3ee926f7195cc182379893836e554c7b7ea53a06d3995212612361fcf678b025"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-18753a0.json",
+      "sha256": "05d06fbf6b7fc44a3cee051bccc29d1e10cc5299762512ecc485a3297a430a58"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-141afd0.json",
+      "sha256": "442c60de43eef609dfae0d85e5b38ccadd19e06d7987b79ae4c61d47f467cc19"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-141b170.json",
+      "sha256": "21b0997c7c213fabf900fc6c6ec216f7ffaa3d3020cc85bdad947b453815ca47"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-141b460.json",
+      "sha256": "444909d8b1e18d460aaa828ec4d61cd2d4b32c6da2e432dc1b2ebda65c3286f1"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-f77c10.json",
+      "sha256": "f6d21df246698274201c39225c825e1c02e5fc30ce6a73b286fe02b22ec7f0b5"
+    }
+  ],
+  "derivation": [
+    "Action6001 and StartCoroutine(Play,false) occur in one unyielded Process segment at2a8f23a and2a8f363. Start1875792 executes immediately to the first wait before appending the wrapper18757af.",
+    "Play yields one CastingTime2 wait before primary contact selection. Same-version reviewed R groups use0.45f; WaitForFrameSync.Seconds computes27 native update steps. This is not27 replay records or wall-clock ticks.",
+    "GameServer.FrameUpdate invokes CoroutineService.Update atf78456 each native update. Live/nonempty coroutine objects are traversed; CoroutineObject.Update visits pending routines forward; InternalUpdateTargetCoroutine checks removal before Process.",
+    "Process recursively completes a finished yielded waiter and resumes its owning iterator in the same call. Play has no additional yield between this wait and its primary target loop. Parent cancellation does not introduce a pause/requeue of that child. Removal/disposal terminates it instead.",
+    "For an action bounded by native frames[L,U], the primary opportunity is no later thanU+27 in the reviewed scheduler. A later CommonState creation timestamp proves its own update occurred at or after that timestamp. Require timestamp lower bound strictly greater thanU+27 and a strictly later command record: a same-frame pre-scheduler callback is insufficient.",
+    "This frontier only bounds the primary opportunity. Actual miss still requires alive/current state epoch, no removal/reset/pause/barrier, uncapped mandatory-signal exclusion and no conflicting positive/ambiguous enemy damage. High marks and missing state evidence remain unknown."
+  ],
+  "exclusions": [
+    "No replay-tick window or fixed replay/native offset.",
+    "No full R metric promotion; BlackMamba deferred secondary and Congestion area are separate.",
+    "No assertion that the frontier is a successful child-completion packet."
+  ],
+  "fallbackUsed": false
+}

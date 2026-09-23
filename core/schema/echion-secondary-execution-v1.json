@@ -1,0 +1,93 @@
+{
+  "format": "er-echion-secondary-execution.v1",
+  "clientVersion": "12.3.0",
+  "scope": "BlackMamba secondary producer in the same attribution graph as all live primary producers",
+  "nativeBodies": [
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-2a8e3f0.json",
+      "sha256": "b5f70d2c179621ce8880c20b11105c054ac190ff59301a3ca3394faf671b73f6"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-2a8e380.json",
+      "sha256": "19a7800062e6d048c9e727761a17dd49d1b18ae40b58a8d9b801caf95e1f6f4b"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-2a8f560.json",
+      "sha256": "ac71829593d9bff9ebc6fa03fdeedbff9537c32aa2ff371616508e36cf5c0734"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-2a8fc90.json",
+      "sha256": "e69593bae98962e8845b88b511a2d873d95dde47d8f6f349b03f20face04da29"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-12722c0.json",
+      "sha256": "a16a3c68ab0a5082118e3facf628e5e7c4c3a6f42cd30ea9b7ca38769c7c9927"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-2f85bc0.json",
+      "sha256": "2f4cf0de6c9b119a2efa3ad47e3565312a82b4a8746453b7aac980a93a06b955"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-2f862a0.json",
+      "sha256": "d008a6bb5ccbc177100664d14038fd5cfbc73f7da3a5d8f3f33e3162f15e6e2e"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-2f88ee0.json",
+      "sha256": "fccea8d0abf813e511615070e488c4c38c2575746685b70ac7ba171fd1153367"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-2f85e50.json",
+      "sha256": "c62d309350d510508ca73f8fba6cff2791cebadd6105c278c5ce10c40c602be5"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-native-4fa7f40.json",
+      "sha256": "16b44b539dbb62ebd597eb89c785dbc22c667a60956c012e114ae30eacaa3e5c"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-native-4fa7cb0.json",
+      "sha256": "2f435f0c2dfb751efefd5b99b303e4fd7c5d1d1d3782421f8a6ab5337ec8d8d2"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-ccdcd0.json",
+      "sha256": "62afd89cfc40a7b7854afff939d71b0699d29b6fb6017b32a2f0688f2f2d671c"
+    }
+  ],
+  "schedulerAuthority": {
+    "path": "schema/echion-primary-frame-frontier-v1.json",
+    "sha256": "5fac8f95758479c51310706e7905326c98f20b9e720e05bde26249a5be87ae72"
+  },
+  "metadataAuthority": {
+    "path": "C:/tools/reversing/analysis/il2cppdump/dump.cs",
+    "sha256": "37e705fddd4dbfeba1aaa1d1b5c5083f2e869ec8dd686b3663b05a9c79915692"
+  },
+  "anchors": {
+    "schedule": "After primary contact/congestion: slot85 delay2a8edc2 -> DelayedAction2f85bc0 at2a8eeb5 -> StartThrowingFrameSyncCoroutine2f85f30 at2a8ef34",
+    "callback": "Closure2a8e380 captures individualId/boxPos/dir/skillNumber; slot83 call2a8e3de; BlackMamba override2a8f560, base no-op89f030",
+    "delay": "EchionSkillActive4_2Data+50: bits3f59999a at1274713; getter2a8fcec",
+    "timer": "DelayedAction.MoveNext2f862a0 -> Seconds2f88ee0 at2f863d1; resumed callback2f86515",
+    "scheduler": "StartCoroutine2f85e50 jumps1875610; same immediate-start/forward-update scheduler as primary",
+    "parameters": "Reset2a8f80b; live weapon2a8f846..877; Set data2a8f89f; Add secondary data2a8f8e2; damage2a8fa50",
+    "identifiers": "IndividualId->parameters+84 at2a8f9c0; SkillNumber->+74 at2a8f9de"
+  },
+  "delay": {
+    "bits": "3f59999a",
+    "float32": 0.8500000238418579,
+    "frameStepFloat32": 0.01666666753590107,
+    "nativeFloat32Quotient": 51.0,
+    "waitUpdates": 51,
+    "primaryWaitUpdates": 27,
+    "totalUpdateOffsetFromAction": 78,
+    "recordedTickOffsetUsed": false
+  },
+  "effectSemantics": "Secondary uses the same live-weapon data as primary, plus after-damage data. The latter is allocated empty at127285f with no subsequent constructor writes to that member. Add merges effect entries via4fa7cb0, does not clear existing effects. Keep all primary effect family codes as secondary candidates; no parent weapon/effect-prefix exclusion.",
+  "lifecycle": "Normal parent finish closes awaited primary only. The secondary is separately scheduled; reset/disposal may suppress it but cannot postpone it beyond the reviewed native scheduler opportunity. Missing damage does not prove secondary miss.",
+  "runtimeRules": [
+    "Primary offsets27 for every actual R variant; BlackMamba secondary78, same actor.",
+    "Intersect existing native-clock intervals; no replay-tick time window.",
+    "One compatible producer-stage yields positive evidence; multiple or unbounded candidates remain ambiguous.",
+    "No secondary misses or exact denominator from absent damage."
+  ],
+  "secondaryMissRuleImplemented": false,
+  "fullRequestedMetricComplete": false,
+  "fallbackUsed": false
+}

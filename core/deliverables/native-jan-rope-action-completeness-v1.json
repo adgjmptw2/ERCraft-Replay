@@ -1,0 +1,65 @@
+{
+  "schema": "jan-rope-action-completeness.v1",
+  "approvedRule": "live-four-owned-dummies-require-same-frame-rope-action",
+  "gameDataSha256": [
+    "5ef9cb5459a2e908099655bf9ffc70ac16b134d1db282fb97b25fe065e7c8e4f",
+    "82dc298a2047af0e23637a6a78fcbbb70680e70bcdb7d80ca96ebec2e0f02b7c",
+    "ff6e6a5a12424fbe9c04255cc8e3acdf2f89386ceb422ea741a0aa25373a2aa6"
+  ],
+  "nativeMethods": [
+    {
+      "path": "work/jan-rope-caller-closure.json",
+      "sha256": "d151e2abff58995e64f6eeae9b5671add9d2162f5d038f531e8152bb1249d401"
+    },
+    {
+      "path": "work/jan-r-declared-methods-lifecycle.json",
+      "sha256": "8edb3932a5cebdb93527538e405ec4d341c93eecaa0479e0d342131e129406d6"
+    },
+    {
+      "path": "work/jan-r-process-install.json",
+      "sha256": "9530794078032534b4bb8d68443884b9d1dde63c93098cd66be8bac59227f683"
+    },
+    {
+      "path": "work/jan-rope-summon-play-action.json",
+      "sha256": "9f22f40aa2a69debce170c5ff7b15d6189be7a848789819b6db10ddfe22311e4"
+    },
+    {
+      "path": "work/jan-rope-world-play-action.json",
+      "sha256": "b547999be8f981559e85cd37263fbbf2e143cae8cf982ece76afeae33c8d53f7"
+    },
+    {
+      "path": "work/jan-rope-world-play-targets.json",
+      "sha256": "32be5ccb26d98a696798ed3ccf96ef31f2d8e645920e7dcf8bb26639d0a400b1"
+    },
+    {
+      "path": "work/jan-server-object-lifecycle.json",
+      "sha256": "53fa9f6513836474f92473890002aa9ec1b09d5c00fe960fde605b4970ecc489"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-3062160.json",
+      "sha256": "edf4cbfede2991f147e8c3827a8478fe8af159aa1a0a53316cae520c2eed8adb"
+    },
+    {
+      "path": "deliverables/native-damage-effect-assignments-v1.json",
+      "sha256": "858b855788004fccd6a75547794e04fd2b42b4f92cc91d502ba979b918da094b"
+    }
+  ],
+  "nativeReplayBuildIdentityProven": false,
+  "verifiedCompletionCredit": false,
+  "classification": "experimental-native-rule",
+  "requirements": [
+    "Exact complete source and command anchors; known exact archive; noncritical direct caster shared1035300 damage.",
+    "One non-reentered R lifecycle; all four owner1173 dummy identities from exact snapshot with InWorld1; no repeated spawn, destroy or destroy-delay before damage.",
+    "No skill492 action in the entire damage command frame; missing command/frame/status rejects admission.",
+    "Normal unique W direct lifetime and existing source-bound evidence; other ambiguous targets remain unknown.",
+    "Every owned trap from prior recorded R installations must have an exact final CmdDestroy before the admitted R installation; old callbacks with removed dummy mappings are not silently ruled out."
+  ],
+  "evidence": "work/jan-rope-action-emitter-review.json",
+  "counterexamples": [
+    "Missing dictionary mapping can skip marker/action.",
+    "Dummy CurInWorldType not1 silently skips action enqueue.",
+    "A rope action frame cannot establish unique damage attribution if other producers interleave."
+  ],
+  "globalQueueAssumption": "A complete retained command stream represents synchronous enqueued commands; no recovery from a missing command stream or missing server singleton is inferred.",
+  "fallbackUsed": false
+}

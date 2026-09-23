@@ -1,0 +1,65 @@
+{
+  "format": "er-stationary-player-sub-collision-rule.v1",
+  "clientVersion": "12.3.0",
+  "restoredDllSha256": "3a92f99aea09d6eae54456a07ac1360c51c5aad1a102ace5cca23deca59c5ef4",
+  "rule": "An exact stationary player position spanning a completed intermediate server frame and the later callback excludes a stale sub collision. No position invalidator may occur in that interval.",
+  "frameLoop": {
+    "method": "GameServer.FrameUpdate",
+    "rva": "f77c10",
+    "activeObjectGuard": "f78cd2 object+40 == 1",
+    "slot": "f78ce1 ecx=64",
+    "sequence": "f78ce6 server+0xb4",
+    "dispatch": "f78ced call9bf0",
+    "thunk": "9bf0..9c18 virtual vtable[0x138+slot*16] with object and server sequence"
+  },
+  "playerPostFrame": {
+    "rva": "30091b0",
+    "unconditionalBaseCall": "30091bc ->30617b0"
+  },
+  "basePostFrame": {
+    "rva": "30617b0",
+    "typeGuard": "ContinuousCollisionSet TypeInfo at30617ef RIP target174104824",
+    "call": "306181f ->3061830"
+  },
+  "update": {
+    "rva": "3061830",
+    "sequenceConversion": "3061957 int32 serverUpdateSeq ->float32",
+    "beforeGetter": "3061963 ->1453330 ->virtual13"
+  },
+  "subState": {
+    "rva": "1454630",
+    "lastSubPositionTest": "14547b8..14547c7",
+    "movedBranch": "1454c06 useSub=true;1454c0a/0f lastSubPos=current;1454c18..23 prevPos and updateSeq=current when sequence changes",
+    "samePositionBranch": "1454c7b..88: if sequence differs, useSub=false; same sequence retains current state",
+    "interpolationDisabled": "1454c8e..98 updates lastSubPos and useSub=false"
+  },
+  "requirements": [
+    "Source frame strictly after last StopMove and strictly before callback",
+    "Complete supported pose stream and no later position-changing command",
+    "Player collision circle radius and geometry inputs independently exact",
+    "Both native CPU branches agree on circle-box classification"
+  ],
+  "sources": [
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-f77c10.json",
+      "sha256": "f6d21df246698274201c39225c825e1c02e5fc30ce6a73b286fe02b22ec7f0b5"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-30091b0.json",
+      "sha256": "810b70b9c2cc534847d83cc7a642789d78bfcc17ddfd869db1473e0408ead9a9"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-30617b0.json",
+      "sha256": "0926a5d3223324678c7d04892cc600b0321b7295aee5565c1896e7cfb9eb9ff4"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-3061830.json",
+      "sha256": "3237e1796461da079cfef87fc5e3d7c90db18e8f2169e9ae6d2c99df4baa8a56"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-1454630.json",
+      "sha256": "b51185fd5a7b7a955e6b2eaa36b80f193e027a198fb5f62221c6b655ad98a521"
+    }
+  ],
+  "scope": "Stationary player contacts only; no inferred moving trajectory or missing-state-as-miss rule"
+}

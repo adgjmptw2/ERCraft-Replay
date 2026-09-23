@@ -1,0 +1,42 @@
+{
+  "format": "er-post-stop-current-position-bound.v1",
+  "clientVersion": "12.3.0",
+  "nativeAndDependencies": [
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-2eab070.json",
+      "sha256": "f2b298c2c9d4a6ad7615de1f59d76a356f874d101eff1b03fa0225d60348ade1"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-3061540.json",
+      "sha256": "9e6d279582c630be95a186dc0ef44d0514f9ede71cd1afc5492cf51f50286164"
+    },
+    {
+      "path": "deliverables/barbara-region-formula-v1.json",
+      "sha256": "cb735f0e90243c1cdac1453b209b515ca5c54be15513c038e50c08aef55ede42"
+    },
+    {
+      "path": "schema/ordinary-next-source-cell-bound-v1.json",
+      "sha256": "54cc7260dda4bfb2bd369ca5573d2943a75127de355decfde3260ebfd4662fe0"
+    },
+    {
+      "path": "schema/single-recipient-command-order-v1.json",
+      "sha256": "6880fb1520d386746f8c7c492e98b56910dd83d2391284fccfe08312b8818566"
+    },
+    {
+      "path": "schema/sua-source-cell-sweep-bound-v3.json",
+      "sha256": "8ecf93996492025b3c904477d9ddfe59ee6d470f831f79631a41bd7f6038b0a8"
+    }
+  ],
+  "scope": "Barbara base E inner/outer region current-position getter only. Does not establish previous collision pivot bounds.",
+  "getter": "Barbara29b5ab0 calls target SkillAgent.get_Position2eab070 at29b6000. It invokes WorldObject virtual slot45 at2eab146. Getter3061540 reads MoveAgent.simulatedTransform(+90).position X/Z at+2c/+34, or cachedPosition. BlisTransform.position is+2c; prePosition is+20. No player character override was found in the pinned metadata.",
+  "sourceCell": "Ordinary command source cell is floor(f32(current WorldObject.position*100)), captured during server enqueue after new ordinary strategy setup. Stop correction precedes the subsequent ordinary capture when singleton recipient FIFO is proved. The source frame is complete before the damage record.",
+  "guards": [
+    "Most recent position event is ordinary movement from the immediately prior recorded tick with an immediately preceding same-frame Stop; prior-to-Stop event is ordinary movement from an earlier tick.",
+    "Both original command payloads and positions match retained decoded inputs and source SHA; final recipient masks are the same positive single bit.",
+    "Completed source frame, later damage frame, no target position command anywhere in damage frame.",
+    "All existing speed/reset/domain and interval-conflict guards apply. Only the current-position caller opts in."
+  ],
+  "bound": "Expand exact float32 source-cell X/Z preimage by age+1 whole ordinary frame displacement budget. Post-stop current position does not retain a pre-stop collision endpoint; no exact point or update phase is inferred.",
+  "missingRouting": "Do not grant this extension; preserve existing unresolved outcome.",
+  "fallbackUsed": false
+}

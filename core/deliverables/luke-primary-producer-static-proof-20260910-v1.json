@@ -1,0 +1,32 @@
+{
+  "format": "er-luke-primary-producer-proof.v1",
+  "skillGroup": 1022200,
+  "skillId": "LukeActive1_1",
+  "assignments": [
+    {
+      "field": "ProjectileCode",
+      "offset": "0x10",
+      "code": 102210,
+      "rva": "0x1300522",
+      "processRead": "0x2c3fdfd"
+    },
+    {
+      "field": "EvolutionProjectileCode",
+      "offset": "0x14",
+      "code": 102211,
+      "rva": "0x1300529",
+      "processRead": "0x2c3fdd4"
+    }
+  ],
+  "staticSources": [
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-13004b0.json",
+      "sha256": "d8bb4f87409900c51d402eccbf64e7616d54da6baf038cedc935081f2592bb00"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-2c3fb60.json",
+      "sha256": "94c48fa2a8c3e398cc88f21d5fba1bc6bc9d43478b38b0667a6da780f0c74191"
+    }
+  ],
+  "scope": "First projectile throw only; Q2 dash excluded. Both evolution forms share first-throw denominator."
+}

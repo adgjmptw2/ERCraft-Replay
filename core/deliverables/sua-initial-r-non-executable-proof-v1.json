@@ -1,0 +1,84 @@
+{
+  "format": "sua-initial-r-non-executable-v1",
+  "gameDb": {
+    "path": "acquire/gamedata-20260903071248.zip",
+    "sha256": "5ef9cb5459a2e908099655bf9ffc70ac16b134d1db282fb97b25fe065e7c8e4f"
+  },
+  "registrationMap": {
+    "path": "deliverables\\server-skill-script-registrations-v1.json",
+    "sha256": "e077e442d075ff7b24689b3d5b0205f24d1320b3ea3616766190088eadaaf600"
+  },
+  "registration": {
+    "type": "SuaActive4",
+    "typeIndex": 4304,
+    "typeToken": "0x20010d0",
+    "image": "Assembly-CSharp.dll",
+    "attributeRange": 3292,
+    "attributeDataOffset": 61211,
+    "attributeDataLength": 23,
+    "registrations": [
+      {
+        "skillId": 404,
+        "tag": "수아",
+        "constructorMethodIndex": 60665
+      }
+    ]
+  },
+  "native": [
+    {
+      "path": "tmp\\static-code-restored-v1\\game-fn-1d60bf0.json",
+      "sha256": "fe375f200e976f8902829b4b640a8895993f78c519ea0d69e47e14633d6f8c0f"
+    },
+    {
+      "path": "tmp\\static-code-restored-v1\\game-fn-15a5540.json",
+      "sha256": "c811cbf05676128987ca2e5aa35ec6375dce730dacc5ada3f7a1ea237c899dba"
+    },
+    {
+      "path": "tmp\\static-code-restored-v1\\game-fn-2ecedf0.json",
+      "sha256": "be58e197ea96948f1be6c5dbc2dc06a3651c900c48eba2fc3a8c47dad09d6d0e"
+    }
+  ],
+  "identity": {
+    "skillGroup": 1028500,
+    "skillIdName": "SuaActive4_1",
+    "wireSkillId": 404,
+    "implementationClass": "Blis.Server.SuaActive4"
+  },
+  "useGuard": {
+    "method": "SuaActive4.IsCanUseSkill",
+    "slot": 51,
+    "rva": "0x1d60bf0",
+    "instructions": [
+      "mov eax,0x270f",
+      "ret"
+    ],
+    "result": 9999,
+    "resultName": "NoMessageError",
+    "allowedResult": -1,
+    "allowedResultName": "None",
+    "controllerForward": "SkillController.IsCanUseCharacterSkill2ecedf0 calls slot51 then returns the result"
+  },
+  "attackImplementation": {
+    "startOverride": false,
+    "processWrapper": "0x2d56c60",
+    "iterator": "SuaActive4.<Process>d__0",
+    "moveNext": "0x15a5540",
+    "moveNextAlwaysFalse": true
+  },
+  "resolution": "not-applicable-static-non-executable",
+  "normalPlayerCastingAvailable": false,
+  "hitRateApplicable": false,
+  "scopeMeaning": "Initial memory slot is a registered disabled placeholder, not an additional R attack alongside copied Q/W/E. Keep its registry identity for decoding; do not seek cast samples or fabricate attempts/hits.",
+  "preservedActualRequirements": [
+    "R-Q1028510",
+    "R-W1028520",
+    "R-E1028530"
+  ],
+  "limitations": [
+    "Version-locked to inspected metadata/DLL and game DB.",
+    "This is removal of a non-executable candidate from hit-rate coverage, not a newly measured hit-rate metric.",
+    "Empty Process alone would be insufficient because actual Q/R-Q attack from Start/death callback. Here the explicit registration, unconditional use rejection, absence of Start override and empty Process are combined."
+  ],
+  "fallbackUsed": false,
+  "runtimeAccess": false
+}

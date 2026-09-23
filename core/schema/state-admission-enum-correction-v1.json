@@ -1,0 +1,31 @@
+{
+  "format": "er-state-admission-enum-correction.v1",
+  "clientVersion": "12.3.0",
+  "native": {
+    "path": "tmp/static-code-restored-v1/game-fn-2fcb5f0.json",
+    "sha256": "3dd725673a047ca8351072b53cdb6439b817068564ffb8d81972a6d58fa0a59b"
+  },
+  "metadata": {
+    "path": "C:/tools/reversing/analysis/il2cppdump/dump.cs",
+    "sha256": "37e705fddd4dbfeba1aaa1d1b5c5083f2e869ec8dd686b3663b05a9c79915692"
+  },
+  "namespace": "Blis.Common",
+  "enum": "StateType",
+  "values": {
+    "Stasis": 45,
+    "VLS": 51
+  },
+  "instructions": [
+    "2fcb60c: mov edx,0x2d",
+    "2fcb611: call StateEffector.IsHaveStateByType",
+    "2fcb618: present => false"
+  ],
+  "correction": "WorldCharacter.CanBeAffected rejects Stasis (45), not VLS (51). Add Stasis to shared admission blockers. Retain the conservative VLS exclusion; do not silently weaken other reviewed gates.",
+  "supersedesMistakenLabelIn": [
+    "deliverables/sua-state-admission-static-v1.json",
+    "schema/sua-center-slow-admission-v3.json",
+    "schema/adela-pushed-pawn-state-admission-v1.json",
+    "schema/fiora-q-slow-admission-v1.json"
+  ],
+  "oldArtifactsPreserved": true
+}

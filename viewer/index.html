@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="ko" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ERCraft 리플레이 전투 분석</title>
+  <link rel="stylesheet" href="./styles/theme.css?v=restrained-ui-final">
+  <link rel="stylesheet" href="./styles/layout.css?v=restrained-ui-final">
+  <link rel="stylesheet" href="./styles/team-rail.css?v=ui-v15">
+  <link rel="stylesheet" href="./styles/map-overlay.css?v=ui-v21&restrained-ui-final">
+  <link rel="stylesheet" href="./styles/app-finish.css?v=compact-records-v3">
+  <link rel="stylesheet" href="./styles/ercraft-foundations.css?v=readable-system-v2">
+  <link rel="stylesheet" href="./styles/replay-bento.css?v=controls-v3">
+</head>
+<body>
+  <div class="wrap">
+    <!-- Navigation & Player Selector Toolbar -->
+    <nav class="toolbar">
+      <div class="navigation-group">
+      <div class="tabs" role="tablist" aria-label="분석 탭">
+        <button type="button" class="active" data-view="map">이동 지도</button>
+        <button type="button" data-view="overview" disabled aria-disabled="true" title="경기 요약은 준비 중입니다">🔒 경기 요약</button>
+        <button type="button" data-view="skills">스킬 분석</button>
+      </div>
+      <span class="toolbar-version">v12.4</span>
+      </div>
+
+      <div class="picker">
+        <label for="playerSelect">관전 플레이어</label>
+        <select id="playerSelect" aria-label="플레이어 선택">
+          <option value="">불러오는 중...</option>
+        </select>
+        <button type="button" id="themeToggle" class="theme-toggle" aria-label="테마 전환" title="다크/라이트 모드 전환">☀️</button>
+      </div>
+    </nav>
+
+
+    <!-- Loading Indicator -->
+    <div id="loadingIndicator" style="display: flex; align-items: center; justify-content: center; padding: 40px; font-size: 14px; color: var(--muted); gap: 10px;">
+      <span>리플레이 분석 데이터를 불러오는 중입니다...</span>
+    </div>
+
+    <!-- Main Stage (Map + Team Rail) -->
+    <main class="stage">
+      <!-- Map Section -->
+      <section class="panel map-panel">
+        <div class="map-shell">
+          <canvas id="mapCanvas" aria-label="이터널 리턴 이동 지도"></canvas>
+          <div id="mapSpaceBadge" class="map-space-badge" hidden></div>
+
+          <!-- Top-Left Current Engagement Skill Summary -->
+          <aside id="mapEngagementSkills" class="map-engagement-skills" hidden aria-live="polite"></aside>
+
+          <!-- Top-Right Team Combat Log -->
+          <aside id="mapTeamCombatLog" class="map-team-log" hidden aria-live="polite" aria-label="팀 전투 로그"></aside>
+          <div class="map-phase"><select id="mapPhaseSelect" aria-label="일차 낮밤 선택"></select><b id="mapPhaseClock"></b></div>
+
+          <!-- Bottom-Left Wildlife Guide Popover -->
+          <details id="wildlifeGuide" class="map-wildlife-guide">
+            <summary>야생동물 표식</summary>
+            <div id="wildlifeGuidePopover" class="wildlife-guide-popover"></div>
+          </details>
+
+          <!-- Bottom-Right Zoom Controls -->
+          <div class="map-zoom" role="group" aria-label="지도 확대/축소">
+            <button type="button" id="mapZoomIn" aria-label="확대">+</button>
+            <button type="button" id="mapZoomOut" aria-label="축소">−</button>
+            <button type="button" id="mapZoomReset" class="reset" aria-label="지도 맞춤">맞춤</button>
+          </div>
+        </div>
+
+        <!-- Transport & Timeline Controls -->
+        <div class="restriction-legend" aria-label="구역 표시 안내"><span class="restricted">금지구역</span><span class="reserved">금지 예정</span><span class="clearing">해제 예정</span></div>
+        <details id="mobileCombatLog" class="mobile-combat-log">
+          <summary>전투 로그 <span>다운 · 처치 · 오브젝트</span></summary>
+        </details>
+        <div id="mapControls">
+          <div class="transport">
+            <button type="button" class="btn play" id="play" aria-pressed="false">재생</button>
+            <input id="time" type="range" min="0" max="1000" step="1" value="0" aria-label="재생 시간">
+            <b id="timeLabel" class="clock">0:00</b>
+          </div>
+
+          <div class="transport2">
+            <div class="transport-left">
+              <div class="seg" role="group" aria-label="재생 속도">
+                <button type="button" class="speed" data-speed="0.5">0.5×</button>
+                <button type="button" class="speed active" data-speed="1">1×</button>
+                <button type="button" class="speed" data-speed="2">2×</button>
+                <button type="button" class="speed" data-speed="4">4×</button>
+                <button type="button" class="speed" data-speed="8">8×</button>
+              </div>
+            </div>
+
+            <div class="map-filters" role="group" aria-label="레이어 필터">
+              <label class="map-toggle">
+                <input type="checkbox" data-layer="wildlife"> 야생동물
+              </label>
+              <label class="map-toggle">
+                <input type="checkbox" data-layer="pings" checked> 전술 핑
+              </label>
+              <label class="map-toggle">
+                <input type="checkbox" data-layer="cameras" checked> 카메라
+              </label>
+              <span class="map-presence available">루미 이동 추적</span>
+            </div>
+          </div>
+        </div>
+        <section class="map-engagement-review" aria-labelledby="mapEngagementReviewTitle">
+          <div class="map-death-review-head">
+            <h2 id="mapEngagementReviewTitle">전체 교전 <span id="engagementReviewCount"></span></h2>
+            <div class="map-death-review-actions">
+              <span>장면을 누르면 교전 3초 전으로 이동합니다.</span>
+              <button id="engagementReviewToggle" type="button" aria-expanded="false" aria-controls="mapEngagementReview">전체 펼치기</button>
+            </div>
+          </div>
+          <div id="mapEngagementReview" class="engagement-review-list"></div>
+          <div id="engagementPicker" class="engagement-picker" aria-label="교전 선택"></div>
+        </section>
+      </section>
+
+      <!-- Right Aside: Team Loadout Rail -->
+      <aside class="panel rail" aria-label="팀원">
+        <div id="teamLoadout" class="cards">
+          <!-- Dynamically populated by team-rail.js -->
+        </div>
+      </aside>
+    </main>
+
+    <!-- Container for Non-Map Tab Views -->
+    <div id="otherViews" style="display: none;"></div>
+    <footer class="site-notice">
+      <span>ERCraft는 님블뉴런의 공식 서비스가 아닙니다. 분석 정확도와 리플레이 형식 호환성을 님블뉴런이 보증하지 않습니다.</span>
+      <button type="button" id="privacyNoticeToggle" aria-expanded="false" aria-controls="privacyNoticePanel">개인정보 안내</button>
+      <div id="privacyNoticePanel" class="privacy-notice-panel" hidden>ERCraft는 님블뉴런의 공식 서비스가 아닙니다. 분석 정확도와 리플레이 형식 호환성을 님블뉴런이 보증하지 않습니다.</div>
+    </footer>
+  </div>
+
+  <script type="module" src="./src/main.js?v=rift-background-v6"></script>
+</body>
+</html>
+
+

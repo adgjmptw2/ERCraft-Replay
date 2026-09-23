@@ -1,0 +1,19 @@
+{
+  "format": "er-straight-nav-radius-prefix-bound.v1",
+  "clientVersion": "12.3.0",
+  "nativeInputContract": "schema/native-straight-motion-input-contract-v1.json",
+  "heightCorrectionBody": "tmp/static-code-restored-v1/game-fn-11a6400.json",
+  "rule": "Enclose every prior pivot, every endpoint within requested XZ plus/minus five units, and every eased phase up to the age+1 update upper bound. No exact endpoint or phase is selected.",
+  "start": "3065bb8 obtains the server current start before strategy setup. Recursively use the prior-position envelope evaluated at the command. An unsupported or missing predecessor rejects.",
+  "height": "11a6400 changes only Y at 11a65dd/11a65e0 or 11a65eb; XZ is preserved on every returning branch.",
+  "endpoint": "12a146c loads maxDistance=5. At 12a14ac, 11a4a50 applies height correction, then NavMesh.SamplePosition. Success returns a point within five units; failure preserves requested XZ.",
+  "apiContract": "https://docs.unity3d.com/6000.0/Documentation/ScriptReference/AI.NavMesh.SamplePosition.html",
+  "phase": "Positive fixed-point duration/100. At most age+1 updates with float32 accumulation/division allowance. Linear21 uses phase. Monotone EaseOutQuad1 uses phase*(2-phase)+2^-20; monotone EaseOutCubic4 uses 1-(1-phase)^3+2^-20; both are clamped at one. Include phase zero for paused or not-yet-updated movement.",
+  "cubicProof": "GetEasingFunction 1451dc0: jump-table entry 4 at 14525c4 targets 14520da. MethodInfo loaded at 14520e6 from a642230 is Method$Blis.Common.EasingFunction.EaseOutCubic(), native 1450290. Native instructions subtract 1, multiply v*v*v, add 1, then scale by end-start and add start. Both constants are exact float32 1. Caller 11af450 passes start=0/end=1; 11af452..11af465 clamps the result to [0,1]. The derivative 3*(1-phase)^2 is nonnegative on [0,1]. The 2^-20 allowance exceeds the absolute error from the four float32 operations on this domain (including the initial subtraction); coordinate arithmetic retains its separate padding.",
+  "cubicBodies": ["tmp/static-code-restored-v1/game-fn-1450290.json", "tmp/static-code-restored-v1/game-fn-1451dc0.json", "tmp/static-code-restored-v1/game-fn-11af3a0.json"],
+  "roundoff": "Use endpoint radius5+1/128 and output padding(frames+1)/128 in the finite coordinate domain abs<=512.",
+  "finalPositionProof": "schema/non-nav-linear-prefix-bound-v1.json",
+  "limits": ["Only Linear21, EaseOutQuad1 and EaseOutCubic4", "Prior-position evidence required", "No exact navigation endpoint, pause state, elapsed time, or tile association assumed"],
+  "exactPositionClaimed": false,
+  "fallbackUsed": false
+}

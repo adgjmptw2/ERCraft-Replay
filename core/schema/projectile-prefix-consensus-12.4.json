@@ -1,0 +1,63 @@
+{
+  "format": "er-projectile-prefix-multi-match-consensus.v1",
+  "status": "candidate-consensus-only-not-promoted",
+  "minimumMatchesPerObjectType": 3,
+  "inputGameCount": 3,
+  "unavailableGameCount": 0,
+  "versions": [
+    {
+      "clientVersion": "12.4.0",
+      "exactCandidateMatchCount": 3,
+      "minimumMatches": 3,
+      "observedCandidateObjectTypeCount": 3,
+      "objectTypes": [
+        {
+          "objectType": 14,
+          "supportingMatchCount": 3,
+          "totalOccurrenceCount": 14627,
+          "memberHeader": 5,
+          "observedMemberHeaders": {
+            "5": 3
+          },
+          "collisionLinkedObjectCount": 9215,
+          "status": "candidate-layout-consensus-ready-for-explicit-review",
+          "fallbackUsed": false
+        },
+        {
+          "objectType": 15,
+          "supportingMatchCount": 3,
+          "totalOccurrenceCount": 166,
+          "memberHeader": 6,
+          "observedMemberHeaders": {
+            "6": 3
+          },
+          "collisionLinkedObjectCount": 141,
+          "status": "candidate-layout-consensus-ready-for-explicit-review",
+          "fallbackUsed": false
+        },
+        {
+          "objectType": 16,
+          "supportingMatchCount": 3,
+          "totalOccurrenceCount": 525,
+          "memberHeader": 5,
+          "observedMemberHeaders": {
+            "5": 3
+          },
+          "collisionLinkedObjectCount": 234,
+          "status": "candidate-layout-consensus-ready-for-explicit-review",
+          "fallbackUsed": false
+        }
+      ],
+      "candidateLayout": {
+        "14": 5,
+        "15": 6,
+        "16": 5
+      },
+      "status": "candidate-layout-consensus-ready-for-explicit-version-promotion",
+      "promotionStatus": "not-promoted",
+      "coverageCaveat": "Only object types with at least three qualifying spawns in at least one input match can appear; absence is not proof that a projectile object type does not exist.",
+      "fallbackUsed": false
+    }
+  ],
+  "fallbackUsed": false
+}

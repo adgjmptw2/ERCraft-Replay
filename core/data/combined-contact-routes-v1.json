@@ -1,0 +1,391 @@
+{
+  "format": "combined-contact-routes.v1",
+  "entries": [
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:16:1016200:any",
+        "characterCode": 16,
+        "skillGroup": 1016200,
+        "label": "Q [SilviaHumanActive1]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "routeId": "combined-recorded-contact",
+      "priorObservedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes",
+        "exact-action-target-same-tick-corroborated"
+      ],
+      "bundleId": "16:Q",
+      "requirementsSha256": "8dd9111bda7676cb4f3daad00c1648ac82f7057a2e8c4e847233854257ea6819",
+      "actionCoverageClosesCast": true
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:18:1018500:any",
+        "characterCode": 18,
+        "skillGroup": 1018500,
+        "label": "R [ShoichiActive4]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "routeId": "combined-recorded-contact",
+      "priorObservedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes",
+        "exclusive-cast-any-enemy-projectile-collision"
+      ],
+      "bundleId": "18:R",
+      "requirementsSha256": "37d3737491db9e5c3e2b372b75007a5af10f4c0b55b8b49af2370943ed9ddf79",
+      "actionCoverageClosesCast": false
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:22:1022400:any",
+        "characterCode": 22,
+        "skillGroup": 1022400,
+        "label": "E [LukeActive3]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "routeId": "combined-recorded-contact",
+      "priorObservedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes",
+        "exact-action-target-same-tick-corroborated"
+      ],
+      "bundleId": "22:E",
+      "requirementsSha256": "58bbb33a008965c5b3f986ceae954af88b106237af127cf485e0abfd64d1b2bb",
+      "actionCoverageClosesCast": true
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:33:1033500:any",
+        "characterCode": 33,
+        "skillGroup": 1033500,
+        "label": "R [NickyActive4]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "routeId": "combined-recorded-contact",
+      "priorObservedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes",
+        "exact-action-target-same-tick-corroborated"
+      ],
+      "bundleId": "33:R",
+      "requirementsSha256": "ed5ee5c2115a6ab09f4c65db8c9a199f5def63327eb16652640071c7587904ef",
+      "actionCoverageClosesCast": true
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:56:1056400:any",
+        "characterCode": 56,
+        "skillGroup": 1056400,
+        "label": "E [PioloActive3_1]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "routeId": "combined-recorded-contact",
+      "priorObservedMethods": [
+        "exclusive-cast-any-enemy-projectile-collision",
+        "exclusive-projectile-cast-with-explicit-cancellations-counted-as-misses"
+      ],
+      "bundleId": "56:E",
+      "requirementsSha256": "50bc6c183bf7c85af94b4627cc30616dcc7a4ecca58c903e06b8cbdd360f6c25",
+      "actionCoverageClosesCast": false
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:58:1058220:any",
+        "characterCode": 58,
+        "skillGroup": 1058220,
+        "label": "R 로켓(Q 입력) [HazeActive1_3]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "routeId": "combined-recorded-contact",
+      "priorObservedMethods": [
+        "exclusive-cast-any-enemy-projectile-collision"
+      ],
+      "bundleId": "58:R",
+      "requirementsSha256": "fcff4f399a2eb42c8c561ca90c04e82bbc420907150fa58dbce2708c5fb7f037",
+      "actionCoverageClosesCast": true,
+      "supplementalMethodEvidence": "tmp/preselected-contact-routes-v1/corrected-game-65070736.json"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:65:1065500:any",
+        "characterCode": 65,
+        "skillGroup": 1065500,
+        "label": "R [DebiMarleneActive4]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "routeId": "combined-recorded-contact",
+      "priorObservedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes",
+        "exact-action-target-same-tick-corroborated"
+      ],
+      "bundleId": "65:R",
+      "requirementsSha256": "c8008f1fe2d023788f3de89dcde9acfc1fb91ec5e027bb7ca33b5e1825d571a2",
+      "actionCoverageClosesCast": true
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:16:1016300:any",
+        "characterCode": 16,
+        "skillGroup": 1016300,
+        "label": "W [SilviaHumanActive2]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "routeId": "combined-recorded-contact",
+      "bundleId": "16:W",
+      "requirementsSha256": null,
+      "reviewedMethods": [
+        "cast-specific-effect-stage-team-combat-closed-v107"
+      ],
+      "sourceAuthoritySha256": "55d86c573ed115eb35795b2b5f869badf2a9d1a0cf8cf7eea18b64f377727b48",
+      "mappingReviewUpgraded": false,
+      "selectionBasis": "Recorded owned delayed projectile contacts and effect damage are evaluated together; cast finish alone does not close the projectile.",
+      "actionCoverageClosesCast": false
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:69:1069200:any",
+        "characterCode": 69,
+        "skillGroup": 1069200,
+        "label": "Q [LeniActive1]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "routeId": "combined-recorded-contact",
+      "bundleId": "69:Q",
+      "requirementsSha256": null,
+      "reviewedMethods": [
+        "cast-specific-effect-stage-team-combat-closed-v107"
+      ],
+      "sourceAuthoritySha256": "55d86c573ed115eb35795b2b5f869badf2a9d1a0cf8cf7eea18b64f377727b48",
+      "mappingReviewUpgraded": false,
+      "selectionBasis": "Recorded owned delayed projectile contacts and effect damage are evaluated together; cast finish alone does not close the projectile.",
+      "actionCoverageClosesCast": false
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:51:1051300:any",
+        "characterCode": 51,
+        "skillGroup": 1051300,
+        "label": "W [PriyaActive2]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "routeId": "combined-recorded-contact",
+      "reviewedMethods": [
+        "exclusive-projectile-cast-with-explicit-cancellations-counted-as-misses"
+      ],
+      "bundleId": "51:W",
+      "requirementsSha256": "f066052638f321b9897da48ff4ae1eb97491a4aa7521d23d6ceee9dc2df44ec1",
+      "previousRouteId": "preselected-cancelled-projectile-contact",
+      "actionCoverageClosesCast": false,
+      "migrationReason": "Replace whole-row cancellation/explosion rejection with one per-use joint candidate contact graph; candidate mapping remains experimental."
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:51:1051200:any",
+        "characterCode": 51,
+        "skillGroup": 1051200,
+        "label": "Q [PriyaActive1]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "routeId": "combined-recorded-contact",
+      "bundleId": "51:Q",
+      "reviewedMethods": [
+        "exact-explosion-target-list-damage-and-destruction"
+      ],
+      "requirementsSha256": "b8e389d5a8578e39c0bfdb9d668cc16b55570c5a46bf6936e404d8e028ea5da0",
+      "previousRouteId": "preselected-explosion-contact",
+      "actionCoverageClosesCast": false,
+      "migrationReason": "Replace whole-row cancellation/explosion rejection with one per-use joint candidate contact graph; candidate mapping remains experimental."
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:69:1069500:any",
+        "characterCode": 69,
+        "skillGroup": 1069500,
+        "label": "R [LeniActive4]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "routeId": "combined-recorded-contact",
+      "bundleId": "69:R",
+      "reviewedMethods": [
+        "exact-explosion-target-list-damage-and-destruction"
+      ],
+      "requirementsSha256": "aa56b500c6596520881e1987f40584887d38ce71dc2daed48783d46372a7eff7",
+      "previousRouteId": "preselected-explosion-contact",
+      "actionCoverageClosesCast": false,
+      "migrationReason": "Replace whole-row cancellation/explosion rejection with one per-use joint candidate contact graph; candidate mapping remains experimental."
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:68:1068200:any",
+        "characterCode": 68,
+        "skillGroup": 1068200,
+        "label": "Q [AlonsoActive1]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "routeId": "combined-recorded-contact",
+      "reviewedMethods": [
+        "exclusive-cast-any-enemy-projectile-collision",
+        "exclusive-projectile-cast-with-explicit-cancellations-counted-as-misses"
+      ],
+      "bundleId": "68:Q",
+      "requirementsSha256": "11ed5ac68ed47b2f035ef5d04c84930f998ca973d904f605b4c4f7fb6f8b8e7e",
+      "previousRouteId": "preselected-cancelled-projectile-contact",
+      "actionCoverageClosesCast": false,
+      "projectileContactOnly": true,
+      "migrationReason": "Preserve the prior projectile-contact predicate and exclude follow-up attack FX; use exact cast/object lifetimes instead of whole-row window matching."
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:22:1022200:any",
+        "characterCode": 22,
+        "skillGroup": 1022200,
+        "label": "Q [LukeActive1_1]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "routeId": "combined-recorded-contact",
+      "reviewedMethods": [
+        "exclusive-cast-any-enemy-projectile-collision"
+      ],
+      "bundleId": "22:Q",
+      "requirementsSha256": "0b9314729f639027426a19d04eb7c94957d52ba642591b7b1d1bca30b68f7d9d",
+      "previousRouteId": "preselected-projectile-contact",
+      "actionCoverageClosesCast": false,
+      "projectileContactOnly": true,
+      "migrationReason": "Static normal/evolved first-throw codes and exact cast/object lifetimes replace ambiguous action time windows; Q2 is not counted."
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:32:1032500:any",
+        "characterCode": 32,
+        "skillGroup": 1032500,
+        "label": "R [WilliamActive4]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "reviewedMethods": [
+        "complete-exclusive-cast-projectile-lifetimes-and-contact-outcomes"
+      ],
+      "routeId": "combined-recorded-contact",
+      "bundleId": "32:R",
+      "requirementsSha256": "eeb2a083f78539a5120f2e846ac0c52c354c936fc020db69f2816abc617f54c6",
+      "previousRouteId": "preselected-ordered-projectile-lifetime",
+      "actionCoverageClosesCast": false,
+      "attemptOnProjectileSpawn": true,
+      "migrationReason": "Keep actual projectile attempt timing while joining per-use effects and active ends; missing collision metadata must not block unrelated uses."
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:51:1051500:any",
+        "characterCode": 51,
+        "skillGroup": 1051500,
+        "label": "R [PriyaActive4]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "routeId": "combined-recorded-contact",
+      "bundleId": "51:R",
+      "requirementsSha256": null,
+      "reviewedMethods": [
+        "cast-specific-effect-stage-team-combat-closed-v107"
+      ],
+      "sourceAuthoritySha256": "55d86c573ed115eb35795b2b5f869badf2a9d1a0cf8cf7eea18b64f377727b48",
+      "mappingReviewUpgraded": false,
+      "selectionBasis": "Preserve the prior R damage-effect outcome predicate; real projectile105108 supplies ownership/lifetime, not collision-only success. A collision without damage is not itself an unknown damage result.",
+      "actionCoverageClosesCast": false,
+      "effectDamageOnly": true,
+      "requireOwnedProducerForNegative": true
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:60:1060210:any",
+        "characterCode": 60,
+        "skillGroup": 1060210,
+        "label": "Q [TaziaActive1_2]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "routeId": "combined-recorded-contact",
+      "reviewedMethods": [
+        "exclusive-cast-any-enemy-projectile-collision",
+        "exclusive-projectile-cast-with-explicit-cancellations-counted-as-misses"
+      ],
+      "bundleId": "60:Q",
+      "requirementsSha256": "0be800248e23998caee43fa966ac10f8f696e46b6471fd4eec96660cfe96770b",
+      "actionCoverageClosesCast": false,
+      "actionContacts": false,
+      "allowUnnamedProjectileCandidates": false,
+      "requireOwnedProducerForNegative": true,
+      "requireActiveOwnedProducerForEffect": true,
+      "attemptOnProjectileSpawn": true,
+      "producerProof": "data/tazia-reinforced-q-candidate-proof-v1.json",
+      "verifiedCompletionCredit": false
+    }
+  ],
+  "sourceAuthoritySha256": "55d86c573ed115eb35795b2b5f869badf2a9d1a0cf8cf7eea18b64f377727b48",
+  "calculationConfidence": "experimental",
+  "verifiedCompletionCredit": false,
+  "replaySamplesUsedForCompilation": 0
+}

@@ -1,0 +1,1306 @@
+{
+  "format": "preselected-existing-effect-routes.v1",
+  "sourceAuthoritySha256": "55d86c573ed115eb35795b2b5f869badf2a9d1a0cf8cf7eea18b64f377727b48",
+  "routeId": "preselected-existing-effect-family",
+  "mappingReviewUpgraded": false,
+  "replaySamplesUsedForCompilation": 0,
+  "positiveSampleRequired": false,
+  "entries": [
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:7:1007400:any",
+        "characterCode": 7,
+        "skillGroup": 1007400,
+        "label": "E [HyunwooActive3]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "07:E",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "c384e00f76d1def39938f36a10e39fae851c84b6fe275583249f0dfe9c695161"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:10:1010200:any",
+        "characterCode": 10,
+        "skillGroup": 1010200,
+        "label": "Q [LiDailinActive1_1]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "10:Q",
+      "reviewedMethods": [
+        "candidate-FX-family-exclusive-ordered-uses-with-explicit-unknowns",
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "1bd1d8edb46445e14854dcd84a3ed0c8e394acab9473639cd7633a84572d14c0"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:10:1010210:any",
+        "characterCode": 10,
+        "skillGroup": 1010210,
+        "label": "Q [LiDailinActive1_2]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "10:Q",
+      "reviewedMethods": [
+        "candidate-FX-family-exclusive-ordered-uses-with-explicit-unknowns",
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "1bd1d8edb46445e14854dcd84a3ed0c8e394acab9473639cd7633a84572d14c0"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:10:1010220:any",
+        "characterCode": 10,
+        "skillGroup": 1010220,
+        "label": "Q [LiDailinActive1_3]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "10:Q",
+      "reviewedMethods": [
+        "candidate-FX-family-exclusive-ordered-uses-with-explicit-unknowns",
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "1bd1d8edb46445e14854dcd84a3ed0c8e394acab9473639cd7633a84572d14c0"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:10:1010400:any",
+        "characterCode": 10,
+        "skillGroup": 1010400,
+        "label": "E [LiDailinActive3]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "10:E",
+      "reviewedMethods": [
+        "candidate-FX-family-exclusive-ordered-uses-with-explicit-unknowns",
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "2f8065bc1a0396e38eafb1157d0bf7e2d5606e555c96dac9ac6c2629703affe7"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:13:1013500:any",
+        "characterCode": 13,
+        "skillGroup": 1013500,
+        "label": "R [XiukaiActive4]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "13:R",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "0f80e601a46e5eeaa53f9d18a067b7a8ef54de4a50fc75baa3daa732c14d11ab"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:20:1020400:any",
+        "characterCode": 20,
+        "skillGroup": 1020400,
+        "label": "E [LenoxActive3]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "20:E",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "5df8e0d0c32216474364a8037b5d5b753bc6f098ddd7e11c3f38006e68b68b09"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:21:1021200:any",
+        "characterCode": 21,
+        "skillGroup": 1021200,
+        "label": "Q [RozziActive1]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "21:Q",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "6990d6b0c949bd8315ca1d7a39bf3a91357c977c6acc16c62c459a1b9ae82e20"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:21:1021300:any",
+        "characterCode": 21,
+        "skillGroup": 1021300,
+        "label": "W [RozziActive2]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "21:W",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "46b3bd27f4a7231199146ada3d0dc34316d5e9cfe787899d5d73cd589cb34989"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:21:1021400:any",
+        "characterCode": 21,
+        "skillGroup": 1021400,
+        "label": "E [RozziActive3_1]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "21:E",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "af2728dcd29ca51298c55a6c3d3e1ae3885769aa90878d5f2d9cf6fe25d84949"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:24:1024500:any",
+        "characterCode": 24,
+        "skillGroup": 1024500,
+        "label": "R [AdelaActive4]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "24:R",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "708bd03c33bc76e1ab4e37b507755484173999620334a95a215ae97415e649f7"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:26:1026300:any",
+        "characterCode": 26,
+        "skillGroup": 1026300,
+        "label": "W [BarbaraActive2_IonLaser]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "26:W",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "d9ab6a5ad50c808ae356573237a8c88268d7ea0d908601167ccbf42c715836b9"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:30:1030200:any",
+        "characterCode": 30,
+        "skillGroup": 1030200,
+        "label": "Q [ElevenActive1]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "30:Q",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "5e7416330d771f8255608c0b28f7f30eb3ce9e856ed574bb07d4dadf5efba202"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:30:1030300:any",
+        "characterCode": 30,
+        "skillGroup": 1030300,
+        "label": "W 도발 성공률",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-applying-taunt-to-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "30:W",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "dbc6e7ebf4ca8d85e66275c743d1d5900d3ed8b5b2a69c1e4ab11ad5e420d6da"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:30:1030400:any",
+        "characterCode": 30,
+        "skillGroup": 1030400,
+        "label": "E [ElevenActive3]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "30:E",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "940a1e4f6b410b6921d33b5bcee3965402d2bf1ddbc7bb3791fef7c8c92f667d"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:33:1033210:any",
+        "characterCode": 33,
+        "skillGroup": 1033210,
+        "label": "Q [NickyActive1_2]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "33:Q",
+      "reviewedMethods": [
+        "candidate-FX-family-exclusive-ordered-uses-with-explicit-unknowns",
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "ef6ac94c7098c1690d970a196d40a54a1b4deda187289c9f570885cd100d2d0a"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:37:1037200:any",
+        "characterCode": 37,
+        "skillGroup": 1037200,
+        "label": "Q [DanielActive1]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "37:Q",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "fcb030c10a76cd4e727eabd79354ddcb17545c3c271ed9d8924cce9b2821901d"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:39:1039510:any",
+        "characterCode": 39,
+        "skillGroup": 1039510,
+        "label": "R [CamiloActive4_2]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "39:R",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "44f46d651be486d2976810655e5c7195615257812fe51b2b4d0e7d63ae2378ff"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:44:1044400:any",
+        "characterCode": 44,
+        "skillGroup": 1044400,
+        "label": "E [EchionActive3]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "44:E",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "ad4d5346f2a4d7500f1deb9c7d3393e87eaf045435f94023d9ac78ef3e8c2d37"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:45:1045200:any",
+        "characterCode": 45,
+        "skillGroup": 1045200,
+        "label": "Q [MaiActive1]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "45:Q",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "9c23ef959de72fc9558d08b5652bd543bc1400aa1f486bdabe5649eb3927a4af"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:45:1045410:any",
+        "characterCode": 45,
+        "skillGroup": 1045410,
+        "label": "E [MaiActive3_2]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "45:E",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "b5309ab50d6d565b43f15654f63008412adc0f4e8d09982d1defacea39e75e2e"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:48:1048600:any",
+        "characterCode": 48,
+        "skillGroup": 1048600,
+        "label": "E [TiaActive3_1]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "48:E",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "f2dc7c176cfffa17dd5e135b932e17012ce848f10de004d4be40986762c92082"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:53:1053300:any",
+        "characterCode": 53,
+        "skillGroup": 1053300,
+        "label": "W [MarkusActive2_1]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "53:W",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "70c895399d3c7fa638ccb97d84b76fd6214966653a8d9c9cd49f931672f8f4d0"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:53:1053500:any",
+        "characterCode": 53,
+        "skillGroup": 1053500,
+        "label": "R [MarkusActive4]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "53:R",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "2f48052aafc94423078eb750ece789db0b0b3ce9ad3f102c7033168e74f0fa4c"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:56:1056210:any",
+        "characterCode": 56,
+        "skillGroup": 1056210,
+        "label": "Q [PioloActive1_2]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "56:Q",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "6cd5e9e7a058119c124075c38a7f0a0c3d3ce7c9c7883d693f993abe483ecd9c"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:56:1056310:any",
+        "characterCode": 56,
+        "skillGroup": 1056310,
+        "label": "W [PioloActive2_2]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "56:W",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "a3a1952950bd8e09ca49bf1065d89dfdbc926602363f4b923fa6b495ae005ae5"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:56:1056410:any",
+        "characterCode": 56,
+        "skillGroup": 1056410,
+        "label": "E [PioloActive3_2]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "56:E",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "50bc6c183bf7c85af94b4627cc30616dcc7a4ecca58c903e06b8cbdd360f6c25"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:56:1056500:any",
+        "characterCode": 56,
+        "skillGroup": 1056500,
+        "label": "R [PioloActive4_1]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "56:R",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "5970acd0849b9a9639c825540c82deb2bc4ea5f06a74545f908fa1a48ce4b675"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:58:1058300:any",
+        "characterCode": 58,
+        "skillGroup": 1058300,
+        "label": "W [HazeActive2]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "58:W",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "733c9963bfe35870a12ec584688784359184d64546c8845320f3c66996f750ac"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:59:1059200:any",
+        "characterCode": 59,
+        "skillGroup": 1059200,
+        "label": "Q [IsaacActive1]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "59:Q",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "a81de6c852220dfcd59c17ad7335582c9020f7dead921c443be35d77529ba807"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:59:1059410:any",
+        "characterCode": 59,
+        "skillGroup": 1059410,
+        "label": "E [IsaacActive3_2]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "59:E",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "d92945f6ef1beed1b843ff4e755f1879b6ee30056c444de04e3557d1dfbadcf2"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:59:1059500:any",
+        "characterCode": 59,
+        "skillGroup": 1059500,
+        "label": "R [IsaacActive4]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "59:R",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "f9a7af3b4739237f7fbd0e054d7817110ef07fa20da6e6165df1f6130f4d8323"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:60:1060420:any",
+        "characterCode": 60,
+        "skillGroup": 1060420,
+        "label": "E [TaziaActive3_1_Sequence]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "60:E",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "2a1843762cbd75e6b9f0e7c340633067427980946ca628207ac5561665d12261"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:60:1060430:any",
+        "characterCode": 60,
+        "skillGroup": 1060430,
+        "label": "E [TaziaActive3_2_Sequence]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "60:E",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "2a1843762cbd75e6b9f0e7c340633067427980946ca628207ac5561665d12261"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:61:1061410:any",
+        "characterCode": 61,
+        "skillGroup": 1061410,
+        "label": "E [IremCatActive3]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "61:E",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "7723a05d51edf06a852eb1cb07b5e00a714c5c0cc20fdfa66f67f12f0471daa6"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:63:1063200:any",
+        "characterCode": 63,
+        "skillGroup": 1063200,
+        "label": "Q [LyanhHumanActive1]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "63:Q",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "898c1e5d86c90d4d768a0682b29e634c07676a4d7380961fed406dd4c57b047b"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:63:1063210:any",
+        "characterCode": 63,
+        "skillGroup": 1063210,
+        "label": "Q [LyanhPossessionActive1]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "63:Q",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "898c1e5d86c90d4d768a0682b29e634c07676a4d7380961fed406dd4c57b047b"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:63:1063300:any",
+        "characterCode": 63,
+        "skillGroup": 1063300,
+        "label": "W [LyanhHumanActive2]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "63:W",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "898c1e5d86c90d4d768a0682b29e634c07676a4d7380961fed406dd4c57b047b"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:63:1063310:any",
+        "characterCode": 63,
+        "skillGroup": 1063310,
+        "label": "W [LyanhPossessionActive2]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "63:W",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "898c1e5d86c90d4d768a0682b29e634c07676a4d7380961fed406dd4c57b047b"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:67:1067300:any",
+        "characterCode": 67,
+        "skillGroup": 1067300,
+        "label": "W [AbigailActive2]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "67:W",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "223c35ae7db24284534d0eb99fe6e567b93be7dd3cd7a6de1a4fb6216fe1b528"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:67:1067400:any",
+        "characterCode": 67,
+        "skillGroup": 1067400,
+        "label": "E [AbigailActive3]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "67:E",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "307ad7f05a35cd24d50bee79a18127d880452f1b450d01ad716778b2e6ceebc2"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:67:1067500:any",
+        "characterCode": 67,
+        "skillGroup": 1067500,
+        "label": "R [AbigailActive4]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "67:R",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "05d9041dc6afee1b9fbb751d323bc9aad51d85b54861b4a67a3a538effad7114"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:68:1068400:any",
+        "characterCode": 68,
+        "skillGroup": 1068400,
+        "label": "E [AlonsoActive3]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "68:E",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "ebd9bc5573577390eeeee3662cd8ba80e7d9fabd330b652290f4da3c94319900"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:68:1068500:any",
+        "characterCode": 68,
+        "skillGroup": 1068500,
+        "label": "R [AlonsoActive4]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "68:R",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "c03d2515ff1a8c982ddced17f49e736ade504477d773666b419bea9bd0707985"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:69:1069300:any",
+        "characterCode": 69,
+        "skillGroup": 1069300,
+        "label": "W [LeniActive2]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "69:W",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "fcb030c10a76cd4e727eabd79354ddcb17545c3c271ed9d8924cce9b2821901d"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:69:1069400:any",
+        "characterCode": 69,
+        "skillGroup": 1069400,
+        "label": "E [LeniActive3]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "69:E",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "783f3a6633b0b917161479e07c59c5196fc9961c23a1763ad538b87d4f0c1424"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:72:1072400:any",
+        "characterCode": 72,
+        "skillGroup": 1072400,
+        "label": "E [KatjaActive3]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "72:E",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "77528100d6aacb68c3fa0619d89260052141a0888a9ff4f43cb2a665fd43da98"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:75:1075300:any",
+        "characterCode": 75,
+        "skillGroup": 1075300,
+        "label": "W [LenoreActive2]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "75:W",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "b184a5d006c7758a271fe68773a3def6fd689d8cf239842f57ec3d5c7a02894f"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:76:1076200:any",
+        "characterCode": 76,
+        "skillGroup": 1076200,
+        "label": "Q [GarnetActive1_1]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "76:Q",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "ef6ac94c7098c1690d970a196d40a54a1b4deda187289c9f570885cd100d2d0a"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:77:1077300:any",
+        "characterCode": 77,
+        "skillGroup": 1077300,
+        "label": "W [YuMinActive2_1]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "77:W",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "b91e3487806f929f2402a48d71e8f78b08a0a436932b59e8975d1ee9acefb57c"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:78:1078300:any",
+        "characterCode": 78,
+        "skillGroup": 1078300,
+        "label": "W [HisuiActive2_1]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "78:W",
+      "reviewedMethods": [
+        "candidate-FX-family-exclusive-ordered-uses-with-explicit-unknowns",
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "ce70c8bf80d8cf919f9edb74f881c44b1561780ed979542cfa40aa1af98b3a25"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:78:1078310:any",
+        "characterCode": 78,
+        "skillGroup": 1078310,
+        "label": "W [HisuiActive2_2]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "78:W",
+      "reviewedMethods": [
+        "candidate-FX-family-exclusive-ordered-uses-with-explicit-unknowns",
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "ce70c8bf80d8cf919f9edb74f881c44b1561780ed979542cfa40aa1af98b3a25"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:78:1078320:any",
+        "characterCode": 78,
+        "skillGroup": 1078320,
+        "label": "W [HisuiActive2_3]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "78:W",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "ce70c8bf80d8cf919f9edb74f881c44b1561780ed979542cfa40aa1af98b3a25"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:78:1078400:any",
+        "characterCode": 78,
+        "skillGroup": 1078400,
+        "label": "E [HisuiActive3]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "78:E",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "ca1d241f584ad2aadad9dea6dbfe404851c1034b3f561d978c912e3832749da5"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:78:1078510:any",
+        "characterCode": 78,
+        "skillGroup": 1078510,
+        "label": "R [HisuiActive4_2]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "78:R",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "560d0788e70dac2e1b74774ae73cb55576b5c6b6b2a55c1a9dc5f27dc0e4e845"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:79:1079500:any",
+        "characterCode": 79,
+        "skillGroup": 1079500,
+        "label": "R [JustynaActive4]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "79:R",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "2c3ba0492ca350e477be64ccae2f1b40d1511ce0af02b024491a23e266bc975e"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:80:1080500:any",
+        "characterCode": 80,
+        "skillGroup": 1080500,
+        "label": "R [IstvanActive4]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "80:R",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "912c9f736461f7e9539dda33a4f8ffe784c25774c9d67f429a11ec317bb9eeed"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:84:1084300:any",
+        "characterCode": 84,
+        "skillGroup": 1084300,
+        "label": "W [BlairActive2_1]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "84:W",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "770e79468e08e4094442ed001a5c821b277d8a532db008d8e8563cb04e0f5e50"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:84:1084400:any",
+        "characterCode": 84,
+        "skillGroup": 1084400,
+        "label": "E [BlairActive3_1]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "84:E",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "afdad11e17d8943c6fbad74b20d125c10228543cc433ae15fac6efc88b36d4ca"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:84:1084410:any",
+        "characterCode": 84,
+        "skillGroup": 1084410,
+        "label": "E [BlairActive3_2]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "84:E",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "afdad11e17d8943c6fbad74b20d125c10228543cc433ae15fac6efc88b36d4ca"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:85:1085400:any",
+        "characterCode": 85,
+        "skillGroup": 1085400,
+        "label": "E [MirkaActive3_1]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "85:E",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "712f828e8663ab5a5d84350fc88c4578bb9404c7253fccad38f6a09d15082859"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:85:1085410:any",
+        "characterCode": 85,
+        "skillGroup": 1085410,
+        "label": "E [MirkaActive3_2]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "85:E",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "712f828e8663ab5a5d84350fc88c4578bb9404c7253fccad38f6a09d15082859"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:85:1085500:any",
+        "characterCode": 85,
+        "skillGroup": 1085500,
+        "label": "R [MirkaActive4]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "85:R",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "05d9041dc6afee1b9fbb751d323bc9aad51d85b54861b4a67a3a538effad7114"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:86:1086200:any",
+        "characterCode": 86,
+        "skillGroup": 1086200,
+        "label": "Q [FenrirActive1]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "86:Q",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "578528eef5d7d0752c5272445d33642a39612aaec0c3b4bcd7ff5599604f9f28"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:86:1086310:any",
+        "characterCode": 86,
+        "skillGroup": 1086310,
+        "label": "W [FenrirActive2_2]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "86:W",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "838588db341da950d4152a4f49752f7f72c444b921acbc809f24e76375e5fe80"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:88:1088400:any",
+        "characterCode": 88,
+        "skillGroup": 1088400,
+        "label": "E [BihyungActive3]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "88:E",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "c6f58efb48bb089c83fb88145adcdb733482d597c304782e3c6c5851e3ba9d39"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:88:1088500:any",
+        "characterCode": 88,
+        "skillGroup": 1088500,
+        "label": "R [BihyungActive4]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "88:R",
+      "reviewedMethods": [
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "56290d5328aec4a4a95649b362ed8e03a23442d176653b5dbddae658e65448ac"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:89:1089300:any",
+        "characterCode": 89,
+        "skillGroup": 1089300,
+        "label": "W [CraverActive2_1]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "89:W",
+      "reviewedMethods": [
+        "candidate-FX-family-exclusive-ordered-uses-with-explicit-unknowns",
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "4285df2fb180990fef21357a77b7ac5aa66e4d5e0a25c6ea2272585444898823"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:89:1089500:any",
+        "characterCode": 89,
+        "skillGroup": 1089500,
+        "label": "R [CraverActive4]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "bundleId": "89:R",
+      "reviewedMethods": [
+        "candidate-FX-family-exclusive-ordered-uses-with-explicit-unknowns",
+        "candidate-FX-family-verified-by-complete-exclusive-runtime-lifetimes"
+      ],
+      "requirementsSha256": "dea5e3aca3ed9a2cc2172420758d71a171e80d06695630cecf8fe6f2e1960aa2"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:16:1016600:any",
+        "characterCode": 16,
+        "skillGroup": 1016600,
+        "label": "Q [SilviaBikeActive1]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "routeId": "preselected-existing-effect-family",
+      "bundleId": "16:Q",
+      "requirementsSha256": null,
+      "reviewedMethods": [
+        "exact-cast-exclusive-effect-family-v131"
+      ],
+      "sourceAuthoritySha256": "55d86c573ed115eb35795b2b5f869badf2a9d1a0cf8cf7eea18b64f377727b48",
+      "mappingReviewUpgraded": false,
+      "selectionBasis": "Existing candidate effect/contact contract selected before evaluation; no per-match winner search."
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:45:1045400:any",
+        "characterCode": 45,
+        "skillGroup": 1045400,
+        "label": "E [MaiActive3_1]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "routeId": "preselected-existing-effect-family",
+      "bundleId": "45:E",
+      "requirementsSha256": null,
+      "reviewedMethods": [
+        "cast-specific-effect-stage-team-combat-closed"
+      ],
+      "sourceAuthoritySha256": "55d86c573ed115eb35795b2b5f869badf2a9d1a0cf8cf7eea18b64f377727b48",
+      "mappingReviewUpgraded": false,
+      "selectionBasis": "Existing candidate effect/contact contract selected before evaluation; no per-match winner search."
+    }
+  ],
+  "zeroPositiveSamplePolicy": "explicit-experimental-only-with-complete-streams-and-normal-unique-lifetimes"
+}

@@ -1,0 +1,55 @@
+{
+  "format": "er-state-created-time-server-frame.v1",
+  "clientVersion": "12.3.0",
+  "gameDbSha256": "5ef9cb5459a2e908099655bf9ffc70ac16b134d1db282fb97b25fe065e7c8e4f",
+  "evidence": [
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-30d5a00.json",
+      "sha256": "75306f628f852c3c98bfe8b1af6afc33cb4c6601af2d7f51f9a5686d656784bc"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-30d5d80.json",
+      "sha256": "e006fc5dce0c1a4875245659560d97fdcf3ae5f64de7a4f5b21d8614b4c3f0b0"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-2fce170.json",
+      "sha256": "01edd837e7a3f58096c764fec30b92c534adc7670f2146aa21a4347a0a18ac52"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-31c1390.json",
+      "sha256": "b1b92ac98c15072ecdf002389283500b8b5eaf3feaea406edeee591dd364320e"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-32282c0.json",
+      "sha256": "9cec4b4f921f3f3e00568e67346b0436746fa3bb4687f68234d90cb6dd1528fb"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-native-floor-fragments-v1.json",
+      "sha256": "c84bd80c277bd43f85cc8c2a1506e24f7d2a6bce7354a3edf3a8f49f982e38d7"
+    }
+  ],
+  "nativeFlow": {
+    "start": "30d5a55..30d5a99 reads GameServer.UpdateSeq(+B4), cvtdq2ps then mulss(1/60), stores CharacterState.createdTime(+20)",
+    "reset": "30d5dc7..30d5e07 repeats the same UpdateSeq conversion",
+    "packet": "2fce2f2 reads state+20;2fce2ff mulss(100);2fce30a calls bb14b0 floor-to-int; CmdUpdateState.createdTime",
+    "snapshot": "322860b reads state+20;3228680 passes createdTime to CharacterStateValue.Init;31c1390 serializes mulss(100) then bb14b0",
+    "stepConstant": {
+      "rva": "0x9a316b8",
+      "float32": 0.01666666753590107
+    },
+    "scaleConstant": {
+      "rva": "0x9a32440",
+      "float32": 100.0
+    }
+  },
+  "formula": "floor(f32(f32(f32(UpdateSeq)*f32(1/60))*100))",
+  "domain": "nonnegative signed-int32 UpdateSeq before wrap; representable nonnegative int32 wire timestamp only",
+  "inverse": "All integer preimages by monotone binary search, never round(timestamp*60)",
+  "limitations": [
+    "createdTime may be historical. It is NOT current UpdateSeq for CmdUpdateState.",
+    "State-specific creation/reset ownership and protected-field writers must be reviewed before treating a timestamp as an event clock.",
+    "No damage-to-cast attribution or miss is inferred from the inverse alone."
+  ],
+  "fallbackUsed": false,
+  "hitRateCalculable": false
+}

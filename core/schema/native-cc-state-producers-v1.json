@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "clientVersion": "12.3.0",
+  "gameDbSha256": "5ef9cb5459a2e908099655bf9ffc70ac16b134d1db282fb97b25fe065e7c8e4f",
+  "restoredDllSha256": "3a92f99aea09d6eae54456a07ac1360c51c5aad1a102ace5cca23deca59c5ef4",
+  "rules": [
+    {
+      "characterCode": 76,
+      "skillGroup": 1076300,
+      "mode": "fetter",
+      "skillId": "GarnetActive2",
+      "stateCodes": [
+        1076311
+      ],
+      "stateGroup": 1076310,
+      "disjointStateCodes": {
+        "1076511": 1076510
+      },
+      "dataClass": "GarnetSkillActive2Data",
+      "dataGetterMethodInfoRva": "0xa526198",
+      "normalChargeField": {
+        "name": "NormalChargeDebuffStateCode",
+        "offset": "0x10",
+        "code": 1076301,
+        "storeRva": "0x12b5554"
+      },
+      "fullChargeField": {
+        "name": "FullChargeDebuffStateCode",
+        "offset": "0x14",
+        "code": 1076311,
+        "storeRva": "0x12b555b"
+      },
+      "consumer": {
+        "method": "GarnetActive2.Process.MoveNext",
+        "rva": "0x2b16a10",
+        "normalReadRva": "0x2b16f4b",
+        "fullReadRva": "0x2b16f74",
+        "codeRegister": "r12d",
+        "argumentMoveRva": "0x2b17308",
+        "createStateCallRva": "0x2b17311",
+        "createStateTarget": "0x2edfbe0",
+        "addStateCallRva": "0x2b1731f",
+        "addStateTarget": "0x2ead2d0"
+      },
+      "disjointDefinition": {
+        "dataClass": "GarnetSkillActive4Data",
+        "field": "TargetDebuffStateCode",
+        "offset": "0x54",
+        "code": 1076511,
+        "storeRva": "0x12b651a"
+      },
+      "conclusion": "The W normal/full selection passes only the two typed data fields to CreateState.stateCode. The R data constant is a different state identity despite shared visual FX. This admits exact state-code distinction only; cast ownership, competing casts and complete lifetimes remain required."
+    }
+  ],
+  "sources": [
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-12b5440.json",
+      "sha256": "c9f48ff30f43a81b80fff94ac6a0a681413b6bcc4207a68fc7b87a893c86f4c7"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-12b63b0.json",
+      "sha256": "1470a506b8158cf00231be47c4094028d6f2198c16ef1b8bd8c15cf9dd824d5e"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-2b16a10.json",
+      "sha256": "7e85082624a47b593e1cc4f2bc796e81264209391ed01b0b6d09dc996be6e4e0"
+    }
+  ],
+  "runtimeAccess": false
+}

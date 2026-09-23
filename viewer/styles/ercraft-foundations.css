@@ -1,0 +1,124 @@
+/* ERCraft foundations: SEED role, spacing, type and state principles.
+   Existing brand accent, item grades and game artwork remain independent. */
+:root, [data-theme="dark"] {
+ --surface-page:#17191c;
+ --surface-content:#212428;
+ --surface-subtle:#292d32;
+ --surface-hover:#30363c;
+ --surface-selected:#2b3b46;
+ --ink-primary:#f1f3f5;
+ --ink-secondary:#c3cad1;
+ --ink-caption:#9da8b3;
+ --border-divider:#363c43;
+ --border-interactive:#505c66;
+ --action-primary:#a7cadf;
+ --space-1:4px; --space-2:8px; --space-3:12px; --space-4:16px; --space-6:24px;
+ --radius-control:8px; --radius-section:12px;
+ --type-caption:.8125rem; --type-body:.875rem; --type-emphasis:1rem; --type-title:1.25rem;
+ --bg:var(--surface-page); --panel:var(--surface-content); --card:var(--surface-subtle);
+ --card-hi:var(--surface-hover); --card-selected:var(--surface-selected);
+ --text:var(--ink-primary); --text-secondary:var(--ink-secondary); --muted:var(--ink-caption);
+ --line:var(--border-divider); --line-2:var(--border-divider); --accent:var(--action-primary);
+}
+[data-theme="light"] {
+ --surface-page:#f3f5f7; --surface-content:#fff; --surface-subtle:#f1f4f6;
+ --surface-hover:#e8eef2; --surface-selected:#e5eff5;
+ --ink-primary:#20262c; --ink-secondary:#46535f; --ink-caption:#626f7a;
+ --border-divider:#e1e6eb; --border-interactive:#9aa8b4; --action-primary:#315f7b;
+}
+body { line-height:1.5; }
+button, select, input { font-family:inherit; }
+button, select { -webkit-tap-highlight-color:transparent; }
+button:focus-visible, select:focus-visible, input:focus-visible, summary:focus-visible {
+ outline:2px solid var(--action-primary); outline-offset:3px;
+}
+.toolbar { padding-block:var(--space-4); margin-bottom:var(--space-4); gap:var(--space-4); }
+.tabs { padding:var(--space-1); background:var(--surface-subtle); border:0; border-radius:10px; gap:var(--space-1); }
+.tabs button { height:36px; padding-inline:var(--space-4); font-size:var(--type-body); border-radius:7px; }
+.tabs button.active { background:var(--surface-content); color:var(--text); box-shadow:0 1px 3px #0002; }
+.tabs button:disabled { opacity:.5; }
+.toolbar select { height:36px; background:var(--surface-subtle); border:1px solid transparent; border-radius:var(--radius-control); }
+.toolbar .theme-toggle { border:1px solid var(--line); border-radius:var(--radius-control); }
+.panel { border:1px solid var(--border-divider); border-radius:var(--radius-section); box-shadow:none; }
+.map-panel { padding:var(--space-3); }
+.map-shell { border:0; border-radius:var(--radius-control); box-shadow:none; }
+.map-phase { padding:var(--space-2) var(--space-3); border-radius:var(--radius-control); box-shadow:0 2px 8px #0002; }
+.map-phase select { font-size:var(--type-caption); }
+.map-phase b { font-size:var(--type-body); }
+.map-zoom button { border-radius:var(--radius-control); box-shadow:none; }
+#mapControls { gap:var(--space-3); margin-top:var(--space-3); }
+.transport { gap:var(--space-3); }
+.transport .play { border-radius:var(--radius-control); font-size:var(--type-body); }
+.transport2 { padding:var(--space-2) 0 var(--space-1); }
+.map-toggle { border-radius:6px; }
+.rail { padding:var(--space-2); }
+.pcard { padding:var(--space-2); }
+.pcard.is-selected { background:var(--surface-subtle); border-radius:var(--radius-control); }
+.pcard.is-selected::before { background:var(--accent); }
+.pcard-head-title b { font-size:var(--type-body); line-height:20px; }
+.live-status { background:transparent; padding:var(--space-1) 0; }
+.loadout-label { color:var(--ink-caption); }
+.map-engagement-review { margin-top:var(--space-4); padding-top:var(--space-4); }
+.map-engagement-review .map-death-review-head { padding-bottom:var(--space-4); border-bottom:1px solid var(--line); }
+.map-engagement-review .map-death-review-head h2 { font-size:18px; font-weight:700; }
+#engagementReviewCount { margin-left:var(--space-2); color:var(--muted); font-weight:500; font-size:var(--type-caption); }
+#engagementReviewToggle { min-height:36px; padding:var(--space-2) var(--space-3); border:0; border-radius:var(--radius-control); background:var(--surface-subtle); color:var(--text-secondary); font-size:var(--type-caption); }
+.map-engagement-review .engagement-card { padding:var(--space-6) var(--space-2); }
+.map-engagement-review .engagement-card-seek { padding-bottom:var(--space-4); }
+.map-engagement-review .engagement-card-title { font-size:20px; line-height:28px; letter-spacing:-.025em; }
+.map-engagement-review .engagement-card-result { background:transparent; }
+.engagement-values { gap:var(--space-2) var(--space-6); }
+.map-engagement-review .engagement-skill-overview { gap:var(--space-3); margin-bottom:var(--space-4); }
+.engagement-value { font-size:var(--type-body); line-height:22px; font-variant-numeric:tabular-nums; }
+.engagement-value + .engagement-value { border-left:1px solid var(--line); padding-left:var(--space-3); }
+.map-engagement-review .record-label { color:var(--ink-secondary); font-size:13px; font-weight:600; min-width:36px; }
+.map-engagement-review .engagement-card-time { font-variant-numeric:tabular-nums; color:var(--ink-secondary); }
+.map-engagement-review .engagement-scene-link { color:var(--action-primary); font-size:13px; white-space:nowrap; }
+.map-engagement-review .personal-metric-grid { background:var(--surface-subtle); border:0; border-radius:var(--radius-control); padding:var(--space-4); gap:var(--space-4); }
+.map-engagement-review .personal-metric-cell { border:0; padding:0; gap:var(--space-1); font-variant-numeric:tabular-nums; }
+.map-engagement-review .personal-metric-cell + .personal-metric-cell { border-left:1px solid var(--line); padding-left:var(--space-4); }
+.map-engagement-review .personal-metric-cell > span { color:var(--ink-secondary); font-size:13px; }
+.map-engagement-review .personal-metric-cell b { font-size:22px; line-height:30px; }
+.map-engagement-review .engagement-card details { margin-top:var(--space-3); }
+.engagement-picker { gap:var(--space-1); margin-top:var(--space-4); padding-top:var(--space-3); border-top:1px solid var(--line); }
+.engagement-picker button { min-height:80px; padding:var(--space-3) 2px; border:1px solid transparent; border-radius:var(--radius-control); gap:var(--space-1); }
+.engagement-picker button:hover { background:var(--surface-subtle); }
+.engagement-picker button[aria-pressed="true"] { background:var(--surface-selected); border-color:var(--border-interactive); box-shadow:none; }
+.engagement-picker button b { font-size:var(--type-caption); line-height:20px; }
+.engagement-picker button span:last-child { color:var(--muted); }
+.skill-analysis-view { max-width:1120px; padding:32px; }
+.skill-analysis-view h2 { font-size:22px; line-height:30px; }
+.skill-analysis-view .skill-analysis-intro { color:var(--muted); margin:var(--space-2) 0 var(--space-6); }
+.skill-analysis-view .skill-select-list { gap:0; padding:0; background:transparent; border-radius:0; border-bottom:1px solid var(--line); }
+.skill-analysis-view .skill-select-list .skill-select-button { padding:var(--space-4); border:1px solid transparent; border-radius:var(--radius-control); background:transparent; }
+.skill-analysis-view .skill-select-list .skill-select-button[aria-pressed="true"] { background:var(--surface-subtle); border-color:transparent; box-shadow:inset 0 -3px var(--action-primary); }
+.skill-analysis-view .skill-select-list .skill-select-button b { font-size:18px; line-height:24px; }
+.skill-analysis-view .skill-select-list .skill-select-button > span { font-size:24px; line-height:32px; color:var(--text); }
+.skill-analysis-view .skill-variant-list { padding-bottom:var(--space-4); margin-bottom:var(--space-6); gap:var(--space-2); }
+.skill-analysis-view .skill-variant-list .skill-select-button { border-radius:var(--radius-control); padding:var(--space-2) var(--space-3); }
+.skill-analysis-view .skill-variant-list .skill-select-button[aria-pressed="true"] { background:var(--surface-selected); border-color:transparent; }
+.skill-analysis-view .skill-selected-summary { margin:var(--space-2) 0 var(--space-4); }
+.skill-analysis-view .skill-record-columns { border-radius:0; background:var(--surface-subtle); border-block:1px solid var(--line); min-height:48px; color:var(--ink-secondary); }
+.skill-analysis-view .skill-scene-row { padding-block:var(--space-2); min-height:56px; }
+.skill-analysis-view .skill-scene-row:nth-child(even) { background:color-mix(in srgb,var(--surface-subtle) 35%,transparent); }
+.skill-analysis-view .skill-scene-row strong { font-variant-numeric:tabular-nums; }
+.skill-analysis-view .skill-scene-row:hover { background:var(--surface-subtle); }
+.skill-analysis-view .skill-scene-row button { border-radius:6px; font-weight:600; }
+.skill-analysis-view .skill-scene-row button:hover { background:var(--surface-selected); }
+@media(max-width:700px) {
+ .toolbar { margin-bottom:var(--space-2); }
+ .tabs button { padding-inline:var(--space-3); font-size:13px; }
+ .map-panel { padding:var(--space-2); }
+ .skill-analysis-view { padding:var(--space-4); }
+ .skill-analysis-view .skill-select-list .skill-select-button { padding:var(--space-3); }
+ .map-engagement-review .engagement-card { padding:var(--space-4) var(--space-1); }
+ .map-engagement-review .engagement-card-title { font-size:18px; }
+ .map-engagement-review .personal-metric-grid { gap:var(--space-4); }
+ .map-engagement-review .personal-metric-cell:nth-child(-n+2) { border:0; padding:0; }
+ .map-engagement-review .personal-metric-cell:nth-child(odd) { border-left:0; padding-left:0; }
+ .map-engagement-review .personal-metric-cell:nth-child(even) { border-left:1px solid var(--line); padding-left:var(--space-4); }
+ .map-death-review-actions > span { max-width:100%; white-space:normal; }
+}
+@media(prefers-reduced-motion:reduce) {
+ button, .pcard { transition:none; }
+}

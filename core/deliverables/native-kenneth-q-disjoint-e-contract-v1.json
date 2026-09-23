@@ -1,0 +1,41 @@
+{
+  "format": "native-kenneth-q-disjoint-e-contract.v1",
+  "characterCode": 71,
+  "skillGroup": 1071200,
+  "skillId": "KennethActive1",
+  "wireSkillId": 1045,
+  "effectCodes": [
+    1071202
+  ],
+  "qProducer": {
+    "constructor": "0x12ec360",
+    "setter": "0x12ec804",
+    "parameter": "KennethSkillActive1Data.DamageParameterData+18",
+    "consumer": "0x2bf27f0",
+    "set": "0x2bf2c0d",
+    "damageTo": "0x2bf2ce8",
+    "lifecycle": "Process2bf33c0 calls DamageProgress2bf27f0 synchronously at2bf33fa and returns. PostSet fields IndividualId+84 and SkillNumber+74 are identities.",
+    "reinforced": "MaxPassiveDamageParameterData+20 added by slot14 at2bf2c6d. Constructor writes only level1..5 DamageMore enum16 via numeric Add4fa36f0. Shared Add4fa7f40 iterates numeric parameters and invokes slot13 Add; effect dictionary is not copied or replaced."
+  },
+  "foreignProducer": {
+    "skillGroup": 1071400,
+    "skillId": "KennethActive3",
+    "wireSkillId": 1048,
+    "effectCodes": [
+      1071401
+    ],
+    "lifecycle": "E Start/Process perform movement and add states. Damage is in KennethActive3AddNormalAttack.OnAfterDamageProcess2bf56b0: Clear collection+d0 at2bf596b, Set KennethSkillActive3Data.DamageParamData+10 at2bf59c3, identity fields only, DamageToCharacter2eda0c0 at2bf5a3d. E is not a source of Q FX1071202. No full E lifecycle rate claimed."
+  },
+  "fallbackUsed": false,
+  "artifacts": {
+    "deliverables/native-damage-effect-assignments-v2.json": "e55a340816194d0f00d2c7613d3c687ee8c254a566bbd2618bafa064f6c2cc91",
+    "tmp/static-code-restored-v1/game-native-4fa7f40.json": "16b44b539dbb62ebd597eb89c785dbc22c667a60956c012e114ae30eacaa3e5c",
+    "tmp/static-code-restored-v1/game-fn-2bf2500.json": "466d3827a314b91e188d16932154069e516a12832b798b7bf8cba021bb3fdbaa",
+    "tmp/static-code-restored-v1/game-fn-2bf27f0.json": "ead18684af3f52e5b2b40cd8cb95965a06adf8fa558eedb109132f135563472a",
+    "tmp/static-code-restored-v1/game-fn-2bf33c0.json": "8840bf5fb157e7ac1ae55ad60cc537451fb7f38e74bd85d3b731112f1146d0f1",
+    "tmp/static-code-restored-v1/game-fn-12ec360.json": "32692bc64c267f65e81e975770f79ebc5cb4f9af5d55c0da90974b1cdd53d372",
+    "tmp/static-code-restored-v1/game-fn-2bf4180.json": "5f9a0a2ffb9fa358b45f94b14a38ec0baf0b719c1909af1440376bcc617d1691",
+    "tmp/static-code-restored-v1/game-fn-2bf4db0.json": "19f66e71f7f82fb97e71b22ed2b80310c57d72a16c57126e2a51f394d32ce77c",
+    "tmp/static-code-restored-v1/game-fn-2bf56b0.json": "55d7b769be8739d33635c500f814d9617419839228b3424d08df98f5f4998c47"
+  }
+}

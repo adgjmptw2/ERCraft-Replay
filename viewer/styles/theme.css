@@ -1,0 +1,182 @@
+/* ERCraft Replay Analytics - Design System & Themes */
+
+:root,
+[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0c0e14;
+  --panel: #141722;
+  --card: #191e2c;
+  --card-hi: #212738;
+  --card-selected: #252d42;
+  --well: #11141e;
+  --slot-bg: #0d1017;
+  --slot-empty-border: rgba(255, 255, 255, 0.06);
+
+  --text: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --muted: #94a3b8;
+  --faint: #64748b;
+
+  --line: rgba(255, 255, 255, 0.08);
+  --line-2: rgba(255, 255, 255, 0.14);
+  --line-focus: rgba(168, 85, 247, 0.5);
+
+  --accent: #a855f7;
+  --accent-soft: rgba(168, 85, 247, 0.15);
+  --accent-glow: rgba(168, 85, 247, 0.25);
+  --accent-line: rgba(168, 85, 247, 0.35);
+
+  --good: #10b981;
+  --good-soft: rgba(16, 185, 129, 0.15);
+  --good-border: rgba(16, 185, 129, 0.3);
+
+  --warn: #f59e0b;
+  --warn-soft: rgba(245, 158, 11, 0.15);
+  --warn-border: rgba(245, 158, 11, 0.3);
+
+  --bad: #ef4444;
+  --bad-soft: rgba(239, 68, 68, 0.15);
+  --bad-border: rgba(239, 68, 68, 0.3);
+
+  --cyan: #06b6d4;
+  --cyan-soft: rgba(6, 182, 212, 0.15);
+
+  /* Item Grade Color Tokens */
+  --grade-common: #94a3b8;
+  --grade-common-bg: rgba(148, 163, 184, 0.08);
+  --grade-uncommon: #22c55e;
+  --grade-uncommon-bg: rgba(34, 197, 94, 0.12);
+  --grade-rare: #3b82f6;
+  --grade-rare-bg: rgba(59, 130, 246, 0.14);
+  --grade-epic: #a855f7;
+  --grade-epic-bg: rgba(168, 85, 247, 0.16);
+  --grade-legend: #f59e0b;
+  --grade-legend-bg: rgba(245, 158, 11, 0.18);
+  --grade-mythic: #f43f5e;
+  --grade-mythic-bg: rgba(244, 63, 94, 0.2);
+
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 4px 12px 0 rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 10px 25px -3px rgba(0, 0, 0, 0.45);
+
+  --r-sm: 6px;
+  --r-md: 10px;
+  --r-lg: 14px;
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f1f5f9;
+  --panel: #ffffff;
+  --card: #f8fafc;
+  --card-hi: #eef2f6;
+  --card-selected: #e9e5ff;
+  --well: #f1f5f9;
+  --slot-bg: #e2e8f0;
+  --slot-empty-border: rgba(0, 0, 0, 0.08);
+
+  --text: #0f172a;
+  --text-secondary: #334155;
+  --muted: #64748b;
+  --faint: #94a3b8;
+
+  --line: rgba(0, 0, 0, 0.08);
+  --line-2: rgba(0, 0, 0, 0.14);
+  --line-focus: rgba(147, 51, 234, 0.5);
+
+  --accent: #9333ea;
+  --accent-soft: rgba(147, 51, 234, 0.12);
+  --accent-glow: rgba(147, 51, 234, 0.2);
+  --accent-line: rgba(147, 51, 234, 0.35);
+
+  --good: #059669;
+  --good-soft: rgba(5, 150, 105, 0.12);
+  --good-border: rgba(5, 150, 105, 0.3);
+
+  --warn: #d97706;
+  --warn-soft: rgba(217, 119, 6, 0.12);
+  --warn-border: rgba(217, 119, 6, 0.3);
+
+  --bad: #dc2626;
+  --bad-soft: rgba(220, 38, 38, 0.12);
+  --bad-border: rgba(220, 38, 38, 0.3);
+
+  --cyan: #0891b2;
+  --cyan-soft: rgba(8, 145, 178, 0.12);
+
+  /* Item Grade Color Tokens (Light Mode - Crisp contrast) */
+  --grade-common: #64748b;
+  --grade-common-bg: rgba(100, 116, 139, 0.08);
+  --grade-uncommon: #16a34a;
+  --grade-uncommon-bg: rgba(22, 163, 74, 0.12);
+  --grade-rare: #2563eb;
+  --grade-rare-bg: rgba(37, 99, 235, 0.12);
+  --grade-epic: #9333ea;
+  --grade-epic-bg: rgba(147, 51, 234, 0.12);
+  --grade-legend: #d97706;
+  --grade-legend-bg: rgba(217, 119, 6, 0.14);
+  --grade-mythic: #e11d48;
+  --grade-mythic-bg: rgba(225, 29, 72, 0.14);
+
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 10px 0 rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 10px 25px -3px rgba(0, 0, 0, 0.12);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Pretendard Variable", Pretendard, "Inter", "Segoe UI Variable Text", "Segoe UI", sans-serif;
+  font-size: 13.5px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+button, select, input {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+  background: transparent;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.tnum {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Quiet application chrome; game-state and item-grade colors retain their meaning. */
+:root, [data-theme="dark"] {
+  --bg: #111315; --panel: #181b1e; --card: #202428; --card-hi: #282d32;
+  --card-selected: #293238; --well: #15181b;
+  --accent: #91afc1; --accent-soft: rgba(145,175,193,.12);
+  --accent-line: rgba(145,175,193,.45); --accent-glow: transparent;
+  --line-focus: #91afc1;
+  --r-md: 6px; --r-lg: 6px;
+  --shadow-sm: none; --shadow-md: none;
+}
+[data-theme="light"] {
+  --bg: #f0f1f2; --panel: #ffffff; --card: #f6f7f8; --card-hi: #eceff1;
+  --card-selected: #e6edf1; --well: #f0f2f3;
+  --accent: #365d73; --accent-soft: rgba(54,93,115,.08);
+  --accent-line: rgba(54,93,115,.4); --accent-glow: transparent;
+  --line-focus: #365d73;
+}

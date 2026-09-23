@@ -1,0 +1,128 @@
+{
+  "format": "candidate-producer-overrides.v1",
+  "entries": [
+    {
+      "skillGroup": 1016600,
+      "characterCode": 16,
+      "skillId": "SilviaBikeActive1",
+      "gameDataSha256": [
+        "5ef9cb5459a2e908099655bf9ffc70ac16b134d1db282fb97b25fe065e7c8e4f",
+        "82dc298a2047af0e23637a6a78fcbbb70680e70bcdb7d80ca96ebec2e0f02b7c",
+        "ff6e6a5a12424fbe9c04255cc8e3acdf2f89386ceb422ea741a0aa25373a2aa6"
+      ],
+      "proofPath": "deliverables/retained-observed-effect-family-proof-v131.json",
+      "proofSha256": "085da12226a1838199cdc5775b76643e3f79916478ba653e32e1545a69849bf0",
+      "effectDefinitions": {
+        "1016601": "FX_BI_Silvia_Skill05_Hit"
+      },
+      "projectileDefinitions": {},
+      "mappingStatus": "candidate-observed-only",
+      "staticMappingConfirmed": false
+    },
+    {
+      "skillGroup": 1051200,
+      "characterCode": 51,
+      "skillId": "PriyaActive1",
+      "gameDataSha256": [
+        "5ef9cb5459a2e908099655bf9ffc70ac16b134d1db282fb97b25fe065e7c8e4f",
+        "82dc298a2047af0e23637a6a78fcbbb70680e70bcdb7d80ca96ebec2e0f02b7c",
+        "ff6e6a5a12424fbe9c04255cc8e3acdf2f89386ceb422ea741a0aa25373a2aa6"
+      ],
+      "proofPath": "deliverables\\priya-primary-producer-static-proof-20260910-v1.json",
+      "proofSha256": "07767cd2e17492435e43059b3130953944125935cc226c87ec08c2a03229690f",
+      "effectDefinitions": {
+        "1051101": "FX_BI_Priya_Skill01_Hit",
+        "1051102": "FX_BI_Priya_Skill01_Hit2"
+      },
+      "projectileDefinitions": {
+        "105106": ""
+      },
+      "mappingStatus": "static-primary-projectile-and-candidate-effect",
+      "staticMappingConfirmed": false,
+      "projectileMappingAuthority": "static-field-assignment-and-process-read",
+      "effectMappingConfirmed": false
+    },
+    {
+      "skillGroup": 1051300,
+      "characterCode": 51,
+      "skillId": "PriyaActive2",
+      "gameDataSha256": [
+        "5ef9cb5459a2e908099655bf9ffc70ac16b134d1db282fb97b25fe065e7c8e4f",
+        "82dc298a2047af0e23637a6a78fcbbb70680e70bcdb7d80ca96ebec2e0f02b7c",
+        "ff6e6a5a12424fbe9c04255cc8e3acdf2f89386ceb422ea741a0aa25373a2aa6"
+      ],
+      "proofPath": "deliverables\\priya-primary-producer-static-proof-20260910-v1.json",
+      "proofSha256": "07767cd2e17492435e43059b3130953944125935cc226c87ec08c2a03229690f",
+      "effectDefinitions": {
+        "1051203": "FX_BI_Priya_Skill02_Hit"
+      },
+      "projectileDefinitions": {
+        "105104": "Projectile_FX_BI_Priya_Skill01"
+      },
+      "mappingStatus": "static-primary-projectile-and-candidate-effect",
+      "staticMappingConfirmed": false,
+      "projectileMappingAuthority": "static-field-assignment-and-process-read",
+      "effectMappingConfirmed": false
+    },
+    {
+      "skillGroup": 1022200,
+      "characterCode": 22,
+      "skillId": "LukeActive1_1",
+      "gameDataSha256": [
+        "5ef9cb5459a2e908099655bf9ffc70ac16b134d1db282fb97b25fe065e7c8e4f",
+        "82dc298a2047af0e23637a6a78fcbbb70680e70bcdb7d80ca96ebec2e0f02b7c",
+        "ff6e6a5a12424fbe9c04255cc8e3acdf2f89386ceb422ea741a0aa25373a2aa6"
+      ],
+      "proofPath": "deliverables\\luke-primary-producer-static-proof-20260910-v1.json",
+      "proofSha256": "8c1afdbde64b05afb13468274b358599019d850f2f9f9f2add4a85e1667df7ae",
+      "effectDefinitions": {},
+      "projectileDefinitions": {
+        "102210": "Projectile_FX_BI_Luke_Dagger",
+        "102211": "Projectile_FX_BI_Luke_Dagger_Evo"
+      },
+      "mappingStatus": "static-primary-projectile",
+      "staticMappingConfirmed": false,
+      "projectileMappingAuthority": "static-field-assignment-and-process-read"
+    },
+    {
+      "skillGroup": 1051500,
+      "characterCode": 51,
+      "skillId": "PriyaActive4",
+      "gameDataSha256": [
+        "5ef9cb5459a2e908099655bf9ffc70ac16b134d1db282fb97b25fe065e7c8e4f",
+        "82dc298a2047af0e23637a6a78fcbbb70680e70bcdb7d80ca96ebec2e0f02b7c",
+        "ff6e6a5a12424fbe9c04255cc8e3acdf2f89386ceb422ea741a0aa25373a2aa6"
+      ],
+      "proofPath": "deliverables/priya-sound-dummy-static-proof-20260910-v1.json",
+      "proofSha256": "428195d286735a6291e8038f093d3b066ab2ec510f2f9f29d0e5cdb28d8034b7",
+      "effectDefinitions": {
+        "1051401": "FX_BI_Priya_Skill04_Hit",
+        "1051402": "FX_BI_Priya_Skill04_Hit2"
+      },
+      "projectileDefinitions": {
+        "105108": ""
+      }
+    },
+    {
+      "skillGroup": 1060210,
+      "characterCode": 60,
+      "skillId": "TaziaActive1_2",
+      "gameDataSha256": [
+        "5ef9cb5459a2e908099655bf9ffc70ac16b134d1db282fb97b25fe065e7c8e4f",
+        "82dc298a2047af0e23637a6a78fcbbb70680e70bcdb7d80ca96ebec2e0f02b7c",
+        "ff6e6a5a12424fbe9c04255cc8e3acdf2f89386ceb422ea741a0aa25373a2aa6"
+      ],
+      "proofPath": "data/tazia-reinforced-q-candidate-proof-v1.json",
+      "proofSha256": "4b5853dfde2a2fac2120cd9484c6102c8680118c9ee8d60f593620dd4cb62b57",
+      "effectDefinitions": {
+        "1060204": "FX_BI_Tazia_Skill01_02_Hit",
+        "1060205": "FX_BI_Tazia_Skill01_02_ExplosionHit"
+      },
+      "projectileDefinitions": {
+        "106022": "Projectile_FX_BI_Tazia_Skill01_02"
+      },
+      "mappingStatus": "candidate-observed-only",
+      "staticMappingConfirmed": false
+    }
+  ]
+}

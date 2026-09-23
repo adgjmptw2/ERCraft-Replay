@@ -1,0 +1,34 @@
+{
+  "format": "native-isol-q-ground-attachment.v1",
+  "characterCode": 9,
+  "skillGroup": 1009200,
+  "projectileCode": 100902,
+  "summonCode": 1011,
+  "attachStateCode": 1009211,
+  "dataStores": [
+    "12ce96e SummonObjectCode+10=1011",
+    "12ce975 ProjectileCode+14=100902",
+    "12ceaf3 AttachState+48=1009211"
+  ],
+  "chain": [
+    "IsolActive1 Process registers projectile destruction callback b__0(2b7c2c0). AffectExplosion branch synchronously spawns ground Summon1011 via SpawnSummon at2b7c60a and registers b__1 as its custom action.",
+    "Ground action b__1(2b7c7f0) applies attach state at2b7ccc8/2b7ccd6; invokes WorldSummonBase.DestroySelf slot68 at2b7ccf5 and sets summonUpdateBreak=true at2b7ccfb. The same bomb cannot attach again.",
+    "WorldSummonBase.DestroySelf2fae890 delegates to WorldCharacter.DestroySelf2fcfd30. Recorded CmdDestroyDelayStart identifies the consumed ground object; attachment add precedes it in the same command frame. Visual projectile CmdDestroy is not attachment lifetime."
+  ],
+  "runtimeRequirements": [
+    "exact gameDb projectile prefab and Summon1011 prefabPath Isol_Skill01_Timebomb, objectType SummonTrap",
+    "exact ownerId on both projectile and summon",
+    "exactly one projectile active-end tick equals ground summon spawn tick; never nearest tick or fixed window",
+    "exactly one ground destroy-delay-start at attachment tick, with later wireOrder",
+    "all required raw streams complete; unmatched or multiple parents remain unknown"
+  ],
+  "staticDllSha256": "3a92f99aea09d6eae54456a07ac1360c51c5aad1a102ace5cca23deca59c5ef4",
+  "sourceGameDbSha256": "5ef9cb5459a2e908099655bf9ffc70ac16b134d1db282fb97b25fe065e7c8e4f",
+  "bodies": {
+    "tmp/static-code-restored-v1/game-fn-12ce8c0.json": "e9e7489818bf2ea5b3402697dff19d74f770872b378865ac29e34eaea4ba49f7",
+    "tmp/static-code-restored-v1/game-fn-2b7c2c0.json": "85a7c847eade4843c227c60be8370a234ff7e4fcd0191c0d43bb8e023b6ce2f1",
+    "tmp/static-code-restored-v1/game-fn-2b7c7f0.json": "fb933b0f37bce970690c4b919af649326f21c5cbfb5cf8dce3ea107c048b6240",
+    "tmp/static-code-restored-v1/game-fn-2b7d500.json": "c4ad94061cf85609e6350dda12a454ba937831276daeb279f14e865659b973bc",
+    "tmp/static-code-restored-v1/game-fn-2fae890.json": "dae8371654c52123cfda94375a78c07e0a98d9733ead55e3afdf75bc16522f52"
+  }
+}

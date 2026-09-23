@@ -1,0 +1,33 @@
+{
+  "format": "native-adriana-r-bomb-object-contract.v1",
+  "characterCode": 17,
+  "skillGroup": 1017500,
+  "skillId": "AdrianaActive4",
+  "wireSkillId": 237,
+  "projectileCode": 101741,
+  "projectilePrefab": "Projectile_FX_BI_Adriana_Skill04",
+  "effectCode": 1017501,
+  "positionIndicatorExcluded": 101742,
+  "persistentFlameExcluded": 101740,
+  "constructor": "AdrianaSkillActive4Data1220fb0: +10 FireFlame101740, +14 FireBomb101741, +18 FireBombPosition101742; DamageParam+28 HitFX1017501 at12211c0.",
+  "producer": "Process294d970 spawns position object from Data+18 at294dc7c/dd05, then real bomb from Data+14 at294de3f/e033. Bomb property+5c is stateSkillId238 (AdrianaActive4FireBomb). Only bomb is registered with individualId/skillNumber at294e073. Position collision is not a damage callback.",
+  "consumer": "FireBomb Process294e480 retrieves projectile info by actual objectId at294e729; target loop Clear parameter+d8 at294e878, Set Data+28 at294e8d4, only identity+84/+74 before DamageTo2edb360 at294e93b. Synchronous target loop ends with FinishConcentration at294e971; flame spawning belongs to separate callback/effect family.",
+  "lifetime": "Owned bomb spawn inside unique R cast; exact CmdDestroyDelayStart or final removal closes activity, not cast finish or visual final-destroy timeout. Actual FX1017501 damage within unique owned bomb activity supplies target contacts. No radius inference, fixed time window, positive sample prerequisite, or position-indicator collision as hit.",
+  "artifacts": {
+    "deliverables/native-damage-effect-assignments-v2.json": "e55a340816194d0f00d2c7613d3c687ee8c254a566bbd2618bafa064f6c2cc91",
+    "tmp/static-code-restored-v1/game-fn-1220fb0.json": "f35ee290a77dfbfd934aba4e3b3d8a8caeaf24f1c80d6695a06d992626d5cfb0",
+    "tmp/static-code-restored-v1/game-fn-294d970.json": "67c8f63662880806d5a49a67479aa6e9200ed0607253ed8e294a2722f109cd50",
+    "tmp/static-code-restored-v1/game-fn-294d470.json": "1dc9f5fc80db1fb502ffab282269098d00f228b459516f50e0a82e5e4e5abde2",
+    "tmp/static-code-restored-v1/game-fn-294d950.json": "df129183477fa0d8e45cb31efc1956452023e9136a1b98fb8cf751d5e22baf83",
+    "tmp/static-code-restored-v1/game-fn-294e480.json": "c180637f8c55ba0f2a6a217b1c938a13360c7959798aa302afdc42586fd50c94"
+  },
+  "fallbackUsed": false,
+  "requiredStreams": [
+    "CmdStartSkill",
+    "CmdFinishSkill",
+    "CmdSpawn",
+    "CmdDamage",
+    "CmdDestroyDelayStart",
+    "CmdDestroy"
+  ]
+}

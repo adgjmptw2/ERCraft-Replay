@@ -1,0 +1,89 @@
+{
+  "format": "echion-initial-r-non-executable.v1",
+  "clientVersion": "12.3.0",
+  "gameDb": {
+    "path": "acquire/gamedata-20260903071248.zip",
+    "sha256": "5ef9cb5459a2e908099655bf9ffc70ac16b134d1db282fb97b25fe065e7c8e4f"
+  },
+  "registrationMap": {
+    "path": "deliverables/server-skill-script-registrations-v1.json",
+    "sha256": "e077e442d075ff7b24689b3d5b0205f24d1320b3ea3616766190088eadaaf600"
+  },
+  "registration": {
+    "type": "EchionActive4",
+    "typeIndex": 2642,
+    "typeToken": "0x2000a52",
+    "image": "Assembly-CSharp.dll",
+    "attributeRange": 1765,
+    "attributeDataOffset": 36395,
+    "attributeDataLength": 26,
+    "registrations": [
+      {
+        "skillId": 614,
+        "tag": "에키온",
+        "constructorMethodIndex": 60665
+      }
+    ]
+  },
+  "identity": {
+    "skillGroup": 1044500,
+    "skillIdName": "EchionActive4",
+    "wireSkillId": 614,
+    "implementationClass": "Blis.Server.EchionActive4"
+  },
+  "useGuard": {
+    "method": "EchionActive4.IsCanUseSkill",
+    "slot": 51,
+    "rva": "0x8e1f20",
+    "instructions": [
+      "xor eax,eax",
+      "ret"
+    ],
+    "result": 0,
+    "resultName": "NotAvailableNow",
+    "allowedResult": -1,
+    "allowedResultName": "None",
+    "controllerForward": "SkillController.IsCanUseCharacterSkill2ecedf0 calls slot51 and returns its result"
+  },
+  "attackImplementation": {
+    "startOverride": false,
+    "processWrapper": "0x2a8b4e0",
+    "moveNext": "0x15a5540",
+    "moveNextAlwaysFalse": true
+  },
+  "native": [
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-8e1f20.json",
+      "sha256": "e7f5c96b142a36c0f10f07297a55f0eb3dfe703db581ffcde45d05049e6183eb"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-2a8b4e0.json",
+      "sha256": "f82a988ff21bf5f9f16b0d958824f08f8dff253f1b9e016a11ae7eae29c6495b"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-15a5540.json",
+      "sha256": "c811cbf05676128987ca2e5aa35ec6375dce730dacc5ada3f7a1ea237c899dba"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-2ecedf0.json",
+      "sha256": "be58e197ea96948f1be6c5dbc2dc06a3651c900c48eba2fc3a8c47dad09d6d0e"
+    }
+  ],
+  "resolution": "not-applicable-static-non-executable",
+  "normalPlayerCastingAvailable": false,
+  "hitRateApplicable": false,
+  "preservedActualRequirements": [
+    "1044510 Viper",
+    "1044520 BlackMamba",
+    "1044530 DeathAdder",
+    "1044540 SideWinder",
+    "EchionActive4Congestion persistent contacts"
+  ],
+  "scopeMeaning": "Disabled initial R registration, not an additional attack. Preserve registry identity, never fabricate attempts, and do not seek normal cast samples for it.",
+  "limitations": [
+    "Version locked. This corrects applicability, not a newly measured hit-rate metric.",
+    "An observed cast of this exact group is a source/static conflict and must remain unresolved, never silently discarded."
+  ],
+  "fallbackUsed": false,
+  "runtimeAccess": false
+}
