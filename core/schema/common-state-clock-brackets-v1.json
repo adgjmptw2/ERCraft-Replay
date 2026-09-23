@@ -1,0 +1,85 @@
+{
+  "format": "er-common-state-clock-brackets.v1",
+  "clientVersion": "12.3.0",
+  "gameDbSha256": "5ef9cb5459a2e908099655bf9ffc70ac16b134d1db282fb97b25fe065e7c8e4f",
+  "supportedStateBehaviourType": "Common",
+  "nativeFactory": "30d494c reads CharacterStateGroupData+50 stateBehaviourType; switchCommon0 entry30d4d50 ->30d496d;3220870 constructs CommonState",
+  "createdTimeWriters": {
+    "instance": "CharacterState ctor zero30d4444, Start30d5a99, ResetCreateTime30d5e07",
+    "rejectedOtherObjects": [
+      "30d4e31",
+      "30d53e0",
+      "30d56a0"
+    ],
+    "scope": "109 CharacterState/CommonState method bodies checked; no non-stack LEA taking address+20; CommonState overrides only IsDone and has no createdTime setter"
+  },
+  "rules": [
+    "CommonState creation time is the native UpdateSeq at Start or the latest Reset, never an arbitrary event tick.",
+    "Two updates for the same surviving object/group/caster with strictly increasing timestamp bracket at least one reset between them.",
+    "CmdResetCreateTimeState is emitted after ResetCreateTime in the same synchronous invocation. A later surviving-state timestamp bounds that reset from above even if further resets occurred.",
+    "Add, extended Add, Remove, object replacement and resets invalidate instance continuity. Unknown wrapper/category clears continuity conservatively.",
+    "State timestamps from strictly earlier records supply lower bounds; reset brackets in strictly later records supply upper bounds. No ordering of unrelated callbacks inside one record.",
+    "Missing boundaries or contradictory intervals stay typed unavailable. No fixed record-tick offset or arbitrary lookback.",
+    "A new CmdAddState/Extended is emitted only on isNewAddState. AddNewState calls CommonState.Start synchronously before CompleteAddState sends that packet. A later surviving-state createdTime therefore also bounds the Add packet from above; the Add still breaks continuity with the old instance."
+  ],
+  "limitations": [
+    "Only the Common runtime class selected by stateBehaviourType, not every state whose stateType is Common.",
+    "These clock intervals do not alone establish skill provenance, coroutine survival, enemy identity, or a miss denominator."
+  ],
+  "evidence": [
+    {
+      "path": "tmp/common-state-created-time-writer-audit-v1.json",
+      "sha256": "f440d6c282db2fa4b99a322e5a0b3867edbb32bdf475ffa2f3f9423cb00fc7c9"
+    },
+    {
+      "path": "tmp/common-state-time-reset-callers-v1.json",
+      "sha256": "062641c984d40594cc91194ff17585a76c8aa749cfeac2fb110fc95beff09c48"
+    },
+    {
+      "path": "schema/state-created-time-server-frame-v1.json",
+      "sha256": "142f66dee7b74a65c678c61b61ddacbf63c9d1c5f5771eac6339a5b6c8f7c6c1"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-30d4790.json",
+      "sha256": "96d6f983782f94b5934bc63afa5ac9afa5d86ea0c2e4b8a5b3b5bf2ef48252e5"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-322b4c0.json",
+      "sha256": "105dd7f91f4b21314d439c1f6d5a7f48d8a8e79c89a9a07e7a80b9e9fa587ab3"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-2fd53f0.json",
+      "sha256": "63c1bf97b7cddbb5dcbdc6142964b7fb050a00376340a3e908762a972411bb1f"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-322b170.json",
+      "sha256": "4ca112d896050f8e461009a4c47653fa12e63f39e5fe084e57d8891e6555009f"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-32358e0.json",
+      "sha256": "c1571f8bcaf37ce7a07d610ca7e05d0092abd97e20f918c28e695a5f06419a39"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-2fce170.json",
+      "sha256": "01edd837e7a3f58096c764fec30b92c534adc7670f2146aa21a4347a0a18ac52"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-2fce3e0.json",
+      "sha256": "b29fb22f580cd22a50747c1b95a901df048d731adbdc9679ecd4552fca2dfa32"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-322dcf0.json",
+      "sha256": "6d18ecc55267e57f999c9fe489bf22bd3a98b0584d8e75b684109ea4debff99d"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-2fcccd0.json",
+      "sha256": "51a5a63d77bc66359843b5dd5202f84a19fec98a6d28fa20fac8f50e7a420817"
+    }
+  ],
+  "fallbackUsed": false,
+  "newStateAnchors": {
+    "start": "322e21a virtualslot6 CommonState inheritsCharacterState.Start",
+    "addCallback": "322b971 AddNewState returns before322b99f CompleteAddState(isNew=true)",
+    "newOnly": "2fccdad/2fccdb0 isNew guard;2fccdbf sends state packet"
+  }
+}

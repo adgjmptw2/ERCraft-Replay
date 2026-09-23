@@ -1,0 +1,4 @@
+-r requirements.txt
+# Optional: offline metadata and disassembly research helpers.
+capstone>=5,<6
+dnfile>=0.15,<1

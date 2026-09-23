@@ -1,0 +1,18 @@
+{
+  "format": "er-fiora-q-position-envelope.v1",
+  "scope": "12.3.0 Q inner/tip regions of already attributed enemy contacts",
+  "nativeProjection": "deliverables/fiora-q-region-static-formula-v1.json",
+  "nativeMovementEnvelope": "schema/sua-source-cell-sweep-bound-v3.json",
+  "sharedImplementation": "decoder/skill_evaluation_position_bounds.py",
+  "conditions": [
+    "Same exact parent skill lifetime and damage attribution as the existing Fiora Q route. IsOuterRange call2b0d100 precedes state/passive/damage processing in the saved2b0ccf0 iterator. The damage command is the upper observation boundary; unlike Barbara's damage-before-region branch, later position commands do not invalidate this earlier decision.",
+    "Actual Q instant look-at command after start followed by a retained rotation lock; subsequent rotation invalidators reject the direction. Both native yaw-table CPU branches are evaluated.",
+    "Caster and target use an earlier unchanged exact stop or a source-coordinate cell enclosed by the proved ordinary movement displacement bound. All reset, speed-stream, frame-continuity, strategy and domain guards remain active.",
+    "Interval subtraction encloses target minus caster. Multiplication by each signed forward component and the native sequential float32 additions enclose dot; division by the positive exact native norm encloses scale.",
+    "The projected XZ squared length is nondecreasing in absolute scale. Evaluate both scale endpoints, plus zero when enclosed, using the native float32 multiply/add order. This encloses the branch result without choosing a callback position.",
+    "Both CPU branches must place the entire squared projection interval above the threshold (tip), or at/below it (non-tip). Any crossing remains unknown.",
+    "Positive level-specific outer Slow remains a separate existing witness. A proven geometry disagreement invalidates the use; missing Slow is never inner evidence."
+  ],
+  "fallbackUsed": false,
+  "allFutureMatchesGuaranteed": false
+}

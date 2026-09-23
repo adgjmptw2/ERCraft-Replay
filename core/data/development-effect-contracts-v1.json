@@ -1,0 +1,691 @@
+{
+  "format": "er-development-effect-contracts.v1",
+  "verifiedCompletionCredit": false,
+  "contracts": {
+    "1007200": {
+      "effectCodes": [
+        0
+      ],
+      "allowDelayedInference": false,
+      "mappingStatus": "candidate-unconfigured-damage-effect-zero",
+      "constructorClass": "HyunwooSkillActive1Data",
+      "constructorBody": "tmp/static-code-restored-v1/game-fn-12c6a70.json",
+      "constructorSha256": "f90851eedd7e618964dcff5867a31b2df04d7495bb7d7269399ec6eacfdf74fb",
+      "limitation": "Constructor has no explicit hit-effect setter for this parameter. Wire effectCode 0 is observed but shared. Only actual cast/projectile temporal evidence can supply provisional attribution; unique skill mapping is NOT established."
+    },
+    "1007500": {
+      "effectCodes": [
+        0
+      ],
+      "allowDelayedInference": false,
+      "mappingStatus": "candidate-unconfigured-damage-effect-zero",
+      "constructorClass": "HyunwooSkillActive4Data",
+      "constructorBody": "tmp/static-code-restored-v1/game-fn-12c7910.json",
+      "constructorSha256": "5694bf8b633be535fc992f818448d8d4cb7ef8528a931de29670c83f22fe2bfa",
+      "limitation": "Constructor has no explicit hit-effect setter for this parameter. Wire effectCode 0 is observed but shared. Only actual cast/projectile temporal evidence can supply provisional attribution; unique skill mapping is NOT established."
+    },
+    "1027300": {
+      "effectCodes": [
+        0
+      ],
+      "allowDelayedInference": false,
+      "mappingStatus": "candidate-unconfigured-damage-effect-zero",
+      "constructorClass": "AlexSkillActive2TargetMarkerData",
+      "constructorBody": "tmp/static-code-restored-v1/game-fn-1225e30.json",
+      "constructorSha256": "2bde3abca673f0b4ce6bdd8d2c102a171573cfc53aba2f61f10678f032cc4d7d",
+      "limitation": "Constructor has no explicit hit-effect setter for this parameter. Wire effectCode 0 is observed but shared. Only actual cast/projectile temporal evidence can supply provisional attribution; unique skill mapping is NOT established."
+    },
+    "1027700": {
+      "effectCodes": [
+        0
+      ],
+      "allowDelayedInference": false,
+      "mappingStatus": "candidate-unconfigured-damage-effect-zero",
+      "constructorClass": "AlexSkillActive2PlasmaMineData",
+      "constructorBody": "tmp/static-code-restored-v1/game-fn-1225be0.json",
+      "constructorSha256": "7bfba15a6e49f5316a4a5a19ec46952154e81272be59ca7d535ca4f88fbe12d2",
+      "limitation": "Constructor has no explicit hit-effect setter for this parameter. Wire effectCode 0 is observed but shared. Only actual cast/projectile temporal evidence can supply provisional attribution; unique skill mapping is NOT established."
+    },
+    "1053400": {
+      "effectCodes": [
+        0
+      ],
+      "allowDelayedInference": false,
+      "mappingStatus": "candidate-unconfigured-damage-effect-zero",
+      "constructorClass": "MarkusSkillActive3Data",
+      "constructorBody": "tmp/static-code-restored-v1/game-fn-130eb50.json",
+      "constructorSha256": "2037f0430d510c2665003c7cff9a7b0076b1b40d1c03edc3fce3e914ed66bf9e",
+      "limitation": "Constructor has no explicit hit-effect setter for this parameter. Wire effectCode 0 is observed but shared. Only actual cast/projectile temporal evidence can supply provisional attribution; unique skill mapping is NOT established."
+    },
+    "1065210": {
+      "effectCodes": [
+        0
+      ],
+      "allowDelayedInference": false,
+      "mappingStatus": "candidate-unconfigured-damage-effect-zero",
+      "constructorClass": "DebiMarleneActive1SkillData",
+      "constructorBody": "tmp/static-code-restored-v1/game-fn-1262160.json",
+      "constructorSha256": "d2437c68e4a07a64469cecd9d1709d3f791cdbcbcaa83cc0316a554a3c5a63b0",
+      "limitation": "Constructor has no explicit hit-effect setter for this parameter. Wire effectCode 0 is observed but shared. Only actual cast/projectile temporal evidence can supply provisional attribution; unique skill mapping is NOT established."
+    },
+    "1065310": {
+      "effectCodes": [
+        0
+      ],
+      "allowDelayedInference": false,
+      "mappingStatus": "candidate-unconfigured-damage-effect-zero",
+      "constructorClass": "DebiMarleneActive2SkillData",
+      "constructorBody": "tmp/static-code-restored-v1/game-fn-1262aa0.json",
+      "constructorSha256": "a933b759908e15745b7897f344ef1ebef01f56b45e4620d15593dbbd054a66c7",
+      "limitation": "Constructor has no explicit hit-effect setter for this parameter. Wire effectCode 0 is observed but shared. Only actual cast/projectile temporal evidence can supply provisional attribution; unique skill mapping is NOT established."
+    },
+    "1065400": {
+      "effectCodes": [
+        0
+      ],
+      "allowDelayedInference": false,
+      "mappingStatus": "candidate-unconfigured-damage-effect-zero",
+      "constructorClass": "DebiMarleneActive3SkillData",
+      "constructorBody": "tmp/static-code-restored-v1/game-fn-298e560.json",
+      "constructorSha256": "ce9c4d2641d48b98e8f3e804a40384210afa5f00a3c560ad416f44121f9c607c",
+      "limitation": "Constructor has no explicit hit-effect setter for this parameter. Wire effectCode 0 is observed but shared. Only actual cast/projectile temporal evidence can supply provisional attribution; unique skill mapping is NOT established."
+    },
+    "1064500": {
+      "effectCodes": [],
+      "allowDelayedInference": false,
+      "projectileCollisionIsSuccess": true,
+      "excludedSleepEffectCodes": [
+        1064513
+      ],
+      "mappingStatus": "owned-directional-projectile-contact-first-hit-only",
+      "projectileCode": 106405,
+      "limitation": "Actual first-projectile enemy collision is the success signal. Sleep damage and shared zero-effect damage are excluded; parent/negative outcome remain provisional."
+    },
+    "1017400": {
+      "effectCodes": [
+        1017102
+      ],
+      "allowDelayedInference": false,
+      "mappingStatus": "constructor-assigned-effect-with-shared-passive-producer",
+      "constructorClass": "AdrianaSkillActive3Data",
+      "proof": "deliverables/native-damage-effect-assignments-v2.json",
+      "limitation": "Shared passive burn FX cannot be counted after E finish without owned attack timing; only in-cast/object evidence admitted provisionally."
+    },
+    "1017300": {
+      "effectCodes": [],
+      "stateCodes": [
+        1017311,
+        1017312,
+        1017313,
+        1017314,
+        1017315
+      ],
+      "allowDelayedInference": true,
+      "mappingStatus": "constructor-oil-area-slow-state-contact",
+      "constructorBody": "tmp/static-code-restored-v1/game-native-1220800.json",
+      "constructorSha256": "b7b7a27c955fd007908805fb614e4a599b2920d96c708cdeb879928024cbe1d7",
+      "limitation": "W oil contact measured from applied slow. Multiple oil areas may share caster; latest W attribution is provisional."
+    },
+    "1012500": {
+      "effectCodes": [
+        1012401,
+        1012402
+      ],
+      "allowDelayedInference": true,
+      "projectileCollisionIsSuccess": true,
+      "projectileCode": 101205,
+      "mappingStatus": "owned-orbiting-projectile-contact-or-candidate-damage",
+      "limitation": "Recorded R orb enemy contact retained independently of candidate effect codes; parent/negative outcomes remain provisional."
+    },
+    "1005200": {
+      "effectCodes": [],
+      "groups": [
+        1005200
+      ],
+      "projectileCodes": [
+        73
+      ],
+      "allowDelayedInference": true,
+      "projectileCollisionIsSuccess": true,
+      "mappingStatus": "retained-candidate-family-with-relaxed-object-retirement",
+      "limitation": "Projectile identity/contact retained; missing final retirement and unowned delayed effects affect confidence rather than disabling all uses.",
+      "collisionRequiresDamage": true
+    },
+    "1008400": {
+      "effectCodes": [
+        1008302,
+        1008303,
+        1008304,
+        1008305,
+        1008306,
+        1008307
+      ],
+      "groups": [
+        1008400,
+        1008410
+      ],
+      "projectileCodes": [
+        100815,
+        100816,
+        100817,
+        100818,
+        100819,
+        100820,
+        100821,
+        100822,
+        100823,
+        100824,
+        100825,
+        100826
+      ],
+      "allowDelayedInference": true,
+      "projectileCollisionIsSuccess": true,
+      "mappingStatus": "retained-candidate-family-with-relaxed-object-retirement",
+      "limitation": "Projectile identity/contact retained; missing final retirement and unowned delayed effects affect confidence rather than disabling all uses.",
+      "collisionRequiresDamage": true
+    },
+    "1008210": {
+      "effectCodes": [
+        1008209,
+        1008210,
+        1008211,
+        1008212,
+        1008213,
+        1008214,
+        1008215,
+        1008216
+      ],
+      "groups": [
+        1008200,
+        1008210
+      ],
+      "projectileCodes": [
+        100807,
+        100808,
+        100809,
+        100810,
+        100811,
+        100812,
+        100813,
+        100814
+      ],
+      "allowDelayedInference": true,
+      "projectileCollisionIsSuccess": true,
+      "mappingStatus": "retained-candidate-family-with-relaxed-object-retirement",
+      "limitation": "Projectile identity/contact retained; missing final retirement and unowned delayed effects affect confidence rather than disabling all uses.",
+      "collisionRequiresDamage": true
+    },
+    "1013200": {
+      "effectCodes": [],
+      "groups": [
+        1013200
+      ],
+      "projectileCodes": [
+        101301
+      ],
+      "allowDelayedInference": true,
+      "projectileCollisionIsSuccess": true,
+      "mappingStatus": "retained-candidate-family-with-relaxed-object-retirement",
+      "limitation": "Projectile identity/contact retained; missing final retirement and unowned delayed effects affect confidence rather than disabling all uses.",
+      "collisionRequiresDamage": true,
+      "proof": "decoder/skill_observed_projectile_metrics.py:ROUTES"
+    },
+    "1004500": {
+      "effectCodes": [
+        1004004
+      ],
+      "groups": [
+        1004500
+      ],
+      "projectileCodes": [
+        5
+      ],
+      "allowDelayedInference": true,
+      "projectileCollisionIsSuccess": true,
+      "mappingStatus": "retained-candidate-family-with-relaxed-object-retirement",
+      "limitation": "Projectile identity/contact retained; missing final retirement and unowned delayed effects affect confidence rather than disabling all uses.",
+      "collisionRequiresDamage": true
+    },
+    "1090200": {
+      "effectCodes": [
+        1090202,
+        1090211
+      ],
+      "groups": [
+        1090200,
+        1090210
+      ],
+      "projectileCodes": [
+        109021
+      ],
+      "allowDelayedInference": true,
+      "projectileCollisionIsSuccess": true,
+      "mappingStatus": "retained-candidate-family-with-relaxed-object-retirement",
+      "limitation": "Projectile identity/contact retained; missing final retirement and unowned delayed effects affect confidence rather than disabling all uses.",
+      "collisionRequiresDamage": true
+    },
+    "1008410": {
+      "effectCodes": [
+        1008302,
+        1008303,
+        1008304,
+        1008305,
+        1008306,
+        1008307
+      ],
+      "groups": [
+        1008400,
+        1008410
+      ],
+      "projectileCodes": [
+        100815,
+        100816,
+        100817,
+        100818,
+        100819,
+        100820,
+        100821,
+        100822,
+        100823,
+        100824,
+        100825,
+        100826
+      ],
+      "allowDelayedInference": true,
+      "projectileCollisionIsSuccess": true,
+      "mappingStatus": "retained-candidate-family-with-relaxed-object-retirement",
+      "limitation": "Projectile identity/contact retained; missing final retirement and unowned delayed effects affect confidence rather than disabling all uses.",
+      "collisionRequiresDamage": true
+    },
+    "1018400": {
+      "effectCodes": [],
+      "groups": [
+        1018400
+      ],
+      "projectileCodes": [
+        101830
+      ],
+      "allowDelayedInference": true,
+      "projectileCollisionIsSuccess": true,
+      "mappingStatus": "retained-candidate-family-with-relaxed-object-retirement",
+      "limitation": "Projectile identity/contact retained; missing final retirement and unowned delayed effects affect confidence rather than disabling all uses.",
+      "collisionRequiresDamage": true,
+      "proof": "decoder/skill_observed_projectile_metrics.py:ROUTES"
+    },
+    "1019300": {
+      "effectCodes": [
+        1019301
+      ],
+      "groups": [
+        1019300
+      ],
+      "projectileCodes": [
+        101931
+      ],
+      "allowDelayedInference": true,
+      "projectileCollisionIsSuccess": true,
+      "mappingStatus": "retained-candidate-family-with-relaxed-object-retirement",
+      "limitation": "Projectile identity/contact retained; missing final retirement and unowned delayed effects affect confidence rather than disabling all uses.",
+      "collisionRequiresDamage": true
+    },
+    "1054500": {
+      "effectCodes": [
+        1054501,
+        1054502,
+        1054503
+      ],
+      "groups": [
+        1054500
+      ],
+      "projectileCodes": [
+        105451
+      ],
+      "allowDelayedInference": true,
+      "projectileCollisionIsSuccess": false,
+      "mappingStatus": "retained-candidate-family-with-relaxed-object-retirement",
+      "limitation": "Projectile identity/contact retained; missing final retirement and unowned delayed effects affect confidence rather than disabling all uses.",
+      "summonCodes": [
+        1293
+      ]
+    },
+    "1035300": {
+      "effectCodes": [
+        1035300,
+        1035301
+      ],
+      "groups": [
+        1035300
+      ],
+      "projectileCodes": [],
+      "allowDelayedInference": false,
+      "projectileCollisionIsSuccess": false,
+      "mappingStatus": "retained-candidate-family-with-relaxed-object-retirement",
+      "limitation": "Projectile identity/contact retained; missing final retirement and unowned delayed effects affect confidence rather than disabling all uses."
+    },
+    "1052200": {
+      "effectCodes": [],
+      "groups": [
+        1052200
+      ],
+      "projectileCodes": [
+        105221,
+        105222,
+        105223
+      ],
+      "allowDelayedInference": true,
+      "projectileCollisionIsSuccess": true,
+      "mappingStatus": "retained-candidate-family-with-relaxed-object-retirement",
+      "limitation": "Projectile identity/contact retained; missing final retirement and unowned delayed effects affect confidence rather than disabling all uses.",
+      "proof": "deliverables/native-adina-q-collision-contract-v1.json"
+    },
+    "1028200": {
+      "effectCodes": [
+        1028201
+      ],
+      "groups": [
+        1028200
+      ],
+      "projectileCodes": [
+        1028201
+      ],
+      "allowDelayedInference": true,
+      "projectileCollisionIsSuccess": false,
+      "mappingStatus": "retained-candidate-family-with-relaxed-object-retirement",
+      "limitation": "Normal Q projectile/effect only; exclude R duplicate 1028202. Missing removal uses candidate damage attribution provisionally."
+    },
+    "1044200": {
+      "effectCodes": [
+        1044200,
+        1044201,
+        1044202,
+        1044203,
+        1044204
+      ],
+      "groups": [
+        1044200,
+        1044210
+      ],
+      "projectileCodes": [
+        104421,
+        104422,
+        104423,
+        104424,
+        104425,
+        104426,
+        104427,
+        104428
+      ],
+      "allowDelayedInference": true,
+      "projectileCollisionIsSuccess": true,
+      "mappingStatus": "retained-candidate-family-with-relaxed-object-retirement",
+      "limitation": "Projectile identity/contact retained; missing final retirement and unowned delayed effects affect confidence rather than disabling all uses.",
+      "collisionRequiresDamage": true
+    },
+    "1035500": {
+      "effectCodes": [],
+      "groups": [
+        1035500,
+        1035600
+      ],
+      "projectileCodes": [
+        103501
+      ],
+      "allowDelayedInference": false,
+      "projectileCollisionIsSuccess": false,
+      "mappingStatus": "retained-candidate-family-with-relaxed-object-retirement",
+      "limitation": "R rope marker on owned object and same-tick enemy state remain required; final visual destruction no longer blocks the match.",
+      "stateCodes": [
+        1035511,
+        1035512,
+        1035513,
+        1035521,
+        1035522,
+        1035523
+      ],
+      "summonCodes": [
+        1170,
+        1171,
+        1173
+      ],
+      "markerStateCode": 1035551
+    },
+    "1076400": {
+      "effectCodes": [
+        1076401
+      ],
+      "groups": [
+        1076400,
+        1076410
+      ],
+      "projectileCodes": [],
+      "allowDelayedInference": true,
+      "projectileCollisionIsSuccess": false,
+      "mappingStatus": "retained-candidate-family-with-relaxed-object-retirement",
+      "limitation": "Projectile identity/contact retained; missing final retirement and unowned delayed effects affect confidence rather than disabling all uses."
+    },
+    "1044210": {
+      "effectCodes": [
+        1044200,
+        1044201,
+        1044202,
+        1044203,
+        1044204
+      ],
+      "groups": [
+        1044200,
+        1044210
+      ],
+      "projectileCodes": [
+        104421,
+        104422,
+        104423,
+        104424,
+        104425,
+        104426,
+        104427,
+        104428
+      ],
+      "allowDelayedInference": true,
+      "projectileCollisionIsSuccess": true,
+      "mappingStatus": "retained-candidate-family-with-relaxed-object-retirement",
+      "limitation": "Projectile identity/contact retained; missing final retirement and unowned delayed effects affect confidence rather than disabling all uses.",
+      "collisionRequiresDamage": true
+    },
+    "1025500:fetter": {
+      "effectCodes": [],
+      "stateCodes": [
+        1025511
+      ],
+      "allowDelayedInference": true,
+      "mappingStatus": "reviewed-state-codes-provisional-cast-owner",
+      "limitation": "Only recorded enemy fetter counts. Projectile/CC same-frame requirement relaxed; repeated state ownership remains provisional."
+    },
+    "1076300:fetter": {
+      "effectCodes": [],
+      "stateCodes": [
+        1076311
+      ],
+      "allowDelayedInference": true,
+      "mappingStatus": "reviewed-state-codes-provisional-cast-owner",
+      "limitation": "Only recorded enemy fetter counts. Projectile/CC same-frame requirement relaxed; repeated state ownership remains provisional."
+    },
+    "1087400:fetter": {
+      "effectCodes": [],
+      "stateCodes": [
+        1087401,
+        1087402,
+        1087403,
+        1087404,
+        1087405,
+        1087411,
+        1087412,
+        1087413,
+        1087414,
+        1087415,
+        1087441,
+        1087442,
+        1087443,
+        1087444,
+        1087445
+      ],
+      "allowDelayedInference": true,
+      "mappingStatus": "reviewed-state-codes-provisional-cast-owner",
+      "limitation": "Only recorded enemy fetter counts. Projectile/CC same-frame requirement relaxed; repeated state ownership remains provisional."
+    },
+    "1083500:end-hit": {
+      "effectCodes": [
+        1083504
+      ],
+      "allowDelayedInference": true,
+      "mappingStatus": "reviewed-final-explosion-effect-provisional-parent",
+      "excludedFirstHitEffectCodes": [
+        1083503
+      ],
+      "limitation": "Only final explosion damage counts. Exact action-to-cast gate is relaxed; earlier R hit cannot count as final hit."
+    },
+    "1027600": {
+      "effectCodes": [],
+      "actionTargetDamageIsSuccess": true,
+      "allowDelayedInference": false,
+      "mappingStatus": "recorded-skill-action-target-and-same-tick-damage",
+      "limitation": "Retain reviewed targeted action contacts without requiring the name-selected effect code; zero-hit uses no longer need a positive sample."
+    },
+    "1023200": {
+      "effectCodes": [],
+      "actionTargetDamageIsSuccess": true,
+      "allowDelayedInference": false,
+      "mappingStatus": "recorded-skill-action-target-and-same-tick-damage",
+      "limitation": "Retain reviewed targeted action contacts without requiring the name-selected effect code; zero-hit uses no longer need a positive sample."
+    },
+    "1022500": {
+      "effectCodes": [],
+      "projectileCodes": [
+        102250
+      ],
+      "projectileCollisionIsSuccess": true,
+      "collisionRequiresDamage": true,
+      "allowDelayedInference": false,
+      "mappingStatus": "owned-projectile-collision-and-same-tick-damage",
+      "limitation": "Preserve recorded projectile contacts; absence of a positive sample is not a gate. Missing endings are provisional negatives."
+    },
+    "1031500": {
+      "effectCodes": [],
+      "projectileCodes": [
+        103151,
+        103152,
+        103153
+      ],
+      "projectileCollisionIsSuccess": true,
+      "collisionRequiresDamage": true,
+      "allowDelayedInference": false,
+      "mappingStatus": "owned-projectile-collision-and-same-tick-damage",
+      "limitation": "Preserve recorded projectile contacts; absence of a positive sample is not a gate. Missing endings are provisional negatives."
+    },
+    "1038200": {
+      "groups": [
+        1038200,
+        1038600
+      ],
+      "effectCodes": [],
+      "projectileCodes": [
+        103821,
+        103822,
+        103861,
+        103862
+      ],
+      "projectileCollisionIsSuccess": true,
+      "collisionRequiresDamage": true,
+      "allowDelayedInference": false,
+      "mappingStatus": "owned-Q-projectile-enemy-collision-and-same-tick-owner-damage",
+      "limitation": "Cast parent retains existing provisional lifecycle attribution after finish; no confidence promotion. Excludes non-damaging103820 selector and unrelated effect-zero damage."
+    },
+    "1038600": {
+      "groups": [
+        1038200,
+        1038600
+      ],
+      "effectCodes": [],
+      "projectileCodes": [
+        103821,
+        103822,
+        103861,
+        103862
+      ],
+      "projectileCollisionIsSuccess": true,
+      "collisionRequiresDamage": true,
+      "allowDelayedInference": false,
+      "mappingStatus": "owned-Q-projectile-enemy-collision-and-same-tick-owner-damage",
+      "limitation": "Cast parent retains existing provisional lifecycle attribution after finish; no confidence promotion. Excludes non-damaging103820 selector and unrelated effect-zero damage."
+    },
+    "1088300": {
+      "groups": [
+        1088300
+      ],
+      "effectCodes": [],
+      "projectileCodes": [
+        108831
+      ],
+      "projectileCollisionIsSuccess": true,
+      "collisionRequiresStateCodes": [
+        1088301
+      ],
+      "allowDelayedInference": false,
+      "mappingStatus": "owned-projectile-enemy-collision-and-same-tick-owner-state",
+      "limitation": "Existing provisional cast parent attribution retained; no confidence promotion."
+    },
+    "1047300": {
+      "groups": [
+        1047300
+      ],
+      "effectCodes": [],
+      "projectileCodes": [
+        104731
+      ],
+      "projectileCollisionIsSuccess": true,
+      "collisionRequiresStateCodes": [
+        1047311
+      ],
+      "allowDelayedInference": false,
+      "mappingStatus": "owned-projectile-enemy-collision-and-same-tick-owner-state",
+      "limitation": "Existing provisional cast parent attribution retained; no confidence promotion."
+    },
+    "1027800": {
+      "groups": [
+        1027800
+      ],
+      "effectCodes": [],
+      "projectileCodes": [],
+      "summonCodes": [
+        1110
+      ],
+      "summonRequiresCastActionTarget": true,
+      "stateCasterIsOwnedSummon": true,
+      "stateCodes": [
+        1027821
+      ],
+      "allowDelayedInference": false,
+      "mappingStatus": "same-tick-cast-action-owned-clone-and-clone-enemy-state",
+      "limitation": "Only unique recorded cast target clone; enemy players only."
+    },
+    "1013410": {
+      "groups": [
+        1013410
+      ],
+      "effectCodes": [],
+      "projectileCodes": [],
+      "stateCodes": [
+        1013411,
+        1013412,
+        1013413,
+        1013414,
+        1013415
+      ],
+      "stateRequiresDamageEffects": [
+        1013301
+      ],
+      "allowDelayedInference": false,
+      "mappingStatus": "E-followup-enemy-state-and-same-tick-owner-damage",
+      "limitation": "Shared W damage alone is not a hit; provisional cast attribution retained."
+    }
+  }
+}

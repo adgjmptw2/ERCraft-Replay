@@ -1,0 +1,5825 @@
+{
+  "format": "er-requested-skill-stage-registry.v1",
+  "clientVersion": "12.3.0",
+  "gameDataSha256": "5ef9cb5459a2e908099655bf9ffc70ac16b134d1db282fb97b25fe065e7c8e4f",
+  "scopeSourceSha256": "39f4611640bca18ba60b3b5353fb7fa58c94881298f6a846860205e62abb876d",
+  "characterCount": 90,
+  "registeredStageMetricCount": 463,
+  "characters": [
+    {
+      "characterCode": 1,
+      "name": "재키",
+      "requestedScopeText": "Q1/Q2(미구현·범위), E(미구현·착지 범위), R2(미구현·주변 범위).",
+      "currentScopeText": "Q1/Q2 범위 적중만 집계. 출혈 및 출혈 관련 추가 피해 적중률 제외. E와 R2 제외 유지.",
+      "registeredStages": [
+        {
+          "skillGroup": 1001200,
+          "label": "Q1",
+          "mode": "any",
+          "scopeTier": "reviewed-request-stage"
+        },
+        {
+          "skillGroup": 1001210,
+          "label": "Q2",
+          "mode": "any",
+          "scopeTier": "reviewed-request-stage"
+        }
+      ],
+      "excludedStageCandidates": [
+        {
+          "skillGroup": 1001400,
+          "skillId": "JackieActive3",
+          "reason": "재키 E는 최신 사용자 지시에 따라 적중률 대상에서 제외"
+        },
+        {
+          "skillGroup": 1001510,
+          "skillId": "JackieActive4_2",
+          "reason": "재키 R2는 최신 사용자 지시에 따라 적중률 대상에서 제외"
+        }
+      ],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q1/Q2 범위 적중만 집계. 출혈 및 출혈 관련 추가 피해 적중률 제외. E와 R2 제외 유지.",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 2,
+      "name": "아야",
+      "requestedScopeText": "W(신규★·실제 발사 탄환 기준), R(미구현·범위/공포). 추가 후보 Q(미구현·지정 2연발 적용률[Q는 확정이라 필요X])",
+      "registeredStages": [
+        {
+          "skillGroup": 1002300,
+          "label": "W",
+          "mode": "shot",
+          "scopeTier": "reviewed-request-stage"
+        },
+        {
+          "skillGroup": 1002500,
+          "label": "R 공포",
+          "mode": "fear",
+          "scopeTier": "reviewed-request-stage"
+        }
+      ],
+      "excludedStageCandidates": [],
+      "internalStageCandidates": [],
+      "detailedRequirements": "W(신규★·실제 발사 탄환 기준), R(미구현·범위/공포). 추가 후보 Q(미구현·지정 2연발 적용률[Q는 확정이라 필요X])",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 3,
+      "name": "피오라",
+      "requestedScopeText": "Q(미구현·범위/끝부분[아닌경우와 끝부분 두개 구현]), W(미구현·2연타), E1(미구현·돌진 접촉), R1~3(미구현·단계별/3타 기절). E2는 이동 단계.",
+      "currentScopeText": "Q 전체 적중률 + 끝부분 확정 시전 횟수. 부위 불명 타격은 전체 적중에 포함하고 끝부분은 확정된 경우만 집계. W(미구현·2연타), E1(미구현·돌진 접촉), R1~3(미구현·단계별/3타 기절). E2는 이동 단계.",
+      "userScopeAmendment20260909": "전체 적중률 + 끝부분 확정 횟수",
+      "registeredStages": [
+        {
+          "skillGroup": 1003200,
+          "label": "Q 전체 적중 + 끝부분 확정 횟수",
+          "mode": "any",
+          "scopeTier": "reviewed-request-stage"
+        },
+        {
+          "skillGroup": 1003300,
+          "label": "W",
+          "mode": "any",
+          "scopeTier": "reviewed-request-stage"
+        },
+        {
+          "skillGroup": 1003400,
+          "label": "E1",
+          "mode": "any",
+          "scopeTier": "reviewed-request-stage"
+        },
+        {
+          "skillGroup": 1003500,
+          "label": "R1",
+          "mode": "any",
+          "scopeTier": "reviewed-request-stage"
+        },
+        {
+          "skillGroup": 1003510,
+          "label": "R2",
+          "mode": "any",
+          "scopeTier": "reviewed-request-stage"
+        },
+        {
+          "skillGroup": 1003520,
+          "label": "R3",
+          "mode": "any",
+          "scopeTier": "reviewed-request-stage"
+        }
+      ],
+      "excludedStageCandidates": [],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q 전체 적중률 + 끝부분 확정 시전 횟수. 부위 불명 타격은 전체 적중에 포함하고 끝부분은 확정된 경우만 집계. W(미구현·2연타), E1(미구현·돌진 접촉), R1~3(미구현·단계별/3타 기절). E2는 이동 단계.",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true,
+      "supersededStageMetrics": [
+        {
+          "skillGroup": 1003200,
+          "label": "Q 안쪽",
+          "mode": "non-tip",
+          "scopeTier": "reviewed-request-stage",
+          "reason": "사용자 요청: 전체 적중률과 끝부분 확정 횟수로 대체"
+        },
+        {
+          "skillGroup": 1003200,
+          "label": "Q 끝부분",
+          "mode": "tip",
+          "scopeTier": "reviewed-request-stage",
+          "reason": "사용자 요청: 전체 적중률과 끝부분 확정 횟수로 대체"
+        }
+      ]
+    },
+    {
+      "characterCode": 4,
+      "name": "매그너스",
+      "requestedScopeText": "Q(미구현·투사체), W(미구현·주변 지속 연타[필요없음]), E 일반 타격(미구현)/벽 기절(신규★), R(미구현·바이크 충돌/폭발).",
+      "registeredStages": [
+        {
+          "skillGroup": 1004200,
+          "label": "Q",
+          "mode": "any",
+          "scopeTier": "reviewed-request-stage"
+        },
+        {
+          "skillGroup": 1004400,
+          "label": "E 일반 타격",
+          "mode": "any",
+          "scopeTier": "reviewed-request-stage"
+        },
+        {
+          "skillGroup": 1004400,
+          "label": "E 벽 기절",
+          "mode": "wall",
+          "scopeTier": "reviewed-request-stage"
+        },
+        {
+          "skillGroup": 1004500,
+          "label": "R",
+          "mode": "any",
+          "scopeTier": "reviewed-request-stage"
+        }
+      ],
+      "excludedStageCandidates": [],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q(미구현·투사체), W(미구현·주변 지속 연타[필요없음]), E 일반 타격(미구현)/벽 기절(신규★), R(미구현·바이크 충돌/폭발).",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 5,
+      "name": "자히르",
+      "requestedScopeText": "[W 제외 전부 관통이나 다중타격 가능하니 각각의 경우 필요] Q(미구현·범위), W(구현), E(미구현·관통 후보/에어본), R(미구현·범위 반복 타격). E 관통은 정적 설정 기준이며 실제 연결 검증은 남음.",
+      "registeredStages": [
+        {
+          "skillGroup": 1005200,
+          "label": "Q",
+          "mode": "any",
+          "scopeTier": "reviewed-request-stage"
+        },
+        {
+          "skillGroup": 1005300,
+          "label": "W",
+          "mode": "any",
+          "scopeTier": "reviewed-request-stage"
+        },
+        {
+          "skillGroup": 1005400,
+          "label": "E",
+          "mode": "any",
+          "scopeTier": "reviewed-request-stage"
+        },
+        {
+          "skillGroup": 1005500,
+          "label": "R",
+          "mode": "any",
+          "scopeTier": "reviewed-request-stage"
+        }
+      ],
+      "excludedStageCandidates": [],
+      "internalStageCandidates": [],
+      "detailedRequirements": "[W 제외 전부 관통이나 다중타격 가능하니 각각의 경우 필요] Q(미구현·범위), W(구현), E(미구현·관통 후보/에어본), R(미구현·범위 반복 타격). E 관통은 정적 설정 기준이며 실제 연결 검증은 남음.",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 6,
+      "name": "나딘",
+      "requestedScopeText": "Q(신규★·관통/다인), W(미구현·연결 덫 설치/발동, 덫 한 세트 기준).",
+      "currentScopeText": "Q(관통/다인). W1/W2와 덫 한 세트 지표는 사용자 지시로 제외.",
+      "registeredStages": [
+        {
+          "skillGroup": 1006200,
+          "slot": "Q",
+          "label": "Q [NadineActive1]",
+          "skillId": "NadineActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [
+        {
+          "skillGroup": 1006300,
+          "skillId": "NadineActive2_1",
+          "reason": "나딘 W는 최신 사용자 지시에 따라 적중률 대상에서 제외"
+        },
+        {
+          "skillGroup": 1006310,
+          "skillId": "NadineActive2_2",
+          "reason": "나딘 W는 최신 사용자 지시에 따라 적중률 대상에서 제외"
+        }
+      ],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q(관통/다인). W1/W2와 덫 한 세트 지표는 사용자 지시로 제외.",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 7,
+      "name": "현우",
+      "requestedScopeText": "Q(미구현·범위), E 일반 접촉/벽 기절(각각 미구현), R(미구현·충전 범위/최대 충전 기절). E는 피해 없이 밀친 경우도 접촉으로 구분.",
+      "registeredStages": [
+        {
+          "skillGroup": 1007200,
+          "slot": "Q",
+          "label": "Q [HyunwooActive1]",
+          "skillId": "HyunwooActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1007400,
+          "slot": "E",
+          "label": "E [HyunwooActive3]",
+          "skillId": "HyunwooActive3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1007500,
+          "slot": "R",
+          "label": "R [HyunwooActive4]",
+          "skillId": "HyunwooActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q(미구현·범위), E 일반 접촉/벽 기절(각각 미구현), R(미구현·충전 범위/최대 충전 기절). E는 피해 없이 밀친 경우도 접촉으로 구분.",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 8,
+      "name": "하트",
+      "requestedScopeText": "Q 발사 단계(미구현·준비 단계 제외), E1/E2(미구현·이동 후 자동 발사). 별도 Q3는 대응 단계가 확인되지 않아 보류.",
+      "registeredStages": [
+        {
+          "skillGroup": 1008210,
+          "slot": "Q",
+          "label": "Q [HartActive1_2]",
+          "skillId": "HartActive1_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1008400,
+          "slot": "E",
+          "label": "E [HartActive3_1]",
+          "skillId": "HartActive3_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1008410,
+          "slot": "E",
+          "label": "E [HartActive3_2]",
+          "skillId": "HartActive3_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [
+        {
+          "skillGroup": 1008200,
+          "skillId": "HartActive1_1",
+          "reason": "하트 Q 준비는 실제 발사 단계와 분리"
+        }
+      ],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q 발사 단계(미구현·준비 단계 제외), E1/E2(미구현·이동 후 자동 발사). 별도 Q3는 대응 단계가 확인되지 않아 보류.",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 9,
+      "name": "아이솔",
+      "requestedScopeText": "Q(미구현·부착/지연 폭발), W(미구현·한 번이라도 맞으면 시전 성공[총타격 기준이며, 감시카메라 타격도 포함으로]), R(미구현·설치 폭탄/감지 후 폭발).",
+      "registeredStages": [
+        {
+          "skillGroup": 1009200,
+          "slot": "Q",
+          "label": "Q 부착 적용",
+          "skillId": "IsolActive1",
+          "mode": "attach",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1009500,
+          "slot": "R",
+          "label": "R [IsolActive4]",
+          "skillId": "IsolActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [
+        {
+          "skillGroup": 1009300,
+          "slot": "W",
+          "label": "W [IsolActive2]",
+          "skillId": "IsolActive2",
+          "mode": "shot-with-camera",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true,
+          "reason": "사용자 2026-09-09 요청 범위 변경"
+        },
+        {
+          "skillGroup": 1009200,
+          "slot": "Q",
+          "label": "Q [IsolActive1]",
+          "skillId": "IsolActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true,
+          "reason": "사용자 2026-09-09: 최초 폭탄 부착만 집계; 지연 폭발 피해 적중률 제외"
+        }
+      ],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q 최초 폭탄 부착만 집계; 지연 폭발 피해 적중률 제외. R 설치 폭탄/감지 후 폭발 유지. W 제외 유지.",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true,
+      "currentScopeText": "Q 최초 폭탄 부착만 집계; 지연 폭발 피해 적중률 제외. R 설치 폭탄/감지 후 폭발 유지. W 제외 유지."
+    },
+    {
+      "characterCode": 10,
+      "name": "리 다이린",
+      "requestedScopeText": "Q1~3(미구현·돌진 범위/취권 구분), E(미구현·부채꼴), R(구현·돌진 적중; 후속 4연타 수는 별도).",
+      "registeredStages": [
+        {
+          "skillGroup": 1010200,
+          "slot": "Q",
+          "label": "Q [LiDailinActive1_1]",
+          "skillId": "LiDailinActive1_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1010210,
+          "slot": "Q",
+          "label": "Q [LiDailinActive1_2]",
+          "skillId": "LiDailinActive1_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1010220,
+          "slot": "Q",
+          "label": "Q [LiDailinActive1_3]",
+          "skillId": "LiDailinActive1_3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1010400,
+          "slot": "E",
+          "label": "E [LiDailinActive3]",
+          "skillId": "LiDailinActive3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1010500,
+          "slot": "R",
+          "label": "R [LiDailinActive4]",
+          "skillId": "LiDailinActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q1~3(미구현·돌진 범위/취권 구분), E(미구현·부채꼴), R(구현·돌진 적중; 후속 4연타 수는 별도).",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 11,
+      "name": "유키",
+      "requestedScopeText": "E(미구현·첫 충돌), R(미구현·범위 베기/표식 폭발).",
+      "registeredStages": [
+        {
+          "skillGroup": 1011400,
+          "slot": "E",
+          "label": "E [YukiActive3]",
+          "skillId": "YukiActive3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1011500,
+          "slot": "R",
+          "label": "R [YukiActive4]",
+          "skillId": "YukiActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [],
+      "internalStageCandidates": [],
+      "detailedRequirements": "E(미구현·첫 충돌), R(미구현·범위 베기/표식 폭발).",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 12,
+      "name": "혜진",
+      "requestedScopeText": "Q(미구현·최대 2명 관통), W(미구현·지연 범위/끌기), E1/E2(미구현·경로/도착 피해), R(미구현·첫 범위 피해와 회전 부적 5개 분리).",
+      "registeredStages": [
+        {
+          "skillGroup": 1012200,
+          "slot": "Q",
+          "label": "Q [HyejinActive1]",
+          "skillId": "HyejinActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1012300,
+          "slot": "W",
+          "label": "W [HyejinActive2]",
+          "skillId": "HyejinActive2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1012400,
+          "slot": "E",
+          "label": "E [HyejinActive3_1]",
+          "skillId": "HyejinActive3_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1012410,
+          "slot": "E",
+          "label": "E [HyejinActive3_2]",
+          "skillId": "HyejinActive3_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1012500,
+          "slot": "R",
+          "label": "R [HyejinActive4]",
+          "skillId": "HyejinActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q(미구현·최대 2명 관통), W(미구현·지연 범위/끌기), E1/E2(미구현·경로/도착 피해), R(미구현·첫 범위 피해와 회전 부적 5개 분리).",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 13,
+      "name": "쇼우",
+      "requestedScopeText": "Q(미구현·투사체/소스 지대), E1(구현·돌진)/E2(미구현·내려찍기), R(구현·시전 적중/다인; 전체 화염 연타 수 미검증).",
+      "registeredStages": [
+        {
+          "skillGroup": 1013200,
+          "slot": "Q",
+          "label": "Q [XiukaiActive1]",
+          "skillId": "XiukaiActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1013400,
+          "slot": "E",
+          "label": "E [XiukaiActive3_1]",
+          "skillId": "XiukaiActive3_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1013410,
+          "slot": "E",
+          "label": "E [XiukaiActive3_2]",
+          "skillId": "XiukaiActive3_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1013500,
+          "slot": "R",
+          "label": "R [XiukaiActive4]",
+          "skillId": "XiukaiActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q(미구현·투사체/소스 지대), E1(구현·돌진)/E2(미구현·내려찍기), R(구현·시전 적중/다인; 전체 화염 연타 수 미검증).",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 14,
+      "name": "키아라",
+      "requestedScopeText": "Q(신규★·여러 갈래 중 하나라도 적중/다인), W2(미구현·보호막 폭발), E(부분·첫 사슬 구현, 유지/속박 미구현). 추가 후보 R 폭주(미구현·지속 범위), R 심판(미구현·지정·적용률[R은 심판으로 적 처치할시 카운트]).",
+      "registeredStages": [
+        {
+          "skillGroup": 1014200,
+          "slot": "Q",
+          "label": "Q [ChiaraActive1]",
+          "skillId": "ChiaraActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1014310,
+          "slot": "W",
+          "label": "W [ChiaraActive2ShieldBreak]",
+          "skillId": "ChiaraActive2ShieldBreak",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1014400,
+          "slot": "E",
+          "label": "E [ChiaraActive3]",
+          "skillId": "ChiaraActive3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1014400,
+          "slot": "E",
+          "label": "E 속박 적용",
+          "skillId": "ChiaraActive3",
+          "mode": "fetter",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1014510,
+          "slot": "R",
+          "label": "R [ChiaraActive4judgment]",
+          "skillId": "ChiaraActive4judgment",
+          "mode": "enemy-kill",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [
+        {
+          "skillGroup": 1014300,
+          "skillId": "ChiaraActive2",
+          "reason": "키아라 W는 요청한 W2 보호막 폭발만 측정"
+        },
+        {
+          "skillGroup": 1014500,
+          "skillId": "ChiaraActive4Transform",
+          "reason": "키아라 R은 사용자 확정대로 심판 처치 수만 측정"
+        }
+      ],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q(신규★·여러 갈래 중 하나라도 적중/다인), W2(미구현·보호막 폭발), E(부분·첫 사슬 구현, 유지/속박 미구현). 추가 후보 R 폭주(미구현·지속 범위), R 심판(미구현·지정·적용률[R은 심판으로 적 처치할시 카운트]).",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 15,
+      "name": "시셀라",
+      "requestedScopeText": "Q(미구현·경로/도착 범위), W(미구현·종료 폭발), E(미구현·적 끌기/자기 이동 구분). 추가 후보 R(미구현·광역 지연 피해 적용률).",
+      "currentScopeText": "Q 경로/도착 범위, W 종료 폭발, E 적 끌기/자기 이동 구분. R 제외.",
+      "registeredStages": [
+        {
+          "skillGroup": 1015200,
+          "slot": "Q",
+          "label": "Q [SisselaActive1]",
+          "skillId": "SisselaActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1015300,
+          "slot": "W",
+          "label": "W [SisselaActive2]",
+          "skillId": "SisselaActive2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1015400,
+          "slot": "E",
+          "label": "E [SisselaActive3]",
+          "skillId": "SisselaActive3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1015400,
+          "slot": "E",
+          "label": "E 적 끌기 적용",
+          "skillId": "SisselaActive3",
+          "mode": "enemy-pull",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1015400,
+          "slot": "E",
+          "label": "E 자기 끌기",
+          "skillId": "SisselaActive3",
+          "mode": "self-pull",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": false
+        },
+        {
+          "skillGroup": 1015700,
+          "slot": "Q",
+          "label": "Q [SisselaWilsonActive1]",
+          "skillId": "SisselaWilsonActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [
+        {
+          "skillGroup": 1015500,
+          "skillId": "SisselaActive4",
+          "reason": "시셀라 R은 최신 사용자 지시에 따라 제외"
+        }
+      ],
+      "internalStageCandidates": [
+        {
+          "skillGroup": 1015900,
+          "skillId": "SisselaWilsonActive3",
+          "parentRequestedSkillGroup": 1015400,
+          "reason": "본체 한 번 사용에 연결할 소환물 후속 시전; 독립 사용 횟수로 세지 않음"
+        }
+      ],
+      "detailedRequirements": "Q 경로/도착 범위, W 종료 폭발, E 적 끌기/자기 이동 구분. R 제외.",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 16,
+      "name": "실비아",
+      "requestedScopeText": "인간 Q(신규★·지정+경로/다인), 인간 W(미구현·설치 라인), 인간 E(구현·투사체), 바이크 Q(미구현·주변 범위), 바이크 W(구현·착지/다인), 바이크 E(미구현·지정 돌진·적용률).",
+      "registeredStages": [
+        {
+          "skillGroup": 1016200,
+          "slot": "Q",
+          "label": "Q [SilviaHumanActive1]",
+          "skillId": "SilviaHumanActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1016300,
+          "slot": "W",
+          "label": "W [SilviaHumanActive2]",
+          "skillId": "SilviaHumanActive2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1016400,
+          "slot": "E",
+          "label": "E [SilviaHumanActive3]",
+          "skillId": "SilviaHumanActive3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1016600,
+          "slot": "Q",
+          "label": "Q [SilviaBikeActive1]",
+          "skillId": "SilviaBikeActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1016700,
+          "slot": "W",
+          "label": "W [SilviaBikeActive2]",
+          "skillId": "SilviaBikeActive2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1016800,
+          "slot": "E",
+          "label": "E [SilviaBikeActive3_1]",
+          "skillId": "SilviaBikeActive3_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [],
+      "internalStageCandidates": [],
+      "detailedRequirements": "인간 Q(신규★·지정+경로/다인), 인간 W(미구현·설치 라인), 인간 E(구현·투사체), 바이크 Q(미구현·주변 범위), 바이크 W(구현·착지/다인), 바이크 E(미구현·지정 돌진·적용률).",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 17,
+      "name": "아드리아나",
+      "requestedScopeText": "Q(미구현·지속 분사), W(미구현·기름 둔화/점화 피해), E(미구현·이동 경로 화염), R(미구현·화염병별 폭발/잔류 화염).",
+      "registeredStages": [
+        {
+          "skillGroup": 1017200,
+          "slot": "Q",
+          "label": "Q [AdrianaActive1]",
+          "skillId": "AdrianaActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1017300,
+          "slot": "W",
+          "label": "W [AdrianaActive2]",
+          "skillId": "AdrianaActive2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1017400,
+          "slot": "E",
+          "label": "E [AdrianaActive3]",
+          "skillId": "AdrianaActive3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1017500,
+          "slot": "R",
+          "label": "R [AdrianaActive4]",
+          "skillId": "AdrianaActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q 지속 분사, W 기름 둔화/점화, E 이동 경로 화염, R 화염병 폭발/잔류 화염 유지. 패시브로 붙는 화상 지속 피해의 별도 적중률은 제외.",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true,
+      "currentScopeText": "Q 지속 분사, W 기름 둔화/점화, E 이동 경로 화염, R 화염병 폭발/잔류 화염 유지. 패시브로 붙는 화상 지속 피해의 별도 적중률은 제외."
+    },
+    {
+      "characterCode": 18,
+      "name": "쇼이치",
+      "requestedScopeText": "Q 일반/강화(미구현·범위), W(미구현·대상/단검 지정 후 경로 피해), E(미구현·투사체). 추가 후보 R(미구현·주변 타격/사방 단검), 회수 단검(미구현·실제 자동 발사 기준).",
+      "currentScopeText": "쇼이치 W 적중률 제외; 나머지 기존 요구 유지.",
+      "registeredStages": [
+        {
+          "skillGroup": 1018200,
+          "slot": "Q",
+          "label": "Q [ShoichiActive1_1]",
+          "skillId": "ShoichiActive1_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1018210,
+          "slot": "Q",
+          "label": "Q [ShoichiActive1_2]",
+          "skillId": "ShoichiActive1_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1018400,
+          "slot": "E",
+          "label": "E [ShoichiActive3]",
+          "skillId": "ShoichiActive3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1018500,
+          "slot": "R",
+          "label": "R [ShoichiActive4]",
+          "skillId": "ShoichiActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [
+        {
+          "skillGroup": 1018100,
+          "skillId": "None",
+          "reason": "쇼이치 회수 단검 패시브는 조준 적중률 목록에서 제외"
+        },
+        {
+          "skillGroup": 1018300,
+          "slot": "W",
+          "label": "W [ShoichiActive2]",
+          "skillId": "ShoichiActive2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true,
+          "reason": "쇼이치 W 적중률 제외; 나머지 기존 요구 유지."
+        }
+      ],
+      "internalStageCandidates": [],
+      "detailedRequirements": "쇼이치 W 적중률 제외; 나머지 기존 요구 유지.",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 19,
+      "name": "엠마",
+      "requestedScopeText": "Q(구현·본체/비둘기별 분리는 미구현), W(미구현·모자 폭발), R(신규★·형태별 완결 검증은 남음). 추가 후보 E(미구현·지정 변이 적용률).",
+      "currentScopeText": "Q 본체/비둘기별 분리, W 모자 폭발, R 형태별 적중. 확정 지정 변이 E는 사용자 지시로 제외. 사용자 2026-09-10 추가: 엠마 R 전체 적중률 제외.",
+      "registeredStages": [
+        {
+          "skillGroup": 1019200,
+          "slot": "Q",
+          "label": "Q [EmmaActive1Summon]",
+          "skillId": "EmmaActive1Summon",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1019300,
+          "slot": "W",
+          "label": "W [EmmaActive2]",
+          "skillId": "EmmaActive2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [
+        {
+          "skillGroup": 1019400,
+          "skillId": "EmmaActive3",
+          "reason": "엠마 E 확정 지정 적용은 최신 사용자 지시에 따라 제외"
+        },
+        {
+          "skillGroup": 1019500,
+          "skillId": "EmmaActive4",
+          "reason": "사용자 2026-09-10: 엠마 R 전체 제외"
+        }
+      ],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q 본체/비둘기별 분리, W 모자 폭발, R 형태별 적중. 확정 지정 변이 E는 사용자 지시로 제외. 사용자 2026-09-10 추가: 엠마 R 전체 적중률 제외.",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 20,
+      "name": "레녹스",
+      "requestedScopeText": "Q(미구현·범위/가장자리), W(미구현·휘두르기/후속 채찍), E(미구현·범위 밀침), R(미구현·X자 2타/둘 다 적중).",
+      "registeredStages": [
+        {
+          "skillGroup": 1020200,
+          "slot": "Q",
+          "label": "Q [LenoxActive1]",
+          "skillId": "LenoxActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1020300,
+          "slot": "W",
+          "label": "W 끌기 적용",
+          "skillId": "LenoxActive2",
+          "mode": "pull-hit",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1020400,
+          "slot": "E",
+          "label": "E [LenoxActive3]",
+          "skillId": "LenoxActive3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1020500,
+          "slot": "R",
+          "label": "R [LenoxActive4]",
+          "skillId": "LenoxActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1020500,
+          "slot": "R",
+          "label": "R 첫 타격",
+          "skillId": "LenoxActive4",
+          "mode": "first-hit",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1020500,
+          "slot": "R",
+          "label": "R 둘째 타격",
+          "skillId": "LenoxActive4",
+          "mode": "end-hit",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1020500,
+          "slot": "R",
+          "label": "R 같은 적에게 두 타 모두 적중",
+          "skillId": "LenoxActive4",
+          "mode": "both-hit",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [
+        {
+          "skillGroup": 1020300,
+          "slot": "W",
+          "label": "W [LenoxActive2]",
+          "skillId": "LenoxActive2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true,
+          "reason": "사용자 2026-09-09: W 회전 피해 포함 전체 적중 대신 후속 끌기만 집계"
+        }
+      ],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q/E 기존 요구 유지. W 후속 끌기 적용만 집계; 첫 회전 피해 적중 제외. R 최초 두 번의 베기 및 두 타 모두 적중만 집계; 이후 표식/이동에 따른 추가 피해 적중률 제외.",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true,
+      "currentScopeText": "Q/E 기존 요구 유지. W 후속 끌기 적용만 집계; 첫 회전 피해 적중 제외. R 최초 두 번의 베기 및 두 타 모두 적중만 집계; 이후 표식/이동에 따른 추가 피해 적중률 제외."
+    },
+    {
+      "characterCode": 21,
+      "name": "로지",
+      "requestedScopeText": "Q(미구현·경로), W(미구현·주변 범위), E(미구현·지정 대상 위치 타격), R(부분·기본값 있음, 부착/폭발 분리 미구현).",
+      "currentScopeText": "Q 경로 공격만 포함하고 Move 이동 단계 제외. W/E 유지. R 최초 폭탄 부착만 집계; 이후 폭발 및 추가 폭발 피해 적중률 제외.",
+      "registeredStages": [
+        {
+          "skillGroup": 1021200,
+          "slot": "Q",
+          "label": "Q [RozziActive1]",
+          "skillId": "RozziActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1021300,
+          "slot": "W",
+          "label": "W [RozziActive2]",
+          "skillId": "RozziActive2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1021400,
+          "slot": "E",
+          "label": "E [RozziActive3_1]",
+          "skillId": "RozziActive3_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1021500,
+          "slot": "R",
+          "label": "R 부착 적용",
+          "skillId": "RozziActive4",
+          "mode": "attach",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [
+        {
+          "skillGroup": 1021210,
+          "skillId": "RozziActive1Move",
+          "reason": "로지 Q Move는 이동 단계이며 적중률 대상에서 제외"
+        },
+        {
+          "skillGroup": 1021500,
+          "slot": "R",
+          "label": "R [RozziActive4]",
+          "skillId": "RozziActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true,
+          "reason": "사용자 2026-09-09: 최초 폭탄 부착만 집계; 지연 폭발 피해 적중률 제외"
+        }
+      ],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q 경로 공격만 포함하고 Move 이동 단계 제외. W/E 유지. R 최초 폭탄 부착만 집계; 이후 폭발 및 추가 폭발 피해 적중률 제외.",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 22,
+      "name": "루크",
+      "requestedScopeText": "Q1(구현·투사체)/Q2(미구현·후속 돌진), W(미구현·주변 범위), E(미구현·적 지정·적용률), R(미구현·폭발탄). 진화 효과는 별도 구분.",
+      "currentScopeText": "Q1(구현·투사체)/Q2(미구현·후속 돌진), W(미구현·주변 범위), E(미구현·적 지정·적용률), R(미구현·폭발탄). 진화 효과는 별도 구분. 사용자 2026-09-10: Q1 적중률 유지. Q2 후속 돌진 적중률 제외.",
+      "registeredStages": [
+        {
+          "skillGroup": 1022200,
+          "slot": "Q",
+          "label": "Q [LukeActive1_1]",
+          "skillId": "LukeActive1_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1022300,
+          "slot": "W",
+          "label": "W [LukeActive2]",
+          "skillId": "LukeActive2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1022400,
+          "slot": "E",
+          "label": "E [LukeActive3]",
+          "skillId": "LukeActive3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1022500,
+          "slot": "R",
+          "label": "R [LukeActive4]",
+          "skillId": "LukeActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [
+        {
+          "skillGroup": 1022210,
+          "skillId": "LukeActive1_2",
+          "reason": "사용자 2026-09-10: 루크 Q2 적중률 제외"
+        }
+      ],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q1(구현·투사체)/Q2(미구현·후속 돌진), W(미구현·주변 범위), E(미구현·적 지정·적용률), R(미구현·폭발탄). 진화 효과는 별도 구분. 사용자 2026-09-10: Q1 적중률 유지. Q2 후속 돌진 적중률 제외.",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 23,
+      "name": "캐시",
+      "requestedScopeText": "Q(구현·경로 돌진), W(미구현·안쪽/바깥쪽), E(미구현·2명 관통/적끼리 충돌/벽 기절), R(구현·경로 범위).",
+      "currentScopeText": "Q 경로 돌진, W 안쪽/바깥쪽 피해 영역별 적중 분리, E 2명 관통/적끼리 충돌/벽 기절, R 경로 범위.",
+      "registeredStages": [
+        {
+          "skillGroup": 1023200,
+          "slot": "Q",
+          "label": "Q [CathyActive1]",
+          "skillId": "CathyActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1023210,
+          "slot": "Q",
+          "label": "Q [CathyActive1NormalAttack]",
+          "skillId": "CathyActive1NormalAttack",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1023300,
+          "slot": "W",
+          "label": "W [CathyActive2]",
+          "skillId": "CathyActive2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1023300,
+          "slot": "W",
+          "label": "W 안쪽 적중",
+          "skillId": "CathyActive2",
+          "mode": "inner-hit",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1023300,
+          "slot": "W",
+          "label": "W 바깥쪽 적중",
+          "skillId": "CathyActive2",
+          "mode": "outer-hit",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1023400,
+          "slot": "E",
+          "label": "E [CathyActive3]",
+          "skillId": "CathyActive3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1023500,
+          "slot": "R",
+          "label": "R [CathyActive4]",
+          "skillId": "CathyActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q 경로 돌진, W 안쪽/바깥쪽 피해 영역별 적중 분리, E 2명 관통/적끼리 충돌/벽 기절, R 경로 범위.",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 24,
+      "name": "아델라",
+      "requestedScopeText": "Q 폰/퀸(미구현·설치 지점), W(미구현·2회 착지/밀어낸 말), E1(미구현·룩 경로/다른 말 발동), R(미구현·착지/말 폭발).",
+      "currentScopeText": "Q 폰/퀸(미구현·설치 지점), W(미구현·2회 착지/밀어낸 말), E1(미구현·룩 경로/다른 말 발동), R(미구현·착지/말 폭발). 사용자 2026-09-10: R 본체 피해와 R이 유발한 체스 폭발을 구분. 체스 피해가 기존 Q/E 적중으로 잘못 귀속되는지 확인.",
+      "registeredStages": [
+        {
+          "skillGroup": 1024200,
+          "slot": "Q",
+          "label": "Q [AdelaActive1]",
+          "skillId": "AdelaActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1024300,
+          "slot": "W",
+          "label": "W [AdelaActive2]",
+          "skillId": "AdelaActive2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1024400,
+          "slot": "E",
+          "label": "E [AdelaActive3_1]",
+          "skillId": "AdelaActive3_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1024410,
+          "slot": "E",
+          "label": "E [AdelaActive3_2]",
+          "skillId": "AdelaActive3_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1024500,
+          "slot": "R",
+          "label": "R [AdelaActive4]",
+          "skillId": "AdelaActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q 폰/퀸(미구현·설치 지점), W(미구현·2회 착지/밀어낸 말), E1(미구현·룩 경로/다른 말 발동), R(미구현·착지/말 폭발). 사용자 2026-09-10: R 본체 피해와 R이 유발한 체스 폭발을 구분. 체스 피해가 기존 Q/E 적중으로 잘못 귀속되는지 확인.",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 25,
+      "name": "버니스",
+      "requestedScopeText": "Q(미구현·관통), W(미구현·덫/지속 피해), R(부분·첫 탄 구현, 폭발/전이 미구현).",
+      "registeredStages": [
+        {
+          "skillGroup": 1025200,
+          "slot": "Q",
+          "label": "Q [BerniceActive1]",
+          "skillId": "BerniceActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1025300,
+          "slot": "W",
+          "label": "W [BerniceActive2]",
+          "skillId": "BerniceActive2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1025500,
+          "slot": "R",
+          "label": "R [BerniceActive4]",
+          "skillId": "BerniceActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1025500,
+          "slot": "R",
+          "label": "R 속박 적용",
+          "skillId": "BerniceActive4",
+          "mode": "fetter",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q/R 기존 요구 유지. W 최초 덫에 걸린 판정만 집계; 이후 출혈/지속 피해 적중률 제외.",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true,
+      "currentScopeText": "Q/R 기존 요구 유지. W 최초 덫에 걸린 판정만 집계; 이후 출혈/지속 피해 적중률 제외."
+    },
+    {
+      "characterCode": 26,
+      "name": "바바라",
+      "requestedScopeText": "Q/RQ(미구현·센트리건 공격/레일건 실제 발사), W(미구현·경로 레이저), E(미구현·범위/중앙 기절). RW/RE는 gameDb에 있으나 라운지 설명이 없어 현재 활성 여부 보류.",
+      "currentScopeText": "Q/RQ 일반탄·레일건 각각 실제 발사, W 경로 레이저, E 전체 적중과 중앙 기절. E 안쪽/바깥쪽 구분 제외. RW/RE 활성 여부는 보류.",
+      "registeredStages": [
+        {
+          "skillGroup": 1026020,
+          "slot": "Q",
+          "label": "Q 일반 센트리건 레일건",
+          "skillId": "BarbaraTurretActive1_RailGunAttack",
+          "mode": "summon-railgun-normal",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1026020,
+          "slot": "Q",
+          "label": "RQ 강화 센트리건 레일건",
+          "skillId": "BarbaraTurretActive1_RailGunAttack",
+          "mode": "summon-railgun-reinforced",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1026200,
+          "slot": "Q",
+          "label": "Q [BarbaraActive1_Turret]",
+          "skillId": "BarbaraActive1_Turret",
+          "mode": "summon-shot",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1026210,
+          "slot": "Q",
+          "label": "Q [BarbaraActive1_ReinforceTurret]",
+          "skillId": "BarbaraActive1_ReinforceTurret",
+          "mode": "summon-shot",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1026300,
+          "slot": "W",
+          "label": "W [BarbaraActive2_IonLaser]",
+          "skillId": "BarbaraActive2_IonLaser",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1026310,
+          "slot": "W",
+          "label": "W [BarbaraActive2_ReinforceIonLaser]",
+          "skillId": "BarbaraActive2_ReinforceIonLaser",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1026400,
+          "slot": "E",
+          "label": "E [BarbaraActive3_MagneticForce]",
+          "skillId": "BarbaraActive3_MagneticForce",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1026400,
+          "slot": "E",
+          "label": "E 중앙 기절",
+          "skillId": "BarbaraActive3_MagneticForce",
+          "mode": "central-stun",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1026410,
+          "slot": "E",
+          "label": "E [BarbaraActive3_ReinforceMagneticForce]",
+          "skillId": "BarbaraActive3_ReinforceMagneticForce",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1026420,
+          "slot": "E",
+          "label": "E [BarbaraActive3_ProjectileExplosion]",
+          "skillId": "BarbaraActive3_ProjectileExplosion",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1026430,
+          "slot": "E",
+          "label": "E [BarbaraActive3_ReinforceProjectileExplosion]",
+          "skillId": "BarbaraActive3_ReinforceProjectileExplosion",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [
+        {
+          "skillGroup": 1026400,
+          "slot": "E",
+          "label": "E 안쪽 적중",
+          "skillId": "BarbaraActive3_MagneticForce",
+          "mode": "inner-hit",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true,
+          "reason": "사용자 2026-09-09 요청 범위 변경"
+        },
+        {
+          "skillGroup": 1026400,
+          "slot": "E",
+          "label": "E 바깥쪽 적중",
+          "skillId": "BarbaraActive3_MagneticForce",
+          "mode": "outer-hit",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true,
+          "reason": "사용자 2026-09-09 요청 범위 변경"
+        }
+      ],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q/RQ 일반탄·레일건 각각 실제 발사, W 경로 레이저, E 전체 적중과 중앙 기절. E 안쪽/바깥쪽 구분 제외. RW/RE 활성 여부는 보류.",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 27,
+      "name": "알렉스",
+      "requestedScopeText": "원거리 Q/E(구현), 원거리 W(미구현·범위), 근거리 Q(미구현·지정 돌진), 근거리 W(미구현·범위 끌기), 근거리 E(미구현·홀로그램 도발), R(미구현·폭격/반복 펄스/중앙).",
+      "registeredStages": [
+        {
+          "skillGroup": 1027200,
+          "slot": "Q",
+          "label": "Q [AlexActive1RailGun]",
+          "skillId": "AlexActive1RailGun",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1027300,
+          "slot": "W",
+          "label": "W [AlexActive2TargetMarker]",
+          "skillId": "AlexActive2TargetMarker",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1027400,
+          "slot": "E",
+          "label": "E [AlexActive3PulseSting]",
+          "skillId": "AlexActive3PulseSting",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1027500,
+          "slot": "R",
+          "label": "R [AlexActive4]",
+          "skillId": "AlexActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1027600,
+          "slot": "Q",
+          "label": "Q [AlexActive1Raid]",
+          "skillId": "AlexActive1Raid",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1027700,
+          "slot": "W",
+          "label": "W [AlexActive2PlasmaMine]",
+          "skillId": "AlexActive2PlasmaMine",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1027800,
+          "slot": "E",
+          "label": "E [AlexActive3Disturbance]",
+          "skillId": "AlexActive3Disturbance",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [],
+      "internalStageCandidates": [],
+      "detailedRequirements": "원거리 Q/E(구현), 원거리 W(미구현·범위), 근거리 Q(미구현·지정 돌진), 근거리 W(미구현·범위 끌기), 근거리 E(미구현·홀로그램 도발), R(미구현·폭격/반복 펄스/중앙).",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 28,
+      "name": "수아",
+      "requestedScopeText": "Q(미구현·범위/중앙/책갈피 기절), W 적 사용(미구현·지정 실명), E(구현), R-Q/R-W(미구현), R-E(구현).",
+      "currentScopeText": "Q(미구현·범위/중앙/책갈피 기절), W 적 사용(미구현·지정 실명), E(구현), R-Q/R-W(미구현), R-E(구현). 사용자 2026-09-10: W 적중률 제외. R-W는 이번 변경 대상 아님.",
+      "registeredStages": [
+        {
+          "skillGroup": 1028200,
+          "slot": "Q",
+          "label": "Q [SuaActive1]",
+          "skillId": "SuaActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1028400,
+          "slot": "E",
+          "label": "E [SuaActive3]",
+          "skillId": "SuaActive3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1028500,
+          "slot": "R",
+          "label": "R [SuaActive4_1]",
+          "skillId": "SuaActive4_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1028510,
+          "slot": "R",
+          "label": "R [SuaActive4_2]",
+          "skillId": "SuaActive4_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1028520,
+          "slot": "R",
+          "label": "R [SuaActive4_3]",
+          "skillId": "SuaActive4_3",
+          "mode": "blind",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1028530,
+          "slot": "R",
+          "label": "R [SuaActive4_4]",
+          "skillId": "SuaActive4_4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [
+        {
+          "skillGroup": 1028300,
+          "skillId": "SuaActive2",
+          "reason": "사용자 2026-09-10: 수아 W 적중률 제외; R-W 범위는 유지"
+        }
+      ],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q(미구현·범위/중앙/책갈피 기절), W 적 사용(미구현·지정 실명), E(구현), R-Q/R-W(미구현), R-E(구현). 사용자 2026-09-10: W 적중률 제외. R-W는 이번 변경 대상 아님.",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 29,
+      "name": "레온",
+      "requestedScopeText": "Q(미구현·직선 범위), E(구현·착지), R(미구현·파도 경로/벽 충돌 추가 피해·에어본).",
+      "registeredStages": [
+        {
+          "skillGroup": 1029200,
+          "slot": "Q",
+          "label": "Q [LeonActive1]",
+          "skillId": "LeonActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1029400,
+          "slot": "E",
+          "label": "E [LeonActive3]",
+          "skillId": "LeonActive3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1029500,
+          "slot": "R",
+          "label": "R [LeonActive4]",
+          "skillId": "LeonActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q(미구현·직선 범위), E(구현·착지), R(미구현·파도 경로/벽 충돌 추가 피해·에어본).",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 30,
+      "name": "일레븐",
+      "requestedScopeText": "Q(미구현·충전 범위), W(미구현·범위 도발), E(미구현·충전 착지), R(미구현·주변 지속 연타).",
+      "currentScopeText": "Q 충전 범위, W 범위 도발, E 충전 착지. R 제외.",
+      "registeredStages": [
+        {
+          "skillGroup": 1030200,
+          "slot": "Q",
+          "label": "Q [ElevenActive1]",
+          "skillId": "ElevenActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1030300,
+          "slot": "W",
+          "label": "W [ElevenActive2]",
+          "skillId": "ElevenActive2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1030400,
+          "slot": "E",
+          "label": "E [ElevenActive3]",
+          "skillId": "ElevenActive3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [
+        {
+          "skillGroup": 1030500,
+          "skillId": "ElevenActive4",
+          "reason": "일레븐 R은 최신 사용자 지시에 따라 제외"
+        }
+      ],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q 충전 범위, W 범위 도발, E 충전 착지. R 제외.",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 31,
+      "name": "리오",
+      "requestedScopeText": "단궁 W(미구현·다발), 화궁 W(부분·첫 탄 구현/후방 피해 미구현)[리오는 W어케든 맞추기만하면 적중 카운트 다인계산X], 양쪽 E(미구현·자동 다중 대상 발사), 단궁 R 연사(미구현)/마무리(구현·벽 기절 미구현), 화궁 R(미구현·장거리 범위탄).",
+      "registeredStages": [
+        {
+          "skillGroup": 1031300,
+          "slot": "W",
+          "label": "W [RioActive2Short]",
+          "skillId": "RioActive2Short",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": false
+        },
+        {
+          "skillGroup": 1031310,
+          "slot": "W",
+          "label": "W [RioActive2Long]",
+          "skillId": "RioActive2Long",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": false
+        },
+        {
+          "skillGroup": 1031500,
+          "slot": "R",
+          "label": "R [RioActive4Short]",
+          "skillId": "RioActive4Short",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1031510,
+          "slot": "R",
+          "label": "R [RioActive4Long]",
+          "skillId": "RioActive4Long",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1031520,
+          "slot": "R",
+          "label": "R [RioActive4ShortFinish]",
+          "skillId": "RioActive4ShortFinish",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [
+        {
+          "skillGroup": 1031400,
+          "slot": "E",
+          "label": "E [RioActive3Short]",
+          "skillId": "RioActive3Short",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true,
+          "reason": "W 단궁/화궁 모두 시전당 한 대 이상 적중하면 성공. 여러 발 모두 적중 또는 다인 적중 요구 없음. E 단궁/화궁 모두 제외. R 유지."
+        },
+        {
+          "skillGroup": 1031410,
+          "slot": "E",
+          "label": "E [RioActive3Long]",
+          "skillId": "RioActive3Long",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true,
+          "reason": "W 단궁/화궁 모두 시전당 한 대 이상 적중하면 성공. 여러 발 모두 적중 또는 다인 적중 요구 없음. E 단궁/화궁 모두 제외. R 유지."
+        }
+      ],
+      "internalStageCandidates": [],
+      "detailedRequirements": "W 단궁/화궁 모두 시전당 한 대 이상 적중하면 성공. 여러 발 모두 적중 또는 다인 적중 요구 없음. E 단궁/화궁 모두 제외. R 유지.",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true,
+      "currentScopeText": "W 단궁/화궁 모두 시전당 한 대 이상 적중하면 성공. 여러 발 모두 적중 또는 다인 적중 요구 없음. E 단궁/화궁 모두 제외. R 유지."
+    },
+    {
+      "characterCode": 32,
+      "name": "윌리엄",
+      "requestedScopeText": "W(미구현·왕복/왕복 모두 적중 기절/마운드 밀침), R(미구현·범위/중앙).",
+      "registeredStages": [
+        {
+          "skillGroup": 1032300,
+          "slot": "W",
+          "label": "W [WilliamActive2]",
+          "skillId": "WilliamActive2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1032500,
+          "slot": "R",
+          "label": "R [WilliamActive4]",
+          "skillId": "WilliamActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [],
+      "internalStageCandidates": [],
+      "detailedRequirements": "W(미구현·왕복/왕복 모두 적중 기절/마운드 밀침), R(미구현·범위/중앙).",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 33,
+      "name": "니키",
+      "requestedScopeText": "Q1(구현)/Q2(미구현), W(미구현·가드 성공/반격 적중 분리), E 일반/분노(미구현), R(미구현·지정 돌진·적용률).",
+      "registeredStages": [
+        {
+          "skillGroup": 1033200,
+          "slot": "Q",
+          "label": "Q [NickyActive1_1]",
+          "skillId": "NickyActive1_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1033210,
+          "slot": "Q",
+          "label": "Q [NickyActive1_2]",
+          "skillId": "NickyActive1_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1033300,
+          "slot": "W",
+          "label": "W 가드 성공률",
+          "skillId": "NickyActive2_1",
+          "mode": "guard-success",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": false
+        },
+        {
+          "skillGroup": 1033400,
+          "slot": "E",
+          "label": "E [NickyActive3_1]",
+          "skillId": "NickyActive3_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1033410,
+          "slot": "E",
+          "label": "E [NickyActive3_2]",
+          "skillId": "NickyActive3_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1033500,
+          "slot": "R",
+          "label": "R [NickyActive4]",
+          "skillId": "NickyActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [
+        {
+          "skillGroup": 1033300,
+          "slot": "W",
+          "label": "W [NickyActive2_1]",
+          "skillId": "NickyActive2_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true,
+          "reason": "반격 적중률을 가드 성공률로 대체"
+        }
+      ],
+      "internalStageCandidates": [],
+      "detailedRequirements": "W는 가드 성공률만 측정. 반격 피해 적중은 요구하지 않음. Q/E/R 유지.",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true,
+      "currentScopeText": "W는 가드 성공률만 측정. 반격 피해 적중은 요구하지 않음. Q/E/R 유지."
+    },
+    {
+      "characterCode": 34,
+      "name": "나타폰",
+      "requestedScopeText": "Q(미구현·범위), W(부분·기본값 있음, 반복 촬영/마지막 속박 미구현), E(미구현·프레임/후속 되돌리기), R(미구현·피해 없는 광역 행동불가).",
+      "registeredStages": [
+        {
+          "skillGroup": 1034200,
+          "slot": "Q",
+          "label": "Q [NathaponActive1]",
+          "skillId": "NathaponActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1034300,
+          "slot": "W",
+          "label": "W [NathaponActive2]",
+          "skillId": "NathaponActive2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1034300,
+          "slot": "W",
+          "label": "W 마지막 촬영 속박",
+          "skillId": "NathaponActive2",
+          "mode": "fetter",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1034400,
+          "slot": "E",
+          "label": "E [NathaponActive3]",
+          "skillId": "NathaponActive3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1034410,
+          "slot": "E",
+          "label": "E [NathaponActive3Pull]",
+          "skillId": "NathaponActive3Pull",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1034500,
+          "slot": "R",
+          "label": "R [NathaponActive4]",
+          "skillId": "NathaponActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q(미구현·범위), W(부분·기본값 있음, 반복 촬영/마지막 속박 미구현), E(미구현·프레임/후속 되돌리기), R(미구현·피해 없는 광역 행동불가).",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 35,
+      "name": "얀",
+      "requestedScopeText": "Q1/Q2(미구현·범위/강화), W(미구현·안쪽/바깥쪽/벽 기절), R(미구현·링 로프 접촉/밀려서 충돌).",
+      "registeredStages": [
+        {
+          "skillGroup": 1035200,
+          "slot": "Q",
+          "label": "Q [JanActive1_1]",
+          "skillId": "JanActive1_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1035210,
+          "slot": "Q",
+          "label": "Q [JanActive1_2]",
+          "skillId": "JanActive1_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1035300,
+          "slot": "W",
+          "label": "W [JanActive2]",
+          "skillId": "JanActive2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1035500,
+          "slot": "R",
+          "label": "R [JanActive4]",
+          "skillId": "JanActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [],
+      "internalStageCandidates": [
+        {
+          "skillGroup": 1035600,
+          "skillId": "JanActive4Rope",
+          "parentRequestedSkillGroup": 1035500,
+          "reason": "본체 한 번 사용에 연결할 소환물 후속 시전; 독립 사용 횟수로 세지 않음"
+        }
+      ],
+      "detailedRequirements": "Q1/Q2(미구현·범위/강화), W(미구현·안쪽/바깥쪽/벽 기절), R(미구현·링 로프 접촉/밀려서 충돌).",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 36,
+      "name": "이바",
+      "requestedScopeText": "Q(부분·기본값 있음, 관통/폭발 분리 미구현), W(미구현·생성/종료/중앙 에어본), R(미구현·연속 빔/실제 방출 기준).",
+      "registeredStages": [
+        {
+          "skillGroup": 1036200,
+          "slot": "Q",
+          "label": "Q [EvaActive1_1]",
+          "skillId": "EvaActive1_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1036210,
+          "slot": "Q",
+          "label": "Q [EvaActive1_2]",
+          "skillId": "EvaActive1_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1036300,
+          "slot": "W",
+          "label": "W [EvaActive2]",
+          "skillId": "EvaActive2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1036500,
+          "slot": "R",
+          "label": "R [EvaActive4]",
+          "skillId": "EvaActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q(부분·기본값 있음, 관통/폭발 분리 미구현), W(미구현·생성/종료/중앙 에어본), R(미구현·연속 빔/실제 방출 기준).",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 37,
+      "name": "다니엘",
+      "requestedScopeText": "Q(미구현·범위/중앙), W(미구현·표식 유지/폭발 성공률), R 진입(미구현)/탈출(구현). 그림자 안 반복 피해는 별도 미구현.",
+      "currentScopeText": "Q 범위/중앙, W 표식 유지/폭발 성공률. R 진입·탈출·내부 반복 피해 모두 제외.",
+      "registeredStages": [
+        {
+          "skillGroup": 1037200,
+          "slot": "Q",
+          "label": "Q [DanielActive1]",
+          "skillId": "DanielActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1037300,
+          "slot": "W",
+          "label": "W [DanielActive2]",
+          "skillId": "DanielActive2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [
+        {
+          "skillGroup": 1037510,
+          "skillId": "DanielActive4_1",
+          "reason": "다니엘 R 진입은 최신 사용자 지시에 따라 제외"
+        },
+        {
+          "skillGroup": 1037520,
+          "skillId": "DanielActive4_2",
+          "reason": "다니엘 R 탈출은 최신 사용자 지시에 따라 제외"
+        }
+      ],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q 범위/중앙, W 표식 유지/폭발 성공률. R 진입·탈출·내부 반복 피해 모두 제외.",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 38,
+      "name": "제니",
+      "requestedScopeText": "Q 양 배역(미구현·3회 타격), W1/W2 양 배역(미구현·카펫/당기기·밀기), R(미구현·지연 범위/매혹).",
+      "registeredStages": [
+        {
+          "skillGroup": 1038200,
+          "slot": "Q",
+          "label": "Q [JennyActive1]",
+          "skillId": "JennyActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1038300,
+          "slot": "W",
+          "label": "W [JennyActive2BlackTea_1]",
+          "skillId": "JennyActive2BlackTea_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1038310,
+          "slot": "W",
+          "label": "W [JennyActive2BlackTea_2]",
+          "skillId": "JennyActive2BlackTea_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1038500,
+          "slot": "R",
+          "label": "R [JennyActive4]",
+          "skillId": "JennyActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1038600,
+          "slot": "Q",
+          "label": "Q [JennyActive1]",
+          "skillId": "JennyActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1038700,
+          "slot": "W",
+          "label": "W [JennyActive2RedWine_1]",
+          "skillId": "JennyActive2RedWine_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1038710,
+          "slot": "W",
+          "label": "W [JennyActive2RedWine_2]",
+          "skillId": "JennyActive2RedWine_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [
+        {
+          "skillGroup": 1038010,
+          "skillId": "JennyActive3NormalAttack",
+          "reason": "제니 E는 요청 범위 밖"
+        },
+        {
+          "skillGroup": 1038400,
+          "skillId": "JennyActive3BlackTea",
+          "reason": "제니 E는 요청 범위 밖"
+        },
+        {
+          "skillGroup": 1038800,
+          "skillId": "JennyActive3RedWine",
+          "reason": "제니 E는 요청 범위 밖"
+        }
+      ],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q 양 배역(미구현·3회 타격), W1/W2 양 배역(미구현·카펫/당기기·밀기), R(미구현·지연 범위/매혹).",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 39,
+      "name": "카밀로",
+      "requestedScopeText": "Q 일반/강화/연계(미구현·가장자리/범위 2타), W(미구현·이동 연타), E1/E2(미구현·지정 돌진), R1~3(미구현·시전별 왕복/두 번 접촉 기절).",
+      "registeredStages": [
+        {
+          "skillGroup": 1039200,
+          "slot": "Q",
+          "label": "Q [CamiloActive1_1]",
+          "skillId": "CamiloActive1_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1039210,
+          "slot": "Q",
+          "label": "Q [CamiloActive1_2]",
+          "skillId": "CamiloActive1_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1039220,
+          "slot": "Q",
+          "label": "Q [CamiloActive1_3]",
+          "skillId": "CamiloActive1_3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1039300,
+          "slot": "W",
+          "label": "W [CamiloActive2]",
+          "skillId": "CamiloActive2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1039400,
+          "slot": "E",
+          "label": "E [CamiloActive3]",
+          "skillId": "CamiloActive3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1039500,
+          "slot": "R",
+          "label": "R [CamiloActive4_1]",
+          "skillId": "CamiloActive4_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1039510,
+          "slot": "R",
+          "label": "R [CamiloActive4_2]",
+          "skillId": "CamiloActive4_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1039520,
+          "slot": "R",
+          "label": "R [CamiloActive4_3]",
+          "skillId": "CamiloActive4_3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q 일반/강화/연계(미구현·가장자리/범위 2타), W(미구현·이동 연타), E1/E2(미구현·지정 돌진), R1~3(미구현·시전별 왕복/두 번 접촉 기절).",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 40,
+      "name": "클로에",
+      "requestedScopeText": "Q(미구현·니나 범위), W1/W2(미구현·회전/내려꽂기/니나 착지), E1/E2(미구현·클로에/니나 경로), R(미구현·연결선 지속 접촉).",
+      "registeredStages": [
+        {
+          "skillGroup": 1040200,
+          "slot": "Q",
+          "label": "Q [ChloeActive1]",
+          "skillId": "ChloeActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1040250,
+          "slot": "Q",
+          "label": "Q [NinaActive1]",
+          "skillId": "NinaActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1040300,
+          "slot": "W",
+          "label": "W [ChloeActive2_1]",
+          "skillId": "ChloeActive2_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1040310,
+          "slot": "W",
+          "label": "W [ChloeActive2_2]",
+          "skillId": "ChloeActive2_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1040350,
+          "slot": "W",
+          "label": "W [NinaActive2]",
+          "skillId": "NinaActive2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1040400,
+          "slot": "E",
+          "label": "E [ChloeActive3_1]",
+          "skillId": "ChloeActive3_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1040410,
+          "slot": "E",
+          "label": "E [ChloeActive3_2]",
+          "skillId": "ChloeActive3_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1040450,
+          "slot": "E",
+          "label": "E [NinaActive3]",
+          "skillId": "NinaActive3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1040500,
+          "slot": "R",
+          "label": "R [ChloeActive4]",
+          "skillId": "ChloeActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q(미구현·니나 범위), W1/W2(미구현·회전/내려꽂기/니나 착지), E1/E2(미구현·클로에/니나 경로), R(미구현·연결선 지속 접촉).",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 41,
+      "name": "요한",
+      "requestedScopeText": "Q(미구현·폭발/향로 강화), W(미구현·향로 둔화), E(미구현·아군에게 부여 후 주변 폭발), R(미구현·첫 범위 밀침). 아군 회복은 별도.",
+      "currentScopeText": "Q 폭발/향로 강화, W 향로 효과만. E·R 제외. 적팀·다른 아군·둘 중 한 명 이상 적중 각각, 동시 타격은 사용별 대상 합집합 다인 수. 같은 대상 반복 적용은 한 명, 자신은 팀원 수에서 제외.",
+      "registeredStages": [
+        {
+          "skillGroup": 1041200,
+          "slot": "Q",
+          "label": "Q [JohannActive1_1]",
+          "skillId": "JohannActive1_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1041200,
+          "slot": "Q",
+          "label": "Q 속박 적용(본체 발사 기준)",
+          "skillId": "JohannActive1_1",
+          "mode": "fetter",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1041200,
+          "slot": "Q",
+          "label": "Q 아군 효과 적중 [JohannActive1_1]",
+          "skillId": "JohannActive1_1",
+          "mode": "ally",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1041200,
+          "slot": "Q",
+          "label": "Q 적·아군 중 한 명 이상 적중 [JohannActive1_1]",
+          "skillId": "JohannActive1_1",
+          "mode": "either-team",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1041210,
+          "slot": "Q",
+          "label": "Q [JohannActive1_2]",
+          "skillId": "JohannActive1_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1041210,
+          "slot": "Q",
+          "label": "Q 아군 효과 적중 [JohannActive1_2]",
+          "skillId": "JohannActive1_2",
+          "mode": "ally",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1041210,
+          "slot": "Q",
+          "label": "Q 적·아군 중 한 명 이상 적중 [JohannActive1_2]",
+          "skillId": "JohannActive1_2",
+          "mode": "either-team",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1041300,
+          "slot": "W",
+          "label": "W [JohannActive2_1]",
+          "skillId": "JohannActive2_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1041300,
+          "slot": "W",
+          "label": "W 아군 효과 적중 [JohannActive2_1]",
+          "skillId": "JohannActive2_1",
+          "mode": "ally",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1041300,
+          "slot": "W",
+          "label": "W 적·아군 중 한 명 이상 적중 [JohannActive2_1]",
+          "skillId": "JohannActive2_1",
+          "mode": "either-team",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1041310,
+          "slot": "W",
+          "label": "W [JohannActive2_2]",
+          "skillId": "JohannActive2_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1041310,
+          "slot": "W",
+          "label": "W 아군 효과 적중 [JohannActive2_2]",
+          "skillId": "JohannActive2_2",
+          "mode": "ally",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1041310,
+          "slot": "W",
+          "label": "W 적·아군 중 한 명 이상 적중 [JohannActive2_2]",
+          "skillId": "JohannActive2_2",
+          "mode": "either-team",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [
+        {
+          "skillGroup": 1041400,
+          "skillId": "JohannActive3",
+          "reason": "요한 E는 최신 사용자 지시에 따라 제외"
+        },
+        {
+          "skillGroup": 1041500,
+          "skillId": "JohannActive4",
+          "reason": "요한 R은 최신 사용자 지시에 따라 제외"
+        }
+      ],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q 폭발/향로 강화, W 향로 효과만. E·R 제외. 적팀·다른 아군·둘 중 한 명 이상 적중 각각, 동시 타격은 사용별 대상 합집합 다인 수. 같은 대상 반복 적용은 한 명, 자신은 팀원 수에서 제외.",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 42,
+      "name": "비앙카",
+      "requestedScopeText": "Q(부분·기본값 있음, 경로/도착 확산 분리 미구현), E(구현·충전 돌진), R(미구현·마법진 생성/종료).",
+      "registeredStages": [
+        {
+          "skillGroup": 1042200,
+          "slot": "Q",
+          "label": "Q [BiancaActive1]",
+          "skillId": "BiancaActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1042400,
+          "slot": "E",
+          "label": "E [BiancaActive3]",
+          "skillId": "BiancaActive3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1042500,
+          "slot": "R",
+          "label": "R [BiancaActive4]",
+          "skillId": "BiancaActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1042500,
+          "slot": "R",
+          "label": "R 마법진 생성 타격",
+          "skillId": "BiancaActive4",
+          "mode": "creation-hit",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1042500,
+          "slot": "R",
+          "label": "R 마법진 종료 타격",
+          "skillId": "BiancaActive4",
+          "mode": "end-hit",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q(부분·기본값 있음, 경로/도착 확산 분리 미구현), E(구현·충전 돌진), R(미구현·마법진 생성/종료).",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 43,
+      "name": "셀린",
+      "requestedScopeText": "Q-W 기폭(미구현·폭탄별/기폭 시전별 분리), E(미구현·충격파), R-W/자연 폭발(미구현·융합 단계별). Q와 W에 같은 피해를 중복 합산하면 안 됨.",
+      "currentScopeText": "Q-W 기폭(미구현·폭탄별/기폭 시전별 분리), E(미구현·충격파), R-W/자연 폭발(미구현·융합 단계별). Q와 W에 같은 피해를 중복 합산하면 안 됨. 사용자 2026-09-10: Q 설치 폭탄을 W로 기폭. R 융합은 선택 사항이며 QW 반복도 독립 계산. 폭탄별 결과와 W 사용별 성공을 구분하고 피해를 중복 합산하지 않음.",
+      "registeredStages": [
+        {
+          "skillGroup": 1043200,
+          "slot": "Q",
+          "label": "Q [CelineActive1]",
+          "skillId": "CelineActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1043300,
+          "slot": "W",
+          "label": "W [CelineActive2]",
+          "skillId": "CelineActive2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1043400,
+          "slot": "E",
+          "label": "E [CelineActive3]",
+          "skillId": "CelineActive3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1043500,
+          "slot": "R",
+          "label": "R [CelineActive4]",
+          "skillId": "CelineActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [],
+      "internalStageCandidates": [
+        {
+          "skillGroup": 1043520,
+          "skillId": "CelineCombineBombActive4",
+          "parentRequestedSkillGroup": 1043500,
+          "reason": "본체 한 번 사용에 연결할 소환물 후속 시전; 독립 사용 횟수로 세지 않음"
+        }
+      ],
+      "detailedRequirements": "Q-W 기폭(미구현·폭탄별/기폭 시전별 분리), E(미구현·충격파), R-W/자연 폭발(미구현·융합 단계별). Q와 W에 같은 피해를 중복 합산하면 안 됨. 사용자 2026-09-10: Q 설치 폭탄을 W로 기폭. R 융합은 선택 사항이며 QW 반복도 독립 계산. 폭탄별 결과와 W 사용별 성공을 구분하고 피해를 중복 합산하지 않음.",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 44,
+      "name": "에키온",
+      "requestedScopeText": "Q1/Q2(미구현·범위), E(미구현·경로), R 독사의 진노 무기별(미구현·직선/후속 타격). 폭주 주변 피해는 별도 지속 접촉 후보.",
+      "currentScopeText": "Q1/Q2 범위 각각, E 경로 적중. 진화 후 독사의 진노(블랙맘바·데스애더·사이드와인더) 직선/후속 타격. VF폭주 주변 주기 피해의 적중률은 제외. 진화 전 바이퍼 R도 적중률과 표본 수집 대상에서 제외. 사용자 2026-09-10 추가: 병목 목록 7번 에키온 R 임시 제외. 기존 기록과 원본 .er 보존.",
+      "echionEvolvedROnly20260909": true,
+      "congestionAreaHitRateRequired": false,
+      "registeredStages": [
+        {
+          "skillGroup": 1044200,
+          "slot": "Q",
+          "label": "Q [EchionActive1_1]",
+          "skillId": "EchionActive1_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1044210,
+          "slot": "Q",
+          "label": "Q [EchionActive1_2]",
+          "skillId": "EchionActive1_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1044400,
+          "slot": "E",
+          "label": "E [EchionActive3]",
+          "skillId": "EchionActive3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [
+        {
+          "skillGroup": 1044500,
+          "skillId": "EchionActive4",
+          "reason": "사용자 2026-09-10: 병목 목록 7번 에키온 R 임시 제외; 원본 보존"
+        },
+        {
+          "skillGroup": 1044510,
+          "skillId": "EchionActive4_ViperAttack",
+          "reason": "사용자 2026-09-09: 에키온 R은 진화 후만 집계; 진화 전 바이퍼 R 및 해당 표본 수집 제외"
+        },
+        {
+          "skillGroup": 1044520,
+          "skillId": "EchionActive4_BlackMambaAttack",
+          "reason": "사용자 2026-09-10: 병목 목록 7번 에키온 R 임시 제외; 원본 보존"
+        },
+        {
+          "skillGroup": 1044530,
+          "skillId": "EchionActive4_DeathAdderAttack",
+          "reason": "사용자 2026-09-10: 병목 목록 7번 에키온 R 임시 제외; 원본 보존"
+        },
+        {
+          "skillGroup": 1044540,
+          "skillId": "EchionActive4_SideWinderAttack",
+          "reason": "사용자 2026-09-10: 병목 목록 7번 에키온 R 임시 제외; 원본 보존"
+        }
+      ],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q1/Q2 범위 각각, E 경로 적중. 진화 후 독사의 진노(블랙맘바·데스애더·사이드와인더) 직선/후속 타격. VF폭주 주변 주기 피해의 적중률은 제외. 진화 전 바이퍼 R도 적중률과 표본 수집 대상에서 제외. 사용자 2026-09-10 추가: 병목 목록 7번 에키온 R 임시 제외. 기존 기록과 원본 .er 보존.",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 45,
+      "name": "마이",
+      "requestedScopeText": "Q(미구현·범위), W(미구현·종료 범위), E2(미구현·경로 도발), R 자기 사용의 W 연계 피해(미구현·W와 중복 제외).",
+      "registeredStages": [
+        {
+          "skillGroup": 1045200,
+          "slot": "Q",
+          "label": "Q [MaiActive1]",
+          "skillId": "MaiActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1045300,
+          "slot": "W",
+          "label": "W [MaiActive2]",
+          "skillId": "MaiActive2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1045400,
+          "slot": "E",
+          "label": "E [MaiActive3_1]",
+          "skillId": "MaiActive3_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1045410,
+          "slot": "E",
+          "label": "E [MaiActive3_2]",
+          "skillId": "MaiActive3_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1045500,
+          "slot": "R",
+          "label": "R [MaiActive4]",
+          "skillId": "MaiActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q(미구현·범위), W(미구현·종료 범위), E2(미구현·경로 도발), R 자기 사용의 W 연계 피해(미구현·W와 중복 제외).",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 46,
+      "name": "에이든",
+      "requestedScopeText": "근거리 Q(미구현)/원거리 Q(구현), W(미구현·충전 범위/전기장 속박), E1/E2(미구현·발사/관통 돌진), R(미구현·1차/중앙 기절/2차 낙뢰).",
+      "currentScopeText": "근거리 Q(미구현)/원거리 Q(구현), W(미구현·충전 범위/전기장 속박), E1/E2(미구현·발사/관통 돌진), R(미구현·1차/중앙 기절/2차 낙뢰). 사용자 2026-09-10: W는 타격 적중률만 계산; 별도 속박 성공률 제외.",
+      "registeredStages": [
+        {
+          "skillGroup": 1046200,
+          "slot": "Q",
+          "label": "Q [AidenActive1_Spear]",
+          "skillId": "AidenActive1_Spear",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1046210,
+          "slot": "Q",
+          "label": "Q [AidenActive1_ElectroGun]",
+          "skillId": "AidenActive1_ElectroGun",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1046300,
+          "slot": "W",
+          "label": "W 타격 적중",
+          "skillId": "AidenActive2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1046400,
+          "slot": "E",
+          "label": "E [AidenActive3_BackStep]",
+          "skillId": "AidenActive3_BackStep",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1046410,
+          "slot": "E",
+          "label": "E [AidenActive3_VoltRush]",
+          "skillId": "AidenActive3_VoltRush",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1046500,
+          "slot": "R",
+          "label": "R [AidenActive4]",
+          "skillId": "AidenActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1046510,
+          "slot": "R",
+          "label": "R [AidenActive4Warp]",
+          "skillId": "AidenActive4Warp",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [
+        {
+          "skillGroup": 1046300,
+          "slot": "W",
+          "label": "W 속박 적용",
+          "skillId": "AidenActive2",
+          "mode": "fetter",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true,
+          "reason": "사용자 2026-09-10: 타격 단계 집계 범위 수정"
+        }
+      ],
+      "internalStageCandidates": [],
+      "detailedRequirements": "근거리 Q(미구현)/원거리 Q(구현), W(미구현·충전 범위/전기장 속박), E1/E2(미구현·발사/관통 돌진), R(미구현·1차/중앙 기절/2차 낙뢰). 사용자 2026-09-10: W는 타격 적중률만 계산; 별도 속박 성공률 제외.",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 47,
+      "name": "라우라",
+      "requestedScopeText": "Q1(미구현·채찍), W(미구현·투사체), E2(미구현·착지), R(미구현·첫 끌기/후속 범위). E1 벽 연결·이동 성공률은 사용자 지시로 제외; E2 착지 적중률만 유지.",
+      "currentScopeText": "Q1(미구현·채찍), W(미구현·투사체), E2(미구현·착지), R(미구현·첫 끌기/후속 범위). E1 벽 연결·이동 성공률은 사용자 지시로 제외; E2 착지 적중률만 유지. 사용자 2026-09-10: R 첫 타격과 폭발 타격 적중률을 독립적으로 표시.",
+      "registeredStages": [
+        {
+          "skillGroup": 1047200,
+          "slot": "Q",
+          "label": "Q [LauraActive1_1]",
+          "skillId": "LauraActive1_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1047300,
+          "slot": "W",
+          "label": "W [LauraActive2]",
+          "skillId": "LauraActive2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1047410,
+          "slot": "E",
+          "label": "E [LauraActive3_2]",
+          "skillId": "LauraActive3_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1047500,
+          "slot": "R",
+          "label": "R 첫 타격",
+          "skillId": "LauraActive4",
+          "mode": "first-hit",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1047500,
+          "slot": "R",
+          "label": "R 폭발 타격",
+          "skillId": "LauraActive4",
+          "mode": "end-hit",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [
+        {
+          "skillGroup": 1047210,
+          "skillId": "LauraActive1_2",
+          "reason": "라우라 Q는 요청한 Q1만 측정"
+        },
+        {
+          "skillGroup": 1047400,
+          "skillId": "LauraActive3_1",
+          "reason": "라우라 E1 벽 연결·이동 성공률 제외; E2 착지 적중률만 유지"
+        },
+        {
+          "skillGroup": 1047500,
+          "slot": "R",
+          "label": "R [LauraActive4]",
+          "skillId": "LauraActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true,
+          "reason": "사용자 2026-09-10: 타격 단계 집계 범위 수정"
+        }
+      ],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q1(미구현·채찍), W(미구현·투사체), E2(미구현·착지), R(미구현·첫 끌기/후속 범위). E1 벽 연결·이동 성공률은 사용자 지시로 제외; E2 착지 적중률만 유지. 사용자 2026-09-10: R 첫 타격과 폭발 타격 적중률을 독립적으로 표시.",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 48,
+      "name": "띠아",
+      "requestedScopeText": "노랑 Q(부분·투사체 구현/폭발 분리 미구현), 빨강·파랑 Q(미구현·부위별), 색별 E(미구현·경로), R(미구현·기절/색 유무).",
+      "registeredStages": [
+        {
+          "skillGroup": 1048400,
+          "slot": "Q",
+          "label": "Q [TiaActive1_1]",
+          "skillId": "TiaActive1_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1048410,
+          "slot": "Q",
+          "label": "Q [TiaActive1_2]",
+          "skillId": "TiaActive1_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1048420,
+          "slot": "Q",
+          "label": "Q [TiaActive1_3]",
+          "skillId": "TiaActive1_3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1048600,
+          "slot": "E",
+          "label": "E [TiaActive3_1]",
+          "skillId": "TiaActive3_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1048700,
+          "slot": "R",
+          "label": "R [TiaActive4]",
+          "skillId": "TiaActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [],
+      "internalStageCandidates": [],
+      "detailedRequirements": "노랑 Q(부분·투사체 구현/폭발 분리 미구현), 빨강·파랑 Q(미구현·부위별), 색별 E(미구현·경로), R(미구현·기절/색 유무).",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 49,
+      "name": "펠릭스",
+      "requestedScopeText": "Q/W/E 각각 1~3연계(미구현·범위/3연계 강화), R(미구현·충전 돌진/최대 충전 기절).",
+      "registeredStages": [
+        {
+          "skillGroup": 1049200,
+          "slot": "Q",
+          "label": "Q [FelixActive1_1]",
+          "skillId": "FelixActive1_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1049210,
+          "slot": "Q",
+          "label": "Q [FelixActive1_2]",
+          "skillId": "FelixActive1_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1049220,
+          "slot": "Q",
+          "label": "Q [FelixActive1_3]",
+          "skillId": "FelixActive1_3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1049230,
+          "slot": "Q",
+          "label": "Q [FelixActive1_4]",
+          "skillId": "FelixActive1_4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1049240,
+          "slot": "Q",
+          "label": "Q [FelixActive1_5]",
+          "skillId": "FelixActive1_5",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1049300,
+          "slot": "W",
+          "label": "W [FelixActive2_1]",
+          "skillId": "FelixActive2_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1049310,
+          "slot": "W",
+          "label": "W [FelixActive2_2]",
+          "skillId": "FelixActive2_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1049320,
+          "slot": "W",
+          "label": "W [FelixActive2_3]",
+          "skillId": "FelixActive2_3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1049320,
+          "slot": "W",
+          "label": "W 속박 적용(3연계)",
+          "skillId": "FelixActive2_3",
+          "mode": "fetter",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1049330,
+          "slot": "W",
+          "label": "W [FelixActive2_4]",
+          "skillId": "FelixActive2_4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1049340,
+          "slot": "W",
+          "label": "W [FelixActive2_5]",
+          "skillId": "FelixActive2_5",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1049400,
+          "slot": "E",
+          "label": "E [FelixActive3_1]",
+          "skillId": "FelixActive3_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1049410,
+          "slot": "E",
+          "label": "E [FelixActive3_2]",
+          "skillId": "FelixActive3_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1049420,
+          "slot": "E",
+          "label": "E [FelixActive3_3]",
+          "skillId": "FelixActive3_3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1049430,
+          "slot": "E",
+          "label": "E [FelixActive3_4]",
+          "skillId": "FelixActive3_4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1049440,
+          "slot": "E",
+          "label": "E [FelixActive3_5]",
+          "skillId": "FelixActive3_5",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1049500,
+          "slot": "R",
+          "label": "R [FelixActive4]",
+          "skillId": "FelixActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q/W/E 각각 1~3연계(미구현·범위/3연계 강화), R(미구현·충전 돌진/최대 충전 기절).",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 50,
+      "name": "엘레나",
+      "requestedScopeText": "Q(미구현·첫 타격/폭발), W(구현·경로), E(미구현·이동 경로 접촉), R(미구현·범위/안쪽 빙결).",
+      "registeredStages": [
+        {
+          "skillGroup": 1050200,
+          "slot": "Q",
+          "label": "Q [ElenaActive1]",
+          "skillId": "ElenaActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1050300,
+          "slot": "W",
+          "label": "W [ElenaActive2]",
+          "skillId": "ElenaActive2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1050400,
+          "slot": "E",
+          "label": "E [ElenaActive3]",
+          "skillId": "ElenaActive3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1050500,
+          "slot": "R",
+          "label": "R [ElenaActive4]",
+          "skillId": "ElenaActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q(미구현·첫 타격/폭발), W(구현·경로), E(미구현·이동 경로 접촉), R(미구현·범위/안쪽 빙결).",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 51,
+      "name": "프리야",
+      "requestedScopeText": "Q(미구현·범위/꽃 폭발), W(미구현·관통), E(미구현·3연타/속박), R(미구현·퍼짐/수축/춤 CC).",
+      "registeredStages": [
+        {
+          "skillGroup": 1051200,
+          "slot": "Q",
+          "label": "Q [PriyaActive1]",
+          "skillId": "PriyaActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1051300,
+          "slot": "W",
+          "label": "W [PriyaActive2]",
+          "skillId": "PriyaActive2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1051400,
+          "slot": "E",
+          "label": "E [PriyaActive3]",
+          "skillId": "PriyaActive3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1051400,
+          "slot": "E",
+          "label": "E 속박 적용",
+          "skillId": "PriyaActive3",
+          "mode": "fetter",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1051500,
+          "slot": "R",
+          "label": "R [PriyaActive4]",
+          "skillId": "PriyaActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q(미구현·범위/꽃 폭발), W(미구현·관통), E(미구현·3연타/속박), R(미구현·퍼짐/수축/춤 CC).",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 52,
+      "name": "아디나",
+      "requestedScopeText": "Q 해·달·별/해 컨정션(미구현·달 단일 구분), W 각 천체/달 컨정션(미구현·범위/강화 2회), E 각 천체/별 컨정션(미구현·부착/낙하 범위).",
+      "registeredStages": [
+        {
+          "skillGroup": 1052200,
+          "slot": "Q",
+          "label": "Q [AdinaActive1]",
+          "skillId": "AdinaActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1052210,
+          "slot": "Q",
+          "label": "Q [AdinaActive1ReinforceSun]",
+          "skillId": "AdinaActive1ReinforceSun",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1052300,
+          "slot": "W",
+          "label": "W [AdinaActive2]",
+          "skillId": "AdinaActive2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1052310,
+          "slot": "W",
+          "label": "W [AdinaActive2ReinforceMoon]",
+          "skillId": "AdinaActive2ReinforceMoon",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1052400,
+          "slot": "E",
+          "label": "E [AdinaActive3]",
+          "skillId": "AdinaActive3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1052410,
+          "slot": "E",
+          "label": "E [AdinaActive3ReinforceStar]",
+          "skillId": "AdinaActive3ReinforceStar",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q 해·달·별/해 컨정션, W 각 천체/달 컨정션, E 각 천체/별 컨정션. E 적 대상 사망으로 직접 지면 분기가 식별되면 적중 인정; 해당 분기 낙하 상세 판정·별도 표본 검증은 요구하지 않음.",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true,
+      "currentScopeText": "Q 해·달·별/해 컨정션, W 각 천체/달 컨정션, E 각 천체/별 컨정션. E 적 대상 사망으로 직접 지면 분기가 식별되면 적중 인정; 해당 분기 낙하 상세 판정·별도 표본 검증은 요구하지 않음."
+    },
+    {
+      "characterCode": 53,
+      "name": "마커스",
+      "requestedScopeText": "W(부분·기본값 있음, 넘기기/충돌 미구현), E(미구현·돌진/벽·다른 대상 충돌), R(미구현·착지/균열 연계 충격).",
+      "registeredStages": [
+        {
+          "skillGroup": 1053300,
+          "slot": "W",
+          "label": "W [MarkusActive2_1]",
+          "skillId": "MarkusActive2_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1053400,
+          "slot": "E",
+          "label": "E [MarkusActive3_1]",
+          "skillId": "MarkusActive3_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1053500,
+          "slot": "R",
+          "label": "R [MarkusActive4]",
+          "skillId": "MarkusActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [],
+      "internalStageCandidates": [],
+      "detailedRequirements": "W(부분·기본값 있음, 넘기기/충돌 미구현), E(미구현·돌진/벽·다른 대상 충돌), R(미구현·착지/균열 연계 충격).",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 54,
+      "name": "칼라",
+      "requestedScopeText": "Q(미구현·관통 작살), W(미구현·작살별 회수 경로), E(미구현·작살 중심 이동 공격), R(미구현·첫 사슬/유지 후 끌기·기절).",
+      "currentScopeText": "칼라 E 적중률 제외; Q/W/R 기존 요구 유지. 사용자 2026-09-10 추가: 칼라 R 피해 적중률 유지, 별도 기절 성공률 제외.",
+      "registeredStages": [
+        {
+          "skillGroup": 1054200,
+          "slot": "Q",
+          "label": "Q [KarlaActive1]",
+          "skillId": "KarlaActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1054300,
+          "slot": "W",
+          "label": "W [KarlaActive2]",
+          "skillId": "KarlaActive2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1054500,
+          "slot": "R",
+          "label": "R [KarlaActive4]",
+          "skillId": "KarlaActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [
+        {
+          "skillGroup": 1054400,
+          "skillId": "KarlaActive3",
+          "reason": "사용자 2026-09-09: 칼라 E 제외"
+        },
+        {
+          "skillGroup": 1054500,
+          "slot": "R",
+          "label": "R 기절 적용",
+          "skillId": "KarlaActive4",
+          "mode": "stun",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true,
+          "reason": "사용자 2026-09-10: 타격 단계 집계 범위 수정"
+        }
+      ],
+      "internalStageCandidates": [],
+      "detailedRequirements": "칼라 E 적중률 제외; Q/W/R 기존 요구 유지. 사용자 2026-09-10 추가: 칼라 R 피해 적중률 유지, 별도 기절 성공률 제외.",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 55,
+      "name": "에스텔",
+      "requestedScopeText": "W 일반/방패 중(미구현·범위/지속 분사), E2(미구현·방패 돌진), R 자기/아군 사용(미구현·물폭탄/합류 착지).",
+      "currentScopeText": "일반 W 선제대응과 E2 방패 돌진 적중률 유지. 사용자 2026-09-09: 전방 물 분사 W2 긴급진화와 그 종료 단계, 궁극기 R 전체는 적중률에서 제외.",
+      "excludedSkillGroups20260909": [
+        1055310,
+        1055320,
+        1055500
+      ],
+      "registeredStages": [
+        {
+          "skillGroup": 1055300,
+          "slot": "W",
+          "label": "W [EstelleActive2_1]",
+          "skillId": "EstelleActive2_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1055410,
+          "slot": "E",
+          "label": "E [EstelleActive3_2]",
+          "skillId": "EstelleActive3_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1055430,
+          "slot": "E",
+          "label": "E [EstelleActive3_3]",
+          "skillId": "EstelleActive3_3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [
+        {
+          "skillGroup": 1055310,
+          "skillId": "EstelleActive2_2",
+          "reason": "사용자 2026-09-09: 에스텔 전방 물 분사 W2 긴급진화 적중률 제외"
+        },
+        {
+          "skillGroup": 1055320,
+          "skillId": "EstelleActive2_3",
+          "reason": "사용자 2026-09-09: 제외한 에스텔 물 분사의 종료·방패 해제 단계도 적중률 대상에서 제외"
+        },
+        {
+          "skillGroup": 1055400,
+          "skillId": "EstelleActive3_1",
+          "reason": "에스텔 E는 요청한 방패 돌진 E2에 대응하는 공격 단계만 후보"
+        },
+        {
+          "skillGroup": 1055500,
+          "skillId": "EstelleActive4",
+          "reason": "사용자 2026-09-09: 에스텔 궁극기 R 헬기호출 전체 적중률 제외"
+        }
+      ],
+      "internalStageCandidates": [],
+      "detailedRequirements": "일반 W 선제대응과 E2 방패 돌진 적중률 유지. 사용자 2026-09-09: 전방 물 분사 W2 긴급진화와 그 종료 단계, 궁극기 R 전체는 적중률에서 제외.",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 56,
+      "name": "피올로",
+      "requestedScopeText": "Q1/Q2(미구현·난격/내려치기), W2(미구현·범위), E1(부분·첫 탄 구현, 후속 돌진 미구현)/E2(미구현), R(미구현·관통 돌진).",
+      "registeredStages": [
+        {
+          "skillGroup": 1056200,
+          "slot": "Q",
+          "label": "Q [PioloActive1_1]",
+          "skillId": "PioloActive1_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1056210,
+          "slot": "Q",
+          "label": "Q [PioloActive1_2]",
+          "skillId": "PioloActive1_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1056310,
+          "slot": "W",
+          "label": "W [PioloActive2_2]",
+          "skillId": "PioloActive2_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1056400,
+          "slot": "E",
+          "label": "E [PioloActive3_1]",
+          "skillId": "PioloActive3_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1056410,
+          "slot": "E",
+          "label": "E [PioloActive3_2]",
+          "skillId": "PioloActive3_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1056500,
+          "slot": "R",
+          "label": "R [PioloActive4_1]",
+          "skillId": "PioloActive4_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [
+        {
+          "skillGroup": 1056300,
+          "skillId": "PioloActive2_1",
+          "reason": "피올로 W는 요청한 W2만 측정"
+        }
+      ],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q1/Q2(미구현·난격/내려치기), W2(미구현·범위), E1(부분·첫 탄 구현, 후속 돌진 미구현)/E2(미구현), R(미구현·관통 돌진).",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 57,
+      "name": "마르티나",
+      "requestedScopeText": "Q 취재/방송(미구현), W 취재/방송(미구현·카메라 연계), E 복귀 취재/방송(미구현·둔화/피해·기절), 방송 R(미구현·연타/중앙/마지막 기절). 취재 R은 별도 촬영 성공률.",
+      "currentScopeText": "강화(방송) 후 스킬만 적중률 표시: Q, W 카메라 연계, E 복귀 피해·기절, R 연타/중앙/마지막 기절. 강화 전 Q/W/E 및 취재 R 촬영 제외.",
+      "registeredStages": [
+        {
+          "skillGroup": 1057210,
+          "slot": "Q",
+          "label": "Q [MartinaActive1Reinforce]",
+          "skillId": "MartinaActive1Reinforce",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1057310,
+          "slot": "W",
+          "label": "W [MartinaActive2Reinforce]",
+          "skillId": "MartinaActive2Reinforce",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1057330,
+          "slot": "W",
+          "label": "W [MartinaActive2ReinforceSummonAttack]",
+          "skillId": "MartinaActive2ReinforceSummonAttack",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1057430,
+          "slot": "E",
+          "label": "E [MartinaActive3_1Reinforce]",
+          "skillId": "MartinaActive3_1Reinforce",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1057440,
+          "slot": "E",
+          "label": "E [MartinaActive3_2Reinforce]",
+          "skillId": "MartinaActive3_2Reinforce",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1057450,
+          "slot": "E",
+          "label": "E [MartinaActive3_ReturnReinforce]",
+          "skillId": "MartinaActive3_ReturnReinforce",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1057510,
+          "slot": "R",
+          "label": "R [MartinaActive4Reinforce]",
+          "skillId": "MartinaActive4Reinforce",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [
+        {
+          "skillGroup": 1057200,
+          "skillId": "MartinaActive1",
+          "reason": "마르티나 강화 전 스킬은 적중률 표시에서 제외"
+        },
+        {
+          "skillGroup": 1057300,
+          "skillId": "MartinaActive2",
+          "reason": "마르티나 강화 전 스킬은 적중률 표시에서 제외"
+        },
+        {
+          "skillGroup": 1057320,
+          "skillId": "MartinaActive2SummonAttack",
+          "reason": "마르티나 강화 전 카메라 공격은 적중률 표시에서 제외"
+        },
+        {
+          "skillGroup": 1057400,
+          "skillId": "MartinaActive3_1",
+          "reason": "마르티나 강화 전 스킬은 적중률 표시에서 제외"
+        },
+        {
+          "skillGroup": 1057410,
+          "skillId": "MartinaActive3_2",
+          "reason": "마르티나 강화 전 스킬은 적중률 표시에서 제외"
+        },
+        {
+          "skillGroup": 1057420,
+          "skillId": "MartinaActive3_Return",
+          "reason": "마르티나 강화 전 복귀는 적중률 표시에서 제외"
+        },
+        {
+          "skillGroup": 1057500,
+          "skillId": "MartinaActive4",
+          "reason": "마르티나 강화 전 촬영은 적중률 표시에서 제외"
+        }
+      ],
+      "internalStageCandidates": [],
+      "detailedRequirements": "강화(방송) 후 스킬만 적중률 표시: Q, W 카메라 연계, E 복귀 피해·기절, R 연타/중앙/마지막 기절. 강화 전 Q/W/E 및 취재 R 촬영 제외.",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 58,
+      "name": "헤이즈",
+      "requestedScopeText": "일반 Q(미구현·유탄), 기관단총 Q(미구현·실제 연사), 로켓 Q(부분·기본값 있음, 관통/후방 확산 분리 미구현), W(구현·산탄), R 전환 타격(미구현·주변 범위).",
+      "currentScopeText": "Q 일반 유탄/기관단총 실제 연사, W 산탄. R 적중률은 R 상태에서 Q로 발사한 엑셀러레이션 로켓의 적중/발사 시도 및 다인으로 표시. 로켓 관통·후방 확산 분리 유지. R 전환 타격·폼 종료·기본 공격은 제외.",
+      "registeredStages": [
+        {
+          "skillGroup": 1058200,
+          "slot": "Q",
+          "label": "Q [HazeActive1_1]",
+          "skillId": "HazeActive1_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1058210,
+          "slot": "Q",
+          "label": "Q [HazeActive1_2]",
+          "skillId": "HazeActive1_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1058220,
+          "slot": "R",
+          "label": "R 로켓(Q 입력) [HazeActive1_3]",
+          "skillId": "HazeActive1_3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1058300,
+          "slot": "W",
+          "label": "W [HazeActive2]",
+          "skillId": "HazeActive2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [
+        {
+          "skillGroup": 1058500,
+          "skillId": "HazeActive4_1",
+          "reason": "헤이즈 R 전환 휘두르기는 제외; R 상태의 Q 로켓 발사를 R 적중률로 표시"
+        },
+        {
+          "skillGroup": 1058510,
+          "skillId": "HazeActive4_2",
+          "reason": "헤이즈 R 폼 종료는 적중률 분모에서 제외"
+        },
+        {
+          "skillGroup": 1058520,
+          "skillId": "HazeActive4NormalAttackMount",
+          "reason": "헤이즈 R 상태 기본 공격은 요청한 Q 로켓 적중률에서 제외"
+        }
+      ],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q 일반 유탄/기관단총 실제 연사, W 산탄. R 적중률은 R 상태에서 Q로 발사한 엑셀러레이션 로켓의 적중/발사 시도 및 다인으로 표시. 로켓 관통·후방 확산 분리 유지. R 전환 타격·폼 종료·기본 공격은 제외.",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 59,
+      "name": "아이작",
+      "requestedScopeText": "Q(미구현·지정 돌진), E2(미구현·범위 끌기/기절), R(구현·범위; 표식별 효과 분리는 미구현).",
+      "registeredStages": [
+        {
+          "skillGroup": 1059200,
+          "slot": "Q",
+          "label": "Q [IsaacActive1]",
+          "skillId": "IsaacActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1059410,
+          "slot": "E",
+          "label": "E [IsaacActive3_2]",
+          "skillId": "IsaacActive3_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1059500,
+          "slot": "R",
+          "label": "R [IsaacActive4]",
+          "skillId": "IsaacActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [
+        {
+          "skillGroup": 1059400,
+          "skillId": "IsaacActive3_1",
+          "reason": "아이작 E는 요청한 E2만 측정"
+        }
+      ],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q(미구현·지정 돌진), E2(미구현·범위 끌기/기절), R(구현·범위; 표식별 효과 분리는 미구현).",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 60,
+      "name": "타지아",
+      "requestedScopeText": "Q 일반/강화(미구현·충돌/검 폭발), W(미구현·유리벽 접촉), E1/E2(미구현·파편 파괴 조건의 범위 공격), R(미구현·대검 타격/폭발).",
+      "registeredStages": [
+        {
+          "skillGroup": 1060200,
+          "slot": "Q",
+          "label": "Q [TaziaActive1_1]",
+          "skillId": "TaziaActive1_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1060210,
+          "slot": "Q",
+          "label": "Q [TaziaActive1_2]",
+          "skillId": "TaziaActive1_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1060300,
+          "slot": "W",
+          "label": "W [TaziaActive2]",
+          "skillId": "TaziaActive2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1060420,
+          "slot": "E",
+          "label": "E [TaziaActive3_1_Sequence]",
+          "skillId": "TaziaActive3_1_Sequence",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1060430,
+          "slot": "E",
+          "label": "E [TaziaActive3_2_Sequence]",
+          "skillId": "TaziaActive3_2_Sequence",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1060500,
+          "slot": "R",
+          "label": "R [TaziaActive4]",
+          "skillId": "TaziaActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q 일반/강화(미구현·충돌/검 폭발), W(미구현·유리벽 접촉), E1/E2(미구현·파편 파괴 조건의 범위 공격), R(미구현·대검 타격/폭발).",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 61,
+      "name": "이렘",
+      "requestedScopeText": "인간 Q(미구현·튕김/범위), 인간 W(미구현·매혹), 고양이 Q(미구현·강화 평타 뒤 범위 연타), 고양이 W(미구현·범위/에어본), 고양이 E(미구현·착지).",
+      "registeredStages": [
+        {
+          "skillGroup": 1061200,
+          "slot": "Q",
+          "label": "Q [IremHumanActive1]",
+          "skillId": "IremHumanActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1061210,
+          "slot": "Q",
+          "label": "Q [IremCatActive1]",
+          "skillId": "IremCatActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1061300,
+          "slot": "W",
+          "label": "W [IremHumanActive2]",
+          "skillId": "IremHumanActive2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1061310,
+          "slot": "W",
+          "label": "W [IremCatActive2]",
+          "skillId": "IremCatActive2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1061410,
+          "slot": "E",
+          "label": "E [IremCatActive3]",
+          "skillId": "IremCatActive3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [
+        {
+          "skillGroup": 1061400,
+          "skillId": "IremHumanActive3",
+          "reason": "이렘 인간 E는 요청 범위 밖"
+        }
+      ],
+      "internalStageCandidates": [],
+      "detailedRequirements": "인간 Q(미구현·튕김/범위), 인간 W(미구현·매혹), 고양이 Q(미구현·강화 평타 뒤 범위 연타), 고양이 W(미구현·범위/에어본), 고양이 E(미구현·착지).",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 62,
+      "name": "테오도르",
+      "requestedScopeText": "Q 일반/스크린(미구현·광선/재발사), E(부분·첫 탄 구현, 스크린 확산/후속 속박 미구현), R(미구현·에너지 파동).",
+      "currentScopeText": "Q 일반 광선/스크린 재발사, E 첫 탄/스크린 확산/후속 속박. R 제외.",
+      "registeredStages": [
+        {
+          "skillGroup": 1062200,
+          "slot": "Q",
+          "label": "Q [TheodoreActive1]",
+          "skillId": "TheodoreActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1062200,
+          "slot": "Q",
+          "label": "Q 일반 광선",
+          "skillId": "TheodoreActive1",
+          "mode": "direct-hit",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1062200,
+          "slot": "Q",
+          "label": "Q 스크린 재발사",
+          "skillId": "TheodoreActive1",
+          "mode": "screen-hit",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1062210,
+          "slot": "Q",
+          "label": "Q [TheodoreActive1Screen]",
+          "skillId": "TheodoreActive1Screen",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1062400,
+          "slot": "E",
+          "label": "E [TheodoreActive3]",
+          "skillId": "TheodoreActive3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1062400,
+          "slot": "E",
+          "label": "E 속박 적용(형태 미분리)",
+          "skillId": "TheodoreActive3",
+          "mode": "fetter",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [
+        {
+          "skillGroup": 1062500,
+          "skillId": "TheodoreActive4",
+          "reason": "테오도르 R은 최신 사용자 지시에 따라 제외"
+        }
+      ],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q 일반 광선/스크린 재발사, E 첫 탄/스크린 확산/후속 속박. R 제외.",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 63,
+      "name": "이안",
+      "requestedScopeText": "인간 Q(구현), 인간 W/E1/E2(미구현), 빙의 Q/W/E(미구현·범위/끌기), R 해방 진입(미구현·경로).",
+      "registeredStages": [
+        {
+          "skillGroup": 1063200,
+          "slot": "Q",
+          "label": "Q [LyanhHumanActive1]",
+          "skillId": "LyanhHumanActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1063210,
+          "slot": "Q",
+          "label": "Q [LyanhPossessionActive1]",
+          "skillId": "LyanhPossessionActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1063300,
+          "slot": "W",
+          "label": "W [LyanhHumanActive2]",
+          "skillId": "LyanhHumanActive2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1063310,
+          "slot": "W",
+          "label": "W [LyanhPossessionActive2]",
+          "skillId": "LyanhPossessionActive2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1063400,
+          "slot": "E",
+          "label": "E [LyanhHumanActive3_1]",
+          "skillId": "LyanhHumanActive3_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1063410,
+          "slot": "E",
+          "label": "E [LyanhHumanActive3_2]",
+          "skillId": "LyanhHumanActive3_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1063420,
+          "slot": "E",
+          "label": "E [LyanhPossessionActive3]",
+          "skillId": "LyanhPossessionActive3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1063500,
+          "slot": "R",
+          "label": "R [LyanhActive4_1]",
+          "skillId": "LyanhActive4_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1063510,
+          "slot": "R",
+          "label": "R [LyanhActive4_2]",
+          "skillId": "LyanhActive4_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [],
+      "internalStageCandidates": [],
+      "detailedRequirements": "인간 Q(구현), 인간 W/E1/E2(미구현), 빙의 Q/W/E(미구현·범위/끌기), R 해방 진입(미구현·경로).",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 64,
+      "name": "바냐",
+      "requestedScopeText": "Q(미구현·왕복/회수), W1/W2(미구현·연타/착지), E(미구현·경로/바깥 날개), R(미구현·가루/졸음→수면).",
+      "currentScopeText": "Q 왕복/회수, E 경로/바깥 날개, R 첫 투사체 타격 및 다인. W1/W2 전체 제외. R 졸음·수면 제외 유지.",
+      "registeredStages": [
+        {
+          "skillGroup": 1064200,
+          "slot": "Q",
+          "label": "Q [VanyaActive1]",
+          "skillId": "VanyaActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1064400,
+          "slot": "E",
+          "label": "E [VanyaActive3]",
+          "skillId": "VanyaActive3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1064500,
+          "slot": "R",
+          "label": "R [VanyaActive4]",
+          "skillId": "VanyaActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [
+        {
+          "skillGroup": 1064300,
+          "skillId": "VanyaActive2_1",
+          "reason": "바냐 W 전체 단계는 최신 사용자 지시에 따라 제외"
+        },
+        {
+          "skillGroup": 1064310,
+          "skillId": "VanyaActive2_2",
+          "reason": "바냐 W 전체 단계는 최신 사용자 지시에 따라 제외"
+        }
+      ],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q 왕복/회수, E 경로/바깥 날개, R 첫 투사체 타격 및 다인. W1/W2 전체 제외. R 졸음·수면 제외 유지.",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 65,
+      "name": "데비&마를렌",
+      "requestedScopeText": "양쪽 본체 Q(구현), 대기 상대의 Q 연계 공격(미구현), 양쪽 W(미구현·범위/다발 자동 발사), 데비→마를렌 E(구현)/반대 E(미구현), R(구현·후속 5타 수 미검증).",
+      "registeredStages": [
+        {
+          "skillGroup": 1065200,
+          "slot": "Q",
+          "label": "Q [DebiMarleneActive1_1]",
+          "skillId": "DebiMarleneActive1_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1065210,
+          "slot": "Q",
+          "label": "Q [DebiMarleneActive1_2]",
+          "skillId": "DebiMarleneActive1_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1065300,
+          "slot": "W",
+          "label": "W [DebiMarleneActive2_1]",
+          "skillId": "DebiMarleneActive2_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1065310,
+          "slot": "W",
+          "label": "W [DebiMarleneActive2_2]",
+          "skillId": "DebiMarleneActive2_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1065400,
+          "slot": "E",
+          "label": "E [DebiMarleneActive3_1]",
+          "skillId": "DebiMarleneActive3_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1065410,
+          "slot": "E",
+          "label": "E [DebiMarleneActive3_2]",
+          "skillId": "DebiMarleneActive3_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1065500,
+          "slot": "R",
+          "label": "R [DebiMarleneActive4]",
+          "skillId": "DebiMarleneActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [],
+      "internalStageCandidates": [],
+      "detailedRequirements": "양쪽 본체 Q(구현), 대기 상대의 Q 연계 공격(미구현), 양쪽 W(미구현·범위/다발 자동 발사), 데비→마를렌 E(구현)/반대 E(미구현), R(구현·후속 5타 수 미검증).",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 66,
+      "name": "아르다",
+      "requestedScopeText": "일반 Q/W/E(미구현·두루마리/입방체/비석), R 강화 Q/W/E(미구현·강화 세부 설명 보완 필요).",
+      "registeredStages": [
+        {
+          "skillGroup": 1066200,
+          "slot": "Q",
+          "label": "Q [ArdaActive1]",
+          "skillId": "ArdaActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1066210,
+          "slot": "Q",
+          "label": "Q [ArdaActive1Reinforce]",
+          "skillId": "ArdaActive1Reinforce",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1066300,
+          "slot": "W",
+          "label": "W [ArdaActive2]",
+          "skillId": "ArdaActive2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1066310,
+          "slot": "W",
+          "label": "W [ArdaActive2Reinforce]",
+          "skillId": "ArdaActive2Reinforce",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1066400,
+          "slot": "E",
+          "label": "E [ArdaActive3]",
+          "skillId": "ArdaActive3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1066410,
+          "slot": "E",
+          "label": "E [ArdaActive3Reinforce_1]",
+          "skillId": "ArdaActive3Reinforce_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1066420,
+          "slot": "E",
+          "label": "E [ArdaActive3Reinforce_2]",
+          "skillId": "ArdaActive3Reinforce_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1066430,
+          "slot": "E",
+          "label": "E [ArdaActive3Reinforce_3]",
+          "skillId": "ArdaActive3Reinforce_3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1066600,
+          "slot": "W",
+          "label": "W [ArdaSummonActive2]",
+          "skillId": "ArdaSummonActive2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1066610,
+          "slot": "W",
+          "label": "W [ArdaSummonActive2Reinforce]",
+          "skillId": "ArdaSummonActive2Reinforce",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1066700,
+          "slot": "E",
+          "label": "E [ArdaSummonActive3]",
+          "skillId": "ArdaSummonActive3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1066710,
+          "slot": "E",
+          "label": "E [ArdaSummonActive3Reinforce]",
+          "skillId": "ArdaSummonActive3Reinforce",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [
+        {
+          "skillGroup": 1066500,
+          "skillId": "ArdaActive4",
+          "reason": "아르다 R 준비는 강화 Q/W/E의 입력이며 별도 적중 분모 아님"
+        }
+      ],
+      "internalStageCandidates": [],
+      "detailedRequirements": "일반 Q/W/E(미구현·두루마리/입방체/비석), R 강화 Q/W/E(미구현·강화 세부 설명 보완 필요).",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 67,
+      "name": "아비게일",
+      "requestedScopeText": "Q(미구현·2회전), W(미구현·부채꼴), E(미구현·대상 주변 공격), R(미구현·착지).",
+      "registeredStages": [
+        {
+          "skillGroup": 1067200,
+          "slot": "Q",
+          "label": "Q [AbigailActive1]",
+          "skillId": "AbigailActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1067200,
+          "slot": "Q",
+          "label": "Q 첫 타격",
+          "skillId": "AbigailActive1",
+          "mode": "first-hit",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1067200,
+          "slot": "Q",
+          "label": "Q 둘째 타격",
+          "skillId": "AbigailActive1",
+          "mode": "end-hit",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1067200,
+          "slot": "Q",
+          "label": "Q 같은 적에게 두 타 모두 적중",
+          "skillId": "AbigailActive1",
+          "mode": "both-hit",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1067300,
+          "slot": "W",
+          "label": "W [AbigailActive2]",
+          "skillId": "AbigailActive2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1067400,
+          "slot": "E",
+          "label": "E [AbigailActive3]",
+          "skillId": "AbigailActive3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1067500,
+          "slot": "R",
+          "label": "R [AbigailActive4]",
+          "skillId": "AbigailActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q(미구현·2회전), W(미구현·부채꼴), E(미구현·대상 주변 공격), R(미구현·착지).",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 68,
+      "name": "알론소",
+      "requestedScopeText": "Q(부분·첫 적중 구현/후속 기절 미구현), W(미구현·파동/종료 타격), E(미구현·지정 후 돌진 완료), R(미구현·끌기/지속/종료 범위).",
+      "registeredStages": [
+        {
+          "skillGroup": 1068200,
+          "slot": "Q",
+          "label": "Q [AlonsoActive1]",
+          "skillId": "AlonsoActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1068300,
+          "slot": "W",
+          "label": "W [AlonsoActive2]",
+          "skillId": "AlonsoActive2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1068400,
+          "slot": "E",
+          "label": "E [AlonsoActive3]",
+          "skillId": "AlonsoActive3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1068500,
+          "slot": "R",
+          "label": "R [AlonsoActive4]",
+          "skillId": "AlonsoActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q(부분·첫 적중 구현/후속 기절 미구현), W(미구현·파동/종료 타격), E(미구현·지정 후 돌진 완료), R(미구현·끌기/지속/종료 범위).",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 69,
+      "name": "레니",
+      "requestedScopeText": "Q(미구현·충돌/폭발), W(미구현·범위/중앙), E(미구현·발사/기절), R(미구현·트랩/방향 밀침/벽 충돌 추가 피해).",
+      "registeredStages": [
+        {
+          "skillGroup": 1069200,
+          "slot": "Q",
+          "label": "Q [LeniActive1]",
+          "skillId": "LeniActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1069300,
+          "slot": "W",
+          "label": "W [LeniActive2]",
+          "skillId": "LeniActive2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1069400,
+          "slot": "E",
+          "label": "E [LeniActive3]",
+          "skillId": "LeniActive3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1069500,
+          "slot": "R",
+          "label": "R [LeniActive4]",
+          "skillId": "LeniActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q(미구현·충돌/폭발), W(미구현·범위/중앙), E(미구현·발사/기절), R(미구현·트랩/방향 밀침/벽 충돌 추가 피해).",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 70,
+      "name": "츠바메",
+      "requestedScopeText": "Q(미구현·수리검 3개 경로/도착 회전), R(미구현·지정 돌진 경로의 모든 적).",
+      "registeredStages": [
+        {
+          "skillGroup": 1070200,
+          "slot": "Q",
+          "label": "Q [TsubameActive1]",
+          "skillId": "TsubameActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1070500,
+          "slot": "R",
+          "label": "R [TsubameActive4]",
+          "skillId": "TsubameActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q(미구현·수리검 3개 경로/도착 회전), R(미구현·지정 돌진 경로의 모든 적).",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 71,
+      "name": "케네스",
+      "requestedScopeText": "Q(미구현·범위/강화), R(미구현·첫 올려베기/연타/착지). W 방어와 E 강화 평타는 별도.",
+      "registeredStages": [
+        {
+          "skillGroup": 1071200,
+          "slot": "Q",
+          "label": "Q [KennethActive1]",
+          "skillId": "KennethActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1071500,
+          "slot": "R",
+          "label": "R [KennethActive4]",
+          "skillId": "KennethActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q(미구현·범위/강화), R(미구현·첫 올려베기/연타/착지). W 방어와 E 강화 평타는 별도.",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 72,
+      "name": "카티야",
+      "requestedScopeText": "Q(미구현·첫 탄), E(미구현·발사), R(미구현·스캔/실제 최대 3발/다른 적의 대신 맞기).",
+      "currentScopeText": "Q(첫 탄), E(발사), R(사용당 타겟으로 포착한 서로 다른 적 실험체 수; 탄환 적중률·다른 적 대신 맞기 제외).",
+      "registeredStages": [
+        {
+          "skillGroup": 1072200,
+          "slot": "Q",
+          "label": "Q [KatjaActive1]",
+          "skillId": "KatjaActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1072400,
+          "slot": "E",
+          "label": "E [KatjaActive3]",
+          "skillId": "KatjaActive3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1072500,
+          "slot": "R",
+          "label": "R [KatjaActive4]",
+          "skillId": "KatjaActive4",
+          "mode": "target-count",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [],
+      "internalStageCandidates": [
+        {
+          "skillGroup": 1072800,
+          "skillId": "KatjaDroneActive4",
+          "parentRequestedSkillGroup": 1072500,
+          "reason": "본체 한 번 사용에 연결할 소환물 후속 시전; 독립 사용 횟수로 세지 않음"
+        }
+      ],
+      "detailedRequirements": "Q(첫 탄), E(발사), R(사용당 타겟으로 포착한 서로 다른 적 실험체 수; 탄환 적중률·다른 적 대신 맞기 제외).",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 73,
+      "name": "샬럿",
+      "requestedScopeText": "Q(미구현·구체의 대상 탐색/부착/폭발). W/E/R은 아군 지원 지표.",
+      "registeredStages": [
+        {
+          "skillGroup": 1073200,
+          "slot": "Q",
+          "label": "Q [CharlotteActive1]",
+          "skillId": "CharlotteActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q(미구현·구체의 대상 탐색/부착/폭발). W/E/R은 아군 지원 지표.",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 74,
+      "name": "다르코",
+      "requestedScopeText": "W(미구현·범위 둔화/다인 능력치 탈취), E(구현·착지), R(미구현·지정 제압/주변 피해).",
+      "currentScopeText": "다르코 R 적중률 제외; E 유지, W 제외 유지.",
+      "registeredStages": [
+        {
+          "skillGroup": 1074400,
+          "slot": "E",
+          "label": "E [DarkoActive3]",
+          "skillId": "DarkoActive3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [
+        {
+          "skillGroup": 1074300,
+          "skillId": "DarkoActive2",
+          "reason": "다르코 W는 최신 사용자 지시에 따라 제외"
+        },
+        {
+          "skillGroup": 1074500,
+          "slot": "R",
+          "label": "R [DarkoActive4]",
+          "skillId": "DarkoActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true,
+          "reason": "다르코 R 적중률 제외; E 유지, W 제외 유지."
+        }
+      ],
+      "internalStageCandidates": [],
+      "detailedRequirements": "다르코 R 적중률 제외; E 유지, W 제외 유지.",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 75,
+      "name": "르노어",
+      "requestedScopeText": "Q 일반/강화(미구현·5발/폭발), W 일반/강화(미구현·범위 속박), E 일반/강화(미구현·끌기), R(미구현·부착/지속 범위/정신 이상).",
+      "registeredStages": [
+        {
+          "skillGroup": 1075200,
+          "slot": "Q",
+          "label": "Q [LenoreActive1]",
+          "skillId": "LenoreActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1075300,
+          "slot": "W",
+          "label": "W [LenoreActive2]",
+          "skillId": "LenoreActive2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1075300,
+          "slot": "W",
+          "label": "W 속박 적용(형태 미분리)",
+          "skillId": "LenoreActive2",
+          "mode": "fetter",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1075400,
+          "slot": "E",
+          "label": "E [LenoreActive3]",
+          "skillId": "LenoreActive3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1075500,
+          "slot": "R",
+          "label": "R [LenoreActive4]",
+          "skillId": "LenoreActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q 일반/강화(미구현·5발/폭발), W 일반/강화(미구현·범위 속박), E 일반/강화(미구현·끌기), R(미구현·부착/지속 범위/정신 이상).",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 76,
+      "name": "가넷",
+      "requestedScopeText": "Q1/Q2(미구현), W(미구현·충전 범위/속박), E 논타깃(구현), R1(구현·사슬)/R2(미구현·처형 성공률). gameDb의 E 지정형 활성 여부는 보류.",
+      "registeredStages": [
+        {
+          "skillGroup": 1076200,
+          "slot": "Q",
+          "label": "Q [GarnetActive1_1]",
+          "skillId": "GarnetActive1_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1076210,
+          "slot": "Q",
+          "label": "Q [GarnetActive1_2]",
+          "skillId": "GarnetActive1_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1076300,
+          "slot": "W",
+          "label": "W [GarnetActive2]",
+          "skillId": "GarnetActive2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1076300,
+          "slot": "W",
+          "label": "W 속박 적용",
+          "skillId": "GarnetActive2",
+          "mode": "fetter",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1076400,
+          "slot": "E",
+          "label": "E [GarnetActive3Point]",
+          "skillId": "GarnetActive3Point",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1076410,
+          "slot": "E",
+          "label": "E [GarnetActive3]",
+          "skillId": "GarnetActive3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1076500,
+          "slot": "R",
+          "label": "R [GarnetActive4]",
+          "skillId": "GarnetActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1076510,
+          "slot": "R",
+          "label": "R [GarnetActive4_2]",
+          "skillId": "GarnetActive4_2",
+          "mode": "execute-success",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q1/Q2(미구현), W(미구현·충전 범위/속박), E 논타깃(구현), R1(구현·사슬)/R2(미구현·처형 성공률). gameDb의 E 지정형 활성 여부는 보류.",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 77,
+      "name": "유민",
+      "requestedScopeText": "Q 일반/강화(미구현·3갈래 관통/회오리), W 일반/강화(미구현·범위/밀침), E(미구현·최대 3명 자동 발사), R(미구현·착지/날아오르기 2타).",
+      "currentScopeText": "Q 일반/강화 3갈래 관통·회오리, W 일반/강화 범위·밀침, R 착지/날아오르기 2타. E 자체 제외. E로 강화시킨 Q/W는 각각 별도 적중률 유지. 사용자 2026-09-10: 일반 Q 유지. 강화 Q는 첫 공격의 적중만 계산; 후속 회오리 반복 피해 제외.",
+      "registeredStages": [
+        {
+          "skillGroup": 1077200,
+          "slot": "Q",
+          "label": "Q [YuMinActive1_1]",
+          "skillId": "YuMinActive1_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1077210,
+          "slot": "Q",
+          "label": "강화 Q 최초 타격",
+          "skillId": "YuMinActive1_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1077300,
+          "slot": "W",
+          "label": "W [YuMinActive2_1]",
+          "skillId": "YuMinActive2_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1077310,
+          "slot": "W",
+          "label": "W [YuMinActive2_2]",
+          "skillId": "YuMinActive2_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1077500,
+          "slot": "R",
+          "label": "R [YuMinActive4]",
+          "skillId": "YuMinActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1077500,
+          "slot": "R",
+          "label": "R 첫 타격",
+          "skillId": "YuMinActive4",
+          "mode": "first-hit",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1077500,
+          "slot": "R",
+          "label": "R 둘째 타격",
+          "skillId": "YuMinActive4",
+          "mode": "end-hit",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1077500,
+          "slot": "R",
+          "label": "R 같은 적에게 두 타 모두 적중",
+          "skillId": "YuMinActive4",
+          "mode": "both-hit",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [
+        {
+          "skillGroup": 1077400,
+          "skillId": "YuMinActive3",
+          "reason": "유민 E 자체는 제외; E로 강화된 Q/W는 각각 유지"
+        }
+      ],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q 일반/강화 3갈래 관통·회오리, W 일반/강화 범위·밀침, R 착지/날아오르기 2타. E 자체 제외. E로 강화시킨 Q/W는 각각 별도 적중률 유지. 사용자 2026-09-10: 일반 Q 유지. 강화 Q는 첫 공격의 적중만 계산; 후속 회오리 반복 피해 제외.",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 78,
+      "name": "히스이",
+      "requestedScopeText": "Q(미구현·2타), W 1·2·3중첩형(미구현·발도/경로/연타), E(미구현·경로/도착), R2(미구현·2타/중앙 마무리·처형). W 숫자는 재사용 단계가 아님.",
+      "registeredStages": [
+        {
+          "skillGroup": 1078200,
+          "slot": "Q",
+          "label": "Q [HisuiActive1]",
+          "skillId": "HisuiActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1078200,
+          "slot": "Q",
+          "label": "Q 첫 타격",
+          "skillId": "HisuiActive1",
+          "mode": "first-hit",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1078200,
+          "slot": "Q",
+          "label": "Q 둘째 타격",
+          "skillId": "HisuiActive1",
+          "mode": "end-hit",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1078200,
+          "slot": "Q",
+          "label": "Q 같은 적에게 두 타 모두 적중",
+          "skillId": "HisuiActive1",
+          "mode": "both-hit",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1078300,
+          "slot": "W",
+          "label": "W [HisuiActive2_1]",
+          "skillId": "HisuiActive2_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1078310,
+          "slot": "W",
+          "label": "W [HisuiActive2_2]",
+          "skillId": "HisuiActive2_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1078320,
+          "slot": "W",
+          "label": "W [HisuiActive2_3]",
+          "skillId": "HisuiActive2_3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1078400,
+          "slot": "E",
+          "label": "E [HisuiActive3]",
+          "skillId": "HisuiActive3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1078510,
+          "slot": "R",
+          "label": "R [HisuiActive4_2]",
+          "skillId": "HisuiActive4_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [
+        {
+          "skillGroup": 1078500,
+          "skillId": "HisuiActive4_1",
+          "reason": "히스이 R은 요청한 R2만 측정"
+        }
+      ],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q(미구현·2타), W 1·2·3중첩형(미구현·발도/경로/연타), E(미구현·경로/도착), R2(미구현·2타/중앙 마무리·처형). W 숫자는 재사용 단계가 아님.",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 79,
+      "name": "유스티나",
+      "requestedScopeText": "Q1/Q2(미구현·첫 2발/강화 1발), W(미구현·범위 2차례), R(구현·전체 연타 수 미검증).",
+      "registeredStages": [
+        {
+          "skillGroup": 1079200,
+          "slot": "Q",
+          "label": "Q [JustynaActive1_1]",
+          "skillId": "JustynaActive1_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1079210,
+          "slot": "Q",
+          "label": "Q [JustynaActive1_2]",
+          "skillId": "JustynaActive1_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1079300,
+          "slot": "W",
+          "label": "W [JustynaActive2]",
+          "skillId": "JustynaActive2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1079500,
+          "slot": "R",
+          "label": "R [JustynaActive4]",
+          "skillId": "JustynaActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [],
+      "internalStageCandidates": [
+        {
+          "skillGroup": 1079600,
+          "skillId": "JustynaSummonActive2",
+          "parentRequestedSkillGroup": 1079300,
+          "reason": "본체 한 번 사용에 연결할 소환물 후속 시전; 독립 사용 횟수로 세지 않음"
+        }
+      ],
+      "detailedRequirements": "Q1/Q2(미구현·첫 2발/강화 1발), W(미구현·범위 2차례), R(구현·전체 연타 수 미검증).",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 80,
+      "name": "이슈트반",
+      "requestedScopeText": "Q(부분·기본값 있음/다른 가능성 분리 미구현), W/E 일반·다른 가능성(미구현), R(미구현·지정 도약/분신 3방향).",
+      "registeredStages": [
+        {
+          "skillGroup": 1080200,
+          "slot": "Q",
+          "label": "Q [IstvanActive1]",
+          "skillId": "IstvanActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1080300,
+          "slot": "W",
+          "label": "W [IstvanActive2]",
+          "skillId": "IstvanActive2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1080400,
+          "slot": "E",
+          "label": "E [IstvanActive3]",
+          "skillId": "IstvanActive3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1080500,
+          "slot": "R",
+          "label": "R [IstvanActive4]",
+          "skillId": "IstvanActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q(부분·기본값 있음/다른 가능성 분리 미구현), W/E 일반·다른 가능성(미구현), R(미구현·지정 도약/분신 3방향).",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 81,
+      "name": "니아",
+      "requestedScopeText": "Q 일반/R 중(미구현·낙하/블록 경로), W 일반/R 중(미구현·끌기/블록 폭발), R(미구현·가장자리 기절/누적 공격 후 범위 피해).",
+      "registeredStages": [
+        {
+          "skillGroup": 1081200,
+          "slot": "Q",
+          "label": "Q [NiahActive1]",
+          "skillId": "NiahActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1081210,
+          "slot": "Q",
+          "label": "Q [NiahActive1_R]",
+          "skillId": "NiahActive1_R",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1081300,
+          "slot": "W",
+          "label": "W [NiahActive2]",
+          "skillId": "NiahActive2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1081310,
+          "slot": "W",
+          "label": "W [NiahActive2_R]",
+          "skillId": "NiahActive2_R",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1081500,
+          "slot": "R",
+          "label": "R [NiahActive4]",
+          "skillId": "NiahActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1081500,
+          "slot": "R",
+          "label": "R 가장자리 기절",
+          "skillId": "NiahActive4",
+          "mode": "world-edge-stun",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1081600,
+          "slot": "Q",
+          "label": "Q [NiahSummonActive1]",
+          "skillId": "NiahSummonActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1081710,
+          "slot": "W",
+          "label": "W [NiahSummonActive2_1]",
+          "skillId": "NiahSummonActive2_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1081720,
+          "slot": "W",
+          "label": "W [NiahSummonActive2_2]",
+          "skillId": "NiahSummonActive2_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [],
+      "internalStageCandidates": [
+        {
+          "skillGroup": 1081800,
+          "skillId": "NiahSummonActive4",
+          "parentRequestedSkillGroup": 1081500,
+          "reason": "본체 한 번 사용에 연결할 소환물 후속 시전; 독립 사용 횟수로 세지 않음"
+        }
+      ],
+      "detailedRequirements": "Q 일반/R 중(미구현·낙하/블록 경로), W 일반/R 중(미구현·끌기/블록 폭발), R(미구현·가장자리 기절/누적 공격 후 범위 피해).",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 82,
+      "name": "슈린",
+      "requestedScopeText": "Q(미구현·경로/지점 회전/회수 후 회전), W(미구현·반격/강화 기절; 실험체 첫 대상, 비실험체 관통), E(미구현·돌진/후속 어검), R(미구현·범위/추가 어검/회수 경로).",
+      "currentScopeText": "Q 최초 투사체 적중만 집계; 지점 회전·회수 후 회전 및 후속 주기 피해 적중률 제외. W/E 기존 요구 유지. R 제외 유지. 사용자 2026-09-10: E 돌진 피해만 적중률 계산; Q/E 후 주변 검기 피해 제외.",
+      "registeredStages": [
+        {
+          "skillGroup": 1082200,
+          "slot": "Q",
+          "label": "Q 최초 투사체 적중",
+          "skillId": "XuelinActive1",
+          "mode": "first-hit",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1082300,
+          "slot": "W",
+          "label": "W [XuelinActive2]",
+          "skillId": "XuelinActive2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1082400,
+          "slot": "E",
+          "label": "E 돌진 타격",
+          "skillId": "XuelinActive3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1082500,
+          "slot": "R",
+          "label": "R [XuelinActive4]",
+          "skillId": "XuelinActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1082600,
+          "slot": "R",
+          "label": "R [XuelinSummonActive4]",
+          "skillId": "XuelinSummonActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1082610,
+          "slot": "R",
+          "label": "R [XuelinSummonActive4_2]",
+          "skillId": "XuelinSummonActive4_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q 최초 투사체 적중만 집계; 지점 회전·회수 후 회전 및 후속 주기 피해 적중률 제외. W/E 기존 요구 유지. R 제외 유지. 사용자 2026-09-10: E 돌진 피해만 적중률 계산; Q/E 후 주변 검기 피해 제외.",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 83,
+      "name": "헨리",
+      "requestedScopeText": "Q1/Q2(미구현·관통), W(미구현·지속 범위), E(구현·W 연계 피해; 조건별 분리 미구현), R(미구현·첫 범위/종료 폭발·기절).",
+      "currentScopeText": "Q1/Q2(미구현·관통), W(미구현·지속 범위), E(구현·W 연계 피해; 조건별 분리 미구현), R(미구현·첫 범위/종료 폭발·기절). 사용자 2026-09-10: R 마지막 폭발 타격만 적중률 계산; 첫 범위 및 별도 기절 성공률 제외.",
+      "registeredStages": [
+        {
+          "skillGroup": 1083200,
+          "slot": "Q",
+          "label": "Q [HenryActive1_1]",
+          "skillId": "HenryActive1_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1083210,
+          "slot": "Q",
+          "label": "Q [HenryActive1_2]",
+          "skillId": "HenryActive1_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1083300,
+          "slot": "W",
+          "label": "W [HenryActive2]",
+          "skillId": "HenryActive2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1083400,
+          "slot": "E",
+          "label": "E W 연계 피해",
+          "skillId": "HenryActive3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1083400,
+          "slot": "E",
+          "label": "E W 연계 실제 속박",
+          "skillId": "HenryActive3",
+          "mode": "fetter",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1083500,
+          "slot": "R",
+          "label": "R 종료 폭발 타격",
+          "skillId": "HenryActive4",
+          "mode": "end-hit",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [
+        {
+          "skillGroup": 1083500,
+          "slot": "R",
+          "label": "R [HenryActive4]",
+          "skillId": "HenryActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true,
+          "reason": "사용자 2026-09-10: 타격 단계 집계 범위 수정"
+        },
+        {
+          "skillGroup": 1083500,
+          "slot": "R",
+          "label": "R 첫 범위 타격",
+          "skillId": "HenryActive4",
+          "mode": "first-hit",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true,
+          "reason": "사용자 2026-09-10: 타격 단계 집계 범위 수정"
+        },
+        {
+          "skillGroup": 1083500,
+          "slot": "R",
+          "label": "R 기절 적용",
+          "skillId": "HenryActive4",
+          "mode": "stun",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true,
+          "reason": "사용자 2026-09-10: 타격 단계 집계 범위 수정"
+        }
+      ],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q1/Q2(미구현·관통), W(미구현·지속 범위), E(구현·W 연계 피해; 조건별 분리 미구현), R(미구현·첫 범위/종료 폭발·기절). 사용자 2026-09-10: R 마지막 폭발 타격만 적중률 계산; 첫 범위 및 별도 기절 성공률 제외.",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 84,
+      "name": "블레어",
+      "requestedScopeText": "양 무기 Q/W(미구현·2타/경로/연타), 쌍검 E(구현)/쌍날검 E(미구현), 고유 D 연계(미구현·도착 범위), R2(미구현·돌진 착지).",
+      "currentScopeText": "양 무기 Q/W 각각 2타/경로/연타, E 쌍검/쌍날검 각각, R2 돌진 착지. D 제외, R1 제외 유지.",
+      "registeredStages": [
+        {
+          "skillGroup": 1084200,
+          "slot": "Q",
+          "label": "Q [BlairActive1_1]",
+          "skillId": "BlairActive1_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1084210,
+          "slot": "Q",
+          "label": "Q [BlairActive1_2]",
+          "skillId": "BlairActive1_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1084300,
+          "slot": "W",
+          "label": "W [BlairActive2_1]",
+          "skillId": "BlairActive2_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1084310,
+          "slot": "W",
+          "label": "W [BlairActive2_2]",
+          "skillId": "BlairActive2_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1084400,
+          "slot": "E",
+          "label": "E [BlairActive3_1]",
+          "skillId": "BlairActive3_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1084410,
+          "slot": "E",
+          "label": "E [BlairActive3_2]",
+          "skillId": "BlairActive3_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1084510,
+          "slot": "R",
+          "label": "R [BlairActive4_2]",
+          "skillId": "BlairActive4_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [
+        {
+          "skillGroup": 1084500,
+          "skillId": "BlairActive4_1",
+          "reason": "블레어 R은 요청한 R2만 측정"
+        },
+        {
+          "skillGroup": 1084600,
+          "skillId": "BlairWeapon",
+          "reason": "블레어 D는 최신 사용자 지시에 따라 제외"
+        }
+      ],
+      "internalStageCandidates": [],
+      "detailedRequirements": "양 무기 Q/W 각각 2타/경로/연타, E 쌍검/쌍날검 각각, R2 돌진 착지. D 제외, R1 제외 유지.",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 85,
+      "name": "미르카",
+      "requestedScopeText": "Q 일반/강화(미구현·범위/여진), E1/E2/강화 E2(미구현·돌진/휘두르기/밀침), R(미구현·착지).",
+      "registeredStages": [
+        {
+          "skillGroup": 1085200,
+          "slot": "Q",
+          "label": "Q [MirkaActive1]",
+          "skillId": "MirkaActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1085400,
+          "slot": "E",
+          "label": "E [MirkaActive3_1]",
+          "skillId": "MirkaActive3_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1085410,
+          "slot": "E",
+          "label": "E [MirkaActive3_2]",
+          "skillId": "MirkaActive3_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1085420,
+          "slot": "E",
+          "label": "E [MirkaActive3_2Reinforce]",
+          "skillId": "MirkaActive3_2Reinforce",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1085500,
+          "slot": "R",
+          "label": "R [MirkaActive4]",
+          "skillId": "MirkaActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q 일반/강화(미구현·범위/여진), E1/E2/강화 E2(미구현·돌진/휘두르기/밀침), R(미구현·착지).",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 86,
+      "name": "펜리르",
+      "requestedScopeText": "Q 일반/강화(미구현), W1(구현·꼬리)/W2(미구현·후퇴 타격), R(미구현·지정 돌진). W/R의 흡수 유지·반복 피해는 별도 미구현.",
+      "registeredStages": [
+        {
+          "skillGroup": 1086200,
+          "slot": "Q",
+          "label": "Q [FenrirActive1]",
+          "skillId": "FenrirActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1086300,
+          "slot": "W",
+          "label": "W [FenrirActive2_1]",
+          "skillId": "FenrirActive2_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1086300,
+          "slot": "W",
+          "label": "W 흡수 연결",
+          "skillId": "FenrirActive2_1",
+          "mode": "absorb",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1086300,
+          "slot": "W",
+          "label": "W 흡수 반복 적용",
+          "skillId": "FenrirActive2_1",
+          "mode": "absorb-pulse",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1086310,
+          "slot": "W",
+          "label": "W [FenrirActive2_2]",
+          "skillId": "FenrirActive2_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1086500,
+          "slot": "R",
+          "label": "R [FenrirActive4]",
+          "skillId": "FenrirActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1086500,
+          "slot": "R",
+          "label": "R 흡수 연결",
+          "skillId": "FenrirActive4",
+          "mode": "absorb",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1086500,
+          "slot": "R",
+          "label": "R 흡수 반복 적용",
+          "skillId": "FenrirActive4",
+          "mode": "absorb-pulse",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1086600,
+          "slot": "R",
+          "label": "R [FenrirBerserkActive4]",
+          "skillId": "FenrirBerserkActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q 일반/강화(미구현), W1(구현·꼬리)/W2(미구현·후퇴 타격), R(미구현·지정 돌진). W/R의 흡수 유지·반복 피해는 별도 미구현.",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 87,
+      "name": "코렐라인",
+      "requestedScopeText": "Q(부분·첫 탄 구현, 폭발/거울 재발사 미구현), E 일반/백경/흑경(미구현·관통/속박).",
+      "registeredStages": [
+        {
+          "skillGroup": 1087200,
+          "slot": "Q",
+          "label": "Q [CoralineActive1]",
+          "skillId": "CoralineActive1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1087400,
+          "slot": "E",
+          "label": "E [CoralineActive3]",
+          "skillId": "CoralineActive3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1087400,
+          "slot": "E",
+          "label": "E 속박 적용(형태 미분리)",
+          "skillId": "CoralineActive3",
+          "mode": "fetter",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q(부분·첫 탄 구현, 폭발/거울 재발사 미구현), E 일반/백경/흑경(미구현·관통/속박).",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 88,
+      "name": "비형",
+      "requestedScopeText": "W(미구현·범위), E(미구현·돌진/도발), R(구현·중앙 강화 분리 미구현). 추가 후보 Q1/Q2 주변 피해(미구현·강화 평타의 범위 부분).",
+      "currentScopeText": "W 범위, E 돌진/도발, R 일반 적중/중앙 강화 분리. Q1/Q2 및 강화 평타의 주변 피해 전체 제외.",
+      "registeredStages": [
+        {
+          "skillGroup": 1088300,
+          "slot": "W",
+          "label": "W [BihyungActive2]",
+          "skillId": "BihyungActive2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1088400,
+          "slot": "E",
+          "label": "E [BihyungActive3]",
+          "skillId": "BihyungActive3",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1088500,
+          "slot": "R",
+          "label": "R [BihyungActive4]",
+          "skillId": "BihyungActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [
+        {
+          "skillGroup": 1088200,
+          "skillId": "BihyungActive1_1",
+          "reason": "비형 Q 전체 단계는 최신 사용자 지시에 따라 제외"
+        },
+        {
+          "skillGroup": 1088210,
+          "skillId": "BihyungActive1_2",
+          "reason": "비형 Q 전체 단계는 최신 사용자 지시에 따라 제외"
+        },
+        {
+          "skillGroup": 1088220,
+          "skillId": "BihyungActive1NormalAttack",
+          "reason": "비형 Q 강화 평타 단계는 최신 사용자 지시에 따라 제외"
+        },
+        {
+          "skillGroup": 1088230,
+          "skillId": "BihyungActive1ReinforceAttack",
+          "reason": "비형 Q 강화 평타 단계는 최신 사용자 지시에 따라 제외"
+        }
+      ],
+      "internalStageCandidates": [],
+      "detailedRequirements": "W 범위, E 돌진/도발, R 일반 적중/중앙 강화 분리. Q1/Q2 및 강화 평타의 주변 피해 전체 제외.",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 89,
+      "name": "크레이버",
+      "requestedScopeText": "Q 더블 탭(구현·탄환)/포커스 샷(부분·첫 탄 구현, 후방 피해 미구현), W 두 형태(미구현·회전/에어본), E 두 형태(미구현·돌진/관통탄), R(미구현·지정·적용률).",
+      "registeredStages": [
+        {
+          "skillGroup": 1089200,
+          "slot": "Q",
+          "label": "Q [CraverActive1_1]",
+          "skillId": "CraverActive1_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1089210,
+          "slot": "Q",
+          "label": "Q [CraverActive1_2]",
+          "skillId": "CraverActive1_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1089300,
+          "slot": "W",
+          "label": "W [CraverActive2_1]",
+          "skillId": "CraverActive2_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1089310,
+          "slot": "W",
+          "label": "W [CraverActive2_2]",
+          "skillId": "CraverActive2_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1089400,
+          "slot": "E",
+          "label": "E [CraverActive3_1]",
+          "skillId": "CraverActive3_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1089410,
+          "slot": "E",
+          "label": "E [CraverActive3_2]",
+          "skillId": "CraverActive3_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1089500,
+          "slot": "R",
+          "label": "R [CraverActive4]",
+          "skillId": "CraverActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [],
+      "internalStageCandidates": [],
+      "detailedRequirements": "Q 더블 탭(구현·탄환)/포커스 샷(부분·첫 탄 구현, 후방 피해 미구현), W 두 형태(미구현·회전/에어본), E 두 형태(미구현·돌진/관통탄), R(미구현·지정·적용률).",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    },
+    {
+      "characterCode": 90,
+      "name": "루치아",
+      "requestedScopeText": "일반 Q(미구현)/강화 Q(구현·관통 빛줄기), W(미구현·자동 다중 대상/실제 발사 수), R(구현·수정 조건 기절 분리 미구현).",
+      "currentScopeText": "일반 Q(미구현)/강화 Q(구현·관통 빛줄기), W(미구현·자동 다중 대상/실제 발사 수), R(구현·수정 조건 기절 분리 미구현). 사용자 2026-09-10: W 소환체 적중률 제외.",
+      "registeredStages": [
+        {
+          "skillGroup": 1090200,
+          "slot": "Q",
+          "label": "Q [LuciaActive1_1]",
+          "skillId": "LuciaActive1_1",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1090210,
+          "slot": "Q",
+          "label": "Q [LuciaActive1_2]",
+          "skillId": "LuciaActive1_2",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1090500,
+          "slot": "R",
+          "label": "R [LuciaActive4]",
+          "skillId": "LuciaActive4",
+          "mode": "any",
+          "scopeTier": "base-stage-candidate",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1090500,
+          "slot": "R",
+          "label": "R 일반 대상 타격",
+          "skillId": "LuciaActive4",
+          "mode": "unmarked-hit",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1090500,
+          "slot": "R",
+          "label": "R 수정 대상 타격",
+          "skillId": "LuciaActive4",
+          "mode": "marked-hit",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        },
+        {
+          "skillGroup": 1090500,
+          "slot": "R",
+          "label": "R 수정 대상 실제 기절",
+          "skillId": "LuciaActive4",
+          "mode": "stun",
+          "scopeTier": "requested-condition",
+          "reportMultiTarget": true
+        }
+      ],
+      "excludedStageCandidates": [
+        {
+          "skillGroup": 1090300,
+          "skillId": "LuciaActive2",
+          "reason": "사용자 2026-09-10: 루치아 W 소환체 적중률 제외"
+        }
+      ],
+      "internalStageCandidates": [],
+      "detailedRequirements": "일반 Q(미구현)/강화 Q(구현·관통 빛줄기), W(미구현·자동 다중 대상/실제 발사 수), R(구현·수정 조건 기절 분리 미구현). 사용자 2026-09-10: W 소환체 적중률 제외.",
+      "detailedRequirementsComplete": false,
+      "unmappedDetailsMustRemainVisible": true
+    }
+  ],
+  "registrationMeansImplementation": false,
+  "implementationComplete": false
+}

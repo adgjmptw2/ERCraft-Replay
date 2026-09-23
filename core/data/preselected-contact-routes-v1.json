@@ -1,0 +1,656 @@
+{
+  "format": "preselected-existing-contact-routes.v1",
+  "entries": [
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:2:1002300:shot",
+        "characterCode": 2,
+        "skillGroup": 1002300,
+        "label": "W",
+        "mode": "shot",
+        "unit": "projectile-shot",
+        "numerator": "enemy-hit-actual-shots"
+      },
+      "routeId": "preselected-projectile-contact",
+      "reviewedMethods": [
+        "exclusive-actual-shot-collision"
+      ],
+      "bundleId": "02:W",
+      "requirementsSha256": "fea8ba5736bc9a8f873ca3c30031ac8bf79ac0def340e64a58ed1552cceb24f7"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:5:1005300:any",
+        "characterCode": 5,
+        "skillGroup": 1005300,
+        "label": "W",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy"
+      },
+      "routeId": "preselected-projectile-contact",
+      "reviewedMethods": [
+        "exclusive-cast-any-enemy-projectile-collision"
+      ],
+      "bundleId": "05:W",
+      "requirementsSha256": "eb6e11aa3fb1b3cc6bf6c042c5a7882e8623dce60b749f779ff344d60f3803b0"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:10:1010500:any",
+        "characterCode": 10,
+        "skillGroup": 1010500,
+        "label": "R [LiDailinActive4]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "routeId": "preselected-action-contact",
+      "reviewedMethods": [
+        "exact-action-target-same-tick-corroborated"
+      ],
+      "bundleId": "10:R",
+      "requirementsSha256": "4e9a9c9c3490d6ce7dc0e10dfd4a8664a2d349289384d04ee3e9ce44f6cdf4de"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:14:1014200:any",
+        "characterCode": 14,
+        "skillGroup": 1014200,
+        "label": "Q [ChiaraActive1]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "routeId": "preselected-cancelled-projectile-contact",
+      "reviewedMethods": [
+        "exclusive-cast-any-enemy-projectile-collision",
+        "exclusive-projectile-cast-with-explicit-cancellations-counted-as-misses"
+      ],
+      "bundleId": "14:Q",
+      "requirementsSha256": "f82496a9a598b9693bd25a84ccf3daaaf727cb9f33781c4d76752d8e09b08b96",
+      "supplementalReviewedArtifact": "deliverables/shared-rule-reuse-20260910-v1.json"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:16:1016700:any",
+        "characterCode": 16,
+        "skillGroup": 1016700,
+        "label": "W [SilviaBikeActive2]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "routeId": "preselected-action-contact",
+      "reviewedMethods": [
+        "exact-action-target-same-tick-corroborated"
+      ],
+      "bundleId": "16:W",
+      "requirementsSha256": "d5683f54fffd2b5f993a7be6ff7bdb5dcc6598deae93d3a56bb98992edc157f1"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:23:1023500:any",
+        "characterCode": 23,
+        "skillGroup": 1023500,
+        "label": "R [CathyActive4]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "routeId": "preselected-action-contact",
+      "reviewedMethods": [
+        "exact-action-target-same-tick-corroborated"
+      ],
+      "bundleId": "23:R",
+      "requirementsSha256": "efd119e96a1ac977bab132589664eed2302cbfc36c5ed2dfe1558d406648ba3c"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:25:1025200:any",
+        "characterCode": 25,
+        "skillGroup": 1025200,
+        "label": "Q [BerniceActive1]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "routeId": "preselected-cancelled-projectile-contact",
+      "reviewedMethods": [
+        "exclusive-cast-any-enemy-projectile-collision",
+        "exclusive-projectile-cast-with-explicit-cancellations-counted-as-misses"
+      ],
+      "bundleId": "25:Q",
+      "requirementsSha256": "f066052638f321b9897da48ff4ae1eb97491a4aa7521d23d6ceee9dc2df44ec1",
+      "supplementalReviewedArtifact": "deliverables/shared-rule-reuse-20260910-v1.json"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:25:1025500:any",
+        "characterCode": 25,
+        "skillGroup": 1025500,
+        "label": "R [BerniceActive4]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "routeId": "preselected-projectile-contact",
+      "reviewedMethods": [
+        "exclusive-cast-any-enemy-projectile-collision"
+      ],
+      "bundleId": "25:R",
+      "requirementsSha256": "d438567b8f8a6cd50abbb39eb63b36ee71741a255142787bb52cb6ed327d5410"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:27:1027200:any",
+        "characterCode": 27,
+        "skillGroup": 1027200,
+        "label": "Q [AlexActive1RailGun]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "routeId": "preselected-projectile-contact",
+      "reviewedMethods": [
+        "exclusive-cast-any-enemy-projectile-collision"
+      ],
+      "bundleId": "27:Q",
+      "requirementsSha256": "a1d2f9b16532ebd8a767dddc8fe14c465e8c3108d8c9ac84ccb2495dd964e215"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:27:1027400:any",
+        "characterCode": 27,
+        "skillGroup": 1027400,
+        "label": "E [AlexActive3PulseSting]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "routeId": "preselected-projectile-contact",
+      "reviewedMethods": [
+        "exclusive-cast-any-enemy-projectile-collision"
+      ],
+      "bundleId": "27:E",
+      "requirementsSha256": "6ff187be4d64418e1c0d0b2c97710f0055dcd0ea936158ec10da0fd8c3763dee"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:31:1031520:any",
+        "characterCode": 31,
+        "skillGroup": 1031520,
+        "label": "R [RioActive4ShortFinish]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "routeId": "preselected-projectile-contact",
+      "reviewedMethods": [
+        "exclusive-cast-any-enemy-projectile-collision"
+      ],
+      "bundleId": "31:R",
+      "requirementsSha256": "22f4791cd4d1e431425dc17d4a2c205214361e0fb484a1ba2664f266a8ff308e"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:42:1042400:any",
+        "characterCode": 42,
+        "skillGroup": 1042400,
+        "label": "E [BiancaActive3]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "routeId": "preselected-action-contact",
+      "reviewedMethods": [
+        "exact-action-target-same-tick-corroborated"
+      ],
+      "bundleId": "42:E",
+      "requirementsSha256": "ae185b30dee8ad88c33c8268e03d057880aaccd96f4c35a7b7bd4a60895bdbf7"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:54:1054200:any",
+        "characterCode": 54,
+        "skillGroup": 1054200,
+        "label": "Q [KarlaActive1]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "routeId": "preselected-projectile-contact",
+      "reviewedMethods": [
+        "exclusive-cast-any-enemy-projectile-collision"
+      ],
+      "bundleId": "54:Q",
+      "requirementsSha256": "56065dbdf9d266e8f34868a60d5a256032b1c44868b9ccacfd7cf023ac473f46"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:64:1064200:any",
+        "characterCode": 64,
+        "skillGroup": 1064200,
+        "label": "Q [VanyaActive1]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "routeId": "preselected-projectile-contact",
+      "reviewedMethods": [
+        "exclusive-cast-any-enemy-projectile-collision"
+      ],
+      "bundleId": "64:Q",
+      "requirementsSha256": "b7340b2978cfb9ab0b58447c7e059ff49b8ec5872c9e4c0bee8363164ab061c7"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:65:1065200:any",
+        "characterCode": 65,
+        "skillGroup": 1065200,
+        "label": "Q [DebiMarleneActive1_1]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "routeId": "preselected-action-contact",
+      "reviewedMethods": [
+        "exact-action-target-same-tick-corroborated"
+      ],
+      "bundleId": "65:Q",
+      "requirementsSha256": "3d9adedef794648eaf7b62b7cf4963cbe5484792e36894cfab9967f48a9c4085"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:66:1066200:any",
+        "characterCode": 66,
+        "skillGroup": 1066200,
+        "label": "Q [ArdaActive1]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "routeId": "preselected-projectile-contact",
+      "reviewedMethods": [
+        "exclusive-cast-any-enemy-projectile-collision"
+      ],
+      "bundleId": "66:Q",
+      "requirementsSha256": "c8608e8debf30248b6d2eb3a12734be76e81e4aaad6d43f4f38925c2df195ef2"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:66:1066210:any",
+        "characterCode": 66,
+        "skillGroup": 1066210,
+        "label": "Q [ArdaActive1Reinforce]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "routeId": "preselected-projectile-contact",
+      "reviewedMethods": [
+        "exclusive-cast-any-enemy-projectile-collision"
+      ],
+      "bundleId": "66:Q",
+      "requirementsSha256": "c8608e8debf30248b6d2eb3a12734be76e81e4aaad6d43f4f38925c2df195ef2"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:68:1068300:any",
+        "characterCode": 68,
+        "skillGroup": 1068300,
+        "label": "W [AlonsoActive2]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "routeId": "preselected-projectile-contact",
+      "reviewedMethods": [
+        "exclusive-cast-any-enemy-projectile-collision"
+      ],
+      "bundleId": "68:W",
+      "requirementsSha256": "ac4cc76df26e1a648e0401acf8c24aac5333af3b77583f8d6b055f52773f2cbd"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:86:1086300:any",
+        "characterCode": 86,
+        "skillGroup": 1086300,
+        "label": "W [FenrirActive2_1]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "routeId": "preselected-projectile-contact",
+      "reviewedMethods": [
+        "exclusive-cast-any-enemy-projectile-collision"
+      ],
+      "bundleId": "86:W",
+      "requirementsSha256": "838588db341da950d4152a4f49752f7f72c444b921acbc809f24e76375e5fe80"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:87:1087200:any",
+        "characterCode": 87,
+        "skillGroup": 1087200,
+        "label": "Q [CoralineActive1]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "routeId": "preselected-cancelled-projectile-contact",
+      "reviewedMethods": [
+        "exclusive-cast-any-enemy-projectile-collision",
+        "exclusive-projectile-cast-with-explicit-cancellations-counted-as-misses"
+      ],
+      "bundleId": "87:Q",
+      "requirementsSha256": "bced293768bc486709b32ef2a2b4cafaa91c3a0614b52b8f8a17028c7c50bf2b",
+      "supplementalReviewedArtifact": "deliverables/shared-rule-reuse-20260910-v1.json"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:87:1087400:any",
+        "characterCode": 87,
+        "skillGroup": 1087400,
+        "label": "E [CoralineActive3]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "routeId": "preselected-projectile-contact",
+      "reviewedMethods": [
+        "exclusive-cast-any-enemy-projectile-collision"
+      ],
+      "bundleId": "87:E",
+      "requirementsSha256": "6ef441c1953c21d275c0716a1f553ab4aa00d6fc72f022c488e07757b077bae7"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:89:1089210:any",
+        "characterCode": 89,
+        "skillGroup": 1089210,
+        "label": "Q [CraverActive1_2]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "routeId": "preselected-projectile-contact",
+      "reviewedMethods": [
+        "exclusive-cast-any-enemy-projectile-collision"
+      ],
+      "bundleId": "89:Q",
+      "requirementsSha256": "0af2d42dd7013f37a33db21ffc8029bba07ba7df609bcbcdd7fbd601735dc8ea"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:89:1089410:any",
+        "characterCode": 89,
+        "skillGroup": 1089410,
+        "label": "E [CraverActive3_2]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "routeId": "preselected-projectile-contact",
+      "reviewedMethods": [
+        "exclusive-cast-any-enemy-projectile-collision"
+      ],
+      "bundleId": "89:E",
+      "requirementsSha256": "86742a255ccb4576a89e10c0200a7d10a67d7e384d654e94fc8eadabcf79ffe2"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:90:1090210:any",
+        "characterCode": 90,
+        "skillGroup": 1090210,
+        "label": "Q [LuciaActive1_2]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "routeId": "preselected-action-contact",
+      "reviewedMethods": [
+        "exact-action-target-same-tick-corroborated"
+      ],
+      "bundleId": "90:Q",
+      "requirementsSha256": "655be08a529d6b4e574a4f5683964aaf6c40ab268cb363fab9b70301f23b1cfd"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:5:1005400:any",
+        "characterCode": 5,
+        "skillGroup": 1005400,
+        "label": "E",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy"
+      },
+      "routeId": "preselected-cancelled-projectile-contact",
+      "reviewedMethods": [
+        "exclusive-cast-any-enemy-projectile-collision",
+        "exclusive-projectile-cast-with-explicit-cancellations-counted-as-misses"
+      ],
+      "bundleId": "05:E",
+      "requirementsSha256": "d4f7346e2d8d0e7d535f9f8cd3939f31d59e315330426556b9e73b33b011f724"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:19:1019200:any",
+        "characterCode": 19,
+        "skillGroup": 1019200,
+        "label": "Q [EmmaActive1Summon]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "routeId": "preselected-cancelled-projectile-contact",
+      "reviewedMethods": [
+        "exclusive-cast-any-enemy-projectile-collision",
+        "exclusive-projectile-cast-with-explicit-cancellations-counted-as-misses"
+      ],
+      "bundleId": "19:Q",
+      "requirementsSha256": "518a760880eae69089e79685f8ad639886817af86872e35086b302872a168a63"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:23:1023400:any",
+        "characterCode": 23,
+        "skillGroup": 1023400,
+        "label": "E [CathyActive3]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "routeId": "preselected-cancelled-projectile-contact",
+      "reviewedMethods": [
+        "exclusive-cast-any-enemy-projectile-collision",
+        "exclusive-projectile-cast-with-explicit-cancellations-counted-as-misses"
+      ],
+      "bundleId": "23:E",
+      "requirementsSha256": "80cd3a0aefd5ce7cf0f521050d168ed4360c2311df7432c364f2e2cf9e704fc9"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:29:1029200:any",
+        "characterCode": 29,
+        "skillGroup": 1029200,
+        "label": "Q [LeonActive1]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "routeId": "preselected-cancelled-projectile-contact",
+      "reviewedMethods": [
+        "exclusive-cast-any-enemy-projectile-collision",
+        "exclusive-projectile-cast-with-explicit-cancellations-counted-as-misses"
+      ],
+      "bundleId": "29:Q",
+      "requirementsSha256": "e92037dde93819018f34c884a3465524dd0d6c436a58154ccce5076bb400ff61"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:31:1031310:any",
+        "characterCode": 31,
+        "skillGroup": 1031310,
+        "label": "W [RioActive2Long]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": false
+      },
+      "routeId": "preselected-cancelled-projectile-contact",
+      "reviewedMethods": [
+        "exclusive-cast-any-enemy-projectile-collision",
+        "exclusive-projectile-cast-with-explicit-cancellations-counted-as-misses"
+      ],
+      "bundleId": "31:W",
+      "requirementsSha256": "f2fc96d07f9870055de397047dd0ed092e8a3b952b093ad4c425270fdbe70bf9"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:42:1042200:any",
+        "characterCode": 42,
+        "skillGroup": 1042200,
+        "label": "Q [BiancaActive1]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "routeId": "preselected-cancelled-projectile-contact",
+      "reviewedMethods": [
+        "exclusive-cast-any-enemy-projectile-collision",
+        "exclusive-projectile-cast-with-explicit-cancellations-counted-as-misses"
+      ],
+      "bundleId": "42:Q",
+      "requirementsSha256": "bcf8706f2e9970efffc1ab9bffb2dc1cb5c213a9dbd87b823628607c59cc64ad"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:76:1076500:any",
+        "characterCode": 76,
+        "skillGroup": 1076500,
+        "label": "R [GarnetActive4]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "routeId": "preselected-cancelled-projectile-contact",
+      "reviewedMethods": [
+        "exclusive-cast-any-enemy-projectile-collision",
+        "exclusive-projectile-cast-with-explicit-cancellations-counted-as-misses"
+      ],
+      "bundleId": "76:R",
+      "requirementsSha256": "b858202e12221733f374530197d1703008611ab16f421ce77063c18db6ba4229"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:89:1089200:any",
+        "characterCode": 89,
+        "skillGroup": 1089200,
+        "label": "Q [CraverActive1_1]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "routeId": "preselected-cancelled-projectile-contact",
+      "reviewedMethods": [
+        "exclusive-cast-any-enemy-projectile-collision",
+        "exclusive-projectile-cast-with-explicit-cancellations-counted-as-misses"
+      ],
+      "bundleId": "89:Q",
+      "requirementsSha256": "0af2d42dd7013f37a33db21ffc8029bba07ba7df609bcbcdd7fbd601735dc8ea"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:16:1016400:any",
+        "characterCode": 16,
+        "skillGroup": 1016400,
+        "label": "E [SilviaHumanActive3]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "routeId": "preselected-projectile-contact",
+      "bundleId": "16:E",
+      "requirementsSha256": null,
+      "reviewedMethods": [
+        "exclusive-cast-any-enemy-projectile-collision"
+      ],
+      "sourceAuthoritySha256": "55d86c573ed115eb35795b2b5f869badf2a9d1a0cf8cf7eea18b64f377727b48",
+      "mappingReviewUpgraded": false,
+      "selectionBasis": "Existing candidate effect/contact contract selected before evaluation; no per-match winner search."
+    }
+  ],
+  "sourceAuthoritySha256": "55d86c573ed115eb35795b2b5f869badf2a9d1a0cf8cf7eea18b64f377727b48",
+  "mappingReviewUpgraded": false,
+  "replaySamplesUsedForCompilation": 0,
+  "notMigrated": [
+    {
+      "metricId": "user-request-20260905-all90-v1:58:1058220:any",
+      "reason": "retained current results also use action targets; old single-method authority is incomplete"
+    },
+    {
+      "metricId": "user-request-20260905-all90-v1:56:1056400:any",
+      "reason": "retained current results also use effect-family evidence; old mixed projectile authority is incomplete"
+    }
+  ]
+}

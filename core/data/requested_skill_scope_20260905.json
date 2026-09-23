@@ -1,0 +1,671 @@
+{
+  "format": "er-user-skill-metric-scope.v1",
+  "policyId": "user-request-20260905-all90-v1",
+  "clientVersion": "12.3.0",
+  "gameDataSha256": "5ef9cb5459a2e908099655bf9ffc70ac16b134d1db282fb97b25fe065e7c8e4f",
+  "sourceTextSha256": "7169edd2be100dbdbe450906c314d516deb054af8ab825aaf16c1766a7d1d8f5",
+  "characterCount": 90,
+  "progressBatchSize": 5,
+  "characters": [
+    {
+      "characterCode": 1,
+      "name": "재키",
+      "requestedScopeText": "Q1/Q2(미구현·범위), E(미구현·착지 범위), R2(미구현·주변 범위).",
+      "currentScopeText": "Q1/Q2 범위 적중만 집계. 출혈 및 출혈 관련 추가 피해 적중률 제외. E와 R2 제외 유지."
+    },
+    {
+      "characterCode": 2,
+      "name": "아야",
+      "requestedScopeText": "W(신규★·실제 발사 탄환 기준), R(미구현·범위/공포). 추가 후보 Q(미구현·지정 2연발 적용률[Q는 확정이라 필요X])"
+    },
+    {
+      "characterCode": 3,
+      "name": "피오라",
+      "requestedScopeText": "Q(미구현·범위/끝부분[아닌경우와 끝부분 두개 구현]), W(미구현·2연타), E1(미구현·돌진 접촉), R1~3(미구현·단계별/3타 기절). E2는 이동 단계.",
+      "currentScopeText": "Q 전체 적중률 + 끝부분 확정 시전 횟수. 부위 불명 타격은 전체 적중에 포함하고 끝부분은 확정된 경우만 집계. W(미구현·2연타), E1(미구현·돌진 접촉), R1~3(미구현·단계별/3타 기절). E2는 이동 단계.",
+      "userScopeAmendment20260909": "전체 적중률 + 끝부분 확정 횟수"
+    },
+    {
+      "characterCode": 4,
+      "name": "매그너스",
+      "requestedScopeText": "Q(미구현·투사체), W(미구현·주변 지속 연타[필요없음]), E 일반 타격(미구현)/벽 기절(신규★), R(미구현·바이크 충돌/폭발)."
+    },
+    {
+      "characterCode": 5,
+      "name": "자히르",
+      "requestedScopeText": "[W 제외 전부 관통이나 다중타격 가능하니 각각의 경우 필요] Q(미구현·범위), W(구현), E(미구현·관통 후보/에어본), R(미구현·범위 반복 타격). E 관통은 정적 설정 기준이며 실제 연결 검증은 남음."
+    },
+    {
+      "characterCode": 6,
+      "name": "나딘",
+      "requestedScopeText": "Q(신규★·관통/다인), W(미구현·연결 덫 설치/발동, 덫 한 세트 기준).",
+      "currentScopeText": "Q(관통/다인). W1/W2와 덫 한 세트 지표는 사용자 지시로 제외."
+    },
+    {
+      "characterCode": 7,
+      "name": "현우",
+      "requestedScopeText": "Q(미구현·범위), E 일반 접촉/벽 기절(각각 미구현), R(미구현·충전 범위/최대 충전 기절). E는 피해 없이 밀친 경우도 접촉으로 구분."
+    },
+    {
+      "characterCode": 8,
+      "name": "하트",
+      "requestedScopeText": "Q 발사 단계(미구현·준비 단계 제외), E1/E2(미구현·이동 후 자동 발사). 별도 Q3는 대응 단계가 확인되지 않아 보류."
+    },
+    {
+      "characterCode": 9,
+      "name": "아이솔",
+      "requestedScopeText": "Q(미구현·부착/지연 폭발), W(미구현·한 번이라도 맞으면 시전 성공[총타격 기준이며, 감시카메라 타격도 포함으로]), R(미구현·설치 폭탄/감지 후 폭발).",
+      "currentScopeText": "Q 최초 폭탄 부착만 집계; 지연 폭발 피해 적중률 제외. R 설치 폭탄/감지 후 폭발 유지. W 제외 유지."
+    },
+    {
+      "characterCode": 10,
+      "name": "리 다이린",
+      "requestedScopeText": "Q1~3(미구현·돌진 범위/취권 구분), E(미구현·부채꼴), R(구현·돌진 적중; 후속 4연타 수는 별도)."
+    },
+    {
+      "characterCode": 11,
+      "name": "유키",
+      "requestedScopeText": "E(미구현·첫 충돌), R(미구현·범위 베기/표식 폭발)."
+    },
+    {
+      "characterCode": 12,
+      "name": "혜진",
+      "requestedScopeText": "Q(미구현·최대 2명 관통), W(미구현·지연 범위/끌기), E1/E2(미구현·경로/도착 피해), R(미구현·첫 범위 피해와 회전 부적 5개 분리)."
+    },
+    {
+      "characterCode": 13,
+      "name": "쇼우",
+      "requestedScopeText": "Q(미구현·투사체/소스 지대), E1(구현·돌진)/E2(미구현·내려찍기), R(구현·시전 적중/다인; 전체 화염 연타 수 미검증)."
+    },
+    {
+      "characterCode": 14,
+      "name": "키아라",
+      "requestedScopeText": "Q(신규★·여러 갈래 중 하나라도 적중/다인), W2(미구현·보호막 폭발), E(부분·첫 사슬 구현, 유지/속박 미구현). 추가 후보 R 폭주(미구현·지속 범위), R 심판(미구현·지정·적용률[R은 심판으로 적 처치할시 카운트])."
+    },
+    {
+      "characterCode": 15,
+      "name": "시셀라",
+      "requestedScopeText": "Q(미구현·경로/도착 범위), W(미구현·종료 폭발), E(미구현·적 끌기/자기 이동 구분). 추가 후보 R(미구현·광역 지연 피해 적용률).",
+      "currentScopeText": "Q 경로/도착 범위, W 종료 폭발, E 적 끌기/자기 이동 구분. R 제외."
+    },
+    {
+      "characterCode": 16,
+      "name": "실비아",
+      "requestedScopeText": "인간 Q(신규★·지정+경로/다인), 인간 W(미구현·설치 라인), 인간 E(구현·투사체), 바이크 Q(미구현·주변 범위), 바이크 W(구현·착지/다인), 바이크 E(미구현·지정 돌진·적용률)."
+    },
+    {
+      "characterCode": 17,
+      "name": "아드리아나",
+      "requestedScopeText": "Q(미구현·지속 분사), W(미구현·기름 둔화/점화 피해), E(미구현·이동 경로 화염), R(미구현·화염병별 폭발/잔류 화염).",
+      "currentScopeText": "Q 지속 분사, W 기름 둔화/점화, E 이동 경로 화염, R 화염병 폭발/잔류 화염 유지. 패시브로 붙는 화상 지속 피해의 별도 적중률은 제외."
+    },
+    {
+      "characterCode": 18,
+      "name": "쇼이치",
+      "requestedScopeText": "Q 일반/강화(미구현·범위), W(미구현·대상/단검 지정 후 경로 피해), E(미구현·투사체). 추가 후보 R(미구현·주변 타격/사방 단검), 회수 단검(미구현·실제 자동 발사 기준).",
+      "currentScopeText": "쇼이치 W 적중률 제외; 나머지 기존 요구 유지."
+    },
+    {
+      "characterCode": 19,
+      "name": "엠마",
+      "requestedScopeText": "Q(구현·본체/비둘기별 분리는 미구현), W(미구현·모자 폭발), R(신규★·형태별 완결 검증은 남음). 추가 후보 E(미구현·지정 변이 적용률).",
+      "currentScopeText": "Q 본체/비둘기별 분리, W 모자 폭발, R 형태별 적중. 확정 지정 변이 E는 사용자 지시로 제외. 사용자 2026-09-10 추가: 엠마 R 전체 적중률 제외."
+    },
+    {
+      "characterCode": 20,
+      "name": "레녹스",
+      "requestedScopeText": "Q(미구현·범위/가장자리), W(미구현·휘두르기/후속 채찍), E(미구현·범위 밀침), R(미구현·X자 2타/둘 다 적중).",
+      "currentScopeText": "Q/E 기존 요구 유지. W 후속 끌기 적용만 집계; 첫 회전 피해 적중 제외. R 최초 두 번의 베기 및 두 타 모두 적중만 집계; 이후 표식/이동에 따른 추가 피해 적중률 제외."
+    },
+    {
+      "characterCode": 21,
+      "name": "로지",
+      "requestedScopeText": "Q(미구현·경로), W(미구현·주변 범위), E(미구현·지정 대상 위치 타격), R(부분·기본값 있음, 부착/폭발 분리 미구현).",
+      "currentScopeText": "Q 경로 공격만 포함하고 Move 이동 단계 제외. W/E 유지. R 최초 폭탄 부착만 집계; 이후 폭발 및 추가 폭발 피해 적중률 제외."
+    },
+    {
+      "characterCode": 22,
+      "name": "루크",
+      "requestedScopeText": "Q1(구현·투사체)/Q2(미구현·후속 돌진), W(미구현·주변 범위), E(미구현·적 지정·적용률), R(미구현·폭발탄). 진화 효과는 별도 구분.",
+      "currentScopeText": "Q1(구현·투사체)/Q2(미구현·후속 돌진), W(미구현·주변 범위), E(미구현·적 지정·적용률), R(미구현·폭발탄). 진화 효과는 별도 구분. 사용자 2026-09-10: Q1 적중률 유지. Q2 후속 돌진 적중률 제외."
+    },
+    {
+      "characterCode": 23,
+      "name": "캐시",
+      "requestedScopeText": "Q(구현·경로 돌진), W(미구현·안쪽/바깥쪽), E(미구현·2명 관통/적끼리 충돌/벽 기절), R(구현·경로 범위).",
+      "currentScopeText": "Q 경로 돌진, W 안쪽/바깥쪽 피해 영역별 적중 분리, E 2명 관통/적끼리 충돌/벽 기절, R 경로 범위."
+    },
+    {
+      "characterCode": 24,
+      "name": "아델라",
+      "requestedScopeText": "Q 폰/퀸(미구현·설치 지점), W(미구현·2회 착지/밀어낸 말), E1(미구현·룩 경로/다른 말 발동), R(미구현·착지/말 폭발).",
+      "currentScopeText": "Q 폰/퀸(미구현·설치 지점), W(미구현·2회 착지/밀어낸 말), E1(미구현·룩 경로/다른 말 발동), R(미구현·착지/말 폭발). 사용자 2026-09-10: R 본체 피해와 R이 유발한 체스 폭발을 구분. 체스 피해가 기존 Q/E 적중으로 잘못 귀속되는지 확인."
+    },
+    {
+      "characterCode": 25,
+      "name": "버니스",
+      "requestedScopeText": "Q(미구현·관통), W(미구현·덫/지속 피해), R(부분·첫 탄 구현, 폭발/전이 미구현).",
+      "currentScopeText": "Q/R 기존 요구 유지. W 최초 덫에 걸린 판정만 집계; 이후 출혈/지속 피해 적중률 제외."
+    },
+    {
+      "characterCode": 26,
+      "name": "바바라",
+      "requestedScopeText": "Q/RQ(미구현·센트리건 공격/레일건 실제 발사), W(미구현·경로 레이저), E(미구현·범위/중앙 기절). RW/RE는 gameDb에 있으나 라운지 설명이 없어 현재 활성 여부 보류.",
+      "currentScopeText": "Q/RQ 일반탄·레일건 각각 실제 발사, W 경로 레이저, E 전체 적중과 중앙 기절. E 안쪽/바깥쪽 구분 제외. RW/RE 활성 여부는 보류."
+    },
+    {
+      "characterCode": 27,
+      "name": "알렉스",
+      "requestedScopeText": "원거리 Q/E(구현), 원거리 W(미구현·범위), 근거리 Q(미구현·지정 돌진), 근거리 W(미구현·범위 끌기), 근거리 E(미구현·홀로그램 도발), R(미구현·폭격/반복 펄스/중앙)."
+    },
+    {
+      "characterCode": 28,
+      "name": "수아",
+      "requestedScopeText": "Q(미구현·범위/중앙/책갈피 기절), W 적 사용(미구현·지정 실명), E(구현), R-Q/R-W(미구현), R-E(구현).",
+      "currentScopeText": "Q(미구현·범위/중앙/책갈피 기절), W 적 사용(미구현·지정 실명), E(구현), R-Q/R-W(미구현), R-E(구현). 사용자 2026-09-10: W 적중률 제외. R-W는 이번 변경 대상 아님."
+    },
+    {
+      "characterCode": 29,
+      "name": "레온",
+      "requestedScopeText": "Q(미구현·직선 범위), E(구현·착지), R(미구현·파도 경로/벽 충돌 추가 피해·에어본)."
+    },
+    {
+      "characterCode": 30,
+      "name": "일레븐",
+      "requestedScopeText": "Q(미구현·충전 범위), W(미구현·범위 도발), E(미구현·충전 착지), R(미구현·주변 지속 연타).",
+      "currentScopeText": "Q 충전 범위, W 범위 도발, E 충전 착지. R 제외."
+    },
+    {
+      "characterCode": 31,
+      "name": "리오",
+      "requestedScopeText": "단궁 W(미구현·다발), 화궁 W(부분·첫 탄 구현/후방 피해 미구현)[리오는 W어케든 맞추기만하면 적중 카운트 다인계산X], 양쪽 E(미구현·자동 다중 대상 발사), 단궁 R 연사(미구현)/마무리(구현·벽 기절 미구현), 화궁 R(미구현·장거리 범위탄).",
+      "currentScopeText": "W 단궁/화궁 모두 시전당 한 대 이상 적중하면 성공. 여러 발 모두 적중 또는 다인 적중 요구 없음. E 단궁/화궁 모두 제외. R 유지."
+    },
+    {
+      "characterCode": 32,
+      "name": "윌리엄",
+      "requestedScopeText": "W(미구현·왕복/왕복 모두 적중 기절/마운드 밀침), R(미구현·범위/중앙)."
+    },
+    {
+      "characterCode": 33,
+      "name": "니키",
+      "requestedScopeText": "Q1(구현)/Q2(미구현), W(미구현·가드 성공/반격 적중 분리), E 일반/분노(미구현), R(미구현·지정 돌진·적용률).",
+      "currentScopeText": "W는 가드 성공률만 측정. 반격 피해 적중은 요구하지 않음. Q/E/R 유지."
+    },
+    {
+      "characterCode": 34,
+      "name": "나타폰",
+      "requestedScopeText": "Q(미구현·범위), W(부분·기본값 있음, 반복 촬영/마지막 속박 미구현), E(미구현·프레임/후속 되돌리기), R(미구현·피해 없는 광역 행동불가)."
+    },
+    {
+      "characterCode": 35,
+      "name": "얀",
+      "requestedScopeText": "Q1/Q2(미구현·범위/강화), W(미구현·안쪽/바깥쪽/벽 기절), R(미구현·링 로프 접촉/밀려서 충돌)."
+    },
+    {
+      "characterCode": 36,
+      "name": "이바",
+      "requestedScopeText": "Q(부분·기본값 있음, 관통/폭발 분리 미구현), W(미구현·생성/종료/중앙 에어본), R(미구현·연속 빔/실제 방출 기준)."
+    },
+    {
+      "characterCode": 37,
+      "name": "다니엘",
+      "requestedScopeText": "Q(미구현·범위/중앙), W(미구현·표식 유지/폭발 성공률), R 진입(미구현)/탈출(구현). 그림자 안 반복 피해는 별도 미구현.",
+      "currentScopeText": "Q 범위/중앙, W 표식 유지/폭발 성공률. R 진입·탈출·내부 반복 피해 모두 제외."
+    },
+    {
+      "characterCode": 38,
+      "name": "제니",
+      "requestedScopeText": "Q 양 배역(미구현·3회 타격), W1/W2 양 배역(미구현·카펫/당기기·밀기), R(미구현·지연 범위/매혹)."
+    },
+    {
+      "characterCode": 39,
+      "name": "카밀로",
+      "requestedScopeText": "Q 일반/강화/연계(미구현·가장자리/범위 2타), W(미구현·이동 연타), E1/E2(미구현·지정 돌진), R1~3(미구현·시전별 왕복/두 번 접촉 기절)."
+    },
+    {
+      "characterCode": 40,
+      "name": "클로에",
+      "requestedScopeText": "Q(미구현·니나 범위), W1/W2(미구현·회전/내려꽂기/니나 착지), E1/E2(미구현·클로에/니나 경로), R(미구현·연결선 지속 접촉)."
+    },
+    {
+      "characterCode": 41,
+      "name": "요한",
+      "requestedScopeText": "Q(미구현·폭발/향로 강화), W(미구현·향로 둔화), E(미구현·아군에게 부여 후 주변 폭발), R(미구현·첫 범위 밀침). 아군 회복은 별도.",
+      "currentScopeText": "Q 폭발/향로 강화, W 향로 효과만. E·R 제외. 적팀·다른 아군·둘 중 한 명 이상 적중 각각, 동시 타격은 사용별 대상 합집합 다인 수. 같은 대상 반복 적용은 한 명, 자신은 팀원 수에서 제외."
+    },
+    {
+      "characterCode": 42,
+      "name": "비앙카",
+      "requestedScopeText": "Q(부분·기본값 있음, 경로/도착 확산 분리 미구현), E(구현·충전 돌진), R(미구현·마법진 생성/종료)."
+    },
+    {
+      "characterCode": 43,
+      "name": "셀린",
+      "requestedScopeText": "Q-W 기폭(미구현·폭탄별/기폭 시전별 분리), E(미구현·충격파), R-W/자연 폭발(미구현·융합 단계별). Q와 W에 같은 피해를 중복 합산하면 안 됨.",
+      "currentScopeText": "Q-W 기폭(미구현·폭탄별/기폭 시전별 분리), E(미구현·충격파), R-W/자연 폭발(미구현·융합 단계별). Q와 W에 같은 피해를 중복 합산하면 안 됨. 사용자 2026-09-10: Q 설치 폭탄을 W로 기폭. R 융합은 선택 사항이며 QW 반복도 독립 계산. 폭탄별 결과와 W 사용별 성공을 구분하고 피해를 중복 합산하지 않음."
+    },
+    {
+      "characterCode": 44,
+      "name": "에키온",
+      "requestedScopeText": "Q1/Q2(미구현·범위), E(미구현·경로), R 독사의 진노 무기별(미구현·직선/후속 타격). 폭주 주변 피해는 별도 지속 접촉 후보.",
+      "currentScopeText": "Q1/Q2 범위 각각, E 경로 적중. 진화 후 독사의 진노(블랙맘바·데스애더·사이드와인더) 직선/후속 타격. VF폭주 주변 주기 피해의 적중률은 제외. 진화 전 바이퍼 R도 적중률과 표본 수집 대상에서 제외. 사용자 2026-09-10 추가: 병목 목록 7번 에키온 R 임시 제외. 기존 기록과 원본 .er 보존.",
+      "echionEvolvedROnly20260909": true,
+      "congestionAreaHitRateRequired": false
+    },
+    {
+      "characterCode": 45,
+      "name": "마이",
+      "requestedScopeText": "Q(미구현·범위), W(미구현·종료 범위), E2(미구현·경로 도발), R 자기 사용의 W 연계 피해(미구현·W와 중복 제외)."
+    },
+    {
+      "characterCode": 46,
+      "name": "에이든",
+      "requestedScopeText": "근거리 Q(미구현)/원거리 Q(구현), W(미구현·충전 범위/전기장 속박), E1/E2(미구현·발사/관통 돌진), R(미구현·1차/중앙 기절/2차 낙뢰).",
+      "currentScopeText": "근거리 Q(미구현)/원거리 Q(구현), W(미구현·충전 범위/전기장 속박), E1/E2(미구현·발사/관통 돌진), R(미구현·1차/중앙 기절/2차 낙뢰). 사용자 2026-09-10: W는 타격 적중률만 계산; 별도 속박 성공률 제외."
+    },
+    {
+      "characterCode": 47,
+      "name": "라우라",
+      "requestedScopeText": "Q1(미구현·채찍), W(미구현·투사체), E2(미구현·착지), R(미구현·첫 끌기/후속 범위). E1 벽 연결·이동 성공률은 사용자 지시로 제외; E2 착지 적중률만 유지.",
+      "currentScopeText": "Q1(미구현·채찍), W(미구현·투사체), E2(미구현·착지), R(미구현·첫 끌기/후속 범위). E1 벽 연결·이동 성공률은 사용자 지시로 제외; E2 착지 적중률만 유지. 사용자 2026-09-10: R 첫 타격과 폭발 타격 적중률을 독립적으로 표시."
+    },
+    {
+      "characterCode": 48,
+      "name": "띠아",
+      "requestedScopeText": "노랑 Q(부분·투사체 구현/폭발 분리 미구현), 빨강·파랑 Q(미구현·부위별), 색별 E(미구현·경로), R(미구현·기절/색 유무)."
+    },
+    {
+      "characterCode": 49,
+      "name": "펠릭스",
+      "requestedScopeText": "Q/W/E 각각 1~3연계(미구현·범위/3연계 강화), R(미구현·충전 돌진/최대 충전 기절)."
+    },
+    {
+      "characterCode": 50,
+      "name": "엘레나",
+      "requestedScopeText": "Q(미구현·첫 타격/폭발), W(구현·경로), E(미구현·이동 경로 접촉), R(미구현·범위/안쪽 빙결)."
+    },
+    {
+      "characterCode": 51,
+      "name": "프리야",
+      "requestedScopeText": "Q(미구현·범위/꽃 폭발), W(미구현·관통), E(미구현·3연타/속박), R(미구현·퍼짐/수축/춤 CC)."
+    },
+    {
+      "characterCode": 52,
+      "name": "아디나",
+      "requestedScopeText": "Q 해·달·별/해 컨정션(미구현·달 단일 구분), W 각 천체/달 컨정션(미구현·범위/강화 2회), E 각 천체/별 컨정션(미구현·부착/낙하 범위).",
+      "currentScopeText": "Q 해·달·별/해 컨정션, W 각 천체/달 컨정션, E 각 천체/별 컨정션. E 적 대상 사망으로 직접 지면 분기가 식별되면 적중 인정; 해당 분기 낙하 상세 판정·별도 표본 검증은 요구하지 않음."
+    },
+    {
+      "characterCode": 53,
+      "name": "마커스",
+      "requestedScopeText": "W(부분·기본값 있음, 넘기기/충돌 미구현), E(미구현·돌진/벽·다른 대상 충돌), R(미구현·착지/균열 연계 충격)."
+    },
+    {
+      "characterCode": 54,
+      "name": "칼라",
+      "requestedScopeText": "Q(미구현·관통 작살), W(미구현·작살별 회수 경로), E(미구현·작살 중심 이동 공격), R(미구현·첫 사슬/유지 후 끌기·기절).",
+      "currentScopeText": "칼라 E 적중률 제외; Q/W/R 기존 요구 유지. 사용자 2026-09-10 추가: 칼라 R 피해 적중률 유지, 별도 기절 성공률 제외."
+    },
+    {
+      "characterCode": 55,
+      "name": "에스텔",
+      "requestedScopeText": "W 일반/방패 중(미구현·범위/지속 분사), E2(미구현·방패 돌진), R 자기/아군 사용(미구현·물폭탄/합류 착지).",
+      "currentScopeText": "일반 W 선제대응과 E2 방패 돌진 적중률 유지. 사용자 2026-09-09: 전방 물 분사 W2 긴급진화와 그 종료 단계, 궁극기 R 전체는 적중률에서 제외.",
+      "excludedSkillGroups20260909": [
+        1055310,
+        1055320,
+        1055500
+      ]
+    },
+    {
+      "characterCode": 56,
+      "name": "피올로",
+      "requestedScopeText": "Q1/Q2(미구현·난격/내려치기), W2(미구현·범위), E1(부분·첫 탄 구현, 후속 돌진 미구현)/E2(미구현), R(미구현·관통 돌진)."
+    },
+    {
+      "characterCode": 57,
+      "name": "마르티나",
+      "requestedScopeText": "Q 취재/방송(미구현), W 취재/방송(미구현·카메라 연계), E 복귀 취재/방송(미구현·둔화/피해·기절), 방송 R(미구현·연타/중앙/마지막 기절). 취재 R은 별도 촬영 성공률.",
+      "currentScopeText": "강화(방송) 후 스킬만 적중률 표시: Q, W 카메라 연계, E 복귀 피해·기절, R 연타/중앙/마지막 기절. 강화 전 Q/W/E 및 취재 R 촬영 제외."
+    },
+    {
+      "characterCode": 58,
+      "name": "헤이즈",
+      "requestedScopeText": "일반 Q(미구현·유탄), 기관단총 Q(미구현·실제 연사), 로켓 Q(부분·기본값 있음, 관통/후방 확산 분리 미구현), W(구현·산탄), R 전환 타격(미구현·주변 범위).",
+      "currentScopeText": "Q 일반 유탄/기관단총 실제 연사, W 산탄. R 적중률은 R 상태에서 Q로 발사한 엑셀러레이션 로켓의 적중/발사 시도 및 다인으로 표시. 로켓 관통·후방 확산 분리 유지. R 전환 타격·폼 종료·기본 공격은 제외."
+    },
+    {
+      "characterCode": 59,
+      "name": "아이작",
+      "requestedScopeText": "Q(미구현·지정 돌진), E2(미구현·범위 끌기/기절), R(구현·범위; 표식별 효과 분리는 미구현)."
+    },
+    {
+      "characterCode": 60,
+      "name": "타지아",
+      "requestedScopeText": "Q 일반/강화(미구현·충돌/검 폭발), W(미구현·유리벽 접촉), E1/E2(미구현·파편 파괴 조건의 범위 공격), R(미구현·대검 타격/폭발)."
+    },
+    {
+      "characterCode": 61,
+      "name": "이렘",
+      "requestedScopeText": "인간 Q(미구현·튕김/범위), 인간 W(미구현·매혹), 고양이 Q(미구현·강화 평타 뒤 범위 연타), 고양이 W(미구현·범위/에어본), 고양이 E(미구현·착지)."
+    },
+    {
+      "characterCode": 62,
+      "name": "테오도르",
+      "requestedScopeText": "Q 일반/스크린(미구현·광선/재발사), E(부분·첫 탄 구현, 스크린 확산/후속 속박 미구현), R(미구현·에너지 파동).",
+      "currentScopeText": "Q 일반 광선/스크린 재발사, E 첫 탄/스크린 확산/후속 속박. R 제외."
+    },
+    {
+      "characterCode": 63,
+      "name": "이안",
+      "requestedScopeText": "인간 Q(구현), 인간 W/E1/E2(미구현), 빙의 Q/W/E(미구현·범위/끌기), R 해방 진입(미구현·경로)."
+    },
+    {
+      "characterCode": 64,
+      "name": "바냐",
+      "requestedScopeText": "Q(미구현·왕복/회수), W1/W2(미구현·연타/착지), E(미구현·경로/바깥 날개), R(미구현·가루/졸음→수면).",
+      "currentScopeText": "Q 왕복/회수, E 경로/바깥 날개, R 첫 투사체 타격 및 다인. W1/W2 전체 제외. R 졸음·수면 제외 유지."
+    },
+    {
+      "characterCode": 65,
+      "name": "데비&마를렌",
+      "requestedScopeText": "양쪽 본체 Q(구현), 대기 상대의 Q 연계 공격(미구현), 양쪽 W(미구현·범위/다발 자동 발사), 데비→마를렌 E(구현)/반대 E(미구현), R(구현·후속 5타 수 미검증)."
+    },
+    {
+      "characterCode": 66,
+      "name": "아르다",
+      "requestedScopeText": "일반 Q/W/E(미구현·두루마리/입방체/비석), R 강화 Q/W/E(미구현·강화 세부 설명 보완 필요)."
+    },
+    {
+      "characterCode": 67,
+      "name": "아비게일",
+      "requestedScopeText": "Q(미구현·2회전), W(미구현·부채꼴), E(미구현·대상 주변 공격), R(미구현·착지)."
+    },
+    {
+      "characterCode": 68,
+      "name": "알론소",
+      "requestedScopeText": "Q(부분·첫 적중 구현/후속 기절 미구현), W(미구현·파동/종료 타격), E(미구현·지정 후 돌진 완료), R(미구현·끌기/지속/종료 범위)."
+    },
+    {
+      "characterCode": 69,
+      "name": "레니",
+      "requestedScopeText": "Q(미구현·충돌/폭발), W(미구현·범위/중앙), E(미구현·발사/기절), R(미구현·트랩/방향 밀침/벽 충돌 추가 피해)."
+    },
+    {
+      "characterCode": 70,
+      "name": "츠바메",
+      "requestedScopeText": "Q(미구현·수리검 3개 경로/도착 회전), R(미구현·지정 돌진 경로의 모든 적)."
+    },
+    {
+      "characterCode": 71,
+      "name": "케네스",
+      "requestedScopeText": "Q(미구현·범위/강화), R(미구현·첫 올려베기/연타/착지). W 방어와 E 강화 평타는 별도."
+    },
+    {
+      "characterCode": 72,
+      "name": "카티야",
+      "requestedScopeText": "Q(미구현·첫 탄), E(미구현·발사), R(미구현·스캔/실제 최대 3발/다른 적의 대신 맞기).",
+      "currentScopeText": "Q(첫 탄), E(발사), R(사용당 타겟으로 포착한 서로 다른 적 실험체 수; 탄환 적중률·다른 적 대신 맞기 제외)."
+    },
+    {
+      "characterCode": 73,
+      "name": "샬럿",
+      "requestedScopeText": "Q(미구현·구체의 대상 탐색/부착/폭발). W/E/R은 아군 지원 지표."
+    },
+    {
+      "characterCode": 74,
+      "name": "다르코",
+      "requestedScopeText": "W(미구현·범위 둔화/다인 능력치 탈취), E(구현·착지), R(미구현·지정 제압/주변 피해).",
+      "currentScopeText": "다르코 R 적중률 제외; E 유지, W 제외 유지."
+    },
+    {
+      "characterCode": 75,
+      "name": "르노어",
+      "requestedScopeText": "Q 일반/강화(미구현·5발/폭발), W 일반/강화(미구현·범위 속박), E 일반/강화(미구현·끌기), R(미구현·부착/지속 범위/정신 이상)."
+    },
+    {
+      "characterCode": 76,
+      "name": "가넷",
+      "requestedScopeText": "Q1/Q2(미구현), W(미구현·충전 범위/속박), E 논타깃(구현), R1(구현·사슬)/R2(미구현·처형 성공률). gameDb의 E 지정형 활성 여부는 보류."
+    },
+    {
+      "characterCode": 77,
+      "name": "유민",
+      "requestedScopeText": "Q 일반/강화(미구현·3갈래 관통/회오리), W 일반/강화(미구현·범위/밀침), E(미구현·최대 3명 자동 발사), R(미구현·착지/날아오르기 2타).",
+      "currentScopeText": "Q 일반/강화 3갈래 관통·회오리, W 일반/강화 범위·밀침, R 착지/날아오르기 2타. E 자체 제외. E로 강화시킨 Q/W는 각각 별도 적중률 유지. 사용자 2026-09-10: 일반 Q 유지. 강화 Q는 첫 공격의 적중만 계산; 후속 회오리 반복 피해 제외."
+    },
+    {
+      "characterCode": 78,
+      "name": "히스이",
+      "requestedScopeText": "Q(미구현·2타), W 1·2·3중첩형(미구현·발도/경로/연타), E(미구현·경로/도착), R2(미구현·2타/중앙 마무리·처형). W 숫자는 재사용 단계가 아님."
+    },
+    {
+      "characterCode": 79,
+      "name": "유스티나",
+      "requestedScopeText": "Q1/Q2(미구현·첫 2발/강화 1발), W(미구현·범위 2차례), R(구현·전체 연타 수 미검증)."
+    },
+    {
+      "characterCode": 80,
+      "name": "이슈트반",
+      "requestedScopeText": "Q(부분·기본값 있음/다른 가능성 분리 미구현), W/E 일반·다른 가능성(미구현), R(미구현·지정 도약/분신 3방향)."
+    },
+    {
+      "characterCode": 81,
+      "name": "니아",
+      "requestedScopeText": "Q 일반/R 중(미구현·낙하/블록 경로), W 일반/R 중(미구현·끌기/블록 폭발), R(미구현·가장자리 기절/누적 공격 후 범위 피해)."
+    },
+    {
+      "characterCode": 82,
+      "name": "슈린",
+      "requestedScopeText": "Q(미구현·경로/지점 회전/회수 후 회전), W(미구현·반격/강화 기절; 실험체 첫 대상, 비실험체 관통), E(미구현·돌진/후속 어검), R(미구현·범위/추가 어검/회수 경로).",
+      "currentScopeText": "Q 최초 투사체 적중만 집계; 지점 회전·회수 후 회전 및 후속 주기 피해 적중률 제외. W/E 기존 요구 유지. R 제외 유지. 사용자 2026-09-10: E 돌진 피해만 적중률 계산; Q/E 후 주변 검기 피해 제외."
+    },
+    {
+      "characterCode": 83,
+      "name": "헨리",
+      "requestedScopeText": "Q1/Q2(미구현·관통), W(미구현·지속 범위), E(구현·W 연계 피해; 조건별 분리 미구현), R(미구현·첫 범위/종료 폭발·기절).",
+      "currentScopeText": "Q1/Q2(미구현·관통), W(미구현·지속 범위), E(구현·W 연계 피해; 조건별 분리 미구현), R(미구현·첫 범위/종료 폭발·기절). 사용자 2026-09-10: R 마지막 폭발 타격만 적중률 계산; 첫 범위 및 별도 기절 성공률 제외."
+    },
+    {
+      "characterCode": 84,
+      "name": "블레어",
+      "requestedScopeText": "양 무기 Q/W(미구현·2타/경로/연타), 쌍검 E(구현)/쌍날검 E(미구현), 고유 D 연계(미구현·도착 범위), R2(미구현·돌진 착지).",
+      "currentScopeText": "양 무기 Q/W 각각 2타/경로/연타, E 쌍검/쌍날검 각각, R2 돌진 착지. D 제외, R1 제외 유지."
+    },
+    {
+      "characterCode": 85,
+      "name": "미르카",
+      "requestedScopeText": "Q 일반/강화(미구현·범위/여진), E1/E2/강화 E2(미구현·돌진/휘두르기/밀침), R(미구현·착지)."
+    },
+    {
+      "characterCode": 86,
+      "name": "펜리르",
+      "requestedScopeText": "Q 일반/강화(미구현), W1(구현·꼬리)/W2(미구현·후퇴 타격), R(미구현·지정 돌진). W/R의 흡수 유지·반복 피해는 별도 미구현."
+    },
+    {
+      "characterCode": 87,
+      "name": "코렐라인",
+      "requestedScopeText": "Q(부분·첫 탄 구현, 폭발/거울 재발사 미구현), E 일반/백경/흑경(미구현·관통/속박)."
+    },
+    {
+      "characterCode": 88,
+      "name": "비형",
+      "requestedScopeText": "W(미구현·범위), E(미구현·돌진/도발), R(구현·중앙 강화 분리 미구현). 추가 후보 Q1/Q2 주변 피해(미구현·강화 평타의 범위 부분).",
+      "currentScopeText": "W 범위, E 돌진/도발, R 일반 적중/중앙 강화 분리. Q1/Q2 및 강화 평타의 주변 피해 전체 제외."
+    },
+    {
+      "characterCode": 89,
+      "name": "크레이버",
+      "requestedScopeText": "Q 더블 탭(구현·탄환)/포커스 샷(부분·첫 탄 구현, 후방 피해 미구현), W 두 형태(미구현·회전/에어본), E 두 형태(미구현·돌진/관통탄), R(미구현·지정·적용률)."
+    },
+    {
+      "characterCode": 90,
+      "name": "루치아",
+      "requestedScopeText": "일반 Q(미구현)/강화 Q(구현·관통 빛줄기), W(미구현·자동 다중 대상/실제 발사 수), R(구현·수정 조건 기절 분리 미구현).",
+      "currentScopeText": "일반 Q(미구현)/강화 Q(구현·관통 빛줄기), W(미구현·자동 다중 대상/실제 발사 수), R(구현·수정 조건 기절 분리 미구현). 사용자 2026-09-10: W 소환체 적중률 제외."
+    }
+  ],
+  "overrides": {
+    "ayaQ": "excluded",
+    "ayaW": "actual-projectile-shots",
+    "fioraQ": [
+      "non-tip",
+      "tip"
+    ],
+    "fioraE2": "movement-only-excluded",
+    "magnusW": "excluded",
+    "zahirQER": [
+      "any-enemy-hit-per-cast",
+      "distinct-enemies-per-attempt",
+      "multi-target-attempt-rate"
+    ],
+    "isolW": "excluded-user-request-20260909",
+    "chiaraJudgment": "enemy-kill-count",
+    "rioW": "one-cast-any-one-hit-success",
+    "seres": "out-of-request-scope",
+    "cancelledBeforeAttack": "skill-cast metric: one attempt and one miss; actual-shot rate retains actual emitted shots, cancelled casts recorded separately",
+    "nadineW": "excluded",
+    "vanyaR": "first-projectile-contact-per-cast-with-multi-target; drowse-and-sleep-excluded",
+    "multiTargetDisplay": "sum of distinct enemy targets per attempt / total attempts; show count fraction, not two-or-more-attempt percentage; numerator may exceed denominator",
+    "katjaR": "distinct enemy players acquired as targets per R use; primary total acquired targets / R uses; projectile hit rates and interception excluded",
+    "jackieER2": "excluded",
+    "shoichiPassive": "excluded-from-aim-hit-rate-scope",
+    "emmaE": "excluded-guaranteed-targeted-application",
+    "rozziQMove": "excluded-movement-only",
+    "cathyW": "inner-hit and outer-hit separately; aggregate damage cannot prove region",
+    "barbaraE": "overall-hit-without-inner-outer-split; central-stun-retained",
+    "elevenR": "excluded",
+    "danielR": "excluded-all-stages",
+    "johann": "enemy and other-ally outcomes; either-team any-hit and distinct targets per use; never sum aggregate hit counts; self excluded",
+    "johannER": "excluded",
+    "suaW": "enemy-player-targeted casts to actual blindness; cannot target other allies; self is separate from teammates",
+    "sisselaR": "excluded",
+    "theodoreR": "excluded",
+    "vanyaW": "excluded-all-stages",
+    "darkoW": "excluded",
+    "yuminE": "excluded-self-skill; E-enhanced-Q-and-W-retained-separately",
+    "blairD": "excluded",
+    "bihyungQ": "excluded-all-stages",
+    "martina": "display-only-reinforced-broadcast-QWER; normal-and-normal-camera-and-filming-excluded",
+    "hazeR": "HazeActive1_3 rocket cast using Q in R form reported under R; transform/end/basic-attack excluded",
+    "lauraE": "E2 landing hit rate only; E1 wall connection/movement excluded",
+    "adinaEDirectGround": "identified-enemy-target-death-branch-counts-as-hit-by-user-policy; no-fall-detail-or-sample-gate",
+    "isolQ": "initial-attachment-only",
+    "rozziR": "initial-attachment-only",
+    "berniceW": "initial-trap-contact-only",
+    "adrianaPassive": "burn-dot-hit-rate-excluded",
+    "jackieBleed": "bleed-and-associated-extra-damage-hit-rate-excluded",
+    "lenoxR": "initial-two-slashes-only; subsequent-mark-damage-excluded",
+    "lenoxW": "second-hit-pull-application-only; first-spin-damage-excluded",
+    "shoichiW": "excluded-user-request",
+    "rioE": "excluded-user-request",
+    "nickyW": "guard-success-only-counterattack-hit-not-required",
+    "karlaE": "excluded-user-request",
+    "darkoR": "excluded-user-request",
+    "xuelinQ": "initial-projectile-contact-only; followup-periodic-and-pickup-damage-excluded"
+  },
+  "baselineCountsMerged": false,
+  "implementationStatus": "scope-contract-only; execution coverage is reported separately",
+  "clarifications": [
+    {
+      "topic": "ayaW-manual-cancellation",
+      "decision": "직접 시전을 중간에 취소할 수 있으므로 실제 발사된 탄환만 분모에 포함. 5발 발사 후 취소하면 5발이며 미발사 탄환은 실패 탄환으로 추가하지 않음.",
+      "source": "user clarification, 2026-09-05"
+    },
+    {
+      "topic": "isolW",
+      "decision": "실제 발사 수 대비 적 실험체·감시카메라에 맞은 탄환 비율 + 누적 타격 수",
+      "source": "user reply to async clarification, 2026-09-05"
+    },
+    {
+      "topic": "cancelled-before-attack",
+      "decision": "시도 1회·실패 1회로 포함",
+      "source": "user reply to async clarification, 2026-09-05"
+    },
+    {
+      "topic": "nadineW-excluded",
+      "decision": "나딘 W1/W2 및 연결 덫 한 세트 지표를 적중률 대상에서 제외. Q는 유지.",
+      "source": "user clarification, 2026-09-05"
+    },
+    {
+      "topic": "vanyaR-first-contact",
+      "decision": "바냐 R은 수면 대신 첫 타격 기준. 한 명 이상 적중하면 시전 성공 1회, 다중 타격은 별도 집계. 졸음·수면 지표 제외.",
+      "source": "user clarification, 2026-09-05"
+    },
+    {
+      "topic": "multiTarget-total-per-use-display",
+      "decision": "전체 다인 표기는 누적 적중 대상 수/사용 횟수로 표시. 바냐 R 일반 적중 6/10회(60%), 다인 적중 10명/10회. 두 명 이상 적중한 시전 비율은 기본 표기에서 제외. 같은 사용에서 맞힌 적은 각각 1명으로 합산하며 반복 타격 횟수는 별도.",
+      "source": "user clarification, 2026-09-05"
+    },
+    {
+      "topic": "katjaR-target-count",
+      "decision": "카티야 궁은 맞힌 탄환이 아니라 타겟으로 잡은 사람 수를 측정. 사용마다 서로 다른 적 인원을 세며 같은 적 반복 조준은 중복하지 않는다.",
+      "source": "user correction, 2026-09-05"
+    },
+    {
+      "topic": "scope-exclusions-and-inner-outer-damage",
+      "decision": "재키 E/R2 제외, 쇼이치 회수 단검 패시브 제외, 엠마 확정 지정 E 제외, 로지 Q move 이동 단계 제외. 캐시 W와 바바라 E는 안쪽·바깥쪽 피해 영역을 따로 고려. 바바라 중앙 기절은 기존 요구로 별도 유지.",
+      "source": "user correction, 2026-09-05"
+    },
+    {
+      "topic": "eleven-daniel-R-excluded-and-johann-teams",
+      "decision": "일레븐 궁·다니엘 궁 제외. 요한은 적팀 또는 팀원 적중률, 동시 타격은 다인 적중으로 집계.",
+      "source": "user correction, 2026-09-05"
+    },
+    {
+      "topic": "johann-ER-excluded",
+      "decision": "요한 E/R은 적중률 대상에서 제외, Q/W만 유지.",
+      "source": "user correction, 2026-09-05"
+    },
+    {
+      "topic": "sua-W-no-other-ally-target",
+      "decision": "현재 수아 W는 다른 아군에게 사용할 수 없다. 자기 대상 기록과 다른 아군을 구분하며, 요청은 적 실험체 지정 사용 대비 실명 적용이다.",
+      "source": "user correction, 2026-09-05"
+    },
+    {
+      "topic": "seven-exclusions-martina-reinforced-haze-RQ",
+      "source": "user correction, 2026-09-05",
+      "decision": "비형 Q·블레어 D·유민 E 자체·다르코 W·바냐 W·테오도르 R·시셀라 R 제외. 유민 강화 Q/W 유지. 마르티나 강화 후만 표시. 헤이즈 R 상태 Q 로켓을 R 적중률로 표시."
+    },
+    {
+      "topic": "laura-E-landing-only",
+      "source": "user correction, 2026-09-08",
+      "decision": "라우라 E1 벽 연결·이동 성공률 제외; E2 착지 적중률만 유지"
+    },
+    {
+      "topic": "initial-contact-without-adjunct-damage",
+      "source": "user correction, 2026-09-09",
+      "decision": {
+        "1": "Q1/Q2 범위 적중만 집계. 출혈 및 출혈 관련 추가 피해 적중률 제외. E와 R2 제외 유지.",
+        "9": "Q 최초 폭탄 부착만 집계; 지연 폭발 피해 적중률 제외. R 설치 폭탄/감지 후 폭발 유지. W 제외 유지.",
+        "17": "Q 지속 분사, W 기름 둔화/점화, E 이동 경로 화염, R 화염병 폭발/잔류 화염 유지. 패시브로 붙는 화상 지속 피해의 별도 적중률은 제외.",
+        "20": "Q/W/E 기존 요구 유지. R 최초 두 번의 베기 및 두 타 모두 적중만 집계; 이후 표식/이동에 따른 추가 피해 적중률 제외.",
+        "21": "Q 경로 공격만 포함하고 Move 이동 단계 제외. W/E 유지. R 최초 폭탄 부착만 집계; 이후 폭발 및 추가 폭발 피해 적중률 제외.",
+        "25": "Q/R 기존 요구 유지. W 최초 덫에 걸린 판정만 집계; 이후 출혈/지속 피해 적중률 제외."
+      },
+      "appliesTo": "requested hit-rate scope; original damage events and .er preserved"
+    },
+    {
+      "topic": "lenox-W-pull-only",
+      "source": "user correction 2026-09-09",
+      "decision": "회전 피해로 적중을 올리지 않고 후속 끌기 판정만 집계; R 최초 두 번 베기 유지"
+    },
+    {
+      "topic": "guard-and-skill-exclusions-20260909",
+      "source": "user",
+      "decision": {
+        "18": "쇼이치 W 적중률 제외; 나머지 기존 요구 유지.",
+        "31": "W 단궁/화궁 모두 시전당 한 대 이상 적중하면 성공. 여러 발 모두 적중 또는 다인 적중 요구 없음. E 단궁/화궁 모두 제외. R 유지.",
+        "33": "W는 가드 성공률만 측정. 반격 피해 적중은 요구하지 않음. Q/E/R 유지.",
+        "54": "칼라 E 적중률 제외; Q/W/R 기존 요구 유지.",
+        "74": "다르코 R 적중률 제외; E 유지, W 제외 유지."
+      }
+    },
+    {
+      "topic": "xuelin-Q-initial-projectile-only",
+      "source": "explicit user answer 2026-09-09",
+      "decision": "슈린 Q는 최초 투사체 타격만 집계. 후속 주기 피해와 회수 후 피해는 적중률 제외; 원본 피해 기록 보존."
+    }
+  ]
+}

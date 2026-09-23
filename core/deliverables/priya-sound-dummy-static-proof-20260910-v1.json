@@ -1,0 +1,48 @@
+{
+  "format": "reviewed-non-attack-projectile.v1",
+  "skillGroup": 1051500,
+  "characterCode": 51,
+  "projectileCode": 105110,
+  "attackProjectileCode": 105108,
+  "meaning": "PriyaSkillActive4Data.SoundDummyProjectileCode, separate from ProjectileCode",
+  "constructorAssignments": [
+    {
+      "rva": "0x1327dab",
+      "fieldOffset": "0x10",
+      "field": "ProjectileCode",
+      "value": 105108
+    },
+    {
+      "rva": "0x1327db2",
+      "fieldOffset": "0x14",
+      "field": "SoundDummyProjectileCode",
+      "value": 105110
+    }
+  ],
+  "soundMethod": {
+    "rva": "0x2d0ba30",
+    "readOffset": "0x14",
+    "actionNo": 6001
+  },
+  "attackProcess": {
+    "rva": "0x2d0c440",
+    "readOffset": "0x10",
+    "assignedChildSkillId": 751
+  },
+  "staticSources": [
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-1327c50.json",
+      "sha256": "09d02de5c12bddfc80d9746c53ec0b1ba3bb7e668657578439183bcc9e022113"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-2d0ba30.json",
+      "sha256": "1636033f484441c4fdd698d376e0825a32982fdfa11f6d68b0fcc3ae6c877914"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-2d0c440.json",
+      "sha256": "c530b341a97451cc32e83f45557bbb49209bf5d85077f00e033bd99197346d8d"
+    }
+  ],
+  "runtimeSource": "tmp/combined-delay-edges-v1/priya-object953.json",
+  "warning": "Dummy collisions are not skill damage. Exclusion remains provisional; real attack emission blocks exclusion."
+}

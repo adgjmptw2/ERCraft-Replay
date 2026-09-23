@@ -1,0 +1,161 @@
+{
+  "conclusion": "저장 native의 일반 Star W는1052331, 일반 Moon W와 강화 Moon W는둘다1052321을피해파라미터에설정한다. 따라서1052321은강화W전용코드가아니다. 현재두시전의실제variant/고유object수명까지함께봐야하며효과코드만으로모든일반·강화W를분할하면안된다.",
+  "contract": [
+    {
+      "variant": "normal Sun",
+      "effectCode": 1052311,
+      "field": "AdinaSkillActive2Data.HitEffectAndCodeSun +24",
+      "initializer": "121c380",
+      "setterRead": "2838aad"
+    },
+    {
+      "variant": "normal Moon",
+      "effectCode": 1052321,
+      "field": "AdinaSkillActive2Data.HitEffectAndCodeMoon +28",
+      "initializer": "121c387",
+      "setterRead": "2838a33"
+    },
+    {
+      "variant": "normal Star",
+      "effectCode": 1052331,
+      "field": "AdinaSkillActive2Data.HitEffectAndCodeStar +2c",
+      "initializer": "121c38e",
+      "setterRead": "28389f1"
+    },
+    {
+      "variant": "reinforced Moon",
+      "effectCode": 1052321,
+      "field": "same AdinaSkillActive2Data.HitEffectAndCodeMoon +28",
+      "setterRead": "283b6e7"
+    }
+  ],
+  "flow": [
+    {
+      "site": "283899a..28389b1",
+      "meaning": "AdinaEnumType+108 switch:Sun1→+24,Moon2→+28,Star3→+2c"
+    },
+    {
+      "site": "2838ab0..2838ac4",
+      "meaning": "selected field EDX→SkillDamageParameterCollection virtualslot12 SetEffectAndSoundCode"
+    },
+    {
+      "site": "283b6e7..283b707",
+      "meaning": "reinforcedMoon loads SAME singleton+28 then same virtualslot12"
+    },
+    {
+      "site": "2ed59c1..2ed59f9",
+      "meaning": "setter retains incoming integer→R8D; effect parameter keyEDX0; tail4fa7c20"
+    },
+    {
+      "site": "2839540→2839579",
+      "meaning": "Star calls SetDamageParams then passes same damageParams+C8 to DamageTo2eda990"
+    },
+    {
+      "site": "2839149",
+      "meaning": "normal Moon passes its damageParams+C8 to same DamageTo"
+    },
+    {
+      "site": "283b79d→283b7ae",
+      "meaning": "reinforced Moon passes configured damageParams+C8 to same DamageTo"
+    }
+  ],
+  "singletonIdentity": {
+    "metadataAddress": "a4f9f68",
+    "name": "Method$Singleton<AdinaSkillActive2Data>.get_inst()",
+    "source": "tmp/il2cpp-v39-output-20260906/script.json"
+  },
+  "metadataLines": {
+    "file": "tmp/il2cpp-v39-output-20260906/dump.cs",
+    "enum": [
+      358241,
+      358242,
+      358243
+    ],
+    "fields": [
+      360831,
+      360832,
+      360833
+    ],
+    "setterSlot": [
+      179073,
+      180334,
+      180335
+    ]
+  },
+  "files": [
+    {
+      "path": "tmp\\static-code-restored-v1\\game-fn-121c1e0.json",
+      "sha256": "a82c8ca824e260c080cd7a6c64dc6020e57e40a5b2bf1958ec5e5bb85124e4cd",
+      "start": "0x121c1e0",
+      "end": "0x121d1f0"
+    },
+    {
+      "path": "tmp\\static-code-restored-v1\\game-fn-28388c0.json",
+      "sha256": "a72acb48e3f77228589b1b0945778cf08e39103d7eed703e906c4bc82c150e7f",
+      "start": "0x28388c0",
+      "end": "0x2838b30"
+    },
+    {
+      "path": "tmp\\static-code-restored-v1\\game-fn-2839320.json",
+      "sha256": "12ee74610912732b16ad82ede7e1afbfdc9ad0cc66a8951d1bdc153f7edd0f6d",
+      "start": "0x2839320",
+      "end": "0x28396e0"
+    },
+    {
+      "path": "tmp\\static-code-restored-v1\\game-fn-2838ef0.json",
+      "sha256": "155c39c6d21e671893b497806d1953616f9105896d27c473f06b354c1056b2f2",
+      "start": "0x2838ef0",
+      "end": "0x2839320"
+    },
+    {
+      "path": "tmp\\static-code-restored-v1\\game-fn-283b360.json",
+      "sha256": "590cccf7d44c954fa29ad4a23afd7fd0c47833d02aaae61d43e744fbbfd52eaf",
+      "start": "0x283b360",
+      "end": "0x283b8c0"
+    },
+    {
+      "path": "tmp\\static-code-restored-v1\\game-fn-2ed59b0.json",
+      "sha256": "05e3836dc32997a681890b0fcf469d35b9346721765c807a2e6e173f1e217747",
+      "start": "0x2ed59b0",
+      "end": "0x2ed5a00"
+    }
+  ],
+  "analysisPeSha256": "3a92f99aea09d6eae54456a07ac1360c51c5aad1a102ace5cca23deca59c5ef4",
+  "nativeReplayBuildCorrespondenceProven": false,
+  "limit": "설정된피해effect값의정적출처만확인. 공통DamageService/packet override전수조사안함; 현재8031/8012귀속최종판정변경없음.",
+  "newNativeExtractions": 0,
+  "rawReads": 0,
+  "cacheReads": 0,
+  "recalculations": 0,
+  "sourceChanges": 0,
+  "projectileToConfiguredEffect": [
+    {
+      "projectileCode": 105231,
+      "variant": "normal Sun",
+      "effectCode": 1052311,
+      "projectileInitializer": "121c36b/+18",
+      "effectInitializer": "121c380/+24"
+    },
+    {
+      "projectileCode": 105232,
+      "variant": "normal Moon",
+      "effectCode": 1052321,
+      "projectileInitializer": "121c372/+1c",
+      "effectInitializer": "121c387/+28"
+    },
+    {
+      "projectileCode": 105233,
+      "variant": "normal Star",
+      "effectCode": 1052331,
+      "projectileInitializer": "121c379/+20",
+      "effectInitializer": "121c38e/+2c"
+    },
+    {
+      "projectileCode": 105234,
+      "variant": "reinforced Moon",
+      "effectCode": 1052321,
+      "projectileInitializer": "121c67b/+60",
+      "effectInitializer": "121c387/+28"
+    }
+  ]
+}

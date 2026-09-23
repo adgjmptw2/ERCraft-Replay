@@ -1,0 +1,219 @@
+{
+  "format": "native-elena-w-both-forms-disjoint-e.v1",
+  "characterCode": 50,
+  "skillGroup": 1050300,
+  "skillId": "ElenaActive2",
+  "wireSkillId": 734,
+  "effectCodes": [
+    1050301
+  ],
+  "bothNormalAndReinforced": true,
+  "consumer": "Process2a99570 invokes CheckCollilsion2a985b0 at2a99ad2 in its movement loop. Helper selects normal data+38 or reinforced data+40 by script flag+10a, clears readonly parameter+c8, Set(slot8), sets only IndividualId+84/SkillNumber+74/DamageId+a4, and passes same collection as DamageTo argument5. Caster is script+18. Finish2a97e40 stops movement and handlers, no detached W damage callback.",
+  "foreignProducerExclusion": {
+    "skillGroup": 1050400,
+    "skillId": "ElenaActive3",
+    "wireSkillId": 738,
+    "excludedEffects": [
+      1050301
+    ],
+    "actualEffectCodes": [
+      1050402
+    ],
+    "proof": "E movement creates its own ice summon; SummonDeadAction2a9d5a0 selects ElenaSkillActive3Data+28, sets parameter+c8, SetTargetOnWhenDamage then identity fields only, passes it to DamageTo at2a9daaf. SummonCustomAction only updates geometry/stats. E skill event handlers coordinate W execution but do not replace W damage parameters. E is not a no-damage skill."
+  },
+  "gameDbSha256": "5ef9cb5459a2e908099655bf9ffc70ac16b134d1db282fb97b25fe065e7c8e4f",
+  "staticDllSha256": "3a92f99aea09d6eae54456a07ac1360c51c5aad1a102ace5cca23deca59c5ef4",
+  "setterAssignments": [
+    {
+      "dataClass": "ElenaSkillActive2Data",
+      "field": "DamageParamData",
+      "fieldOffset": "0x38",
+      "effectAndSoundCodeType": 0,
+      "effectCode": 1050301,
+      "constructorRva": "0x127b260",
+      "setterCallRva": "0x127b8d5",
+      "transferKind": "call",
+      "instructions": [
+        {
+          "rva": "0x127b8af",
+          "op": "mov",
+          "args": "rcx, qword ptr [rdi + 0x38]"
+        },
+        {
+          "rva": "0x127b8b3",
+          "op": "test",
+          "args": "rcx, rcx"
+        },
+        {
+          "rva": "0x127b8b6",
+          "op": "je",
+          "args": "0x127bb76"
+        },
+        {
+          "rva": "0x127b8bc",
+          "op": "mov",
+          "args": "r9, qword ptr [rcx]"
+        },
+        {
+          "rva": "0x127b8bf",
+          "op": "xor",
+          "args": "edx, edx"
+        },
+        {
+          "rva": "0x127b8c1",
+          "op": "mov",
+          "args": "r8d, 0x1006bd"
+        },
+        {
+          "rva": "0x127b8c7",
+          "op": "mov",
+          "args": "rax, qword ptr [r9 + 0x188]"
+        },
+        {
+          "rva": "0x127b8ce",
+          "op": "mov",
+          "args": "r9, qword ptr [r9 + 0x190]"
+        },
+        {
+          "rva": "0x127b8d5",
+          "op": "call",
+          "args": "rax"
+        }
+      ]
+    },
+    {
+      "dataClass": "ElenaSkillActive2Data",
+      "field": "ReinforceDamageParamData",
+      "fieldOffset": "0x40",
+      "effectAndSoundCodeType": 0,
+      "effectCode": 1050301,
+      "constructorRva": "0x127b260",
+      "setterCallRva": "0x127bab7",
+      "transferKind": "call",
+      "instructions": [
+        {
+          "rva": "0x127ba91",
+          "op": "mov",
+          "args": "rcx, qword ptr [rdi + 0x40]"
+        },
+        {
+          "rva": "0x127ba95",
+          "op": "test",
+          "args": "rcx, rcx"
+        },
+        {
+          "rva": "0x127ba98",
+          "op": "je",
+          "args": "0x127bb76"
+        },
+        {
+          "rva": "0x127ba9e",
+          "op": "mov",
+          "args": "r9, qword ptr [rcx]"
+        },
+        {
+          "rva": "0x127baa1",
+          "op": "xor",
+          "args": "edx, edx"
+        },
+        {
+          "rva": "0x127baa3",
+          "op": "mov",
+          "args": "r8d, 0x1006bd"
+        },
+        {
+          "rva": "0x127baa9",
+          "op": "mov",
+          "args": "rax, qword ptr [r9 + 0x188]"
+        },
+        {
+          "rva": "0x127bab0",
+          "op": "mov",
+          "args": "r9, qword ptr [r9 + 0x190]"
+        },
+        {
+          "rva": "0x127bab7",
+          "op": "call",
+          "args": "rax"
+        }
+      ]
+    },
+    {
+      "dataClass": "ElenaSkillActive3Data",
+      "field": "DamageParamData",
+      "fieldOffset": "0x28",
+      "effectAndSoundCodeType": 0,
+      "effectCode": 1050402,
+      "constructorRva": "0x127bb90",
+      "setterCallRva": "0x127c24b",
+      "transferKind": "call",
+      "instructions": [
+        {
+          "rva": "0x127c225",
+          "op": "mov",
+          "args": "rcx, qword ptr [rdi + 0x28]"
+        },
+        {
+          "rva": "0x127c229",
+          "op": "test",
+          "args": "rcx, rcx"
+        },
+        {
+          "rva": "0x127c22c",
+          "op": "je",
+          "args": "0x127c2bf"
+        },
+        {
+          "rva": "0x127c232",
+          "op": "mov",
+          "args": "r9, qword ptr [rcx]"
+        },
+        {
+          "rva": "0x127c235",
+          "op": "xor",
+          "args": "edx, edx"
+        },
+        {
+          "rva": "0x127c237",
+          "op": "mov",
+          "args": "r8d, 0x100722"
+        },
+        {
+          "rva": "0x127c23d",
+          "op": "mov",
+          "args": "rax, qword ptr [r9 + 0x188]"
+        },
+        {
+          "rva": "0x127c244",
+          "op": "mov",
+          "args": "r9, qword ptr [r9 + 0x190]"
+        },
+        {
+          "rva": "0x127c24b",
+          "op": "call",
+          "args": "rax"
+        }
+      ]
+    }
+  ],
+  "setterAuthoritySha256": "e55a340816194d0f00d2c7613d3c687ee8c254a566bbd2618bafa064f6c2cc91",
+  "bodies": {
+    "tmp/static-code-restored-v1/game-fn-2a99570.json": "8282a05901d11b1926e91ca4ba808e0c77111b9ddd01ca6d09d7b21a76b3f312",
+    "tmp/static-code-restored-v1/game-fn-2a985b0.json": "986c4e41350aaa7c4a84f9369a942f12cdef26fc7cf74d6a7688c78befba5ac8",
+    "tmp/static-code-restored-v1/game-fn-2a97e40.json": "d8fd2a32ab42d11bf7d743154152c015daa30e61714fa389875b06d6e7f4456a",
+    "tmp/static-code-restored-v1/game-fn-2a97720.json": "38055541b308d54d0a426dbbd84a08b0ad5cca5b7b799af06bbe092a9d781264",
+    "tmp/static-code-restored-v1/game-fn-2a9d5a0.json": "65118dec63db48661199a73ba01110fd5ad72f636c822bec787c46432fb14541",
+    "tmp/static-code-restored-v1/game-fn-2a9d080.json": "a2a38b3f513381b653b88b3e4658436415335ade2bcdbeaf7ab7a2b68487105c",
+    "tmp/static-code-restored-v1/game-fn-2a9edd0.json": "71eacfb912caad52d0d1ffe5baec7a2539bdeca25d18f337132d54549060ae39",
+    "tmp/static-code-restored-v1/game-fn-2a9e000.json": "046c13720041d5beee9b61a06e4a5516242042d0f5ada518bbdd44e6189b1443",
+    "tmp/static-code-restored-v1/game-fn-2a9c270.json": "a0fece8ca6adc8f0cb07fe237de30b47896b815dc3684f98545db6ea101e9e93",
+    "tmp/static-code-restored-v1/game-fn-2a9cca0.json": "d24fe5d91cde51e857c09cf73f376cd20ef638164fe251bf8996a3e4170ca410",
+    "tmp/static-code-restored-v1/game-fn-2a9ce50.json": "cf0e72cbea1ddaaee7a2d092cce3ca1855f6c482fa81db75f78e2f87ec413d43"
+  },
+  "runtimeRequirements": [
+    "exact character/group/skillCode/wire identities",
+    "exact native effect1050301 in source gameDb",
+    "retained real finish boundaries",
+    "other unreviewed competitors preserved; cancelled without contact stays unknown"
+  ]
+}

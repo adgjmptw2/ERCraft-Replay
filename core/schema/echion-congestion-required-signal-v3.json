@@ -1,0 +1,114 @@
+{
+  "format": "er-echion-congestion-required-signal.v3",
+  "scope": "Closed primary contact opportunity (awaited parent or reviewed native frame frontier), positive state headroom, exact individual duration transitions.",
+  "nativeBodies": [
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-2a8e3f0.json",
+      "sha256": "b5f70d2c179621ce8880c20b11105c054ac190ff59301a3ca3394faf671b73f6"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-12722c0.json",
+      "sha256": "a16a3c68ab0a5082118e3facf628e5e7c4c3a6f42cd30ea9b7ca38769c7c9927"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-2a8de90.json",
+      "sha256": "d9cb4994bdedf400b34534b7a32b4c1ca6073fd53a0c273623e3be808449da36"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-30d5700.json",
+      "sha256": "3cf50b1c1fee4347ff7cb02fee9a9355885a2d2f343a59112a2471ba960943e6"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-2eb2370.json",
+      "sha256": "6979b06e340d81f658298b80646d0131f59359edcd7c32fe760f926ca27f7854"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-2eb9bb0.json",
+      "sha256": "8e4641d128d5254486ff910697c333a413d2dab800e8e3dc13299dd1f8c32bfc"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-32358e0.json",
+      "sha256": "c1571f8bcaf37ce7a07d610ca7e05d0092abd97e20f918c28e695a5f06419a39"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-2fce170.json",
+      "sha256": "01edd837e7a3f58096c764fec30b92c534adc7670f2146aa21a4347a0a18ac52"
+    }
+  ],
+  "priorLiveWeaponAndCongestion": {
+    "path": "deliverables/echion-primary-live-weapon-and-congestion-static-v1.json",
+    "sha256": "e87566e9beee7ada42b0b76b4750bd1d2e3d3306d270ff51cd25a44ea0233e3f"
+  },
+  "gameDb": {
+    "path": "acquire/gamedata-20260903071248.zip",
+    "sha256": "5ef9cb5459a2e908099655bf9ffc70ac16b134d1db282fb97b25fe065e7c8e4f"
+  },
+  "controlFlow": [
+    {
+      "site": "0x2a8e949..2a8e94c",
+      "fact": "Empty target list jumps to secondary handling at2a8edae, skipping congestion extension."
+    },
+    {
+      "site": "0x2a8ec9e..2a8ecad",
+      "fact": "Nonempty loop ORs IsSkillTargetByCode1044511; every player character qualifies, also some non-player classes."
+    },
+    {
+      "site": "0x2a8ecc5..2a8ed37",
+      "fact": "After processing targets, high branch requests1.0 second, low branch0.5. CmdDamage success is not checked before this branch."
+    },
+    {
+      "site": "0x2a8de90 / 0x30d5700",
+      "fact": "Request is capped by9 minus remaining time; remaining=f32(f32(createdTime+duration)-nativeCurrentUpdateTime). Paused states require different arithmetic and are excluded."
+    },
+    {
+      "site": "0x2eb237d / 0x2eb9bbd",
+      "fact": "ModifyStateValue requires deadReason==0; prove alive from nearest preceding full snapshot plus no subsequent life/reset/wrapper discontinuity."
+    },
+    {
+      "site": "0x3235994",
+      "fact": "Only Debuff(1) invokes IsImmune here. Congestion is Common/Buff(0), so this cannot suppress its positive extension."
+    },
+    {
+      "site": "0x3235c54..0x3235ccd",
+      "fact": "For surviving positive-stack state with resetfalse/addStack0: addss updates duration, then CompleteChangedState delegate emits command. No reset-triggered skill callback occurs."
+    },
+    {
+      "site": "0x2fce272..0x2fce2a0",
+      "fact": "CmdUpdateState.duration is floor(f32(state.duration*100)), same float32 cell inverse as retained position precision helper."
+    }
+  ],
+  "runtimeConditions": [
+    "Exact single Common/Buff self-cast state epoch begins at CmdAddState; no pause, remove, re-add, reset, or relevant wrapper before proven primary frontier.",
+    "Closest earlier full snapshot proves alive/not dying; no life events after that baseline through proven primary frontier. Old deaths before baseline are not carried into current life.",
+    "Baseline is a recorded prelaunch CmdUpdateState or the actual CmdAddState duration under initialValueRule. Creation time is an upper bound for Add baselines; never synthesize an update. Subsequent creation timestamps must agree, stacks remain1, and decreases reject this rule.",
+    "Use full float32 duration preimages and native creation-frame preimages. Max observed duration plus max creation time minus earliest primary clock gives a remaining-time upper bound.",
+    "Require remainingTimeUpper<9 to exclude completely suppressed updates; then apply transitionRule to each individual update.",
+    "Positive or ambiguous enemy damage contradicting the exclusion remains conflict/unknown; never overwrite it with a miss."
+  ],
+  "limits": [
+    "Primary-only evidence; full R variants and secondary effects remain separate.",
+    "High markers also include non-player targets, so they do not independently establish player hits.",
+    "No classification when a required transition is ambiguous."
+  ],
+  "fallbackUsed": false,
+  "previousRule": {
+    "path": "schema/echion-congestion-required-signal-v2.json",
+    "sha256": "3d20cab3ecdfc2f3dbe3b9f5d36d71e01450f39d45b714be7475c79e9877b600"
+  },
+  "frontierRule": {
+    "path": "schema/echion-primary-frame-frontier-v1.json",
+    "sha256": "5fac8f95758479c51310706e7905326c98f20b9e720e05bde26249a5be87ae72"
+  },
+  "transitionRule": [
+    "Use max observed duration/created-time preimages and earliest primary time to prove remainingTimeUpper<9. Therefore a positive high request cannot be silently discarded as fully capped.",
+    "Each existing-state ModifyStateValue updates duration at3235c59 and calls CompleteChanged synchronously at3235ccd; CompleteChanged2fce170 serializes a separate CmdUpdateState with the full resulting duration. Compare consecutive updates in one unchanged state epoch; do not combine independent increments.",
+    "A capped high increment is at most1s. If current duration minimum exceeds f32(previous duration maximum+1), this individual update cannot be the primary high write, irrespective of which larger writer caused it.",
+    "For remaining candidate transitions, bound remaining duration BEFORE the update from previous duration preimages. Require f32(priorRemainingUpper+1)<=9. A cap-ambiguous transition remains unknown.",
+    "Compare current duration cell with [f32(previousLo+1),f32(previousHi+1)]. Any intersection remains a possible high contact update. Includes one-second updates encoded as99 fixed-point units.",
+    "Require every recorded transition to exclude high; missing headroom, decreases, state/life discontinuities or contradictory enemy damage remain unknown. This does not identify the producer of an arbitrary low update."
+  ],
+  "initialValueRule": {
+    "path": "schema/state-add-duration-initial-value-v1.json",
+    "sha256": "75f38ba04de9bd5d93518361a05335b5daba87018ffcc309fd428da99975c12e"
+  }
+}

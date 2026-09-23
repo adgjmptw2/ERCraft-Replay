@@ -1,0 +1,959 @@
+/* ERCraft Replay Analytics - Map Overlay, Controls, HUD, Legend */
+
+.map-shell {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0a0c12;
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  overflow: hidden;
+  touch-action: none;
+  min-height: 480px;
+  box-shadow: var(--shadow-sm);
+}
+
+#mapCanvas {
+  cursor: grab;
+  touch-action: none;
+  display: block;
+}
+
+.map-space-badge {
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  z-index: 4;
+  transform: translateX(-50%);
+  padding: 5px 9px;
+  border: 1px solid var(--line-2);
+  border-radius: 6px;
+  background: color-mix(in srgb, var(--panel) 88%, transparent);
+  color: var(--text);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  pointer-events: none;
+  backdrop-filter: blur(6px);
+}
+
+.map-space-badge[hidden] {
+  display: none;
+}
+
+.map-shell.is-dragging #mapCanvas {
+  cursor: grabbing;
+}
+
+/* Map Zoom Controls */
+.map-zoom {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  z-index: 10;
+}
+
+.map-zoom button {
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border: 1px solid var(--line-2);
+  border-radius: var(--r-sm);
+  background: var(--panel);
+  color: var(--text);
+  font-size: 16px;
+  font-weight: 700;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.15s ease;
+}
+
+.map-zoom button:hover {
+  background: var(--card-hi);
+  border-color: var(--accent);
+}
+
+.map-zoom button.reset {
+  font-size: 11px;
+  font-weight: 650;
+}
+
+/* Team Combat Log (Top Right) */
+.map-team-log {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  max-width: min(220px, 48%);
+  pointer-events: none;
+}
+
+.map-team-log[hidden] {
+  display: none !important;
+}
+
+.team-log-line {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr);
+  align-items: center;
+  gap: 5px;
+  min-height: 22px;
+  padding: 3px 6px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: rgba(14, 18, 27, 0.9);
+  backdrop-filter: blur(4px);
+  box-shadow: var(--shadow-sm);
+  font-size: 10.5px;
+  color: var(--text);
+}
+
+.team-log-line .kind {
+  font-size: 9px;
+  font-weight: 800;
+  text-align: center;
+  border-radius: 3px;
+  padding: 1px 0;
+}
+
+.team-log-line .actors {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 650;
+}
+
+.team-log-line .arrow {
+  margin: 0 4px;
+  color: var(--faint);
+  font-weight: 500;
+}
+
+.team-log-line.down {
+  border-color: var(--warn-border);
+}
+.team-log-line.down .kind {
+  color: var(--warn);
+}
+
+.team-log-line.kill {
+  border-color: var(--good-border);
+}
+.team-log-line.kill .kind {
+  color: var(--good);
+}
+
+.team-log-line.death {
+  border-color: var(--bad-border);
+}
+.team-log-line.death .kind {
+  color: var(--bad);
+}
+
+/* Current Engagement Skills (Top Left) */
+.map-engagement-skills {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  z-index: 10;
+  display: grid;
+  gap: 3px;
+  width: max-content;
+  max-width: min(390px, 58%);
+  padding: 7px 9px;
+  border: 1px solid var(--accent-line);
+  border-radius: 7px;
+  background: color-mix(in srgb, var(--panel) 91%, transparent);
+  box-shadow: var(--shadow-sm);
+  color: var(--text);
+  font-size: 10.5px;
+  line-height: 1.3;
+  backdrop-filter: blur(4px);
+  pointer-events: none;
+}
+
+.map-engagement-skills[hidden] {
+  display: none !important;
+}
+
+.map-engagement-skills > div:not(.engagement-skill-title) {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr);
+  gap: 5px;
+  min-width: 0;
+}
+
+.map-engagement-skills span {
+  color: var(--faint);
+  font-size: 9.5px;
+  font-weight: 650;
+}
+
+.map-engagement-skills b {
+  overflow: hidden;
+  color: var(--text);
+  font-weight: 680;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.engagement-skill-title {
+  color: var(--accent);
+  font-size: 10px;
+  font-weight: 800;
+}
+
+/* Wildlife Guide Popover (Bottom Left) */
+.map-wildlife-guide {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  z-index: 10;
+}
+
+.map-wildlife-guide > summary {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 32px;
+  padding: 0 12px;
+  border: 1px solid var(--line-2);
+  border-radius: var(--r-sm);
+  background: var(--panel);
+  backdrop-filter: blur(4px);
+  box-shadow: var(--shadow-sm);
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 650;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+  transition: all 0.15s ease;
+}
+
+.map-wildlife-guide > summary:hover {
+  background: var(--card-hi);
+  border-color: var(--accent);
+}
+
+.map-wildlife-guide > summary::-webkit-details-marker {
+  display: none;
+}
+
+.map-wildlife-guide > summary::after {
+  content: "⌃";
+  margin-left: 4px;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.map-wildlife-guide[open] > summary::after {
+  content: "⌄";
+}
+
+.wildlife-guide-popover {
+  position: absolute;
+  left: 0;
+  bottom: calc(100% + 8px);
+  width: 250px;
+  padding: 12px;
+  border: 1px solid var(--line-2);
+  border-radius: var(--r-md);
+  background: var(--panel);
+  backdrop-filter: blur(6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.wildlife-guide-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px 10px;
+}
+
+.wildlife-guide-row {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 0;
+  color: var(--muted);
+  font-size: 11.5px;
+  font-weight: 550;
+  white-space: nowrap;
+}
+
+.wildlife-guide-marker {
+  --guide-color: #fff;
+  display: inline-block;
+  flex: none;
+  width: 10px;
+  height: 10px;
+  background: var(--guide-color);
+  border-radius: 2px;
+}
+
+.wildlife-guide-marker.triangle {
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  border-radius: 0;
+}
+
+.wildlife-guide-marker.dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+.wildlife-guide-image {
+  width: 18px;
+  height: 18px;
+  flex: none;
+  object-fit: cover;
+  object-position: center 22%;
+}
+
+.wildlife-guide-image.is-raven {
+  object-fit: contain;
+  object-position: center;
+}
+
+.map-death-review,
+.map-engagement-review {
+  margin-top: 14px;
+  padding-top: 13px;
+  border-top: 1px solid var(--line);
+}
+
+.map-death-review-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 9px;
+}
+
+.map-death-review-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#deathReviewToggle,
+#engagementReviewToggle {
+  flex: none;
+  padding: 4px 8px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--well);
+  color: var(--muted);
+  font: inherit;
+  cursor: pointer;
+}
+
+#deathReviewToggle:hover,
+#engagementReviewToggle:hover {
+  color: var(--text);
+  border-color: var(--accent);
+}
+
+.map-death-review-head h2 {
+  margin: 0;
+  font-size: 13px;
+  color: var(--text);
+}
+
+.map-death-review-head span,
+.death-review-empty {
+  color: var(--faint);
+  font-size: 10.5px;
+}
+
+.death-review-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.death-review-list[hidden] {
+  display: none;
+}
+
+.death-card {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+  padding: 10px 11px;
+  text-align: left;
+  color: var(--text-secondary);
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+}
+
+.death-card:hover {
+  border-color: var(--accent);
+  background: var(--card-hi);
+}
+
+.death-card-seek,
+.engagement-card-seek {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.death-card details,
+.engagement-card details { margin-top: 5px; }
+.death-card summary,
+.engagement-card summary { color: var(--faint); font-size: 13px; cursor: pointer; }
+.death-card details > span,
+.engagement-card details > span { display: block; margin-top: 4px; }
+
+.death-card-time {
+  color: var(--bad);
+  font-size: 13px;
+  font-weight: 700;
+  white-space: normal;
+}
+
+.death-card-context,
+.death-card-cooldowns {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.personal-metric-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 5px;
+  margin-top: 7px;
+}
+
+.personal-metric-note { margin: 6px 0 0; color: var(--muted); font-size: 13px; }
+
+.personal-metric-cell { min-width: 0; }
+.personal-metric-cell span { display: block; color: var(--muted); font-size: 13px; }
+.personal-metric-cell b { display: block; margin-top: 2px; color: var(--text); font-size: 18px; font-variant-numeric: tabular-nums; }
+.personal-metric-cell b.is-unknown { color: var(--muted); }
+.personal-metric-cell small { display: block; margin-top: 2px; color: var(--faint); font-size: 13px; line-height: 1.25; }
+
+.death-card-cooldowns {
+  color: var(--muted);
+}
+
+.engagement-review-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.engagement-review-list[hidden] {
+  display: none;
+}
+
+.engagement-card {
+  display: block;
+  min-width: 0;
+  padding: 7px 9px;
+  color: var(--text-secondary);
+  text-align: left;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+}
+
+.engagement-card:hover {
+  border-color: var(--accent);
+  background: var(--card-hi);
+}
+
+.engagement-card { padding: 8px 10px; }
+
+.engagement-card-title {
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.engagement-card-time,
+.engagement-card-result,
+.engagement-card-facts {
+  font-size: 13px;
+}
+
+.death-card-metrics,
+.engagement-card-metrics {
+  grid-column: 1 / -1;
+  margin-top: 6px;
+  color: var(--text);
+  font-size: 13px;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.engagement-card-equipment {
+  grid-column: 1 / -1;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.engagement-card-facts,
+.engagement-card-skills,
+.engagement-card-accuracy { font-size: 13px; }
+
+.engagement-card-skills,
+.engagement-card-accuracy {
+  grid-column: 1 / -1;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.engagement-card-skills b,
+.engagement-card-accuracy b {
+  margin-right: 4px;
+  color: var(--faint);
+  font-size: 9.5px;
+}
+
+.skill-rate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px;
+}
+
+.skill-analysis-layout {
+  display: grid;
+  grid-template-columns: minmax(220px, 280px) minmax(0, 1fr);
+  gap: 16px;
+}
+
+.skill-select-list {
+  display: grid;
+  align-content: start;
+  gap: 8px;
+}
+
+.skill-select-button {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 3px 8px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--card);
+  color: var(--text);
+  text-align: left;
+  cursor: pointer;
+}
+
+.skill-select-button[aria-pressed="true"] { border-color: #38bdf8; }
+.skill-select-button b { font-size: 14px; }
+.skill-select-button span { color: #38bdf8; font-weight: 700; }
+.skill-select-button small { grid-column: 1 / -1; color: var(--muted); font-size: 11px; }
+
+.skill-selected-detail {
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--card);
+}
+
+.skill-selected-detail h3 { margin: 0; font-size: 15px; }
+.skill-selected-summary { margin: 4px 0 12px; color: var(--muted); font-size: 11px; }
+
+.skill-scene-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 9px 0;
+  border-top: 1px solid var(--line);
+}
+
+.skill-scene-row > div { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 10px; }
+.skill-scene-row span { color: var(--muted); font-size: 11px; }
+.skill-scene-row strong { color: var(--text); font-size: 12px; }
+.skill-scene-row button { flex: 0 0 auto; padding: 6px 9px; border: 0; border-radius: 6px; background: #38bdf8; color: #07111a; font-size: 11px; font-weight: 700; cursor: pointer; }
+
+.skill-rate-card {
+  min-width: 0;
+  padding: 14px 16px;
+  border: 1px solid #262c3d;
+  border-radius: 8px;
+  background: #181c26;
+}
+
+.skill-rate-card-head,
+.skill-rate-card-value {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.skill-rate-card-head b {
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.skill-rate-card-head span {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.skill-rate-card-value { margin-top: 8px; }
+
+.skill-rate-card-value strong {
+  color: #38bdf8;
+  font-size: 24px;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+.skill-rate-card-value span {
+  color: var(--muted);
+  font-size: 13px;
+  text-align: right;
+}
+
+.skill-rate-meter {
+  height: 6px;
+  margin-top: 10px;
+  overflow: hidden;
+  border-radius: 99px;
+  background: var(--line);
+}
+
+.skill-rate-meter span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: #38bdf8;
+}
+
+.skill-rate-card.is-ultimate .skill-rate-meter span { background: #a78bfa; }
+
+.skill-rate-empty,
+.skill-analysis-notices {
+  margin-top: 8px;
+  padding: 10px 12px;
+  border: 1px dashed var(--line);
+  border-radius: var(--r-sm);
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.skill-analysis-notices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  border-style: solid;
+}
+
+.skill-analysis-notices span {
+  padding: 3px 7px;
+  border-radius: 99px;
+  background: var(--panel, var(--card));
+}
+
+.engagement-card-time { color: var(--faint); }
+.engagement-card-result { justify-self: end; color: var(--good); font-weight: 700; }
+.engagement-card-result.is-death { color: var(--bad); }
+.engagement-card-facts {
+  grid-column: 1 / -1;
+  overflow: hidden;
+  color: var(--muted);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (max-width: 720px) {
+  .death-review-list,
+  .engagement-review-list { grid-template-columns: 1fr; }
+  .skill-rate-grid { grid-template-columns: 1fr; }
+  .skill-analysis-layout { grid-template-columns: 1fr; }
+  .skill-select-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .skill-select-button { min-width: 0; }
+}
+
+@media (max-width: 720px) {
+  .personal-metric-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 420px) {
+  .skill-select-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 640px) {
+  .skill-rate-grid { grid-template-columns: 1fr; }
+}
+
+.wildlife-guide-note {
+  margin: 10px 0 0;
+  padding-top: 8px;
+  border-top: 1px solid var(--line);
+  color: var(--text-secondary);
+  font-size: 11px;
+  line-height: 1.4;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Map Controls & Transport */
+#mapControls {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.transport {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.transport .play {
+  min-width: 72px;
+  height: 36px;
+  font-weight: 700;
+  background: var(--accent);
+  color: #ffffff;
+  border: 0;
+  border-radius: var(--r-sm);
+  box-shadow: 0 2px 8px var(--accent-glow);
+  transition: all 0.15s ease;
+}
+
+.transport .play:hover {
+  filter: brightness(1.1);
+  transform: translateY(-1px);
+}
+
+.transport input[type="range"] {
+  flex: 1 1 240px;
+  min-width: 160px;
+  height: 28px;
+  margin: 0;
+  cursor: pointer;
+  accent-color: var(--accent);
+}
+
+.clock {
+  flex: none;
+  min-width: 52px;
+  text-align: right;
+  font-size: 14px;
+  font-weight: 750;
+  font-variant-numeric: tabular-nums;
+  color: var(--text);
+}
+
+/* Secondary Transport (Speed & Phase) */
+.transport2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.transport-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.seg {
+  display: inline-flex;
+  gap: 2px;
+  padding: 3px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+}
+
+.seg button {
+  height: 28px;
+  padding: 0 10px;
+  border: 0;
+  border-radius: 5px;
+  background: transparent;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  transition: all 0.15s ease;
+}
+
+.seg button:hover {
+  background: var(--card-hi);
+  color: var(--text);
+}
+
+.seg button.active {
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 750;
+  box-shadow: inset 0 0 0 1px var(--accent-line);
+}
+
+.phase-field {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.phase-field select {
+  height: 32px;
+  font-size: 12px;
+}
+
+.phase-note {
+  font-size: 12px;
+  color: var(--faint);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Layer Filters */
+.map-filters {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+
+.map-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 30px;
+  padding: 0 10px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+  background: var(--card);
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 550;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.15s ease;
+}
+
+.map-toggle:hover {
+  background: var(--card-hi);
+  color: var(--text);
+}
+
+.map-toggle input {
+  width: 14px;
+  height: 14px;
+  margin: 0;
+  accent-color: var(--accent);
+  cursor: pointer;
+}
+
+.map-presence {
+  display: inline-flex;
+  align-items: center;
+  height: 30px;
+  padding: 0 10px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+  background: var(--well);
+  color: var(--faint);
+  font-size: 11.5px;
+  white-space: nowrap;
+}
+
+.map-presence.available {
+  border-color: var(--cyan-soft);
+  color: var(--cyan);
+}
+
+.skill-variant-list { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+.skill-variant-list .skill-select-button { flex: 1 1 110px; }
+
+/* Keep the overall rates visible together, with details below. */
+.skill-analysis-layout { grid-template-columns: minmax(0, 1fr); }
+.skill-analysis-view .skill-select-list { display: grid; grid-template-columns: repeat(var(--skill-columns, 4), minmax(0, 1fr)); gap: 10px; }
+.skill-select-list .skill-select-button b { font-size: 20px; }
+.skill-select-list .skill-select-button > span { font-size: 22px; font-weight: 700; }
+.skill-select-list .skill-select-button small { font-size: 13px; }
+@media (max-width: 520px) { .skill-analysis-view .skill-select-list { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+.wildlife-guide-popover { width: min(300px, calc(100vw - 64px)); max-height: min(420px, 65vh); overflow-y: auto; }
+.wildlife-guide-grid { gap: 8px 12px; }
+.wildlife-guide-row { min-height: 28px; gap: 8px; font-size: 12px; }
+.wildlife-guide-icon { display: flex; align-items: center; justify-content: center; width: 24px; height: 24px; flex: 0 0 24px; }
+.wildlife-guide-image { width: 22px; height: 22px; }
+
+/* Compact engagement review: scene first, CC second, devices subordinate. */
+.engagement-review-list { gap: 10px; }
+.engagement-card { padding: 12px 14px; border-color: var(--line); border-radius: 10px; box-shadow: none; }
+.engagement-card:hover { border-color: var(--line-2); }
+.engagement-card-seek { display: grid; grid-template-columns: auto 1fr auto 22px; gap: 10px; min-height: 26px; }
+.engagement-card-title { font-size: 14px; white-space: nowrap; }
+.engagement-card-time { font-size: 13px; font-variant-numeric: tabular-nums; color: var(--muted); white-space: nowrap; }
+.engagement-card-result { font-size: 12px; white-space: nowrap; }
+.engagement-scene-link { color: var(--text); font-size: 18px; text-align: right; }
+.engagement-card .personal-metric-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px 18px; margin-top: 9px; }
+.engagement-card .personal-metric-cell { display: flex; align-items: baseline; justify-content: space-between; gap: 5px; }
+.engagement-card .personal-metric-cell span { font-size: 12px; white-space: nowrap; }
+.engagement-card .personal-metric-cell b { margin: 0; font-size: 15px; font-weight: 650; white-space: nowrap; }
+.engagement-card .personal-metric-cell:nth-child(n+3) b { font-size: 12px; font-weight: 500; }
+.engagement-card .personal-metric-cell .is-zero { color: var(--muted); font-weight: 400; }
+.engagement-card details { margin-top: 8px; padding-top: 7px; border-top: 1px solid var(--line); }
+.engagement-card summary { font-size: 12px; color: var(--muted); }
+.engagement-card details[open] > span { line-height: 1.65; }
+.engagement-card-skills b, .engagement-card-accuracy b { font-size: 12px; }
+@media (max-width: 900px) { .engagement-review-list { grid-template-columns: minmax(0, 1fr); } }
+
+/* Three-review consensus: divide entries instead of nesting dashboard cards. */
+.engagement-review-list { gap: 0 22px; }
+.engagement-card { border: 0; border-bottom: 1px solid var(--line); border-radius: 0; background: transparent; padding: 12px 3px; }
+.engagement-card:hover { background: var(--card); }
+.engagement-card .personal-metric-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px 14px; }
+.engagement-card .personal-metric-cell { justify-content: flex-start; }
+.engagement-card details { border: 0; padding-top: 0; margin-top: 7px; }
+@media (max-width: 520px) { .engagement-card .personal-metric-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+.skill-select-button { background: transparent; border-radius: 5px; }
+.skill-select-button[aria-pressed="true"] { border-color: var(--accent); background: var(--accent-soft); }
+.skill-select-button span { color: var(--text); }
+.skill-selected-detail { background: transparent; border: 0; border-top: 1px solid var(--line-2); border-radius: 0; padding: 14px 0 0; }
+.skill-scene-row button { background: var(--card); color: var(--text); border: 1px solid var(--line-2); box-shadow: none; }
+.skill-analysis-intro { color: var(--muted); font-weight: 400; }
+.map-engagement-skills { box-shadow: none; }
+
+.skill-rate-card { background: var(--card); border-color: var(--line); }
+.skill-rate-card-value strong { color: var(--text); }
+.skill-rate-meter span, .skill-rate-card.is-ultimate .skill-rate-meter span { background: var(--accent); }
+.map-presence.available { border-color: var(--accent-line); color: var(--accent); }
+.wildlife-guide-popover { box-shadow: none; }

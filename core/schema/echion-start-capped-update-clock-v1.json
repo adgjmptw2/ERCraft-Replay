@@ -1,0 +1,26 @@
+{
+  "format": "er-echion-start-capped-update-clock.v1",
+  "clientVersion": "12.3.0",
+  "gameDataSha256": "5ef9cb5459a2e908099655bf9ffc70ac16b134d1db282fb97b25fe065e7c8e4f",
+  "scope": "Lower launch-clock bound from an ordered unique R-start self-state update. Does not itself prove a hit or a miss.",
+  "nativeAnchors": {
+    "start": "EchionActive4_AttackBase.Start 2a8d7e0 calls base2a7fda0, adjusts look direction, then sums CastingTime2 and slots9/10 at2a8d964..2a8d9a4; positive sum calls AddCongestionTime2a8de90 at2a8d9b7. This void Start has no coroutine yield.",
+    "execute": "SkillScriptBase.Execute.MoveNext2ee4160 calls virtual Start(slot19) at2ee42b5 before FirstCastingTime(slot20) and Process(slot17). R Process.MoveNext2a8f000 emits launch6001 at2a8f23a on its initial branch before yielding the primary child.",
+    "cap": "AddCongestionTime reads remaining via30d5700 at2a8dfa8; CharacterStateData.duration at2a8e04b is9 for the pinned1044500 rows. It subtracts overflow at2a8e050..064, suppresses nonpositive changes at2a8e068..06c, and applies the positive duration increment at2a8e0de.",
+    "wire": "CompleteChangedState2fce170 serializes total duration and createdTime with float32*100 floor, not remaining time. Existing exact preimage helper retained. Input payload hashes are decoded JSON; routing hashes are original bytes and must not be equated."
+  },
+  "admission": [
+    "Evolved group1044520/1044530/1044540; one same-owner, same-skill Start preceding its launch in the same PacketList record.",
+    "Exactly one own1044500 state event in this Start-to-launch segment; it must be CmdUpdateState, stack1, own/zero caster; no barrier. A second update or any reset/remove/add rejects the rule.",
+    "All three commands have the exact same positive single-bit final recipient mask in the original .er. Merged/disjoint recipients and missing routing evidence reject the rule.",
+    "Exact retained source hash, packet IDs and wire orders bind wrapper evidence. Existing ordered Start/launch and pinned native Start writer establish the start-update lineage.",
+    "Created time and updated total duration each lie in[0,3600) seconds; current event clock upper <=432000 updates(7200seconds). Reject larger domains."
+  ],
+  "bound": "After this capped positive Start update, remaining is at most9 plus float32 arithmetic error. In the admitted domain all intermediate magnitudes are below16384; fewer than16 rounded arithmetic steps each have absolute error <=2^-10. Use a deliberately larger2^-4=0.0625second envelope. Therefore event time >= min(createdTime)+min(duration)-9.0625. Binary-search the first UpdateSeq whose exact f32(f32(seq)*FRAME_STEP) satisfies this lower bound. Launch occurs after this update. Keep old upper bound; reject conflict, never guess an exact frame.",
+  "limits": [
+    "No duration-signature-to-hit inference. Existing positive/ambiguous damage and mandatory-state-signal checks still decide outcomes.",
+    "Do not remove VF state records when surrounding-damage hit rate is excluded; this evidence supports requested direct R.",
+    "No prior cast group to effect code exclusion; all live primary/secondary producers remain candidates."
+  ],
+  "fallbackUsed": false
+}

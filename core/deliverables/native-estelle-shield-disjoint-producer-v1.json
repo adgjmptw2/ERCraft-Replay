@@ -1,0 +1,57 @@
+{
+  "format": "native-disjoint-shield-producer.v1",
+  "characterCode": 55,
+  "consumerSkillGroup": 1055410,
+  "consumerSkillId": "EstelleActive3_2",
+  "consumerWireSkillId": 804,
+  "excludedCompetingSkillGroup": 1055400,
+  "excludedCompetingSkillId": "EstelleActive3_1",
+  "excludedCompetingWireSkillId": 801,
+  "excludedAsProducerOfEffectCodes": [
+    1055303
+  ],
+  "notAGlobalNonDamageClaim": true,
+  "consumerContract": {
+    "path": "deliverables/native-process-direct-effects-v1.json",
+    "sha256": "94589b6a5685ec29d865910b1820b00615919041c31618983353c65ec2e16152"
+  },
+  "shieldEvidence": {
+    "dataClass": "EstelleSkillActive3_1Data",
+    "constructor": "0x1283d90",
+    "deflectorCodeStore": "0x1283e5a",
+    "deflectorCode": 1055400,
+    "dataFields": "Deflector, protection states, damage reduction, timing and angle fields; no outgoing damage parameter field.",
+    "process": "Installs protection/slow/skill-slot states and deflector, waits per frame, binds incoming-damage callbacks.",
+    "incomingDamage": "OnBeforeDamageCalculator modifies incoming damage reduction/flags after angle checks; it does not call DamageTo.",
+    "deflectorCallbacks": "b__12_0 checks defence/block eligibility and angle; b__12_1 reacts to projectile destruction with ShieldSkillAction.",
+    "shieldAction": "ShieldSkillAction emits shield action feedback. Protection state lifecycle controls defence and rotation, not E2 damage parameters.",
+    "gameData": "ProjectileDeflectorSetting1055400 has collisionSelfEffectAndSoundCode=0 and collisionTargetEffectAndSoundCode=0.",
+    "interpretation": "Concurrent shield defence is not an alternative producer of the E2 DamageParamData effect1055303. This is not inferred from the user exclusion list or from overlap duration."
+  },
+  "runtimeRequirements": [
+    "exact same character",
+    "exact foreign skillId and wire enum801",
+    "foreign skillCode declared in group1055400",
+    "effect exclusion must cover current native effect set"
+  ],
+  "sourceGameDbSha256": "5ef9cb5459a2e908099655bf9ffc70ac16b134d1db282fb97b25fe065e7c8e4f",
+  "staticDllSha256": "3a92f99aea09d6eae54456a07ac1360c51c5aad1a102ace5cca23deca59c5ef4",
+  "bodies": {
+    "tmp/static-code-restored-v1/game-fn-2abb950.json": "1863f3355b2174f9e8adddd786ad5f0e5ba8d44d1b1e60575ecb11093cb038c7",
+    "tmp/static-code-restored-v1/game-fn-2abca10.json": "de12908113a17ddf0c63ed61ca8b4081916d11dbbd5639aaae056793d63ef776",
+    "tmp/static-code-restored-v1/game-fn-2abcb50.json": "10abae16c2bbcdd7ec07ee9504df0bfe6eafdcd5730f6a475bf8c92b5bda18c6",
+    "tmp/static-code-restored-v1/game-fn-2abc080.json": "c51439bab9c4f4b7c5cfbda1d1efcff04f8ed01d05c400fefbc1981945000461",
+    "tmp/static-code-restored-v1/game-fn-2abcba0.json": "f0818a127fab19b9b3d484d99541ebc9fc735879760c3df9e7fa14f877098a62",
+    "tmp/static-code-restored-v1/game-fn-2ab5a30.json": "33540aea355e0bd17c311f9c4ca08b4a8d04ad3a78258481f929aed95377095c",
+    "tmp/static-code-restored-v1/game-fn-2abafe0.json": "7beb29642f8f0989dd36579b7e0bd7ffb824280163632dc47776f909b2b071c1",
+    "tmp/static-code-restored-v1/game-fn-2abb460.json": "96628f1ce6298489d6156175e664ce8a61b2feb6b917a1214a2a5ed7420e499f",
+    "tmp/static-code-restored-v1/game-fn-2abc6b0.json": "82dcd87f8cd3ab7dc0d96139dc10f6d2c14881fd8efa499ef3900ac06fb9f53b",
+    "tmp/static-code-restored-v1/game-fn-2abe5c0.json": "aad9b4afdbec243a564617c2e323353dec7d4957899ee98226c2d8a54361cbd1",
+    "tmp/static-code-restored-v1/game-fn-2abd210.json": "406d8837fd8ebd699af57796d948a8d4c2b2de85cb9a49f46abff8cd627332b8",
+    "tmp/static-code-restored-v1/game-fn-2abd9a0.json": "1ee5467615edf88771c5fb1f8f3782ff0deb5c26494ad1c57018df252e8c1c04",
+    "tmp/static-code-restored-v1/game-fn-2abe3a0.json": "760e5cf40f0cce4a636c593ee4dc1a62dc32388469bf300c3f871d07039f16a6",
+    "tmp/static-code-restored-v1/game-fn-1283d90.json": "9ef11d4d1056f189c1dc023db1fa9f51326070d28fa92516ec2b04d2aa00f77a"
+  },
+  "newReplayDownloads": 0,
+  "fullReDecodes": 0
+}

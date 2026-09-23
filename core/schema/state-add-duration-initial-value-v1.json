@@ -1,0 +1,35 @@
+{
+  "format": "er-state-add-duration-initial-value.v1",
+  "scope": "Recorded initial CommonState duration; no fabricated creation timestamp or gameDb duration substitution",
+  "nativeBodies": [
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-2fcccd0.json",
+      "sha256": "51a5a63d77bc66359843b5dd5202f84a19fec98a6d28fa20fac8f50e7a420817"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-2fcd2c0.json",
+      "sha256": "793293437cc2230766a7b919b6a7755807d66a9f1e5d68ba3daddd5d4a3cade5"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-30d5a00.json",
+      "sha256": "75306f628f852c3c98bfe8b1af6afc33cb4c6601af2d7f51f9a5686d656784bc"
+    }
+  ],
+  "priorCreatedTimeRule": {
+    "path": "schema/state-created-time-server-frame-v1.json",
+    "sha256": "142f66dee7b74a65c678c61b61ddacbf63c9d1c5f5771eac6339a5b6c8f7c6c1"
+  },
+  "facts": [
+    "CompleteAddedState only emits a new Add when isNew=true at2fccdad/2fccdb0; SendAddState called2fccdbf.",
+    "SendAddState2fcd2c0 reads CharacterState.duration+0x28 at2fcd3c4 and2fcd433; both branches multiply by100 and floor via bb14b0. This is total stored duration, not GetRemainTime, and is distinct from originalDuration+0x2c.",
+    "Plain CmdAddState branch requires state.stackCount+0x34==1 at2fcd326; extended branch serializes stackCount at2fcd44c..44f. Runtime extended baseline explicitly requires recorded stackCount1.",
+    "CommonState.Start writes createdTime before its new-state Add packet. An Add ordered before the launch therefore has creation frame no greater than the proven action upper frame. Runtime retains this as an upper bound, never an exact timestamp.",
+    "Use all float32 preimages of recorded Add.duration. Require every subsequent relevant state event to be Update in the same epoch; any pause/reset/remove/re-add/life or actor-wrapper change rejects the exclusion.",
+    "If a later update is included after the Add baseline, its creation timestamp must remain constant and its entire frame preimage must not exceed the launch upper bound; otherwise retain unknown."
+  ],
+  "extendsSignalRule": {
+    "path": "schema/echion-congestion-required-signal-v2.json",
+    "sha256": "3d20cab3ecdfc2f3dbe3b9f5d36d71e01450f39d45b714be7475c79e9877b600"
+  },
+  "fallbackUsed": false
+}

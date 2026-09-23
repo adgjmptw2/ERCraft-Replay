@@ -1,0 +1,19 @@
+{
+  "format": "er-barbara-base-region-runtime.v1",
+  "scope": "Base E1026400 inner/outer contact regions. Reinforced handlers retain their separate unresolved scope.",
+  "nativeBranch": "deliverables/barbara-region-formula-v1.json",
+  "ownedExplosion": "deliverables/barbara-explosion-static-proof-v1.json",
+  "stateWitness": "deliverables/barbara-central-stun-static-proof-v1.json",
+  "ordinaryMovementBound": "schema/sua-source-cell-sweep-bound-v3.json",
+  "rules": [
+    "Exact parent355 lifetime contains one projectile102641 with matching owner. Its unique arrival synchronously spawns one owner1102 explosion, with one normal356 child lifetime. Damage1026401 must be strictly inside this child wire lifetime.",
+    "Explosion spawn positionXZ is the native pivot only when no intervening position command exists through child finish. Both child start and finish are in its spawn/arrival frame.",
+    "A matching target central Stun added after attributed damage inside the child proves inner. Absence never proves outer.",
+    "An earlier unchanged CmdStopMove yields a stationary target pivot. Position commands between damage and child finish invalidate that geometry because native damage precedes the region branch.",
+    "For ordinary destination/avoidance movement, retain the exact source float32 cell, a completed frame/ordinary continuity witness, a retained strategy reset and both speed-update streams. Expand each coordinate cell by age+1 times the previously proved native displacement bound; do not choose a callback point.",
+    "Monotonic float32 subtraction, nonnegative interval squaring and float32 addition enclose all native squared distances. All distances <= innerRange squared proves inner; all greater proves outer; crossing remains unknown. This classifies the branch of an already observed contact and never creates a hit from a position envelope.",
+    "Only normally completed unambiguous parent/child uses contribute misses. Missing geometry or linkage is not a miss. Neither replays nor other patches supply default values."
+  ],
+  "allFutureMatchesGuaranteed": false,
+  "fallbackUsed": false
+}

@@ -1,0 +1,24 @@
+{
+  "format": "cathy-q-completed-target-contract.v1",
+  "skillGroup": 1023210,
+  "wireSkillId": 309,
+  "sourceEvent": "CmdStartNormalAttackSkill",
+  "effects": [
+    1023201,
+    1023211
+  ],
+  "nativeProcess": "0x2a09520",
+  "mainTargetDamage": "0x2a099b0 MeleeAttackDamageTo",
+  "reinforcedTargetDamage": "0x2a09b20 NotOnHitMeleeAttackDamageTo(script+20,parameter+130)",
+  "contract": "Retain all exact Q effect target damage before enemy roster filtering. Normal finish plus exact finish-tick same-target decoded damage exclusive to one cast proves completed target attack. With complete cast/damage streams and no enemy-player Q contact, classify as enemy-player miss. No contact, incomplete streams, ambiguous attribution, or conflicting target damage do not satisfy this new rule.",
+  "noPositiveSampleGate": true,
+  "changesObserved": 25,
+  "remainingNoDamageUse": 1,
+  "zeroDamageAmountInferred": true,
+  "fallbackUsed": false,
+  "artifacts": {
+    "tmp/static-code-restored-v1/game-fn-2a09520.json": "d7ac6ac68dc101a107d87c236b0a0ebcc0761d9c74c1f11858b802e02ac7dd18",
+    "tmp/cathy-q-finish-audit-v1/conflicts.json": "5fadbf4d7240ee3adab1eff01cdbf59e8163c2ce686d89f70b7a91e3d14fe5fe",
+    "deliverables/cmd-damage-nullable-semantics-proof-v1.json": "28f10766f5ceb1cc24812e1eda04e32b437f97a949a8c43fcc6bd3cbf4ac8725"
+  }
+}

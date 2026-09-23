@@ -1,0 +1,296 @@
+{
+  "format": "er-adela-pawn-admission-rule.v1",
+  "clientVersion": "12.3.0",
+  "stateCode": 1024281,
+  "stateGroup": 1024280,
+  "handlerGroup": 1024220,
+  "effectCode": 1024110,
+  "native": [
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-1219b30.json",
+      "sha256": "c98c811b89c14f4e1fc41d4c1288d358559534b4173f11c94e621527686e096e"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-26c81b0.json",
+      "sha256": "765dbfe57d1b987e10322f85b85bc6629d8a6b1c23ca4a4727ef1cc1fef80e5a"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-3221e30.json",
+      "sha256": "0eb000c5e048a796b2951b2cbb2d631d61472509b6e42cb39c47c8e0d6d48624"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-32b50d0.json",
+      "sha256": "e4adb79ce4f62b40b52e0e8e3d97a10f7d4b8db3bd91e866a3ab9a806ada2004"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-3221260.json",
+      "sha256": "5660aa3ab5ebfdcc4cb0bbf24d5f46481cbe190dcb2b5784afad6fd14b1eeade"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-2fc7800.json",
+      "sha256": "ee5bb80ee63fce9360d281c5ec5389759e7c30ddd2323f4e6e2d02dea5948674"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-2fc8180.json",
+      "sha256": "7073e002826ba5f3f3a0b857b53332f4bececffc369fbe44bd0e435b52e50aaf"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-2edfbe0.json",
+      "sha256": "56d6ee634d5e39298677f209c64296f870809327823af0b1e4b56cc746af793f"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-30d4690.json",
+      "sha256": "465968d289294ee97eb57afac06745a559ed4f170a771f6de343920cfac79932"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-30d4790.json",
+      "sha256": "96d6f983782f94b5934bc63afa5ac9afa5d86ea0c2e4b8a5b3b5bf2ef48252e5"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-322b270.json",
+      "sha256": "3fe5bc686393448e0acac996651c0bcec2544b4bd02f5444f97010a62a420e36"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-322bc10.json",
+      "sha256": "50052c74f27d16a90b6dfdac0b563d491bf1368894960d470d6bfe6d662bf588"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-322b4c0.json",
+      "sha256": "105dd7f91f4b21314d439c1f6d5a7f48d8a8e79c89a9a07e7a80b9e9fa587ab3"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-native-3db6a20.json",
+      "sha256": "299f5f93a5f5eafd503cba47deb889adda3699438c50e12623ad87f443f2f8bb"
+    },
+    {
+      "path": "deliverables/sua-state-admission-static-v1.json",
+      "sha256": "48ded263a23275fd7c0d907ebd1691503f2543e918522bfad3ee2c9d43238039"
+    },
+    {
+      "path": "schema/sua-center-slow-admission-v3.json",
+      "sha256": "03825e56894bc7dda781eeec2e353c6551d03ff3cbc7f25925102ba881affa9d"
+    }
+  ],
+  "gameDbSha256": "5ef9cb5459a2e908099655bf9ffc70ac16b134d1db282fb97b25fe065e7c8e4f",
+  "conditions": [
+    "Complete same-version retained source and unique command frame; damage and parent raw identities validated.",
+    "Full snapshot isAlive true and not dying; no subsequent death/dying or replacement through entire callback. WorldCharacter snapshot writes deadReason==0 to isAlive at2fc836b/2fc8374.",
+    "Whole-frame possible-state superset has no invulnerability/immunity/VLS or existing pawnAirborne group1024280. No timer-based expiration or same-frame removal inference.",
+    "Adela pawn coroutine calls DamageTo26c8963 then unconditionally CreateState<AirborneState>26c89b4 and AddState26c89cb for each contacted target. Constructor1219eeb sets PawnFromKnightAirborneStateCode1024281. Positive code, known gameDb factory, fixed level1.",
+    "StateEffector admission shares reviewed external-debuff guards; actual game IgnoreStateCondition writer excludes only DyingImmunity25, not Airborne30.",
+    "Airborne new-state CrowdControlData has only Unstoppable blocker. Equal Airborne override reads BlockedByAnotherAirborneType; cctor32b5f9e..32b6288 constructs all9 entries false. Existing queenAirborne does not block new pawnAirborne.",
+    "New state emits AddState/Extended synchronously before CompleteBeginState. Keeping every state event in the entire callback also catches reentrant additions."
+  ],
+  "airbornePriorityRows": [
+    {
+      "newStateType": "Airborne",
+      "playingStateType": "Airborne",
+      "blockedByPlayingState": false,
+      "cancelPlayingSkill": true,
+      "pausePlayingSkill": false
+    },
+    {
+      "newStateType": "Airborne",
+      "playingStateType": "Slow",
+      "blockedByPlayingState": false,
+      "cancelPlayingSkill": false,
+      "pausePlayingSkill": false
+    },
+    {
+      "newStateType": "Airborne",
+      "playingStateType": "Fear",
+      "blockedByPlayingState": false,
+      "cancelPlayingSkill": false,
+      "pausePlayingSkill": true
+    },
+    {
+      "newStateType": "Airborne",
+      "playingStateType": "Taunt",
+      "blockedByPlayingState": false,
+      "cancelPlayingSkill": false,
+      "pausePlayingSkill": true
+    },
+    {
+      "newStateType": "Airborne",
+      "playingStateType": "Charm",
+      "blockedByPlayingState": false,
+      "cancelPlayingSkill": false,
+      "pausePlayingSkill": true
+    },
+    {
+      "newStateType": "Airborne",
+      "playingStateType": "Silence",
+      "blockedByPlayingState": false,
+      "cancelPlayingSkill": false,
+      "pausePlayingSkill": false
+    },
+    {
+      "newStateType": "Airborne",
+      "playingStateType": "BlockedSight",
+      "blockedByPlayingState": false,
+      "cancelPlayingSkill": false,
+      "pausePlayingSkill": false
+    },
+    {
+      "newStateType": "Airborne",
+      "playingStateType": "Fetter",
+      "blockedByPlayingState": false,
+      "cancelPlayingSkill": false,
+      "pausePlayingSkill": false
+    },
+    {
+      "newStateType": "Airborne",
+      "playingStateType": "Stun",
+      "blockedByPlayingState": false,
+      "cancelPlayingSkill": false,
+      "pausePlayingSkill": false
+    },
+    {
+      "newStateType": "Airborne",
+      "playingStateType": "Sleep",
+      "blockedByPlayingState": false,
+      "cancelPlayingSkill": false,
+      "pausePlayingSkill": false
+    },
+    {
+      "newStateType": "Airborne",
+      "playingStateType": "Disarmed",
+      "blockedByPlayingState": false,
+      "cancelPlayingSkill": false,
+      "pausePlayingSkill": false
+    },
+    {
+      "newStateType": "Airborne",
+      "playingStateType": "Suppressed",
+      "blockedByPlayingState": false,
+      "cancelPlayingSkill": false,
+      "pausePlayingSkill": false
+    },
+    {
+      "newStateType": "Airborne",
+      "playingStateType": "VLS",
+      "blockedByPlayingState": false,
+      "cancelPlayingSkill": false,
+      "pausePlayingSkill": false
+    },
+    {
+      "newStateType": "Airborne",
+      "playingStateType": "Blind",
+      "blockedByPlayingState": false,
+      "cancelPlayingSkill": false,
+      "pausePlayingSkill": false
+    },
+    {
+      "newStateType": "Airborne",
+      "playingStateType": "Grounding",
+      "blockedByPlayingState": false,
+      "cancelPlayingSkill": false,
+      "pausePlayingSkill": false
+    },
+    {
+      "newStateType": "Airborne",
+      "playingStateType": "Dance",
+      "blockedByPlayingState": false,
+      "cancelPlayingSkill": false,
+      "pausePlayingSkill": false
+    },
+    {
+      "newStateType": "Airborne",
+      "playingStateType": "Polymorph",
+      "blockedByPlayingState": false,
+      "cancelPlayingSkill": false,
+      "pausePlayingSkill": false
+    },
+    {
+      "newStateType": "Airborne",
+      "playingStateType": "Overcurrent",
+      "blockedByPlayingState": false,
+      "cancelPlayingSkill": false,
+      "pausePlayingSkill": false
+    },
+    {
+      "newStateType": "Airborne",
+      "playingStateType": "Unstoppable",
+      "blockedByPlayingState": true,
+      "cancelPlayingSkill": false,
+      "pausePlayingSkill": false
+    },
+    {
+      "newStateType": "Airborne",
+      "playingStateType": "HyperLoopAfterEffect",
+      "blockedByPlayingState": false,
+      "cancelPlayingSkill": false,
+      "pausePlayingSkill": false
+    },
+    {
+      "newStateType": "Airborne",
+      "playingStateType": "Detected",
+      "blockedByPlayingState": false,
+      "cancelPlayingSkill": false,
+      "pausePlayingSkill": false
+    },
+    {
+      "newStateType": "Airborne",
+      "playingStateType": "BlockedSightShare",
+      "blockedByPlayingState": false,
+      "cancelPlayingSkill": false,
+      "pausePlayingSkill": false
+    },
+    {
+      "newStateType": "Airborne",
+      "playingStateType": "Suspension",
+      "blockedByPlayingState": false,
+      "cancelPlayingSkill": false,
+      "pausePlayingSkill": false
+    },
+    {
+      "newStateType": "Airborne",
+      "playingStateType": "Attach",
+      "blockedByPlayingState": false,
+      "cancelPlayingSkill": false,
+      "pausePlayingSkill": false
+    },
+    {
+      "newStateType": "Airborne",
+      "playingStateType": "Insanity",
+      "blockedByPlayingState": false,
+      "cancelPlayingSkill": false,
+      "pausePlayingSkill": true
+    },
+    {
+      "newStateType": "Airborne",
+      "playingStateType": "Escape",
+      "blockedByPlayingState": false,
+      "cancelPlayingSkill": false,
+      "pausePlayingSkill": false
+    },
+    {
+      "newStateType": "Airborne",
+      "playingStateType": "Berserk",
+      "blockedByPlayingState": false,
+      "cancelPlayingSkill": false,
+      "pausePlayingSkill": true
+    }
+  ],
+  "equalAirborneBlocked": [
+    [
+      false,
+      false,
+      false
+    ],
+    [
+      false,
+      false,
+      false
+    ],
+    [
+      false,
+      false,
+      false
+    ]
+  ],
+  "outcome": "Exclude pushed-pawn producer when its mandatory new Airborne state is absent under all predicates; preserve competing producers and existing attribution logic. Never infer hit/miss from CC absence alone.",
+  "rejectedShortcut": "No StopMove packet does not exclude pawn hit: forced ServerMoveAgent.Stop can return without a packet if already stopped at same position.",
+  "missingInputOutcome": "unknown",
+  "allFutureMatchesGuaranteed": false
+}

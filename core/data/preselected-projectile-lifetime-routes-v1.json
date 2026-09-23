@@ -1,0 +1,127 @@
+{
+  "format": "preselected-projectile-lifetime-routes.v1",
+  "entries": [
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:12:1012200:any",
+        "characterCode": 12,
+        "skillGroup": 1012200,
+        "label": "Q [HyejinActive1]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "reviewedMethods": [
+        "complete-projectile-outcomes-with-explicit-unknown-uses"
+      ],
+      "routeId": "preselected-ordered-projectile-lifetime",
+      "bundleId": "12:Q",
+      "requirementsSha256": "1dddc821784dc8e3f2157fd2ca7321d9353b0f5bf9ec7c338c73699056063951"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:72:1072200:any",
+        "characterCode": 72,
+        "skillGroup": 1072200,
+        "label": "Q [KatjaActive1]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "reviewedMethods": [
+        "complete-exclusive-cast-projectile-lifetimes-and-contact-outcomes",
+        "complete-projectile-outcomes-with-explicit-unknown-uses"
+      ],
+      "routeId": "preselected-ordered-projectile-lifetime",
+      "bundleId": "72:Q",
+      "requirementsSha256": "d1d65a7c91ad8b1e6cf404de76c5cc3af65d9aaf1f4a54dcc05a82d21a0fccea"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:83:1083200:any",
+        "characterCode": 83,
+        "skillGroup": 1083200,
+        "label": "Q [HenryActive1_1]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "reviewedMethods": [
+        "complete-exclusive-cast-projectile-lifetimes-and-contact-outcomes",
+        "complete-projectile-outcomes-with-explicit-unknown-uses"
+      ],
+      "routeId": "preselected-ordered-projectile-lifetime",
+      "bundleId": "83:Q",
+      "requirementsSha256": "99656809e58b24b3479566f52e896073cf556deab7a2b55be6c39a6c5ab3df5a"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:83:1083210:any",
+        "characterCode": 83,
+        "skillGroup": 1083210,
+        "label": "Q [HenryActive1_2]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "reviewedMethods": [
+        "complete-exclusive-cast-projectile-lifetimes-and-contact-outcomes",
+        "complete-projectile-outcomes-with-explicit-unknown-uses"
+      ],
+      "routeId": "preselected-ordered-projectile-lifetime",
+      "bundleId": "83:Q",
+      "requirementsSha256": "99656809e58b24b3479566f52e896073cf556deab7a2b55be6c39a6c5ab3df5a"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:6:1006200:any",
+        "characterCode": 6,
+        "skillGroup": 1006200,
+        "label": "Q [NadineActive1]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "reviewedMethods": [
+        "complete-projectile-outcomes-with-explicit-unknown-uses",
+        "exclusive-cast-any-enemy-projectile-collision"
+      ],
+      "routeId": "preselected-ordered-projectile-lifetime",
+      "bundleId": "06:Q",
+      "requirementsSha256": "72a8f15807e9517ac8ab5c6d980d17b29fec1467a8aca52feac795b6b06b562e"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:46:1046210:any",
+        "characterCode": 46,
+        "skillGroup": 1046210,
+        "label": "Q [AidenActive1_ElectroGun]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "reviewedMethods": [
+        "complete-projectile-outcomes-with-explicit-unknown-uses",
+        "exclusive-cast-any-enemy-projectile-collision"
+      ],
+      "routeId": "preselected-ordered-projectile-lifetime",
+      "bundleId": "46:Q",
+      "requirementsSha256": "ff0290f10b7fff645b70b3d8fba43403d9104a62c6cd7384fe3f64702d0dfc59"
+    }
+  ],
+  "sourceAuthoritySha256": "55d86c573ed115eb35795b2b5f869badf2a9d1a0cf8cf7eea18b64f377727b48",
+  "replaySamplesUsedForCompilation": 0,
+  "mappingReviewUpgraded": false
+}

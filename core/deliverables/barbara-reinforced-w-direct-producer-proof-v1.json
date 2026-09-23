@@ -1,0 +1,48 @@
+{
+  "format": "er-barbara-reinforced-w-direct-producer.v1",
+  "clientVersion": "12.3.0",
+  "gameDataSha256": "5ef9cb5459a2e908099655bf9ffc70ac16b134d1db282fb97b25fe065e7c8e4f",
+  "nativeBodies": [
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-12320f0.json",
+      "sha256": "9d6ccec2e72bf41935962b6c5c02e00a5a147e08bb6ce5b3eb3e91cdbc4ee703"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-29b3f80.json",
+      "sha256": "811e36307dd75967368b08e5aac5e344e1554a7da6ca0f1558c430a1fcbe718c"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-29b3500.json",
+      "sha256": "919dc2d49e91301b1d6e5fbaa43774cdefc3b55998efd87f84c1fb523dca4836"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-29b2bf0.json",
+      "sha256": "ef9c34ac50ab2c073af858c24b3a3861b61cea7a48c8e6f2332ec494dc971000"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-1231370.json",
+      "sha256": "ad4922fb3a3008b16a54cf9ead8c27154b54d7a4866001bcbffda3794fa3fcc0"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-29b3b40.json",
+      "sha256": "da8e04a44ec22763f62aa60eb955cb33d415d635ac6e2f6ded5ca3efa2bb9256"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-2e09c80.json",
+      "sha256": "a84e3464e3a166f1fd303c80cf32f9c5ba620bf5994b3185c112412317c62dbf"
+    }
+  ],
+  "skillGroup": 1026310,
+  "skillId": 353,
+  "skillName": "BarbaraActive2_ReinforceIonLaser",
+  "damageEffectCode": 1026302,
+  "effectPrefab": "FX_BI_Barbara_Skill02_Hit_P",
+  "nativeDefinition": "BarbaraSkillActive4Data ctor12320f0 at1232899 stores1026302 at+C0. ReinforceIonLaser.TryDamageToTarget29b3f80 loads+C0 at29b43a5 and passes explicit effect argument to DamageTo2ed9b10 at29b43e4.",
+  "execution": "BarbaraActive2Base.Process.MoveNext29b3500 sends action31 at29b3594, synchronously calls DamageProcess29b2bf0 during swept collision and at final remainder, then returns. DamageProcess invokes virtual TryDamageToTarget, de-duplicates target IDs. No child projectile/deferred direct damage producer.",
+  "lifecycle": "Require exact command-ordered group353 start, one same-owner action31 inside parent and normal finish. Match exact source actor+effect1026302 damage strictly inside lifetime and after action; no repeated-cast threshold.",
+  "excludedOtherDamage": "Normal W data+38 holds1026301 (12315de). Separate burn DamageForSeconds.DirectDamageTo uses effect0: r15d zero at2e09d36, stack+38 at2e09ea1, call2ed9b10 at2e09ede. Burn timing not used as beam hit identity.",
+  "cancelledUses": "unresolved, never absent-damage misses",
+  "numericPrefixMatching": false,
+  "requiresRepeatedSamples": false,
+  "allFutureMatchesGuaranteed": false
+}

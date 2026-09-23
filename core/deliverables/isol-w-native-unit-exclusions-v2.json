@@ -1,0 +1,160 @@
+{
+  "format": "er-isol-w-native-unit-exclusions.v2",
+  "clientVersion": "12.3.0",
+  "gameDataSha256": "5ef9cb5459a2e908099655bf9ffc70ac16b134d1db282fb97b25fe065e7c8e4f",
+  "scope": "Bounded native W producer and candidate-identifier exclusion; not an exhaustive absence proof over all replay/client routes.",
+  "requiredUnit": "actual-emitted-bullet; enemy-player-or-camera hit and cumulative contacts",
+  "requestedBulletMetricRetained": true,
+  "hitRateCalculable": false,
+  "requestedMetricComplete": false,
+  "newCompletedMetrics": 0,
+  "nativeEvidence": [
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-2b7f180.json",
+      "sha256": "34900645585f302abc0f0d3afc8693d05acb784a84b066b57f8ba70899b4dd5b"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-2b7f8a0.json",
+      "sha256": "bdf98e04ed8f03718fb308e359cc7f7bf34de5744c2222c04feac6f4dddd041e"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-2b7f6a0.json",
+      "sha256": "ed67f66fe1373af4fccdf1a2650fd60791068870849846b2299fe82356df39b9"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-2b7f6b0.json",
+      "sha256": "c96ad9290b8d007ea6616680396b6951f80672d5fa106a827ed5825285f41fd7"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-12cee40.json",
+      "sha256": "b3e379d27d7cd4208f17501b34807b8b44b5b6ecc60157522becba20494190c2"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-1c0e6b0.json",
+      "sha256": "ffa7c74cd743e2b8df32d82468d44e05637bf02f8a6b140175f9e30748130e5e"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-2ed9090.json",
+      "sha256": "8f92e456b263a366cfd1f9d4a0e29d3c553e7ebacdf2d4ac3b511a2685cfc6f0"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-2ed9620.json",
+      "sha256": "abd838bc3bff49c324b09f6d55e2577c86dd3e59904d206239cb0a1d67a006eb"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-2ed9810.json",
+      "sha256": "b1cd93cdeeeeefe9e354e11d3c525a70a7584bdcb1fbb46f0951521f284ec513"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-2edd450.json",
+      "sha256": "bbb3f87d1380225a06e683f8bd98af27fce6878fa0a2546f88c91ade8d437b79"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-2eda990.json",
+      "sha256": "6a55840521ff4ff07e4528ed9c606957fa345e7f3ec0d83175d34e10f69f0419"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-2edbe90.json",
+      "sha256": "b54c747105fafc35207e7cd46aa16debd08f019ff98b4a164e10588be074531e"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-1a5b9c0.json",
+      "sha256": "9b2269ea92fb64c99530ec1438853b8773ee1a57799a60cb18731ecef2fb3b97"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-1a5c0f0.json",
+      "sha256": "3fb148651878fd295ff5205db3f3366965fb2eda01725326a4b2c63e086cc008"
+    }
+  ],
+  "metadata": {
+    "path": "C:/tools/reversing/analysis/il2cppdump/dump.cs",
+    "sha256": "37e705fddd4dbfeba1aaa1d1b5c5083f2e869ec8dd686b3663b05a9c79915692"
+  },
+  "metadataFields": {
+    "iterator": {
+      "0x34": "<individaulId>5__5:uint",
+      "0x38": "<skillNumber>5__6:uint"
+    },
+    "parameterCollection": {
+      "0x74": "SkillNumber:uint",
+      "0x84": "IndividualId:Nullable<uint>",
+      "0xa4": "DamageIdType"
+    },
+    "data": {
+      "0x10": "DamageTermTime:float"
+    }
+  },
+  "identifierExclusions": [
+    {
+      "candidate": "IndividualId",
+      "allocation": "0x2b7fbb3..0x2b7fbc8",
+      "copies": [
+        "0x2b8005e",
+        "0x2b80183"
+      ],
+      "scope": "once before target loop, reused across frames and targets"
+    },
+    {
+      "candidate": "SkillNumber",
+      "allocation": "0x2b7fbf2..0x2b7fbf7",
+      "allocator": "GetSkillNumber 0x1c0e6b0",
+      "copy": "0x2b8019d",
+      "scope": "once before target loop, reused across frames and targets"
+    }
+  ],
+  "controlFlow": {
+    "initialYield": "StartConcentration 0x2ed9620",
+    "loopResume": "0x2b7fa12 jumps to 0x2b7fc32 after identifier allocation",
+    "targetList": "GetAgentWithinRange 0x2edd450 at 0x2b7fd48",
+    "perTargetCooldown": {
+      "lookup": "0x2b7fe54",
+      "skip": "0x2b7fe85..0x2b7fe88",
+      "addTerm": "0x2b802c7",
+      "write": "0x2b802f6"
+    },
+    "nextIteration": "WaitForFrame 0x2ed9090 at 0x2b80325; frame wait is not a bullet emission",
+    "termination": "deadline or OnPlayAgain isSkip; FinishConcentration 0x2ed9810"
+  },
+  "damageCodeCorrection": {
+    "value": 1009300,
+    "meaning": "DamageIdType, not the CmdDamage.effectCode field",
+    "normalWrite": "parameterCollection+0xa4 at 0x2b801b0",
+    "commonObjectArgument": "5th arg to DamageToCommonObject at 0x2b800b2",
+    "commonObjectEffectArgument": "8th arg explicitly zero at 0x2b80098",
+    "normalEffectConfiguration": {
+      "value": 1009007,
+      "producer": "IsolSkillActive2Data constructor EffectAndSound setter slot5 at 0x12cf3a7..0x12cf3bb",
+      "exclusiveProducerProven": false
+    }
+  },
+  "damageTerm": {
+    "bits": "0x3ea8f5c3",
+    "nativeFloat": 0.33000001311302185,
+    "meaning": "per-target rehit cooldown; neither global shot interval nor shot count"
+  },
+  "reviewedClientPath": {
+    "start": "LocalIsolActive2.Start",
+    "play": "LocalIsolActive2.Play shared no-op 0x89f030",
+    "finish": "StopProduction",
+    "semantics": "start/stop local particle effects; cosmetic emission count has no proved server hit identity"
+  },
+  "unsupportedShortcuts": [
+    "cast duration / DamageTermTime",
+    "one damage packet = one emitted bullet",
+    "one IndividualId = one bullet",
+    "one SkillNumber = one bullet",
+    "DamageIdType == wire effectCode",
+    "cosmetic particle count == server attack count"
+  ],
+  "allPossibleWireRoutesExhausted": false,
+  "newReplayKnownToResolve": false,
+  "nextEvidenceRequired": "A distinct actual bullet emitter/counter and its authoritative relation to player/camera contacts. If supplied from client particles/assets, prove it defines the requested server metric; visual count alone does not suffice.",
+  "repeatPolicy": "Do not re-scan these identifiers, W Process or the same caches for a missing global bullet sequence. Reopen this candidate route only for changed native build or a concrete new emitter/wire field. Other outstanding rule implementation continues.",
+  "verification": {
+    "exactInstructionAnchors": 6,
+    "identifierWritesOnceBeforeLoop": true
+  },
+  "fallbackUsed": false,
+  "originalReplayPreserved": true,
+  "networkUsed": false
+}

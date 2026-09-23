@@ -1,0 +1,23 @@
+{
+  "format": "adina-w-explosion-effects.v1",
+  "clientVersion": "12.3.0",
+  "sourceGameDbSha256": [
+    "5ef9cb5459a2e908099655bf9ffc70ac16b134d1db282fb97b25fe065e7c8e4f",
+    "82dc298a2047af0e23637a6a78fcbbb70680e70bcdb7d80ca96ebec2e0f02b7c",
+    "ff6e6a5a12424fbe9c04255cc8e3acdf2f89386ceb422ea741a0aa25373a2aa6"
+  ],
+  "revisionProof": "schema/skill-game-data-revisions-v1.json",
+  "revisionProofSha256": "05d51913844ba65b96a8c262407da2d894618da138389fe72e572f825366ddbb",
+  "nativeProof": "data/adina-w-native-effects-proof-v1.json",
+  "nativeProofSha256": "14e387e03da8cda49881c43335952d784ca24dfffdaee1e7d4dd6261b485d575",
+  "nativeReplayBuildIdentityProven": false,
+  "verifiedCompletionCredit": false,
+  "projectileEffects": {
+    "105231": 1052311,
+    "105232": 1052321,
+    "105233": 1052331,
+    "105234": 1052321
+  },
+  "exactRevisionEvidence": "data/adina-w-exact-revisions-v1.json",
+  "exactRevisionEvidenceSha256": "581e7a7fe72fd4092a8dd5def625a0a57061f6a52091e4d8fb1d932a61bfa4f9"
+}

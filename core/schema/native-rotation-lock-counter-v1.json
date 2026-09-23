@@ -1,0 +1,51 @@
+{
+  "format": "er-native-rotation-lock-counter.v1",
+  "clientVersion": "12.3.0",
+  "native": [
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-3067c30.json",
+      "sha256": "7e32f9630dcbd9952b1e3b1d0171a33bbd31fdfc26ec53aa076a8f654f5d9c8c"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-11a4320.json",
+      "sha256": "b18e84a92cb620f54ac9f952b78a1089db7aef70acea657d812fae8624d3b75c"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-11a4310.json",
+      "sha256": "2d0010a5a82d0f73ac452287ae9240c7aa0f4f51baaa8aa706927d8f73a8bf97"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-11a2a90.json",
+      "sha256": "e79ac845bbd3b0ebd109ff5bb7cd1e6763b99796b2c5669438725a2af80fd0af"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-11a3790.json",
+      "sha256": "35347e7b6a2a99deaa7d6b834b4a5aad9dbb64a4e8c891c4bd75fc210d70aa0f"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-11a24f0.json",
+      "sha256": "4869eff21a65d390f3aaaae7df3131bf53863e6d7de55da83e007e058a747b70"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-30678f0.json",
+      "sha256": "a0feb81d7525742e7878b290b167f1eb7c4f3015ee39be32561d1dba1d4bbb88"
+    }
+  ],
+  "semantics": {
+    "lock": "WorldMovableObject.LockRotation adds +1/-1 at3067cba, then sends CmdLockRotation at3067daa. MoveAgent.LockRotation same at11a432c; IsLockRotation tests count>0 at11a4310.",
+    "ordinaryMovement": "UpdateRotate11a2aa2/11a2ab4 branches away from movement-based rotation while lock count>0. It can still run a separate rotate strategy with IsIgnoreLockRotation=true at11a2c1e..11a2c30; runtime requires no active rotate strategy.",
+    "instantLook": "11a3790 writes exact incoming quaternion to transform+10 and startRotation+B8; it does not clear rotate strategy.",
+    "stopRotate": "11a24f0 clears rotate strategy via11a1a90(null), preserves current quaternion and zeros period/time. Server30678f0 emits CmdStopRotate then performs the same changes.",
+    "snapshot": "MoveAgentSnapshot MemoryPackOrder4 lockRotation is int; order1 RotateStrategyType is enum. Each fullSnapshot record is an exact restart point for counting subsequent deltas."
+  },
+  "runtimeRules": [
+    "Use latest exact snapshot before cast start, not a guessed initial zero.",
+    "Maintain signed lock deltas. Zero/nonpositive counts invalidate a preserved direction. Nested false can leave a positive count.",
+    "An explicit instant look after the retained baseline can precede StartSkill: cast start does not reset the live quaternion. Preserve it only while the lock count stays positive and no separate rotate strategy is active. An initially unlocked look may connect to its lock only within the same tick. Ordinary position commands preserve direction under that lock.",
+    "Other rotation/movement commands invalidate direction. Lifecycle resets invalidate the snapshot baseline. Active rotate strategies require explicit StopRotate or a later snapshot confirming None.",
+    "Missing/malformed baseline or int32 overflow is unknown; do not replace native yaw with rounded CmdLockRotation rotationY.",
+    "InstanceLookAt writes the live quaternion even while already locked. Such an exact later look does not need a second LockRotation(true); preserve it while the native count stays positive and no rotation strategy runs. An unlocked look may connect to its Q lock only in the same tick, never across intervening frames.",
+    "A look observed while a separate rotate strategy is active is not retained. CmdStopRotate preserves the angle reached by that strategy, not an earlier look; require a fresh explicit look after the stop. Include all lock deltas since baseline when the look precedes the cast."
+  ],
+  "fallbackUsed": false
+}

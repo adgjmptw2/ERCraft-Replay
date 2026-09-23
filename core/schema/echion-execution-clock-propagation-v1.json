@@ -1,0 +1,21 @@
+{
+  "format": "er-echion-execution-clock-propagation.v1",
+  "clientVersion": "12.3.0",
+  "authority": [
+    "schema/echion-primary-frame-frontier-v1.json",
+    "schema/echion-secondary-execution-v1.json",
+    "schema/echion-secondary-state-v1.json"
+  ],
+  "invariant": "All damage and secondary state applications emitted by one synchronous target loop share its native execution frame. Primary=launch+27, BlackMamba secondary=launch+78.",
+  "algorithm": "Build all live native producer candidates across variants and both stages. A bounded event with one candidate intersects that launch with event bounds minus the stage offset. Repeat until no bound changes; never bootstrap from ambiguous events. Preserve original source inputs and ordered refinement witnesses.",
+  "admission": [
+    "Exact actor, known effect family or verified secondary state family, command order, native bounds, normal finish for awaited primary only.",
+    "NPC contacts constrain time but do not become enemy hits.",
+    "Unbounded and conflicting clocks never narrow. Ambiguous producers and disjoint source-level orphans remain visible."
+  ],
+  "limits": [
+    "No one-packet-per-target capacity assumption.",
+    "No arbitrary time window or replay-tick conversion.",
+    "No claim of full metric completion from refinement alone."
+  ]
+}

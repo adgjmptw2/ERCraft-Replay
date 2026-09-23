@@ -1,0 +1,63 @@
+{
+  "format": "er-non-nav-linear-prefix-bound.v1",
+  "clientVersion": "12.3.0",
+  "native": [
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-11b0c90.json",
+      "sha256": "fbda79fd780b4d04b165f73e923263d39c2006371595b7ea080adf847fce7388"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-11b0ab0.json",
+      "sha256": "944993f850ebcdaead13383347cd393754af1a65b861868f1bddd1529cccffd4"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-12a15b0.json",
+      "sha256": "3e3478af826cb559fbb27b42d841ac2b6fb22c81877a249919f2bd227153a2c5"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-3066d30.json",
+      "sha256": "8b29457d284a0369532f624f9b6b87daae7a4ef0537dab6a8dc855b2f9dd16b6"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-2fe3ae0.json",
+      "sha256": "a40ea0861dfe0c1d5407b93ca7dff8b053c93ba9dd5713de934f6c284092aace"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-11a2580.json",
+      "sha256": "4b7c9192de58cf36a9fdc3b16aea2c55806453f8cc17d93a3ef66f486685c9d8"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-11a2da0.json",
+      "sha256": "bbac18a401382335da1221547d6e36c975dc09b73194f0a6a8c74208621f2069"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-11a4430.json",
+      "sha256": "57ea8393b1199e8fff9bbfa407a41446b01f1bf86583b8adb4d393513eddead6"
+    }
+  ],
+  "scope": "CmdMoveStraightWithoutNav only; ordinary CmdMoveStraight destination is navigation-adjusted and is not covered.",
+  "endpoints": "Server3066d30 and WorldCharacter override2fe3ae0 pass the same start/end vectors into move agent and CmdMoveStraightWithoutNav.startPosVector2/endPosVector2.12a15b0 copies them into strategy+20/+2c without navigation sampling; fields also confirmed by11b0ab0.",
+  "phase": "11b0c90 accumulates deltaTime into+40, divides by float duration+38, clamps to[0,1] at11b0ce3..11b0cf7, applies start+(end-start)*phase. Phase>=1 returns exact endpoint. Duration must be positive native f32(f32(raw)/100).",
+  "update": "11a2580 calls strategy NextPosition, then11a2da0. Its type guard at11a2e27 references Blis.Common.MoveToDestination_TypeInfo (script.json Address173259384), so this strategy returns unchanged proposed position at11a3766.11a4430 preserves XZ. Existing v5 frame-step/standing-correction bound reused.",
+  "bound": "maxFrames=callbackTick-anchorTick+1. Accumulated native time <=maxFrames*f32(1/60)*(1+2^-23)^(maxFrames+4); extra factors cover division/upper-bound evaluation rounding. Clamp maximum phase to1. Take X/Z interval of prefix endpoints, union with prior evaluation_bounds at command time, expand by(maxFrames+1)/128. Prior pivot retained covers an update not yet run or paused movement. This is an enclosure, not inferred exact time/position.",
+  "domain": {
+    "maxFrames": 3600,
+    "maxEndpointMagnitude": 512,
+    "maxDurationInternalValue": 360000,
+    "maxChainDepth": 64
+  },
+  "guards": [
+    "Same prior-frame and stream guards as evaluation_bounds",
+    "Both wire endpoints exact finite float32",
+    "Prior position bound must be proven; unresolved warp/unsupported predecessor rejects",
+    "Zero/negative/missing duration rejects",
+    "No intervening target position event during callback"
+  ],
+  "floatError": "For endpoints of magnitude<=512, each float32 SUB/MUL/ADD has absolute rounding at most2^-14 at the largest1024 intermediate. Three errors sum below1/128. Per-frame padding also covers the reviewed tiny navigation-standing correction and conservative prior-pivot envelope.",
+  "nativeFrameRule": {
+    "path": "schema/sua-bookmark-stop-sweep-bound-v5.json",
+    "sha256": "43bc163f8bcc9290bf8d1bc8bcc8fa7d3d04d49cf93e1749aa5bf1d21f6c2e05"
+  },
+  "fallbackUsed": false,
+  "positionInterpolationUsed": false
+}

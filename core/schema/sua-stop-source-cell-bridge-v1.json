@@ -1,0 +1,30 @@
+{
+  "format": "er-sua-stop-source-cell-bridge.v1",
+  "scope": "Ordinary source cell after a retained stationary interval; envelope only, never representative point estimation.",
+  "rules": [
+    {
+      "path": "schema/sua-source-cell-sweep-bound-v3.json",
+      "sha256": "8ecf93996492025b3c904477d9ddfe59ee6d470f831f79631a41bd7f6038b0a8"
+    },
+    {
+      "path": "schema/sua-bookmark-stop-sweep-bound-v5.json",
+      "sha256": "43bc163f8bcc9290bf8d1bc8bcc8fa7d3d04d49cf93e1749aa5bf1d21f6c2e05"
+    },
+    {
+      "path": "schema/ordinary-next-source-cell-bound-v1.json",
+      "sha256": "54cc7260dda4bfb2bd369ca5573d2943a75127de355decfde3260ebfd4662fe0"
+    }
+  ],
+  "requirements": [
+    "Immediate previous position event is exact CmdStopMove, strictly earlier tick/order than ordinary destination/avoidance anchor.",
+    "A recorded completed frame is strictly after stop and strictly before anchor in both clocks. No intervening position invalidator.",
+    "Exact stop point lies inside the float32 preimage of source cell.",
+    "Actual completed source frame has same tick/record as anchor and precedes callback tick/record.",
+    "Existing speed since retained reset, full pose streams, unchanged radius and finite envelope guards remain mandatory."
+  ],
+  "nativeReason": "Pinned v5 per-frame collision refresh bounds previous swept endpoint after a stationary completed frame. Stop position is enclosed by the source cell. New non-null ordinary strategy skips relocation at11a190c..190f. Subsequent ordinary displacement and both collision endpoints remain in v3 age+1 envelope.",
+  "classification": "Only whole-envelope exclusion or guaranteed center contact; overlapping envelope remains unknown.",
+  "fallbackUsed": false,
+  "nativeReplayBuildIdentityProven": false,
+  "verifiedCompletionCredit": false
+}

@@ -1,0 +1,46 @@
+{
+  "format": "er-fiora-q-slow-admission.v1",
+  "clientVersion": "12.3.0",
+  "stateGroup": 1003200,
+  "stateCodes": [
+    1003201,
+    1003202,
+    1003203,
+    1003204,
+    1003205
+  ],
+  "gameDbSha256": "5ef9cb5459a2e908099655bf9ffc70ac16b134d1db282fb97b25fe065e7c8e4f",
+  "evidence": [
+    {
+      "path": "deliverables/fiora-q-positive-outer-state-static-proof-v1.json",
+      "sha256": "d32ff296fbd72bf81f4493ec4193b79beebbb20fbdaeaa25523e8023977891ca"
+    },
+    {
+      "path": "schema/sua-center-slow-admission-v3.json",
+      "sha256": "03825e56894bc7dda781eeec2e353c6551d03ff3cbc7f25925102ba881affa9d"
+    },
+    {
+      "path": "schema/adela-pushed-pawn-state-admission-v1.json",
+      "sha256": "ffcf00b0342a45efb0f2b346348ac3ad746e2045802890de0551631d03c9917f"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-2b0ccf0.json",
+      "sha256": "c7d96c41dd64e338ff64b1cd7462f5c971e9a0c78fd3c0d30a2f38f0202fe892"
+    }
+  ],
+  "conditions": [
+    "Exact same-version source with no parser gaps; original Q cast and dedicated effect1003201 damage bind source actor and target.",
+    "Q Process has no yield; IsOuterRange2b0d100 controls the outer path. It reads positive level-specific Slow code, creates state2b0d18b and calls AddState2b0d199 before DamageTo2b0d33b. An exact Q damage proves the target was processed. The complete unique command frame contains this synchronous path.",
+    "Target full snapshot is alive and not dying, no later life/reset/replacement issues through the complete Q frame. Inventory keeps every possible state, including reentrant additions and updates; only exact earlier completed-frame removals close presence.",
+    "No possibly present SlowImmunity, Untargetability, Protectability, Invulnerability, Unstoppable, DebuffImmunity, CCImmunity, CCMovementImmunity, CCStopImmunity, DisplacementImmunity, DanceImmunity or VLS. No existing or newly added group1003200 of any caster.",
+    "Fiora group1003200 is external Debuff/Slow, isAddStateOnDead=false, notCheckUntargetable=false. Reviewed WorldCharacter CanBeAffected and IsInvulnerability guards are covered by the life/state inventory. Reuse native Slow priority proof: no playing CC blocks Slow. Reviewed IgnoreStateCondition writer ignores DyingImmunity25 only, not Slow31.",
+    "With no same-group state, an admitted Slow emits AddState/Extended synchronously before completion callbacks. Whole-frame inventory would contain group1003200 if outer branch executed under these predicates. Its absence therefore excludes outer for this positive Q contact."
+  ],
+  "outcome": "non-tip only when all admission and completeness predicates hold; otherwise no new classification",
+  "packetCountUsed": false,
+  "passiveDamageEffectUsed": false,
+  "cooldownMarkerUsed": false,
+  "positionEstimated": false,
+  "missingInputOutcome": "unknown",
+  "allFutureMatchesGuaranteed": false
+}

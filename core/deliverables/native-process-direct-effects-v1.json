@@ -1,0 +1,483 @@
+{
+  "schemaVersion": 1,
+  "gameDbSha256": "5ef9cb5459a2e908099655bf9ffc70ac16b134d1db282fb97b25fe065e7c8e4f",
+  "staticDllSha256": "3a92f99aea09d6eae54456a07ac1360c51c5aad1a102ace5cca23deca59c5ef4",
+  "evidenceCollector": "script.json fully qualified Server nested coroutine identity",
+  "parameterCopyMethods": [
+    {
+      "rva": "0x2ed4d30",
+      "path": "tmp/static-code-restored-v1/game-fn-2ed4d30.json",
+      "sha256": "ff4396e585b8825218319b630edcb371943ac6ee30f882c1f02f49e42004ba60"
+    },
+    {
+      "rva": "0x2ed4ec0",
+      "path": "tmp/static-code-restored-v1/game-fn-2ed4ec0.json",
+      "sha256": "f048f5cd68f5e866034168f108b8f080bdc85f6de4f7c0acc41187117bf7ad7f"
+    }
+  ],
+  "records": [
+    {
+      "characterCode": 55,
+      "skillGroup": 1055300,
+      "skillId": "EstelleActive2_1",
+      "wireSkillId": 797,
+      "effectCodes": [
+        1055301
+      ],
+      "parameterHandoff": {
+        "function": "0x2ab8b80",
+        "identities": [
+          {
+            "className": "EstelleActive2_1.<Process>d__5",
+            "signature": "bool Blis_Server_EstelleActive2_1__Process_d__5__MoveNext (Blis_Server_EstelleActive2_1__Process_d__5_o* __this, const MethodInfo* method);",
+            "qualifiedMethodName": "Blis.Server.EstelleActive2_1.<Process>d__5$$MoveNext",
+            "namespaceAuthority": "script.json.ScriptMethod.Name"
+          }
+        ],
+        "source": {
+          "dataClass": "EstelleSkillActive2_1Data",
+          "field": "DamageParamData",
+          "fieldOffset": "0x28",
+          "singletonMetadataAddress": "0xa51f088",
+          "singletonCall": "0x2ab910a",
+          "readSite": "0x2ab9118",
+          "destination": "rdx",
+          "effectCodes": [
+            1055301
+          ],
+          "setterSites": [
+            {
+              "constructor": "0x12834c0",
+              "site": "0x12839c5"
+            }
+          ]
+        },
+        "links": [
+          {
+            "parameterSet": "0x2ab913c",
+            "parameterField": {
+              "type": "SkillDamageParameterCollection",
+              "name": "damageParam",
+              "readonly": true
+            },
+            "collectionExpression": [
+              "field",
+              [
+                "field",
+                [
+                  "this",
+                  "EstelleActive2_1.<Process>d__5"
+                ],
+                32
+              ],
+              208
+            ],
+            "damageTo": {
+              "site": "0x2ab91dd",
+              "target": "0x2eda990"
+            },
+            "argumentFiveStore": "0x2ab91c9",
+            "intermediateCollectionCalls": [],
+            "readonlyCollection": true,
+            "scalarEffectAfterAllMutationsProven": false
+          }
+        ],
+        "parameterHandoffProven": true,
+        "bodyPath": "tmp/static-code-restored-v1/game-fn-2ab8b80.json",
+        "bodySha256": "8602be2748c56ce4b037a5e20b4449f0bc573ee63ab97c2c6d0c551c8bc68851"
+      },
+      "process": {
+        "rva": "0x2ab8b80",
+        "bodyPath": "tmp/static-code-restored-v1/game-fn-2ab8b80.json",
+        "sha256": "8602be2748c56ce4b037a5e20b4449f0bc573ee63ab97c2c6d0c551c8bc68851",
+        "directHelperCall": null
+      },
+      "attackerSource": {
+        "field": "SkillScriptBase.Caster",
+        "offset": "0x18",
+        "load": "0x2ab91d6"
+      },
+      "execution": "DamageTo is executed by Process.MoveNext, directly or by its synchronous direct helper; no independent coroutine is launched by this Process.",
+      "scope": "Any enemy character hit during this skill cast. Deflector reflection, unrelated state damage, region and individual pulses are not inferred.",
+      "finalScalarReview": "Typed SkillDamageParameterCollection.Set(data, level), slot 8, receives the same readonly collection passed as DamageTo argument five. No collection receiver call intervenes. SetCommon changes attack/damage types, not EffectAndSound.",
+      "runtimeRequirements": [
+        "exact gameDb and wire skill identity",
+        "complete cast and damage input streams",
+        "unique cast ownership",
+        "normal completion for a miss; exclusive hits may survive cancellation",
+        "reject out-of-life or competing cast evidence"
+      ],
+      "positiveSampleRequired": false
+    },
+    {
+      "characterCode": 55,
+      "skillGroup": 1055310,
+      "skillId": "EstelleActive2_2",
+      "wireSkillId": 798,
+      "effectCodes": [
+        1055302
+      ],
+      "parameterHandoff": {
+        "function": "0x2ab95c0",
+        "identities": [
+          {
+            "className": "EstelleActive2_2",
+            "signature": "void Blis_Server_EstelleActive2_2__CheckCollision (Blis_Server_EstelleActive2_2_o* __this, uint32_t individualId, uint32_t skillNumber, const MethodInfo* method);",
+            "qualifiedMethodName": "Blis.Server.EstelleActive2_2$$CheckCollision",
+            "namespaceAuthority": "script.json.ScriptMethod.Name"
+          }
+        ],
+        "source": {
+          "dataClass": "EstelleSkillActive2_2Data",
+          "field": "DamageParamData",
+          "fieldOffset": "0x18",
+          "singletonMetadataAddress": "0xa51f078",
+          "singletonCall": "0x2ab988a",
+          "readSite": "0x2ab9898",
+          "destination": "rdx",
+          "effectCodes": [
+            1055302
+          ],
+          "setterSites": [
+            {
+              "constructor": "0x1283a90",
+              "site": "0x1283d17"
+            }
+          ]
+        },
+        "links": [
+          {
+            "parameterSet": "0x2ab98be",
+            "parameterField": {
+              "type": "SkillDamageParameterCollection",
+              "name": "damageParam",
+              "readonly": true
+            },
+            "collectionExpression": [
+              "field",
+              [
+                "this",
+                "EstelleActive2_2"
+              ],
+              208
+            ],
+            "damageTo": {
+              "site": "0x2ab994d",
+              "target": "0x2eda990"
+            },
+            "argumentFiveStore": "0x2ab9939",
+            "intermediateCollectionCalls": [],
+            "readonlyCollection": true,
+            "scalarEffectAfterAllMutationsProven": false
+          }
+        ],
+        "parameterHandoffProven": true,
+        "bodyPath": "tmp/static-code-restored-v1/game-fn-2ab95c0.json",
+        "bodySha256": "30de5f65b2b6599265b39cd93ce8544a8a0c644f1090f68d4270b59cba6d8881"
+      },
+      "process": {
+        "rva": "0x2ab9d10",
+        "bodyPath": "tmp/static-code-restored-v1/game-fn-2ab9d10.json",
+        "sha256": "c56b39de8339d705d8b00121b7bd42656079586380a87bf6f5664ca54fd4c90c",
+        "directHelperCall": "0x2aba0a2"
+      },
+      "attackerSource": {
+        "field": "SkillScriptBase.Caster",
+        "offset": "0x18",
+        "load": "0x2ab9946"
+      },
+      "execution": "DamageTo is executed by Process.MoveNext, directly or by its synchronous direct helper; no independent coroutine is launched by this Process.",
+      "scope": "Any enemy character hit during this skill cast. Deflector reflection, unrelated state damage, region and individual pulses are not inferred.",
+      "finalScalarReview": "Typed SkillDamageParameterCollection.Set(data, level), slot 8, receives the same readonly collection passed as DamageTo argument five. No collection receiver call intervenes. SetCommon changes attack/damage types, not EffectAndSound.",
+      "runtimeRequirements": [
+        "exact gameDb and wire skill identity",
+        "complete cast and damage input streams",
+        "unique cast ownership",
+        "normal completion for a miss; exclusive hits may survive cancellation",
+        "reject out-of-life or competing cast evidence"
+      ],
+      "positiveSampleRequired": false
+    },
+    {
+      "characterCode": 55,
+      "skillGroup": 1055410,
+      "skillId": "EstelleActive3_2",
+      "wireSkillId": 804,
+      "effectCodes": [
+        1055303
+      ],
+      "parameterHandoff": {
+        "function": "0x2abf600",
+        "identities": [
+          {
+            "className": "EstelleActive3_2",
+            "signature": "void Blis_Server_EstelleActive3_2__DamageHitTarget (Blis_Server_EstelleActive3_2_o* __this, uint32_t individualId, UnityEngine_Vector3_o moveStartPosition, const MethodInfo* method);",
+            "qualifiedMethodName": "Blis.Server.EstelleActive3_2$$DamageHitTarget",
+            "namespaceAuthority": "script.json.ScriptMethod.Name"
+          }
+        ],
+        "source": {
+          "dataClass": "EstelleSkillActive3_2Data",
+          "field": "DamageParamData",
+          "fieldOffset": "0x40",
+          "singletonMetadataAddress": "0xa51ed98",
+          "singletonCall": "0x2abf70b",
+          "readSite": "0x2abf71f",
+          "destination": "rbp",
+          "effectCodes": [
+            1055303
+          ],
+          "setterSites": [
+            {
+              "constructor": "0x1284280",
+              "site": "0x12846db"
+            }
+          ]
+        },
+        "links": [
+          {
+            "parameterSet": "0x2abf756",
+            "parameterField": {
+              "type": "SkillDamageParameterCollection",
+              "name": "damageParam",
+              "readonly": true
+            },
+            "collectionExpression": [
+              "field",
+              [
+                "this",
+                "EstelleActive3_2"
+              ],
+              216
+            ],
+            "damageTo": {
+              "site": "0x2abf7eb",
+              "target": "0x2eda990"
+            },
+            "argumentFiveStore": "0x2abf7e0",
+            "intermediateCollectionCalls": [],
+            "readonlyCollection": true,
+            "scalarEffectAfterAllMutationsProven": false
+          }
+        ],
+        "parameterHandoffProven": true,
+        "bodyPath": "tmp/static-code-restored-v1/game-fn-2abf600.json",
+        "bodySha256": "25591fc6a0eba241b3b21925d1dbfb3a4b23b44413719fceffbaeaeb46955dc4"
+      },
+      "process": {
+        "rva": "0x2abfd80",
+        "bodyPath": "tmp/static-code-restored-v1/game-fn-2abfd80.json",
+        "sha256": "7909d25a27f67a7eb8d51b22e05f06fee06ca14f83dceada529567a451fff971",
+        "directHelperCall": "0x2ac0258"
+      },
+      "attackerSource": {
+        "field": "SkillScriptBase.Caster",
+        "offset": "0x18",
+        "load": "0x2abf7ba"
+      },
+      "execution": "DamageTo is executed by Process.MoveNext, directly or by its synchronous direct helper; no independent coroutine is launched by this Process.",
+      "scope": "Any enemy character hit during this skill cast. Deflector reflection, unrelated state damage, region and individual pulses are not inferred.",
+      "finalScalarReview": "Typed SkillDamageParameterCollection.Set(data, level), slot 8, receives the same readonly collection passed as DamageTo argument five. No collection receiver call intervenes. SetCommon changes attack/damage types, not EffectAndSound.",
+      "runtimeRequirements": [
+        "exact gameDb and wire skill identity",
+        "complete cast and damage input streams",
+        "unique cast ownership",
+        "normal completion for a miss; exclusive hits may survive cancellation",
+        "reject out-of-life or competing cast evidence"
+      ],
+      "positiveSampleRequired": false
+    },
+    {
+      "characterCode": 65,
+      "skillGroup": 1065300,
+      "skillId": "DebiMarleneActive2_1",
+      "wireSkillId": 977,
+      "effectCodes": [
+        1065301
+      ],
+      "parameterHandoff": {
+        "function": "0x2a75050",
+        "identities": [
+          {
+            "className": "DebiMarleneActive2_1.<Process>d__4",
+            "signature": "bool Blis_Server_DebiMarleneActive2_1__Process_d__4__MoveNext (Blis_Server_DebiMarleneActive2_1__Process_d__4_o* __this, const MethodInfo* method);",
+            "qualifiedMethodName": "Blis.Server.DebiMarleneActive2_1.<Process>d__4$$MoveNext",
+            "namespaceAuthority": "script.json.ScriptMethod.Name"
+          }
+        ],
+        "source": {
+          "dataClass": "DebiMarleneActive2SkillData",
+          "field": "DebiDamageParameterData",
+          "fieldOffset": "0x30",
+          "singletonMetadataAddress": "0xa50d4d8",
+          "singletonCall": "0x2a7545a",
+          "readSite": "0x2a75468",
+          "destination": "rdx",
+          "effectCodes": [
+            1065301
+          ],
+          "setterSites": [
+            {
+              "constructor": "0x1262aa0",
+              "site": "0x126327c"
+            }
+          ]
+        },
+        "links": [
+          {
+            "parameterSet": "0x2a7548c",
+            "parameterField": {
+              "type": "SkillDamageParameterCollection",
+              "name": "parameterCollection",
+              "readonly": true
+            },
+            "collectionExpression": [
+              "field",
+              [
+                "field",
+                [
+                  "this",
+                  "DebiMarleneActive2_1.<Process>d__4"
+                ],
+                32
+              ],
+              216
+            ],
+            "damageTo": {
+              "site": "0x2a7553e",
+              "target": "0x2eda990"
+            },
+            "argumentFiveStore": "0x2a7552a",
+            "intermediateCollectionCalls": [],
+            "readonlyCollection": true,
+            "scalarEffectAfterAllMutationsProven": false
+          }
+        ],
+        "parameterHandoffProven": true,
+        "bodyPath": "tmp/static-code-restored-v1/game-fn-2a75050.json",
+        "bodySha256": "ea284005a56bd471ea9e4862d7bf4c8641e69b3ecc97089c53ab5ef9461b5518"
+      },
+      "process": {
+        "rva": "0x2a75050",
+        "bodyPath": "tmp/static-code-restored-v1/game-fn-2a75050.json",
+        "sha256": "ea284005a56bd471ea9e4862d7bf4c8641e69b3ecc97089c53ab5ef9461b5518",
+        "directHelperCall": null
+      },
+      "attackerSource": {
+        "field": "SkillScriptBase.Caster",
+        "offset": "0x18",
+        "load": "0x2a75537"
+      },
+      "execution": "DamageTo is executed by Process.MoveNext, directly or by its synchronous direct helper; no independent coroutine is launched by this Process.",
+      "scope": "Any enemy character hit during this skill cast. Deflector reflection, unrelated state damage, region and individual pulses are not inferred.",
+      "finalScalarReview": "Typed SkillDamageParameterCollection.Set(data, level), slot 8, receives the same readonly collection passed as DamageTo argument five. No collection receiver call intervenes. SetCommon changes attack/damage types, not EffectAndSound.",
+      "runtimeRequirements": [
+        "exact gameDb and wire skill identity",
+        "complete cast and damage input streams",
+        "unique cast ownership",
+        "normal completion for a miss; exclusive hits may survive cancellation",
+        "reject out-of-life or competing cast evidence"
+      ],
+      "positiveSampleRequired": false
+    },
+    {
+      "characterCode": 89,
+      "skillGroup": 1089400,
+      "skillId": "CraverActive3_1",
+      "wireSkillId": 1303,
+      "effectCodes": [
+        1089401
+      ],
+      "parameterHandoff": {
+        "function": "0x2a54c70",
+        "identities": [
+          {
+            "className": "CraverActive3_1.<Process>d__6",
+            "signature": "bool Blis_Server_CraverActive3_1__Process_d__6__MoveNext (Blis_Server_CraverActive3_1__Process_d__6_o* __this, const MethodInfo* method);",
+            "qualifiedMethodName": "Blis.Server.CraverActive3_1.<Process>d__6$$MoveNext",
+            "namespaceAuthority": "script.json.ScriptMethod.Name"
+          }
+        ],
+        "source": {
+          "dataClass": "CraverSkillActive3Data",
+          "field": "DamageParam",
+          "fieldOffset": "0x10",
+          "singletonMetadataAddress": "0xa50e268",
+          "singletonCall": "0x2a552a9",
+          "readSite": "0x2a552b7",
+          "destination": "r12",
+          "effectCodes": [
+            1089401
+          ],
+          "setterSites": [
+            {
+              "constructor": "0x1259900",
+              "site": "0x1259e29"
+            }
+          ]
+        },
+        "links": [
+          {
+            "parameterSet": "0x2a552f4",
+            "parameterField": {
+              "type": "SkillDamageParameterCollection",
+              "name": "damageParams",
+              "readonly": true
+            },
+            "collectionExpression": [
+              "field",
+              [
+                "field",
+                [
+                  "this",
+                  "CraverActive3_1.<Process>d__6"
+                ],
+                32
+              ],
+              216
+            ],
+            "damageTo": {
+              "site": "0x2a55397",
+              "target": "0x2eda990"
+            },
+            "argumentFiveStore": "0x2a55383",
+            "intermediateCollectionCalls": [],
+            "readonlyCollection": true,
+            "scalarEffectAfterAllMutationsProven": false
+          }
+        ],
+        "parameterHandoffProven": true,
+        "bodyPath": "tmp/static-code-restored-v1/game-fn-2a54c70.json",
+        "bodySha256": "0cd527fa4252bc707397efbbff3920b2f02860118b474255dc009e662701dd47"
+      },
+      "process": {
+        "rva": "0x2a54c70",
+        "bodyPath": "tmp/static-code-restored-v1/game-fn-2a54c70.json",
+        "sha256": "0cd527fa4252bc707397efbbff3920b2f02860118b474255dc009e662701dd47",
+        "directHelperCall": null
+      },
+      "attackerSource": {
+        "field": "SkillScriptBase.Caster",
+        "offset": "0x18",
+        "load": "0x2a55390"
+      },
+      "execution": "DamageTo is executed by Process.MoveNext, directly or by its synchronous direct helper; no independent coroutine is launched by this Process.",
+      "scope": "Any enemy character hit during this skill cast. Deflector reflection, unrelated state damage, region and individual pulses are not inferred.",
+      "finalScalarReview": "Typed SkillDamageParameterCollection.Set(data, level), slot 8, receives the same readonly collection passed as DamageTo argument five. No collection receiver call intervenes. SetCommon changes attack/damage types, not EffectAndSound.",
+      "runtimeRequirements": [
+        "exact gameDb and wire skill identity",
+        "complete cast and damage input streams",
+        "unique cast ownership",
+        "normal completion for a miss; exclusive hits may survive cancellation",
+        "reject out-of-life or competing cast evidence"
+      ],
+      "positiveSampleRequired": false
+    }
+  ],
+  "approvedExecutionContracts": 5,
+  "replaySamplesUsedForStaticMapping": 0,
+  "limitations": [
+    "This does not prove every replay is complete or eliminate ambiguous competing events.",
+    "Leon concentration lifecycle and Xiukai shared FX remain outside this contract."
+  ]
+}

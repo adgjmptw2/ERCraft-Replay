@@ -1,0 +1,82 @@
+{
+  "format": "native-camilo-q3-foreign-producer-contract.v1",
+  "characterCode": 39,
+  "skillGroup": 1039220,
+  "skillId": "CamiloActive1_3",
+  "wireSkillId": 543,
+  "effectCodes": [
+    1039204
+  ],
+  "staticDllSha256": "3a92f99aea09d6eae54456a07ac1360c51c5aad1a102ace5cca23deca59c5ef4",
+  "gameDbSha256": "5ef9cb5459a2e908099655bf9ffc70ac16b134d1db282fb97b25fe065e7c8e4f",
+  "q3Producer": {
+    "skillGroup": 1039220,
+    "skillId": "CamiloActive1_3",
+    "wireSkillId": 543,
+    "excludedEffects": [
+      1039402,
+      1039403
+    ],
+    "actualEffectCodes": [
+      1039204
+    ],
+    "proof": "Q3 Process29fbdc0 reads CamiloSkillActive1_3Data.DamageParamData+18, Set(slot8), then CalculateCriticalAttack returns a CriticalType stored only at parameter+3c; identity+84/+74 writes do not change effect dictionary. DamageTo at29fc256 uses the same parameter. Q3 constructor12454f0 sets Hit FX1039204. Critical roll is not an E effect override; Q3 state applies separately."
+  },
+  "lifecycle": "Q3 Process29fbdc0 performs its target loop and DamageTo synchronously using readonly parameter+c8; Start/Finish bodies retained in prior E proof.",
+  "foreignProducers": [
+    {
+      "groups": [
+        1039300
+      ],
+      "skillId": "CamiloActive2",
+      "wire": 548,
+      "effects": [
+        1039301
+      ],
+      "consumer": "0x29fc680",
+      "set": "0x29fca76",
+      "damageTo": "0x29fcb7e",
+      "mutations": "After Set(Data+28), slot13 Add(0x12, ratio) at29fcaa5 touches numeric parameter dictionary+10 only; enum FinalRatioDamage=18. CriticalType+3c and identity+84/+74 are separate from effects."
+    },
+    {
+      "groups": [
+        1039500,
+        1039510,
+        1039520
+      ],
+      "skills": [
+        "CamiloActive4_1",
+        "CamiloActive4_2",
+        "CamiloActive4_3"
+      ],
+      "wires": [
+        551,
+        552,
+        553
+      ],
+      "effects": [
+        1039505
+      ],
+      "consumer": "0x2a01040",
+      "normal": {
+        "field": "+90",
+        "set": "0x2a018f6",
+        "damageTo": "0x2a0198d"
+      },
+      "reinforced": {
+        "field": "+98",
+        "set": "0x2a01766",
+        "damageTo": "0x2a017fd"
+      },
+      "mutations": "Both branches Clear then Set the readonly collection+d0; only IndividualId+84 and SkillNumber+74 written before DamageTo. This excludes R as source of Q3 FX; it does not establish R cast completion."
+    }
+  ],
+  "fallbackUsed": false,
+  "artifacts": {
+    "deliverables/native-camilo-e-two-steps-contract-v1.json": "e58ade8a20a7e7000ec7853c9b0c98b8913b50d767f3f396b30faad7c5960ba4",
+    "deliverables/native-damage-effect-assignments-v2.json": "e55a340816194d0f00d2c7613d3c687ee8c254a566bbd2618bafa064f6c2cc91",
+    "tmp/static-code-restored-v1/game-fn-29fc680.json": "254646e8c035e10106b6b07f5dc459e13e46ea17b05eb73055e024500dff23ce",
+    "tmp/static-code-restored-v1/game-fn-2ed4b60.json": "8d528c445986e854f7047af3b2b62b86bcca976750874efb0de85935a676205c",
+    "tmp/static-code-restored-v1/game-fn-2a01040.json": "ef260f27fcddd2c1a73862b9aa1a695a7b3e15ef9f20f43dc84589d329e02c79"
+  }
+}

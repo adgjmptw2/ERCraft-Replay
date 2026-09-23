@@ -1,0 +1,31 @@
+{
+  "format": "er-echion-secondary-state.v1",
+  "clientVersion": "12.3.0",
+  "gameDataSha256": "5ef9cb5459a2e908099655bf9ffc70ac16b134d1db282fb97b25fe065e7c8e4f",
+  "producer": "EchionActive4_BlackMambaAttack.SecondDamageProcess (RVA 0x2a8f560, virtual slot 83)",
+  "stateCodes": [
+    1044601,
+    1044602,
+    1044603,
+    1044604
+  ],
+  "stateGroup": 1044600,
+  "nativeEvidence": [
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-12722c0.json",
+      "sha256": "a16a3c68ab0a5082118e3facf628e5e7c4c3a6f42cd30ea9b7ca38769c7c9927"
+    },
+    {
+      "path": "tmp/static-code-restored-v1/game-fn-2a8f560.json",
+      "sha256": "ac71829593d9bff9ebc6fa03fdeedbff9537c32aa2ff371616508e36cf5c0734"
+    }
+  ],
+  "definition": "EchionSkillActive4_2Data +0x68 explicitly stores level 1..4 codes at 0x127462e/466c/46aa/46e8; +0x60 group=1044600 at 0x1274614.",
+  "emission": "Secondary loop reads +0x68 at 0x2a8fa8e after DamageTo. CreateState<AirborneState> at 0x2a8fb1f; target.AddState at 0x2a8fb5c. Metadata slot 0xa625d80 names exact Airborne instantiation.",
+  "lineage": "casterId equals original source actor; a single BlackMamba secondary candidate must overlap bounded native launch+78 frames. Never match against primary stages or normal parent end.",
+  "semantics": "Positive enemy state application proves secondary contact even without a uniquely linked damage packet. Damage and state packet identities stay separate; targets are unioned.",
+  "absentStateMeansMiss": false,
+  "immunityCanSuppressState": true,
+  "fullRequestedMetricComplete": false,
+  "timingAuthority": "schema/echion-secondary-execution-v1.json"
+}

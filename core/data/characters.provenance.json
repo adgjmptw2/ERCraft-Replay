@@ -1,0 +1,548 @@
+{
+  "format": "ercraft-character-icon-provenance.v1",
+  "source": "BSER characterNum + Fankit CharactER folders (scripts/generate-character-asset-map.mjs)",
+  "sourceMappingFile": "characterNumToAssetFolder.generated.json",
+  "sourceMappingSha256": "0f392eeb1200ec30e2482f47a098e98d5e677b7c397d7c40bb86407a75c5e449",
+  "assets": [
+    {
+      "characterCode": 1,
+      "sourceAssetFolder": 1,
+      "file": "characters/1.webp",
+      "sha256": "1dea8c9a35f69e0e842b1af2f3957de8e11740f9d653f8190d31dba6e7f9c652"
+    },
+    {
+      "characterCode": 2,
+      "sourceAssetFolder": 2,
+      "file": "characters/2.webp",
+      "sha256": "21cd2b3f443adf5026ee6f94284b1225c77826890e12d39ea085cf960b945e94"
+    },
+    {
+      "characterCode": 3,
+      "sourceAssetFolder": 5,
+      "file": "characters/3.webp",
+      "sha256": "06cf1600e2e440f2c8c60d9b1203401198ce5ff7f85741c13bd4079615c7cd52"
+    },
+    {
+      "characterCode": 4,
+      "sourceAssetFolder": 4,
+      "file": "characters/4.webp",
+      "sha256": "3c102e9d5bc84210f9ca738189d39f6e4d25d1442b0cfa11c084a3802abc30f6"
+    },
+    {
+      "characterCode": 5,
+      "sourceAssetFolder": 7,
+      "file": "characters/5.webp",
+      "sha256": "99d3601b4671bb1960684ec060b21152b30afd5fb54e31518d2518bdb2c8394a"
+    },
+    {
+      "characterCode": 6,
+      "sourceAssetFolder": 6,
+      "file": "characters/6.webp",
+      "sha256": "0cfc8664bee80a7e098639fc8359acfe2fcf806c3fb24e7ae6da62c2c415f9c6"
+    },
+    {
+      "characterCode": 7,
+      "sourceAssetFolder": 3,
+      "file": "characters/7.webp",
+      "sha256": "3f8b920df89458b9c55a52a0ec5981057d2084ae13727eb4549fe20fa2fb2d0d"
+    },
+    {
+      "characterCode": 8,
+      "sourceAssetFolder": 8,
+      "file": "characters/8.webp",
+      "sha256": "9f8986c1749f4964c2ec9ed8409b5fec939ba9241db9e538b524e853ae15a0d6"
+    },
+    {
+      "characterCode": 9,
+      "sourceAssetFolder": 9,
+      "file": "characters/9.webp",
+      "sha256": "58fb828d3759723663593ef176e1f52aac3360928698a14663622216c7d769ba"
+    },
+    {
+      "characterCode": 10,
+      "sourceAssetFolder": 10,
+      "file": "characters/10.webp",
+      "sha256": "eccb163664f096ffb10affd6b9a7277c5ce1854abb11319dbe25a09b560cf09d"
+    },
+    {
+      "characterCode": 11,
+      "sourceAssetFolder": 11,
+      "file": "characters/11.webp",
+      "sha256": "f2eddab02b50466ffd05c4f1f206670a78f908a20dc3c2a3399ec64a6a5bc1a0"
+    },
+    {
+      "characterCode": 12,
+      "sourceAssetFolder": 12,
+      "file": "characters/12.webp",
+      "sha256": "c9c355667c55f9894ba3ee9865784cf72f7969609d3ba4c0dac65beecf6789dd"
+    },
+    {
+      "characterCode": 13,
+      "sourceAssetFolder": 13,
+      "file": "characters/13.webp",
+      "sha256": "a44af50d507fa4a3edff5d339e2d34b5c82b5a5de3502999ff5d654f79ff305a"
+    },
+    {
+      "characterCode": 14,
+      "sourceAssetFolder": 15,
+      "file": "characters/14.webp",
+      "sha256": "07bb149e33b6dfa7d1575bdef8b67fb133975270c7d87b5de9527c6316d87a51"
+    },
+    {
+      "characterCode": 15,
+      "sourceAssetFolder": 14,
+      "file": "characters/15.webp",
+      "sha256": "04e0f810a6c1524dc1fc82e62e63b625e00ae1009d6c56847e1416cb265f7d89"
+    },
+    {
+      "characterCode": 16,
+      "sourceAssetFolder": 18,
+      "file": "characters/16.webp",
+      "sha256": "e5474195fb6cad850bceb19f0419bbaaa3c72916120dcf024a7f37bb168bec7c"
+    },
+    {
+      "characterCode": 17,
+      "sourceAssetFolder": 16,
+      "file": "characters/17.webp",
+      "sha256": "6158b63952298bc19aa46d43b858fb1866cfbf1b433ecb12e7403569be4f40ad"
+    },
+    {
+      "characterCode": 18,
+      "sourceAssetFolder": 17,
+      "file": "characters/18.webp",
+      "sha256": "2d3e5da32c67ed7012202c643bfee6609ed8870a2207a52362726250f649ce48"
+    },
+    {
+      "characterCode": 19,
+      "sourceAssetFolder": 19,
+      "file": "characters/19.webp",
+      "sha256": "4fb73d239183e42304a76d8238a831c153b467f52df2e37769e8be442a3e4cfe"
+    },
+    {
+      "characterCode": 20,
+      "sourceAssetFolder": 20,
+      "file": "characters/20.webp",
+      "sha256": "75380a4a2cb63bfebf4ac263019d1ac77e489ecc6abf083f69f0662aee889435"
+    },
+    {
+      "characterCode": 21,
+      "sourceAssetFolder": 21,
+      "file": "characters/21.webp",
+      "sha256": "da2f3745ff078b83ab3b5a7e7c8a3427ac2b7d484b961309c0fdbdba4ec4ad43"
+    },
+    {
+      "characterCode": 22,
+      "sourceAssetFolder": 22,
+      "file": "characters/22.webp",
+      "sha256": "1d5b3b39a94f1cf191d768bbcffb2ef0c6497c6c646099235677cf871c738631"
+    },
+    {
+      "characterCode": 23,
+      "sourceAssetFolder": 23,
+      "file": "characters/23.webp",
+      "sha256": "f25c6f965015ff2ce8fce6c5575f9fddaddaf80e0f0dcd06b6565973e2251aa3"
+    },
+    {
+      "characterCode": 24,
+      "sourceAssetFolder": 24,
+      "file": "characters/24.webp",
+      "sha256": "4226e0a061bfce936ebff0de4514176bcb6b0b9ec3531db51c95d02b0e629f3e"
+    },
+    {
+      "characterCode": 25,
+      "sourceAssetFolder": 25,
+      "file": "characters/25.webp",
+      "sha256": "f7bb12d5439a5c18a79307f293b78e183c006316c6e2e5ca8f71752ebd06a9f3"
+    },
+    {
+      "characterCode": 26,
+      "sourceAssetFolder": 26,
+      "file": "characters/26.webp",
+      "sha256": "c36d466920ee88cd23a54b13dadd1b07e1b26a553fabc799dfc9e7601e3f694e"
+    },
+    {
+      "characterCode": 27,
+      "sourceAssetFolder": 27,
+      "file": "characters/27.webp",
+      "sha256": "ef9c0b6a53668303d5e3b031463a7b86b82a5cc103ce4e466adb83369837732d"
+    },
+    {
+      "characterCode": 28,
+      "sourceAssetFolder": 28,
+      "file": "characters/28.webp",
+      "sha256": "b5f0bccd3262e71464c3f33d4cd3ebc4b3354e0fb3080ef42908866a2219c357"
+    },
+    {
+      "characterCode": 29,
+      "sourceAssetFolder": 29,
+      "file": "characters/29.webp",
+      "sha256": "4f368363923beed0f0e142461b2237959d523cae817079f98cbef88058bedcac"
+    },
+    {
+      "characterCode": 30,
+      "sourceAssetFolder": 30,
+      "file": "characters/30.webp",
+      "sha256": "258282c90ad607b9c0a23501e5cf6956bfd8b906ad4dafb13ac5dd5767797ad0"
+    },
+    {
+      "characterCode": 31,
+      "sourceAssetFolder": 31,
+      "file": "characters/31.webp",
+      "sha256": "2b7c80d73c797832de5c49e7b5e027b858807c7ffb0f1a2793cb39a48b00ae4f"
+    },
+    {
+      "characterCode": 32,
+      "sourceAssetFolder": 32,
+      "file": "characters/32.webp",
+      "sha256": "cf274baba30c23d2d95b4e360a15a0f68bcf45d8856c7e0b4a2894780d8b89ec"
+    },
+    {
+      "characterCode": 33,
+      "sourceAssetFolder": 33,
+      "file": "characters/33.webp",
+      "sha256": "9ed387b5da202b41686ff64fc87d5ccb85977e92346820ff30e5c5e99e2d5646"
+    },
+    {
+      "characterCode": 34,
+      "sourceAssetFolder": 34,
+      "file": "characters/34.webp",
+      "sha256": "6273e5bc06dc15d9d5d948e45a6a355906b43998241e531fe37457ac7fcfd762"
+    },
+    {
+      "characterCode": 35,
+      "sourceAssetFolder": 35,
+      "file": "characters/35.webp",
+      "sha256": "bcb1d4cf2b91dfdaaf885b2e271ae3c1652c9c8bd7110b4d35e8bea9768aa8d2"
+    },
+    {
+      "characterCode": 36,
+      "sourceAssetFolder": 36,
+      "file": "characters/36.webp",
+      "sha256": "6f8f805f920b48c3993fa964b45e4141178f1f33ce7c8022666fc0bbed0feba9"
+    },
+    {
+      "characterCode": 37,
+      "sourceAssetFolder": 37,
+      "file": "characters/37.webp",
+      "sha256": "ea73b251fba8d103bb942f019ef4081d9e2f43e028ea9d9567e1c878633d988a"
+    },
+    {
+      "characterCode": 38,
+      "sourceAssetFolder": 38,
+      "file": "characters/38.webp",
+      "sha256": "5f8ec6e7f3c1fcb440274a52dc48276045f7dd9917d9c61df45be4b29ea0571a"
+    },
+    {
+      "characterCode": 39,
+      "sourceAssetFolder": 39,
+      "file": "characters/39.webp",
+      "sha256": "e2d845902215ce8656497deb60d4f0e115fe2a7553d8713033601a076e1acb78"
+    },
+    {
+      "characterCode": 40,
+      "sourceAssetFolder": 40,
+      "file": "characters/40.webp",
+      "sha256": "129f417475093bc2aad0f1d8992dd3f895f5bec9a13495734eac89e0909e01f5"
+    },
+    {
+      "characterCode": 41,
+      "sourceAssetFolder": 41,
+      "file": "characters/41.webp",
+      "sha256": "38bcbcd78944632d443ce49e2d44e160c203225b40e0c0c654c34338a0326c82"
+    },
+    {
+      "characterCode": 42,
+      "sourceAssetFolder": 42,
+      "file": "characters/42.webp",
+      "sha256": "095583d782259627c9a16edca862f9f9da811f7a9a587f3ffe2297243743626e"
+    },
+    {
+      "characterCode": 43,
+      "sourceAssetFolder": 43,
+      "file": "characters/43.webp",
+      "sha256": "2a97fb61ba476522bad756e8787ac22d49fc38905282f4d13755e2e25b525f98"
+    },
+    {
+      "characterCode": 44,
+      "sourceAssetFolder": 44,
+      "file": "characters/44.webp",
+      "sha256": "79f8bc4ae38900cb2a730725b8e234ff427ca104f43436b075981606f9e830e5"
+    },
+    {
+      "characterCode": 45,
+      "sourceAssetFolder": 45,
+      "file": "characters/45.webp",
+      "sha256": "5bf44e3a67a6179d0fe080cacc18d7151f9c8168b36b3314a0ad90b905473f37"
+    },
+    {
+      "characterCode": 46,
+      "sourceAssetFolder": 46,
+      "file": "characters/46.webp",
+      "sha256": "d267345e32f2a54306cb9b236aef6882aa7bb882235fe0e2a950b09dc1bdd8be"
+    },
+    {
+      "characterCode": 47,
+      "sourceAssetFolder": 47,
+      "file": "characters/47.webp",
+      "sha256": "c4980ca93c8cd767d89e5321a337b9751736e66d9821ca67c09e206975118a86"
+    },
+    {
+      "characterCode": 48,
+      "sourceAssetFolder": 48,
+      "file": "characters/48.webp",
+      "sha256": "26ca323438655e451c5106d7cc073c6e5af41528a75e3300945ae0d2d08cc430"
+    },
+    {
+      "characterCode": 49,
+      "sourceAssetFolder": 49,
+      "file": "characters/49.webp",
+      "sha256": "66d2953db1d46571bc3fc3b657a35047f67f2e80f4f8387eead071d7b1246069"
+    },
+    {
+      "characterCode": 50,
+      "sourceAssetFolder": 50,
+      "file": "characters/50.webp",
+      "sha256": "d0843e1b6614c44103a3c7b035dd7eeda5ff9daf44dea8256a41e29bec93195c"
+    },
+    {
+      "characterCode": 51,
+      "sourceAssetFolder": 51,
+      "file": "characters/51.webp",
+      "sha256": "ae414a8df4da511ae3487431e2c4a725bb094c60bef01fb41782705a921ddba0"
+    },
+    {
+      "characterCode": 52,
+      "sourceAssetFolder": 52,
+      "file": "characters/52.webp",
+      "sha256": "ab72210b31795dac3a5e59819d2b02689604de3c1e6b8e2461442fd69cf397f7"
+    },
+    {
+      "characterCode": 53,
+      "sourceAssetFolder": 53,
+      "file": "characters/53.webp",
+      "sha256": "4f5c73b3a21dfda59cb2cde860874f73ff125f9c68dd3dc9ee7111ee79805956"
+    },
+    {
+      "characterCode": 54,
+      "sourceAssetFolder": 54,
+      "file": "characters/54.webp",
+      "sha256": "679f5b81138efc66f46c14a9f1c2fe491d91f629b07ee6f3762d43ef79f8364c"
+    },
+    {
+      "characterCode": 55,
+      "sourceAssetFolder": 55,
+      "file": "characters/55.webp",
+      "sha256": "dad7dd5dfc5b60c900f4008e37cb02d09e74b27010946f576f25f474aec011a3"
+    },
+    {
+      "characterCode": 56,
+      "sourceAssetFolder": 56,
+      "file": "characters/56.webp",
+      "sha256": "b3ce0c2ca6c8f7df43940f2492c5085f68b668e1c5f0612f1d6b04bf0dda9e81"
+    },
+    {
+      "characterCode": 57,
+      "sourceAssetFolder": 57,
+      "file": "characters/57.webp",
+      "sha256": "b74b5e61e5041693c32a7d5f84aebff37dcadf41929db2364d8404719f75a191"
+    },
+    {
+      "characterCode": 58,
+      "sourceAssetFolder": 58,
+      "file": "characters/58.webp",
+      "sha256": "a5c0d62485e0f29f1c4d1e072a43e48d1ab9504e7f288a49f34e35bb0f676ee9"
+    },
+    {
+      "characterCode": 59,
+      "sourceAssetFolder": 59,
+      "file": "characters/59.webp",
+      "sha256": "7d2008f2ce95b2e1f373e41ab6062a9bd57b742b3ffc4892d1a3a375d4b91bf6"
+    },
+    {
+      "characterCode": 60,
+      "sourceAssetFolder": 60,
+      "file": "characters/60.webp",
+      "sha256": "680a0015d455927b3ff3397f62c865a032c2eb10892fb201676765afb26bef3a"
+    },
+    {
+      "characterCode": 61,
+      "sourceAssetFolder": 61,
+      "file": "characters/61.webp",
+      "sha256": "8b655be7c076ac5f6b1037c4f2acc094b371cb99358c327dd14076e3d582fc63"
+    },
+    {
+      "characterCode": 62,
+      "sourceAssetFolder": 62,
+      "file": "characters/62.webp",
+      "sha256": "a49449c09f82f5b05d2ca12cc9cc420dda4acabe4565a4070c067ded2dbcc421"
+    },
+    {
+      "characterCode": 63,
+      "sourceAssetFolder": 63,
+      "file": "characters/63.webp",
+      "sha256": "ce922f1349987cab159ed0f4d1e5bc4608fc0853ee971005f2ebe1741a927ff2"
+    },
+    {
+      "characterCode": 64,
+      "sourceAssetFolder": 64,
+      "file": "characters/64.webp",
+      "sha256": "9cd4fed2ca3f9ab06988885d589c94c9d81d3d0e0af33414772d19d2b0129b36"
+    },
+    {
+      "characterCode": 65,
+      "sourceAssetFolder": 65,
+      "file": "characters/65.webp",
+      "sha256": "0941c84f0f09181c33f55fd7fcc3ac445cb9fda2305d4271a9d7796ae1e04384"
+    },
+    {
+      "characterCode": 66,
+      "sourceAssetFolder": 66,
+      "file": "characters/66.webp",
+      "sha256": "0fc5fa773b60a3d7ab116f4528725070e677c5efb21cef1a05e95cece62a6029"
+    },
+    {
+      "characterCode": 67,
+      "sourceAssetFolder": 67,
+      "file": "characters/67.webp",
+      "sha256": "6bb179698beaa60d4ae7073078a93547ccb32b226bed6fa061644690c6025807"
+    },
+    {
+      "characterCode": 68,
+      "sourceAssetFolder": 68,
+      "file": "characters/68.webp",
+      "sha256": "66c8e80b04e454bcc88f3b8c8fa90963a40a6f7fe32b0d2fb9d77d930aa2bbbf"
+    },
+    {
+      "characterCode": 69,
+      "sourceAssetFolder": 69,
+      "file": "characters/69.webp",
+      "sha256": "2b7aeb0f707d2b65b1dd662523358d66c3e123e4593c803be510caa4aed1e0bc"
+    },
+    {
+      "characterCode": 70,
+      "sourceAssetFolder": 70,
+      "file": "characters/70.webp",
+      "sha256": "f69175872a2de2d0818ab5b81158d97bbe3d128ad670617468027d9f4afa01d2"
+    },
+    {
+      "characterCode": 71,
+      "sourceAssetFolder": 71,
+      "file": "characters/71.webp",
+      "sha256": "4867daef62b974f3317ff3aa11f92baf8354ac6fda8d4eb2f0d4a703c46d2975"
+    },
+    {
+      "characterCode": 72,
+      "sourceAssetFolder": 72,
+      "file": "characters/72.webp",
+      "sha256": "80f0032d95e5c028954e003c2886286b60aa907243d0aadbb702e460d8c3b8c9"
+    },
+    {
+      "characterCode": 73,
+      "sourceAssetFolder": 73,
+      "file": "characters/73.webp",
+      "sha256": "adcbbac00a6e743541f863a579652896817be4548da17ba7a4428769b3d3cbd5"
+    },
+    {
+      "characterCode": 74,
+      "sourceAssetFolder": 74,
+      "file": "characters/74.webp",
+      "sha256": "9dcadc329126f427c583d871ff1a8e835973d672bf98eaac918b1441fa4b8b8b"
+    },
+    {
+      "characterCode": 75,
+      "sourceAssetFolder": 75,
+      "file": "characters/75.webp",
+      "sha256": "72d5819d1224ee7ce6fe7d1bd47e4a0d38bf8ba36f3f807e1042dccb1443974a"
+    },
+    {
+      "characterCode": 76,
+      "sourceAssetFolder": 76,
+      "file": "characters/76.webp",
+      "sha256": "0b056c7043026de78909e62a686f4a155293af2b73fc7b7e1c5630048fa15665"
+    },
+    {
+      "characterCode": 77,
+      "sourceAssetFolder": 77,
+      "file": "characters/77.webp",
+      "sha256": "afeb276204f77450528f99631de45be06650585b0943b3565f8f120ab82c1c04"
+    },
+    {
+      "characterCode": 78,
+      "sourceAssetFolder": 78,
+      "file": "characters/78.webp",
+      "sha256": "11d94c52137594d37bc9a144c4532099c43c7035231501d5f2d9d1b2946c5b2c"
+    },
+    {
+      "characterCode": 79,
+      "sourceAssetFolder": 79,
+      "file": "characters/79.webp",
+      "sha256": "160f0e223cf1151ebe24e070bf73a5f4a819df01f311b5ef5e64855e45e4c4a4"
+    },
+    {
+      "characterCode": 80,
+      "sourceAssetFolder": 80,
+      "file": "characters/80.webp",
+      "sha256": "68aaac3e73f4955de3be388fcab18808d3404656b97b7e320c97bc9bf2bb384d"
+    },
+    {
+      "characterCode": 81,
+      "sourceAssetFolder": 81,
+      "file": "characters/81.webp",
+      "sha256": "fddd74600c6193dd0fc01c63346bcf3d7962d55657d93c2b823c208a9e6ce627"
+    },
+    {
+      "characterCode": 82,
+      "sourceAssetFolder": 82,
+      "file": "characters/82.webp",
+      "sha256": "ae99d7ab16843d8ebcab649f745f941c996d5936b8a81ef1ddf4be1b6e5b1c11"
+    },
+    {
+      "characterCode": 83,
+      "sourceAssetFolder": 83,
+      "file": "characters/83.webp",
+      "sha256": "0956664002d172818712a6d8bd3c623e2fb079ca1c02aef5f4ed47b9fe34e393"
+    },
+    {
+      "characterCode": 84,
+      "sourceAssetFolder": 84,
+      "file": "characters/84.webp",
+      "sha256": "c61ba6b5489fc59b37668e8960379692b55b6adebf52c74ee9f09fc47517933a"
+    },
+    {
+      "characterCode": 85,
+      "sourceAssetFolder": 85,
+      "file": "characters/85.webp",
+      "sha256": "b0f250e1b196a8916ceb32c4be023932b3d590152c3d7dadbaa38e8d3a4652b8"
+    },
+    {
+      "characterCode": 86,
+      "sourceAssetFolder": 86,
+      "file": "characters/86.webp",
+      "sha256": "f5e2a6ed279fa2a36413bdcef2da33dd8892e84ae3ba7bd77940d5c363f12ade"
+    },
+    {
+      "characterCode": 87,
+      "sourceAssetFolder": 87,
+      "file": "characters/87.webp",
+      "sha256": "d24c1710874d140e81985990a9a5517620021a66708f2c335d2622cad61c982f"
+    },
+    {
+      "characterCode": 88,
+      "sourceAssetFolder": 88,
+      "file": "characters/88.webp",
+      "sha256": "905ca79342f9cef909f2a808ff2fca38c89889f4089f24015ea029b026de36c5"
+    },
+    {
+      "characterCode": 89,
+      "sourceAssetFolder": 89,
+      "file": "characters/89.webp",
+      "sha256": "d4c04f659e9d30d84cc263a97923154ba61636d1f5ab28d6ef0d8572aa91593f"
+    },
+    {
+      "characterCode": 90,
+      "sourceAssetFolder": 90,
+      "file": "characters/90.webp",
+      "sha256": "e9e1975fc86def17377cec88221fd123e45b057ab9de949aca52da5e6e676e44"
+    }
+  ]
+}

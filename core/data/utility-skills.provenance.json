@@ -1,0 +1,419 @@
+{
+  "format": "ercraft-utility-skill-icon-provenance.v1",
+  "weapon": {
+    "status": "exact-mastery-icons-with-typed-gaps-and-character-overrides",
+    "sourcePageUrl": "https://m.game.naver.com/lounge/Black_Survival_Eternal_Return/db/wskill",
+    "sourceApiUrl": "https://comm-api.game.naver.com/nng_main/v1/game/db/skill/GM_670/dataType/wskill?order=name&offset=0&limit=200",
+    "assets": [
+      {
+        "masteryType": 1,
+        "objectId": "SK_670_3001000",
+        "name": "글러브 - 어퍼컷",
+        "file": "data/utility-skills/weapon/1.png",
+        "mimeType": "image/png",
+        "sha256": "d24f8adb540b2f2fa86cac43053c2b068d16d2cfcaecc461af6a9e5808c363cd",
+        "sourceUrl": "https://dbscthumb-phinf.pstatic.net/5104_000_6/20210129001049080_E13O6W6XV.png/wskillicon_081.png?type=m1500_q100",
+        "status": "exact-mastery-to-naver-weapon-skill-icon"
+      },
+      {
+        "masteryType": 2,
+        "objectId": "SK_670_3002000",
+        "name": "톤파 - 고속회전",
+        "file": "data/utility-skills/weapon/2.png",
+        "mimeType": "image/png",
+        "sha256": "19655e8225a0634f94c1808de52447b46a0134fa6d9ef106726c6a487360726a",
+        "sourceUrl": "https://dbscthumb-phinf.pstatic.net/5104_000_6/20210129001049100_0PJDF8K3D.png/wskillicon_091.png?type=m1500_q100",
+        "status": "exact-mastery-to-naver-weapon-skill-icon"
+      },
+      {
+        "masteryType": 3,
+        "objectId": "SK_670_3003000",
+        "name": "방망이 - 풀스윙",
+        "file": "data/utility-skills/weapon/3.png",
+        "mimeType": "image/png",
+        "sha256": "349aa577d53269805becb5b37c91b75ad26308e1f4394343f87bda0561811506",
+        "sourceUrl": "https://dbscthumb-phinf.pstatic.net/5104_000_6/20210129001049135_B50IHAUNJ.png/wskillicon_101.png?type=m1500_q100",
+        "status": "exact-mastery-to-naver-weapon-skill-icon"
+      },
+      {
+        "masteryType": 4,
+        "objectId": "SK_670_3004000",
+        "name": "채찍 - 바람 가르기",
+        "file": "data/utility-skills/weapon/4.png",
+        "mimeType": "image/png",
+        "sha256": "c326c2f3b06402fe4075a3e422ef8e7777e7d48d862b1bf5b8200bb5ca0f1587",
+        "sourceUrl": "https://dbscthumb-phinf.pstatic.net/5104_000_6/20210129001049182_RGEG2Q3Q4.png/wskillicon_192.png?type=m1500_q100",
+        "status": "exact-mastery-to-naver-weapon-skill-icon"
+      },
+      {
+        "masteryType": 5,
+        "objectId": "SK_670_3005000",
+        "name": "투척 - 연막",
+        "file": "data/utility-skills/weapon/5.png",
+        "mimeType": "image/png",
+        "sha256": "534bdec17f641d96161ece83c34442456d160f3ac29de5fc4f32c37f6f3ed72c",
+        "sourceUrl": "https://dbscthumb-phinf.pstatic.net/5104_000_6/20210129001049200_W4FLJV2P2.png/wskillicon_116.png?type=m1500_q100",
+        "status": "exact-mastery-to-naver-weapon-skill-icon"
+      },
+      {
+        "masteryType": 6,
+        "objectId": "SK_670_3006000",
+        "name": "암기 - 마름쇠 투척",
+        "file": "data/utility-skills/weapon/6.png",
+        "mimeType": "image/png",
+        "sha256": "b28315311f3856baac566f9219eccbc506d96e5c48cb818655b4170751e7a90e",
+        "sourceUrl": "https://dbscthumb-phinf.pstatic.net/5104_000_6/20210129001049711_ZPLRACHAQ.png/wskillicon_117.png?type=m1500_q100",
+        "status": "exact-mastery-to-naver-weapon-skill-icon"
+      },
+      {
+        "masteryType": 7,
+        "objectId": "SK_670_3007000",
+        "name": "활 - 곡사",
+        "file": "data/utility-skills/weapon/7.png",
+        "mimeType": "image/png",
+        "sha256": "fee164e273e700da6464e5499e956903cce4c0d24159ff741de887853cde2f0f",
+        "sourceUrl": "https://dbscthumb-phinf.pstatic.net/5104_000_6/20210129001049382_JW45QTMPZ.png/wskillicon_112.png?type=m1500_q100",
+        "status": "exact-mastery-to-naver-weapon-skill-icon"
+      },
+      {
+        "masteryType": 8,
+        "objectId": "SK_670_3008000",
+        "name": "석궁 - 강노",
+        "file": "data/utility-skills/weapon/8.png",
+        "mimeType": "image/png",
+        "sha256": "cca6b7b03ffa4f657f96e6946c405b5ad2495cf55041c7fa97e67efc40d035ea",
+        "sourceUrl": "https://dbscthumb-phinf.pstatic.net/5104_000_6/20210129001049518_SKX5XZVKC.png/wskillicon_113.png?type=m1500_q100",
+        "status": "exact-mastery-to-naver-weapon-skill-icon"
+      },
+      {
+        "masteryType": 9,
+        "objectId": "SK_670_3009000",
+        "name": "권총 - 무빙 리로드",
+        "file": "data/utility-skills/weapon/9.png",
+        "mimeType": "image/png",
+        "sha256": "5003e534f6ad0114cd2b2091da56fc86afb75c9778fc03806de8cb4138c03a6e",
+        "sourceUrl": "https://dbscthumb-phinf.pstatic.net/5104_000_6/20210129001049562_DLTCIHASK.png/wskillicon_051.png?type=m1500_q100",
+        "status": "exact-mastery-to-naver-weapon-skill-icon"
+      },
+      {
+        "masteryType": 10,
+        "objectId": "SK_670_3010000",
+        "name": "돌격소총 - 과열",
+        "file": "data/utility-skills/weapon/10.png",
+        "mimeType": "image/png",
+        "sha256": "7f48fd23b29f0c8d59bc91272847035d06eba7a7dd07ee7b35a22746ce940069",
+        "sourceUrl": "https://dbscthumb-phinf.pstatic.net/5104_000_6/20210129001049631_YD6WAEDYE.png/wskillicon_061.png?type=m1500_q100",
+        "status": "exact-mastery-to-naver-weapon-skill-icon"
+      },
+      {
+        "masteryType": 11,
+        "objectId": "SK_670_3011000",
+        "name": "저격총 - 저격",
+        "file": "data/utility-skills/weapon/11.png",
+        "mimeType": "image/png",
+        "sha256": "d5ad1a36ad680388214ca23167bfcbb9889d517969c8f88bc933351fd0c5390a",
+        "sourceUrl": "https://dbscthumb-phinf.pstatic.net/5104_000_6/20210129001049641_IQTQW3SCN.png/wskillicon_071.png?type=m1500_q100",
+        "status": "exact-mastery-to-naver-weapon-skill-icon"
+      },
+      {
+        "masteryType": 13,
+        "objectId": "SK_670_3013000",
+        "name": "망치 - 갑옷깨기",
+        "file": "data/utility-skills/weapon/13.png",
+        "mimeType": "image/png",
+        "sha256": "bb890f20497ed0e8e21aa7b092e2a4d840fa18ee1bb43ba72b01e8ca553ae3cf",
+        "sourceUrl": "https://dbscthumb-phinf.pstatic.net/5104_000_6/20210129001049755_52XM5UAW7.png/wskillicon_111.png?type=m1500_q100",
+        "status": "exact-mastery-to-naver-weapon-skill-icon"
+      },
+      {
+        "masteryType": 14,
+        "objectId": "SK_670_3014000",
+        "name": "도끼 - 피의 나선",
+        "file": "data/utility-skills/weapon/14.png",
+        "mimeType": "image/png",
+        "sha256": "64b586c4e0f653a35a0fc5a45a9671118834369f26883174c027c330fe10f490",
+        "sourceUrl": "https://dbscthumb-phinf.pstatic.net/5104_000_6/20210129001049803_1VC8P1PBR.png/wskillicon_031.png?type=m1500_q100",
+        "status": "exact-mastery-to-naver-weapon-skill-icon"
+      },
+      {
+        "masteryType": 15,
+        "objectId": "SK_670_3015000",
+        "name": "단검 - 망토와 단검",
+        "file": "data/utility-skills/weapon/15.png",
+        "mimeType": "image/png",
+        "sha256": "766347c13acfd2c12243f52c34497f59faa5ce33662057074f43cc58c86d1e69",
+        "sourceUrl": "https://dbscthumb-phinf.pstatic.net/5104_000_6/20210129001049909_DLWCDAC3T.png/wskillicon_011.png?type=m1500_q100",
+        "status": "exact-mastery-to-naver-weapon-skill-icon"
+      },
+      {
+        "masteryType": 16,
+        "objectId": "SK_670_3016000",
+        "name": "양손검 - 빗겨 흘리기",
+        "file": "data/utility-skills/weapon/16.png",
+        "mimeType": "image/png",
+        "sha256": "4c45184ba37718412a3366177612f1b01e122134cabf47ec9ecb47e81a67f12b",
+        "sourceUrl": "https://dbscthumb-phinf.pstatic.net/5104_000_6/20210129001049982_RZ5KQNC29.png/wskillicon_021.png?type=m1500_q100",
+        "status": "exact-mastery-to-naver-weapon-skill-icon"
+      },
+      {
+        "masteryType": 18,
+        "objectId": "SK_670_3018000",
+        "name": "쌍검 - 쌍검난무",
+        "file": "data/utility-skills/weapon/18.png",
+        "mimeType": "image/png",
+        "sha256": "a5972080eb9e38b9764c5cbc7b0977cb06a0c95440e48b06ceeaf24ffd5d3c9e",
+        "sourceUrl": "https://dbscthumb-phinf.pstatic.net/5104_000_6/20210129001050451_RRG9UZ0AB.png/wskillicon_041.png?type=m1500_q100",
+        "status": "exact-mastery-to-naver-weapon-skill-icon"
+      },
+      {
+        "masteryType": 19,
+        "objectId": "SK_670_3019000",
+        "name": "창 - 그림자 찌르기",
+        "file": "data/utility-skills/weapon/19.png",
+        "mimeType": "image/png",
+        "sha256": "ac7f873b014f5a3712430e833bae640b008b9e73fc9792c90593495a4575f2f0",
+        "sourceUrl": "https://dbscthumb-phinf.pstatic.net/5104_000_6/20210129001050445_M57NO7NYK.png/wskillicon_115.png?type=m1500_q100",
+        "status": "exact-mastery-to-naver-weapon-skill-icon"
+      },
+      {
+        "masteryType": 20,
+        "objectId": "SK_670_3020000",
+        "name": "쌍절곤 - 맹룡과강",
+        "file": "data/utility-skills/weapon/20.png",
+        "mimeType": "image/png",
+        "sha256": "2162e83f08726f55d22fbfeeca3803c03bc77b2fe4bf374596c8f9d9afbccff0",
+        "sourceUrl": "https://dbscthumb-phinf.pstatic.net/5104_000_6/20210129001050471_F52PWCIOM.png/wskillicon_191.png?type=m1500_q100",
+        "status": "exact-mastery-to-naver-weapon-skill-icon"
+      },
+      {
+        "masteryType": 21,
+        "objectId": "SK_670_3021000",
+        "name": "레이피어 - 섬격",
+        "file": "data/utility-skills/weapon/21.png",
+        "mimeType": "image/png",
+        "sha256": "418335ad02d65d8d28a510cfb874d942bb42cdf3c00a55445a1f50d0c6f238d3",
+        "sourceUrl": "https://dbscthumb-phinf.pstatic.net/5104_000_6/20210129001050482_ZZ2T0DCKL.png/wskillicon_114.png?type=m1500_q100",
+        "status": "exact-mastery-to-naver-weapon-skill-icon"
+      },
+      {
+        "masteryType": 22,
+        "objectId": "SK_670_3022000",
+        "name": "기타 - Love&...",
+        "file": "data/utility-skills/weapon/22.png",
+        "mimeType": "image/png",
+        "sha256": "93c674c534fe43ca5e056a959c93e2b552c35e94aab4ed32310785e1036418b1",
+        "sourceUrl": "https://dbscthumb-phinf.pstatic.net/5104_000_6/20210129001050498_9JWGA8KTX.png/wskillicon_181.png?type=m1500_q100",
+        "status": "exact-mastery-to-naver-weapon-skill-icon"
+      },
+      {
+        "masteryType": 23,
+        "objectId": "SK_AD_670_53",
+        "name": "카메라 - 플래시",
+        "file": "data/utility-skills/weapon/23.png",
+        "mimeType": "image/png",
+        "sha256": "0adac6e9999d01a43b4a5bacb3c23412fa8cd5a554f9fc0c2d7ce935fb4bfb1c",
+        "sourceUrl": "https://nng-phinf.pstatic.net/MjAyMjExMDNfMTg4/MDAxNjY3NDQ1MjM4NjUx.yK2JIbADlt3zuL0wXX4xsyj0CcAe8TWIKtFnNr5yXrEg.RjXhZShC2SRqWw2_Es4iPRJeIm9GEyeBK01erpaGnxsg.PNG/21._Camera.png",
+        "status": "exact-mastery-to-naver-weapon-skill-icon"
+      },
+      {
+        "masteryType": 24,
+        "objectId": "SK_AD_670_23",
+        "name": "아르카나 - VF 매개",
+        "file": "data/utility-skills/weapon/24.png",
+        "mimeType": "image/png",
+        "sha256": "f600c4c21684d5fa4dc75f514b9b61e81c4b012170b228cd582106893852357d",
+        "sourceUrl": "https://nng-phinf.pstatic.net/MjAyMjExMDJfMjE4/MDAxNjY3Mzc4MzEzNTcx.sFI9I4Hbjtd-EzM9IURZvYnIfKkCxj70rzClep-AIGkg.gMS9FJGAA9VCxuAvwT0YUl8Zfb6oIljaAlyR7FTb3Mgg.PNG/22._Arcana.png",
+        "status": "exact-mastery-to-naver-weapon-skill-icon"
+      },
+      {
+        "masteryType": 25,
+        "objectId": "SK_AD_670_54",
+        "name": "VF 의수 - VF 안정화",
+        "file": "data/utility-skills/weapon/25.png",
+        "mimeType": "image/png",
+        "sha256": "b454f235ec6333b1e133327e8dd880cc12207611bc510bcdecc4a3590cdf0433",
+        "sourceUrl": "https://nng-phinf.pstatic.net/MjAyMjExMDNfMzMg/MDAxNjY3NDQ1NDc2NDgz.kWiD228FrFDXLw0uE_-2eKUba3NdLipnUArXJKLrsG8g.6Fy939JV-6HVPdID3NeMpPTBhj5K2Z1bMvgFHLXJs1Ig.PNG/23._VF_Prosthetic.png",
+        "status": "exact-mastery-to-naver-weapon-skill-icon"
+      }
+    ],
+    "unavailable": [
+      {
+        "masteryType": 12,
+        "status": "unavailable-no-exact-naver-weapon-skill-row"
+      },
+      {
+        "masteryType": 17,
+        "status": "unavailable-no-exact-naver-weapon-skill-row"
+      }
+    ],
+    "characterOverrides": [
+      {
+        "characterCode": 84,
+        "name": "블레어 전용 D",
+        "file": "data/utility-skills/weapon/character-84.png",
+        "mimeType": "image/png",
+        "sha256": "49f5e0554ff2492d3f56902db2f04b40efb0c7b79b93e298ee6926a8d969e9d1",
+        "sourceFilename": "Blair_D.png",
+        "sourceFolderUrl": "https://drive.google.com/drive/folders/1T7RnDdwoKUtehMKBvoipuAZQQ1hSmn7r",
+        "status": "exact-character-specific-user-provided-weapon-skill-icon"
+      }
+    ]
+  },
+  "tactical": {
+    "status": "exact-group-code-production-verified-tactical-icons",
+    "codeToSlug": {
+      "30": "tactical-skills/blink",
+      "40": "tactical-skills/quake",
+      "50": "tactical-skills/protocol-violation",
+      "60": "tactical-skills/electric-shift",
+      "70": "tactical-skills/force-field",
+      "80": "tactical-skills/totem",
+      "90": "tactical-skills/nullification",
+      "110": "tactical-skills/soul-stealer",
+      "120": "tactical-skills/the-strijder",
+      "130": "tactical-skills/blade-of-truth",
+      "150": "tactical-skills/healing-wind",
+      "160": "tactical-skills/repulsor-missiles",
+      "170": "tactical-skills/plasma-dash",
+      "190": "tactical-skills/wings-of-light",
+      "500080": "tactical-skills/fantastical-punch",
+      "500120": "tactical-skills/blink",
+      "500130": "tactical-skills/quake",
+      "500140": "tactical-skills/protocol-violation",
+      "500150": "tactical-skills/electric-shift",
+      "500160": "tactical-skills/force-field",
+      "500170": "tactical-skills/totem",
+      "500180": "tactical-skills/nullification",
+      "500190": "tactical-skills/soul-stealer",
+      "500200": "tactical-skills/the-strijder",
+      "500210": "tactical-skills/blade-of-truth",
+      "500220": "tactical-skills/false-oath",
+      "500230": "tactical-skills/healing-wind",
+      "500240": "tactical-skills/lock-ontracker",
+      "500250": "tactical-skills/repulsor-missiles",
+      "500260": "tactical-skills/plasma-dash",
+      "500280": "tactical-skills/wings-of-light"
+    },
+    "assets": [
+      {
+        "slug": "tactical-skills/blade-of-truth",
+        "file": "data/utility-skills/tactical/blade-of-truth.webp",
+        "mimeType": "image/webp",
+        "sha256": "87a477f38c410974518c1d2c979600870edd7db681b2a18693b5ac18c271c31b",
+        "status": "exact-group-code-production-verified-tactical-icon"
+      },
+      {
+        "slug": "tactical-skills/blink",
+        "file": "data/utility-skills/tactical/blink.webp",
+        "mimeType": "image/webp",
+        "sha256": "8d27ba88aebb0058c5cd7144424fe4a14f4176171e4e351ac00d6e008d4cca48",
+        "status": "exact-group-code-production-verified-tactical-icon"
+      },
+      {
+        "slug": "tactical-skills/electric-shift",
+        "file": "data/utility-skills/tactical/electric-shift.webp",
+        "mimeType": "image/webp",
+        "sha256": "84ddba50a24bf01496e14468809caec8f5df2be70ec5d31b6fdea0a7c8a1612f",
+        "status": "exact-group-code-production-verified-tactical-icon"
+      },
+      {
+        "slug": "tactical-skills/false-oath",
+        "file": "data/utility-skills/tactical/false-oath.webp",
+        "mimeType": "image/webp",
+        "sha256": "ff2a6534d0e0fd62e97e019f717ea789312473de5997f3ff50b1a45ae84d6f1d",
+        "status": "exact-group-code-production-verified-tactical-icon"
+      },
+      {
+        "slug": "tactical-skills/fantastical-punch",
+        "file": "data/utility-skills/tactical/fantastical-punch.webp",
+        "mimeType": "image/webp",
+        "sha256": "1c02e2351bf771af55f2cce4b56402fc284d87cdb3ac4239d7749af2f99bd850",
+        "status": "exact-group-code-production-verified-tactical-icon"
+      },
+      {
+        "slug": "tactical-skills/force-field",
+        "file": "data/utility-skills/tactical/force-field.webp",
+        "mimeType": "image/webp",
+        "sha256": "f08bf3465ae646cc5e0c0afc1948ee8c911e615f33549998defc486dcf685b44",
+        "status": "exact-group-code-production-verified-tactical-icon"
+      },
+      {
+        "slug": "tactical-skills/healing-wind",
+        "file": "data/utility-skills/tactical/healing-wind.webp",
+        "mimeType": "image/webp",
+        "sha256": "59ef7e5396994ac8c07bff6f6eaf16fb1534efac50b5c8e4fc0be427988e0d7a",
+        "status": "exact-group-code-production-verified-tactical-icon"
+      },
+      {
+        "slug": "tactical-skills/lock-ontracker",
+        "file": "data/utility-skills/tactical/lock-ontracker.webp",
+        "mimeType": "image/webp",
+        "sha256": "ea4c6cc8b95f091421a17d1ab08b37053c1e81450c574c0c3b2eeb9a2fe8d357",
+        "status": "exact-group-code-production-verified-tactical-icon"
+      },
+      {
+        "slug": "tactical-skills/nullification",
+        "file": "data/utility-skills/tactical/nullification.webp",
+        "mimeType": "image/webp",
+        "sha256": "4391fdfed334cf9ab02d619dacf3787c1e64476719ddb6df2296fd01c2d4baad",
+        "status": "exact-group-code-production-verified-tactical-icon"
+      },
+      {
+        "slug": "tactical-skills/plasma-dash",
+        "file": "data/utility-skills/tactical/plasma-dash.webp",
+        "mimeType": "image/webp",
+        "sha256": "41263a5ba1580b9043c2700c539290e7cdac906c12af8114b217c06dc78da12e",
+        "status": "exact-group-code-production-verified-tactical-icon"
+      },
+      {
+        "slug": "tactical-skills/protocol-violation",
+        "file": "data/utility-skills/tactical/protocol-violation.webp",
+        "mimeType": "image/webp",
+        "sha256": "219c7f2b48a64a0763e4be611111a7bf9f064f1f363433a1d36d7627ce029c10",
+        "status": "exact-group-code-production-verified-tactical-icon"
+      },
+      {
+        "slug": "tactical-skills/quake",
+        "file": "data/utility-skills/tactical/quake.webp",
+        "mimeType": "image/webp",
+        "sha256": "cbdd677fa9b2be9648849d736a38714f69fd6363ab8dd67acac6c55ae2d2b087",
+        "status": "exact-group-code-production-verified-tactical-icon"
+      },
+      {
+        "slug": "tactical-skills/repulsor-missiles",
+        "file": "data/utility-skills/tactical/repulsor-missiles.webp",
+        "mimeType": "image/webp",
+        "sha256": "534edbff2c36dbe5d29e0b7bd90d528e1f8808e202c558986dc7d2a839cf5507",
+        "status": "exact-group-code-production-verified-tactical-icon"
+      },
+      {
+        "slug": "tactical-skills/soul-stealer",
+        "file": "data/utility-skills/tactical/soul-stealer.webp",
+        "mimeType": "image/webp",
+        "sha256": "3354ed91184e20e1e2fab81ca744824a22c9da2bf073744e763f7c11f31b8e25",
+        "status": "exact-group-code-production-verified-tactical-icon"
+      },
+      {
+        "slug": "tactical-skills/the-strijder",
+        "file": "data/utility-skills/tactical/the-strijder.webp",
+        "mimeType": "image/webp",
+        "sha256": "1c62debbe58ff2f039924ca06edc455658cf7ce298e8f12e935fb177ffa55360",
+        "status": "exact-group-code-production-verified-tactical-icon"
+      },
+      {
+        "slug": "tactical-skills/totem",
+        "file": "data/utility-skills/tactical/totem.webp",
+        "mimeType": "image/webp",
+        "sha256": "2c70ba396cbf64e770d195294f3e094f6f1455cd85453b6322fc9794ffcdff47",
+        "status": "exact-group-code-production-verified-tactical-icon"
+      },
+      {
+        "slug": "tactical-skills/wings-of-light",
+        "file": "data/utility-skills/tactical/wings-of-light.webp",
+        "mimeType": "image/webp",
+        "sha256": "57a8df30188cb21c7eaacc18af02cd9cd1440fffb124cd2517e3401cf38ace2a",
+        "status": "exact-group-code-production-verified-tactical-icon"
+      }
+    ]
+  }
+}

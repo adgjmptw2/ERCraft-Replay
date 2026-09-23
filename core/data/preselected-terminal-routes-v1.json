@@ -1,0 +1,163 @@
+{
+  "format": "preselected-existing-terminal-routes.v1",
+  "entries": [
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:1:1001200:any",
+        "characterCode": 1,
+        "skillGroup": 1001200,
+        "label": "Q1",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy"
+      },
+      "routeId": "preselected-explicit-effect-family",
+      "bundleId": "01:Q",
+      "reviewedMethods": [
+        "explicit-effect-family-exclusive-complete-cast-lifetime"
+      ],
+      "requirementsSha256": "af3258e4149a24c0931499963a45dc171df474e1e098f18f3b77d2d55091656a"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:1:1001210:any",
+        "characterCode": 1,
+        "skillGroup": 1001210,
+        "label": "Q2",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy"
+      },
+      "routeId": "preselected-explicit-effect-family",
+      "bundleId": "01:Q",
+      "reviewedMethods": [
+        "explicit-effect-family-exclusive-complete-cast-lifetime"
+      ],
+      "requirementsSha256": "af3258e4149a24c0931499963a45dc171df474e1e098f18f3b77d2d55091656a"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:3:1003300:any",
+        "characterCode": 3,
+        "skillGroup": 1003300,
+        "label": "W",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy"
+      },
+      "routeId": "preselected-explicit-effect-family",
+      "bundleId": "03:W",
+      "reviewedMethods": [
+        "explicit-effect-family-exclusive-complete-cast-lifetime"
+      ],
+      "requirementsSha256": "7c92846a4e72faf6b7ad8b9e9ec28332f8d701cad7056f25d4442cfed35be900"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:3:1003500:any",
+        "characterCode": 3,
+        "skillGroup": 1003500,
+        "label": "R1",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy"
+      },
+      "routeId": "preselected-explicit-effect-family",
+      "bundleId": "03:R",
+      "reviewedMethods": [
+        "explicit-effect-family-exclusive-complete-cast-lifetime"
+      ],
+      "requirementsSha256": "2a9c890824b2067c9b5c10c4f30da5b45552793f1365252c6423e21dc434d411"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:3:1003510:any",
+        "characterCode": 3,
+        "skillGroup": 1003510,
+        "label": "R2",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy"
+      },
+      "routeId": "preselected-explicit-effect-family",
+      "bundleId": "03:R",
+      "reviewedMethods": [
+        "explicit-effect-family-exclusive-complete-cast-lifetime"
+      ],
+      "requirementsSha256": "2a9c890824b2067c9b5c10c4f30da5b45552793f1365252c6423e21dc434d411"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:3:1003520:any",
+        "characterCode": 3,
+        "skillGroup": 1003520,
+        "label": "R3",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy"
+      },
+      "routeId": "preselected-explicit-effect-family",
+      "bundleId": "03:R",
+      "reviewedMethods": [
+        "explicit-effect-family-exclusive-complete-cast-lifetime"
+      ],
+      "requirementsSha256": "2a9c890824b2067c9b5c10c4f30da5b45552793f1365252c6423e21dc434d411"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:4:1004200:any",
+        "characterCode": 4,
+        "skillGroup": 1004200,
+        "label": "Q",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy"
+      },
+      "routeId": "preselected-explosion-contact",
+      "bundleId": "04:Q",
+      "reviewedMethods": [
+        "exact-explosion-target-list-damage-and-destruction"
+      ],
+      "requirementsSha256": "af4103a31b403d2f0e255b0e8abdd23b20e235abf98322b19c8bd74f174f7f00"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:4:1004400:any",
+        "characterCode": 4,
+        "skillGroup": 1004400,
+        "label": "E 일반 타격",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy"
+      },
+      "routeId": "preselected-explicit-effect-family",
+      "bundleId": "04:E",
+      "reviewedMethods": [
+        "explicit-effect-family-exclusive-complete-cast-lifetime"
+      ],
+      "requirementsSha256": "813f01789ba3016dc6579790a83d321597259af0803843128ca1c01c4440653f"
+    },
+    {
+      "spec": {
+        "metricId": "user-request-20260905-all90-v1:38:1038500:any",
+        "characterCode": 38,
+        "skillGroup": 1038500,
+        "label": "R [JennyActive4]",
+        "mode": "any",
+        "unit": "skill-cast",
+        "numerator": "casts-hitting-any-enemy",
+        "scopeTier": "base-stage-candidate",
+        "reportMultiTarget": true
+      },
+      "routeId": "preselected-explosion-contact",
+      "bundleId": "38:R",
+      "reviewedMethods": [
+        "exact-explosion-target-list-damage-and-destruction"
+      ],
+      "requirementsSha256": "2bd82eacbab52dd008ab255c9b1a4946b12460b46c3cd64eaa003e9faaf26834"
+    }
+  ],
+  "sourceAuthoritySha256": "55d86c573ed115eb35795b2b5f869badf2a9d1a0cf8cf7eea18b64f377727b48",
+  "mappingReviewUpgraded": false,
+  "replaySamplesUsedForCompilation": 0
+}

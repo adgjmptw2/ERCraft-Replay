@@ -1,0 +1,47 @@
+{
+  "format": "eva-w-owned-summon-producer.v1",
+  "skillGroup": 1036300,
+  "skillId": "EvaActive2",
+  "summonCode": 1160,
+  "rejectedProjectileCode": 103601,
+  "definition": {
+    "className": "EvaSkillActive2Data",
+    "field": "BodySummonObjectCode",
+    "fieldOffset": "0x14",
+    "assignmentRva": "0x12a667f",
+    "value": "0x488"
+  },
+  "spawn": {
+    "readFieldRva": "0x2acb7dd",
+    "spawnCallRva": "0x2acb833",
+    "callee": "0x1c15010",
+    "calleeName": "SpawnSummon"
+  },
+  "hitActions": [
+    {
+      "phase": "create",
+      "actionNo": 4002,
+      "argumentRva": "0x2acbcb5",
+      "callRva": "0x2acbcc7"
+    },
+    {
+      "phase": "finish-callback",
+      "actionNo": 4001,
+      "argumentRva": "0x2acd89c",
+      "callRva": "0x2acd8ae"
+    }
+  ],
+  "hitCallback": {
+    "rva": "0x2acbd60",
+    "damageCallRva": "0x2acc496",
+    "callee": "0x2eda990",
+    "calleeName": "DamageTo"
+  },
+  "inference": "Action targets require independent same-tick direct player damage; object removal closure is provisional, not a universal rule for all summons.",
+  "sourceHashes": {
+    "tmp\\static-code-restored-v1\\game-fn-12a65f0.json": "9153e4e714e550271203e91d3a637034ef03e5d012ba0a4d83cec8531b1d65fd",
+    "tmp\\static-code-restored-v1\\game-fn-2acb410.json": "2be8b052596c8008bcdc4c16f1e18fd6dd1379171d65bce438a595a9c31c12da",
+    "tmp\\static-code-restored-v1\\game-fn-2acbd60.json": "a53a1a0410202af1b9cd95d92b0ae536177190cffc995e4480a225389eec17f5",
+    "tmp\\static-code-restored-v1\\game-fn-2acd7c0.json": "2d8845cade332e9474f701f0e5fbc7c87b2f7cb95874d458ceeac648f03ec5a9"
+  }
+}

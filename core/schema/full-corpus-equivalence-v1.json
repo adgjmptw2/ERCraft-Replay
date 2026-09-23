@@ -1,0 +1,111 @@
+{
+  "format": "er-reviewed-corpus-equivalence.v1",
+  "automaticFutureAcceptance": false,
+  "clientVersions": [
+    "12.3.0"
+  ],
+  "dataContract": "complete-er-12.3-wire-fields-and-record-order.v1",
+  "implementations": [
+    {
+      "parserSha256": "3d3749dee6d0105ae63fd507fbb359ccf7a0ec102f2c63d25702700003988bb6",
+      "files": {
+        "decoder/full_replay_corpus.py": "115717ab48ed9986128e1741bdded1b248249139a2beed3156d528916aa7e9e7",
+        "decoder/delta_payloads.py": "6492effc6d80b3bbbe2ce85bd8448a31813e31faed7e7d64d7b46479dcb07671",
+        "decoder/inspect_deltas.py": "d3da7c31803821d2fda8d924b3025e0333be43f01d2d2676dc045a9db25d332f",
+        "schema/schema.json": "7efcc96bcdd10be36b927b79693efeebebf58e96b735b78a56157ae227a71938"
+      }
+    },
+    {
+      "parserSha256": "1e3208ebb20eb4a569addd577721b65ad2bde8ce1a8d4dc7eaa27f13d1de5908",
+      "files": {
+        "decoder/full_replay_corpus.py": "115717ab48ed9986128e1741bdded1b248249139a2beed3156d528916aa7e9e7",
+        "decoder/delta_payloads.py": "f86c058fdb62e7955f315f7a4f9bd08a5a5dfa3726e0498922460270bdbedf00",
+        "decoder/inspect_deltas.py": "d3da7c31803821d2fda8d924b3025e0333be43f01d2d2676dc045a9db25d332f",
+        "schema/schema.json": "7efcc96bcdd10be36b927b79693efeebebf58e96b735b78a56157ae227a71938"
+      }
+    },
+    {
+      "parserSha256": "d6fa21b89a5954a929f25fe1f7ffeb89544f1fab6b00a79be1bacb88d87a29ea",
+      "files": {
+        "decoder/full_replay_corpus.py": "4203138ada101e9ce5c3cd9b416ab3a6f09d209f26a748570902da23b3283ec9",
+        "decoder/delta_payloads.py": "f86c058fdb62e7955f315f7a4f9bd08a5a5dfa3726e0498922460270bdbedf00",
+        "decoder/inspect_deltas.py": "d3da7c31803821d2fda8d924b3025e0333be43f01d2d2676dc045a9db25d332f",
+        "schema/schema.json": "7efcc96bcdd10be36b927b79693efeebebf58e96b735b78a56157ae227a71938"
+      }
+    },
+    {
+      "parserSha256": "675e9eebf88e265bc14940433c09c203424bf79b9675e131ccf4b96176c39f89",
+      "files": {
+        "decoder/full_replay_corpus.py": "570158fd0b93f2b885cf07da1d988ff70cde668e600f358a78270de411ec5ae8",
+        "decoder/delta_payloads.py": "f86c058fdb62e7955f315f7a4f9bd08a5a5dfa3726e0498922460270bdbedf00",
+        "decoder/inspect_deltas.py": "d3da7c31803821d2fda8d924b3025e0333be43f01d2d2676dc045a9db25d332f",
+        "schema/schema.json": "7efcc96bcdd10be36b927b79693efeebebf58e96b735b78a56157ae227a71938"
+      }
+    },
+    {
+      "parserSha256": "50b0b93c94fb1d52e4472cd3d89efc2ef945ff5624b99932de5fb559f1528d15",
+      "files": {
+        "decoder/full_replay_corpus.py": "375ca992e8651f8f455603e72cca1998076fcf8b86e40cb9afe6bdbdba5acfba",
+        "decoder/delta_payloads.py": "f86c058fdb62e7955f315f7a4f9bd08a5a5dfa3726e0498922460270bdbedf00",
+        "decoder/inspect_deltas.py": "d3da7c31803821d2fda8d924b3025e0333be43f01d2d2676dc045a9db25d332f",
+        "schema/schema.json": "7efcc96bcdd10be36b927b79693efeebebf58e96b735b78a56157ae227a71938"
+      }
+    },
+    {
+      "parserSha256": "54c8e661a67ae187da74f87c8d8637aaca8c896c949041b64a74219b16232dae",
+      "files": {
+        "decoder/full_replay_corpus.py": "85ad24fe46f25b6b1483e1a43de2a337cee95735db8f622876285f3e26dd28ad",
+        "decoder/delta_payloads.py": "f86c058fdb62e7955f315f7a4f9bd08a5a5dfa3726e0498922460270bdbedf00",
+        "decoder/inspect_deltas.py": "d3da7c31803821d2fda8d924b3025e0333be43f01d2d2676dc045a9db25d332f",
+        "schema/schema.json": "7efcc96bcdd10be36b927b79693efeebebf58e96b735b78a56157ae227a71938"
+      }
+    },
+    {
+      "parserSha256": "4a9be2e2827e56e918207de5d454459bfbaae24317b972491c2c7a9b3e41467c",
+      "files": {
+        "decoder/full_replay_corpus.py": "47d572b162b0733814889e95f55081e5a253e5cdac0d238e6aa1cf403132d1f3",
+        "decoder/delta_payloads.py": "e2ef857b9f13fbebd05b3c75f99adc2c0bbc9f40acb6a67dd6977c2882abb95b",
+        "decoder/inspect_deltas.py": "d3da7c31803821d2fda8d924b3025e0333be43f01d2d2676dc045a9db25d332f",
+        "schema/schema.json": "7efcc96bcdd10be36b927b79693efeebebf58e96b735b78a56157ae227a71938"
+      }
+    },
+    {
+      "parserSha256": "7fc5b4fa7375b57fe3e2d45910eab5f1a9ee58c0d5126e010dba61dc6afc8ac4",
+      "files": {
+        "decoder/full_replay_corpus.py": "85ad24fe46f25b6b1483e1a43de2a337cee95735db8f622876285f3e26dd28ad",
+        "decoder/delta_payloads.py": "e2ef857b9f13fbebd05b3c75f99adc2c0bbc9f40acb6a67dd6977c2882abb95b",
+        "decoder/inspect_deltas.py": "d3da7c31803821d2fda8d924b3025e0333be43f01d2d2676dc045a9db25d332f",
+        "schema/schema.json": "7efcc96bcdd10be36b927b79693efeebebf58e96b735b78a56157ae227a71938"
+      },
+      "proof": "raw-retention-and-primitive-order-equivalence.json; intermediate reviewed storage revision"
+    }
+  ],
+  "proofs": [
+    {
+      "path": "deliverables/schema-member-cache-performance-20260910-v1.json",
+      "sha256": "9098d9abeb6eafca2137d37611365f5ac7d11b8f8989247b56e0135a8bb6e760"
+    },
+    {
+      "path": "deliverables/parallel-full-decode-20260910-v1.json",
+      "sha256": "24dd84c87a9ed7458357855aa151c288b63c2172c343a6e76f2ef2eae21813b0"
+    },
+    {
+      "path": "deliverables/local-replay-pipeline-speed-20260910-v1.json",
+      "sha256": "c821aecb77ef47d59511f5c7fbcebd0e4b9bf02771559383e4b1bacbbf48b23a"
+    },
+    {
+      "path": "deliverables/corpus-reuse-orchestration-20260910-v1.json",
+      "sha256": "c0c0f3a196a4d64325101c81c2aa9b8bd000f076401a8690d3ab4ebee9ceec6f"
+    },
+    {
+      "path": "deliverables/corpus-reuse-orchestration-20260910-v2.json",
+      "sha256": "24e7be4eb2cdddb5da4e33cac2f7c49a6347edc7c4a40939958e1569e698736c"
+    },
+    {
+      "path": "work/raw-retention-and-primitive-order-equivalence.json",
+      "sha256": "1805e225ceb49f5f3c22072e77453d51a7c3adc47f57d50a11a26feb06936ec4"
+    }
+  ],
+  "review": "Only immutable schema layout caching, ordered parallel decode/SQL batching, worker limits, and archive cache selection changed. Wire schemas, decoded values, raw failure retention and record order are unchanged.",
+  "originalMetadataRewritten": false
+}
