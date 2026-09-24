@@ -1,0 +1,6 @@
+/bin/
+/output/
+*.exe
+*.test
+*.prof
+coverage.out
