@@ -21,4 +21,3 @@ def require_damage_source_coverage(catalog, observations, recorded, metadata):
         if actual != expected:
             raise ValueError(f'{label}: admitted damage coverage mismatch; '
                              f'missing={len(expected-actual)}, extra={len(actual-expected)}')
-
