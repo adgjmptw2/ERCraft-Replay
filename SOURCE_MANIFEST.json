@@ -9476,6 +9476,57 @@
       "path": "core/decoder/test_skill_game_data_contract.py",
       "sha256": "b7537e2e4525b20b2cadcfda7ef3fc0dd78918d29a442160467425bb42ce51f2",
       "sourceGroup": "core-tests"
+    },
+    {
+      "path": "research/quality/damage_accounting_ledger.py",
+      "sha256": "530aa80a4b6d54953c91e860d7f2a699e3f610d8988b13a32aaae4c96d60b22e",
+      "sourceGroup": "research-quality-20260926"
+    },
+    {
+      "path": "research/quality/damage_encounter_partition.py",
+      "sha256": "ddbfc44c36b7ea208f700b9abd794dc1356ba88fc9ba65d147f6512c63181b75",
+      "sourceGroup": "research-quality-20260926"
+    },
+    {
+      "path": "research/quality/replay_damage_quality_result.py",
+      "sha256": "bc727887295e1dfa365878ffae86ba16e8b098be93b9af4372573b703f53b7ef",
+      "sourceGroup": "research-quality-20260926"
+    },
+    {
+      "path": "research/quality/damage_source_coverage_candidate.py",
+      "sha256": "e728dbf30f195d7b8c42ab268c553f108c964c281fb490031ef60e85c0163cd3",
+      "sourceGroup": "research-quality-20260926"
+    },
+    {
+      "path": "research/quality/skill_required_channel_guard.py",
+      "sha256": "f5cf1505557e059997f8015e0ac88031fb64715d095bab0b062414099e4a96d7",
+      "sourceGroup": "research-quality-20260926"
+    },
+    {
+      "path": "research/quality/test_damage_accounting_ledger.py",
+      "sha256": "732abf3ce0b1e70d88b9017baa59609862a75336ea46f112d92bf3b73d764c86",
+      "sourceGroup": "research-quality-20260926"
+    },
+    {
+      "path": "research/quality/test_damage_encounter_partition.py",
+      "sha256": "83c7b585283de16e577c7830a700d2ff13ff6c60ba641e87bc8307ea80aba493",
+      "sourceGroup": "research-quality-20260926"
+    },
+    {
+      "path": "research/quality/test_replay_damage_quality_result.py",
+      "sha256": "35badf71f147063393ec6e5108e8ac801f5d3ed14599f2c9ecbc374059fed30d",
+      "sourceGroup": "research-quality-20260926"
+    },
+    {
+      "path": "research/quality/test_damage_source_coverage_candidate.py",
+      "sha256": "6f5a593bcb5412bf4e49eaed7afdef0db61ea1be1c9a748a5f3415d2a235b310",
+      "sourceGroup": "research-quality-20260926"
+    },
+    {
+      "path": "research/quality/test_skill_required_channel_guard.py",
+      "sha256": "8edbbc82a68c05b00365292b0422198f68c5650e276bec0fbe637f12472db439",
+      "sourceGroup": "research-quality-20260926"
     }
-  ]
+  ],
+  "researchUpdateDate": "2026-09-26"
 }
