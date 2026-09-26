@@ -19,7 +19,7 @@
     },
     {
       "path": "core/decoder/build_combat_analysis.py",
-      "sha256": "e5ab911a3da1aa76d181dfb7277be75d6bd30a9691b681e946525724e47f348b",
+      "sha256": "d15f09f81256b6971473da03d03d8c23743a8f6f4ce19c9b0771ed67b4e4cd72",
       "sourceGroup": "core-12.4"
     },
     {

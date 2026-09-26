@@ -5761,7 +5761,6 @@ def build_catalog(config: AnalysisConfig) -> dict:
                 if cobalt_map_unavailable
                 else "맵 배경은 사용자가 제공한 public shared Satellite Map이다. 리플레이 world X/Z는 별도로 검증된 affine 식으로 원본 772×1000 픽셀에 투영한다. 이 그림을 exact 12.2 client asset이라고 주장하지 않으며 좌표·이벤트 수치의 권위 소스로 사용하지 않는다."
             ),
-            "BSER WITHHELD_ACQUISITION_DETAIL 응답은 취득 코드에 존재하지만 현재 세션 상태가 없어 live field-by-field 비교는 실행하지 않았다.",
             "tick/60은 60Hz 환산이며 공식 UI 경기 시간이라고 단정하지 않는다.",
         ],
     }

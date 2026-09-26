@@ -25,6 +25,10 @@ files = subprocess.check_output(
 ).decode('utf-8').split('\0')
 for relative in filter(None, files):
     path = ROOT / relative
+    if relative.startswith('core/acquire/') or relative in {
+        'worker/acquisition_state.py', 'worker/replay_dispatch.py', 'worker/analyze.py'
+    }:
+        errors.append(f'excluded acquisition implementation: {relative}')
     if path.suffix.lower() in {'.er', '.zip', '.sqlite', '.sqlite3', '.db', '.pem', '.key', '.pfx', '.p12', '.dpapi'}:
         errors.append(f'private/generated file: {relative}')
     if path.name.startswith('.env') or path.name == 'config.local':
@@ -41,6 +45,10 @@ for relative in filter(None, files):
             errors.append(f'JSON syntax: {relative}: {exc}')
     if path.suffix in {'.py', '.json', '.js', '.mjs', '.md', '.html', '.css'}:
         text = path.read_text(encoding='utf-8-sig')
+        acquisition_patterns = [r'find' + r'ReplayGame', r'X-' + r'BSER-',
+                                r'bser-rest-' + r'release', r'rst[.]' + r'replayPath']
+        if any(re.search(pattern, text, re.IGNORECASE) for pattern in acquisition_patterns):
+            errors.append(f'excluded acquisition endpoint or authentication detail: {relative}')
         # Report file names only, never matched secret values.
         patterns = [r'-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----',
                     r'gh[pousr]_[A-Za-z0-9]{30,}', r'github_pat_[A-Za-z0-9_]{30,}',
