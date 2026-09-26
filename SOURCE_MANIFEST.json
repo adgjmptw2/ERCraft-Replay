@@ -9209,7 +9209,7 @@
     },
     {
       "path": "worker/viewer_sidecars.py",
-      "sha256": "03ca72e78f7b54998f962b813d6e2dc15e4218eb8a817054c327325f474308d5",
+      "sha256": "3b68c925821a7410d9a0ee0c9e4f2c169e38ec1ec6e116a1582660666bec29db",
       "sourceGroup": "worker-and-viewer"
     },
     {
@@ -9249,7 +9249,7 @@
     },
     {
       "path": "viewer/src/death-review.js",
-      "sha256": "9b81629ea691513e9346c193d2980553480f5cca9bce64ffaf121d1d5443fe9a",
+      "sha256": "228a5be85ada410a2d7a1f1feff9f58dd5f5db3629370dffee60fef48c951e0f",
       "sourceGroup": "worker-and-viewer"
     },
     {
@@ -9274,7 +9274,7 @@
     },
     {
       "path": "viewer/src/main.js",
-      "sha256": "e1d455ffe1f1b4442587e5a6d4606d83d8eb7133f0fcfc6359aea0dbb248f99f",
+      "sha256": "49283906d758a9f716a5325e6d2952d6f6ef18e9e0eff653fc61f967be78405b",
       "sourceGroup": "worker-and-viewer"
     },
     {
@@ -9526,6 +9526,26 @@
       "path": "research/quality/test_skill_required_channel_guard.py",
       "sha256": "8edbbc82a68c05b00365292b0422198f68c5650e276bec0fbe637f12472db439",
       "sourceGroup": "research-quality-20260926"
+    },
+    {
+      "path": "core/decoder/practical_encounter_damage.py",
+      "sha256": "23d496c854fbefbcb7077561346d41c3d15db1c479a029f74a631b9a2869e84c",
+      "sourceGroup": "core-12.4"
+    },
+    {
+      "path": "core/decoder/test_practical_encounter_damage.py",
+      "sha256": "b168b10ddfe5533646e5427ab3e973aa2713771db1a7297d25870ca5484b9a57",
+      "sourceGroup": "core-12.4"
+    },
+    {
+      "path": "viewer/src/encounter-damage.js",
+      "sha256": "1e1c9938735042a2a519b898fac92c3eb078356beda904739b7b688241590ae2",
+      "sourceGroup": "worker-and-viewer"
+    },
+    {
+      "path": "viewer/src/encounter-damage.test.mjs",
+      "sha256": "be1548a7fa054c2935a0ae130ce2e32a6a9b2b098a658f29a806d88024898303",
+      "sourceGroup": "worker-and-viewer"
     }
   ],
   "researchUpdateDate": "2026-09-26"

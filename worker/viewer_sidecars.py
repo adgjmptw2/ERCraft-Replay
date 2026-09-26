@@ -11,7 +11,7 @@ from patch_inputs import resolve_sidecar_inputs
 
 CORE=Path(corpus_runtime_source.__file__).resolve().parents[1]
 
-def build_sidecars(raw,private,decode_path,source_sha256):
+def build_sidecars(raw,private,decode_path,source_sha256,*,practical_damage=None):
  public=json.loads(raw);version=public['meta']['clientVersion']
  assert private['meta']['clientVersion']==version
  schema_path,calibration_path=resolve_sidecar_inputs(CORE,version)
@@ -88,8 +88,15 @@ def build_sidecars(raw,private,decode_path,source_sha256):
     relevant=[q for q in public['worldMap']['staticObjects'] if q['category']==category and q.get('ownerPublicPlayerId')==p['publicPlayerId'] and ep['startTick']<=q['firstSeenTick']<ep['endTick']]
     exact=all(any(r.get('source')=='CmdSpawn' and ids.get(r.get('ownerId',private['objectOwners'].get(str(r['objectId']))))==p['publicPlayerId'] and r['category']==category and r['position']==q['position'] and r['firstSeenTick']==q['firstSeenTick'] for r in private['worldMap']['staticObjects']) for q in relevant)
     if exact and ep[field]['status']=='available':ep[field].update(label='배치',eventMeaning='exact-owned-CmdSpawn',sourceStatus='verified-owned-spawn',itemUseStatus='unavailable-no-exclusive-item-use-command-link')
- return {
+ result = {
   'skill-levels-v1.json':dict(binding,**({'skillSlotMappingRevision':'12.4.0.SkillSlotIndex.v1'} if version=='12.4.0' else {}),status='snapshot-and-upgrade-verified',snapshotChecks=checks,players=[dict(publicPlayerId=p,skillLevelTimeline=rows) for p,rows in levels.items()]),
   'transport-visual-v1.json':dict(binding,format='ercraft-transport-visual.v1',status=('snapshot-confirmed-with-unavailable-transitions' if any(s['source']=='unavailable-transition-between-snapshots' for s in states) else 'decoded-state-command-correlated'),objects=objects,unavailableTransitionIntervals=sum(s['source']=='unavailable-transition-between-snapshots' for s in states)),
   'personal-engagement-metrics-v3.json':personal,
  }
+
+ if practical_damage is not None:
+  from decoder.practical_encounter_damage import build_damage_sidecar
+  if len(practical_damage.get('runs',[])) != 1 or practical_damage['runs'][0].get('sourceSha256') != source_sha256:
+   raise ValueError('Damage sidecar source mismatch')
+  result['encounter-damage-v1.json']=build_damage_sidecar(raw,private,practical_damage)
+ return result

@@ -1,3 +1,4 @@
+import { bindEncounterDamage } from './encounter-damage.js?v=1';
 import { applyMissPolicy } from './miss-policy.js';
 import { applyMeasuredItemGeometry } from './item-art-layout.js?v=2';
 /* ERCraft Replay Analytics - Main Application Entry */
@@ -9,7 +10,7 @@ import { TeamRail } from './team-rail.js?v=skill-levels-v1';
 import { MapRenderer, hasWildlifePortrait, wildlifeAssetUrl } from './map-renderer.js?v=rift-background-v6';
 import { applyFrontendAssetOverrides, auditVisibleAssets } from './asset-overrides.js?v=team-items-v1';
 import { combatLogViewModel, teamCombatRowsAt } from './team-combat-log.js?v=skill-levels-v1';
-import { engagementReviewViewModel } from './death-review.js?v=team-items-v1&service-labels-v1&skill-ui-v2&opening-casts-v2&restrained-ui-v1&compact-devices-v1';
+import { engagementReviewViewModel } from './death-review.js?v=team-items-v1&service-labels-v1&skill-ui-v2&opening-casts-v2&restrained-ui-v1&compact-devices-v1&encounter-damage-v1';
 import { allEngagementSkillViewModel, currentEngagementSkillViewModel, skillFamilyLabel } from './engagement-skills.js?v=service-labels-v1&skill-ui-v2&opening-casts-v2&restrained-ui-v1';
 import { bindRequestedMetrics, markRequestedUnavailable, requestedRateRows, multiTargetLabels, groupSkillDisplayRows, skillSelectorGroups } from './requested-metrics.js?v=service-labels-v1&skill-ui-v2&sua-r-labels-v1&skill-label-audit-v1&opening-casts-v2&restrained-ui-v1';
 import { bindPersonalEngagementMetrics } from './personal-engagement.js?v=personal-metrics-v3';
@@ -134,6 +135,9 @@ function renderEngagementReview(focusPlayer) {
       <button type="button" class="engagement-card-seek" aria-label="교전 ${row.episodeNumber}, ${escapeHtml(row.timeline)} 장면 보기" data-seek-tick="${row.seekTick}">
         <span class="engagement-card-title">교전 ${row.episodeNumber}</span><span class="engagement-card-time">${escapeHtml(row.timeline)}</span><span class="engagement-card-result ${row.result === '사망' ? 'is-death' : ''}">${escapeHtml(row.result)}</span><span class="engagement-scene-link" aria-hidden="true">장면 보기 ↗</span>
       </button>
+      <div class="personal-metric-grid engagement-damage" aria-label="교전 피해량">
+        ${row.damage.map(cell => `<div class="personal-metric-cell"><span>${escapeHtml(cell.label)}</span><b>${escapeHtml(cell.value)}</b><small>${escapeHtml(cell.note)}</small></div>`).join('')}
+      </div>
       <div class="engagement-skill-overview">
         <div><span class="record-label">사용</span><span class="engagement-values">${renderRecordValues(row.skillUsage)}${row.normalAttackStartCount === null ? '' : `<span class="engagement-value" aria-label="평타 시도 ${row.normalAttackStartCount}회">평타 ${row.normalAttackStartCount}회</span>`}</span></div>
         <div><span class="record-label">적중</span><span class="engagement-values">${renderRecordValues(row.skillAccuracy)}</span></div>
@@ -186,6 +190,13 @@ async function loadData() {
         const scored = await metrics.json(); applyMissPolicy(scored); bindRequestedMetrics(appData, scored, fixtureSha);
       } catch (error) {
         console.error('Requested skill metrics unavailable:', error);
+      }
+      try {
+        const damage = await fetch('./public/ui-assets/encounter-damage-v1.json', { cache: 'no-store' });
+        if (!damage.ok) throw new Error(`HTTP ${damage.status}`);
+        bindEncounterDamage(appData, await damage.json(), fixtureSha);
+      } catch (error) {
+        console.error('Encounter damage unavailable:', error);
       }
       try {
         const personal = await fetch('./public/ui-assets/personal-engagement-metrics-v3.json', { cache: 'no-store' });

@@ -1,3 +1,4 @@
+import { encounterDamageCells } from './encounter-damage.js?v=1';
 import { familyLabel, skillInfoAt } from './team-rail.js?v=team-items-v1';
 import { fullEngagementSkillViewModel } from './engagement-skills.js?v=service-labels-v1&skill-ui-v2&opening-casts-v2&restrained-ui-v1';
 
@@ -95,6 +96,7 @@ export function engagementReviewViewModel(player, fps = 60) {
     );
     return {
       episodeNumber: episode.teamEpisodeNumber || index + 1,
+      damage: encounterDamageCells(player, episode),
       seekTick: Math.max(0, startTick - fps * 3),
       timeline: `${clock(startTick, fps)}–${clock(endTick, fps)}`,
       result: episode.survived === true ? '생존' : episode.survived === false ? '사망' : '결과 미확인',
